@@ -1,0 +1,1 @@
+This folder contains the native CPP dlls from the latest `BonEngine` version we support. This folder is copied as part of the NuGet package.
