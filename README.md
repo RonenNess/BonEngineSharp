@@ -1,3 +1,5 @@
+![icon](nuget_icon.png)
+
 # BonEngine Sharp
 
 `BonEngine` is a code-based game engine designed to be simple and straightforward, with as little setup as possible. It covers 2d rendering, assets, sound effects, music, input, config files, and more.
