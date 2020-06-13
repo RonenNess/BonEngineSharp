@@ -4,7 +4,7 @@
 
 `BonEngineSharp` is a C# bind of `BonEngine`. The APIs are nearly identical, so in this doc we'll only cover few examples and not the whole API. 
 
-To view the full API you can check out [API docs](https://ronenness.github.io/BonEngineSharp/) or the base [BonEngine repo](https://github.com/RonenNess/BonEngine).
+To view the full API you can check out [API docs](https://ronenness.github.io/BonEngineSharp/api/index.html) or the base [BonEngine repo](https://github.com/RonenNess/BonEngine).
 
 ## Install
 
