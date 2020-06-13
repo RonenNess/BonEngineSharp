@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Breakout </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Breakout ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="breakout">Breakout</h1>
+
+<p>This scene implements a simple Breakout game without using any loaded assets. Run this scene from any <code>BonEngine</code> application and it will work.</p>
+<p><img src="../images/example_breakout.jpg" alt="example_breakout.jpg"></p>
+<pre><code class="lang-cs">/// &lt;summary&gt;
+/// Implements a breakout minigame.
+/// &lt;/summary&gt;
+class BreakoutGame : BonEngineSharp.Scene
+{
+    // ball position
+    PointF _ballPosition;
+    PointF _ballSpeed;
+    int _ballRadius = 10;
+
+    // is the ball below player, ie a strike?
+    bool _isBallOut;
+
+    // player rect
+    RectangleF _player;
+
+    // trail effect texture
+    ImageAsset _trailEffectTexture;
+
+    // explosion effects
+    class Explosion
+    {
+        public PointF Position;
+        public Color Color;
+        public float Radius;
+    }
+    List&lt;Explosion&gt; _explosions = new List&lt;Explosion&gt;();
+
+    // blocks
+    class Block
+    {
+        public RectangleI Rectangle;
+        public Color Color;
+    }
+    List&lt;Block&gt; _blocks = new List&lt;Block&gt;();
+
+    // block size
+    PointI BlockSize = new PointI(80, 25);
+
+    // load the scene
+    protected override void Load()
+    {
+        // set level and starting positions
+        _ballPosition.Set(400, 500);
+        _ballSpeed.Set(-1f, -0.75f);
+
+        // init player
+        var windowSize = Gfx.WindowSize;
+        _player = new RectangleF(windowSize.X / 2 - 60, windowSize.Y - 50, 120, 15);
+
+        // init level
+        for (int i = 0; i &lt; windowSize.X / BlockSize.X; ++i)
+        {
+            for (int j = 0; j &lt; 10; ++j)
+            {
+                _blocks.Add(new Block()
+                {
+                    Rectangle = new RectangleI(i * BlockSize.X, j * BlockSize.Y, BlockSize.X, BlockSize.Y),
+                    Color = new Color(1f - (j / 10f), 0f, (j / 10f) - 1f, 1f)
+                });
+            }
+        }
+
+        // create empty texture for trail effects
+        _trailEffectTexture = Assets.CreateEmptyImage(windowSize);
+    }
+
+    // on updates do animations and controls
+    protected override void Update(double deltaTime)
+    {
+        // if user click 'exit' action, exit game
+        if (Input.Down(&quot;exit&quot;))
+        {
+            Game.Exit();
+        }
+
+        // skip frames with too much delta
+        if (deltaTime &gt; 1) { return; }
+
+        // get window size
+        var windowSize = Gfx.WindowSize;
+
+        // move ball
+        _ballPosition.AddSelf(_ballSpeed.Multiply((float)deltaTime * 235f));
+        if (_ballPosition.X &lt; 0) { _ballSpeed.X = Math.Abs(_ballSpeed.X); }
+        if (_ballPosition.X &gt; windowSize.X) { _ballSpeed.X = -Math.Abs(_ballSpeed.X); }
+        if (_ballPosition.Y &lt; 0) { _ballSpeed.Y = Math.Abs(_ballSpeed.Y); }
+        if (_ballPosition.Y &gt; windowSize.Y + 250) { _ballSpeed.Y = -Math.Abs(_ballSpeed.Y); }
+        _isBallOut = _ballPosition.Y &gt; windowSize.Y;
+
+        // if ball out, reset speed
+        if (_isBallOut &amp;&amp; Math.Abs(_ballSpeed.X) &gt; 1f)
+        {
+            _ballSpeed.X = 1;
+        }
+
+        // update explosions
+        foreach (Explosion exp in _explosions)
+        {
+            if (exp.Radius &gt; 10) { exp.Color.A -= (float)deltaTime * 1.25f; }
+            exp.Radius += (float)deltaTime * 150f;
+        }
+        _explosions.RemoveAll(x =&gt; x.Color.A &lt; 0);
+
+        // player movement speed
+        var playerSpeed = 350f;
+        float playerVelocity = 0f;
+
+        // do player movement
+        if (!_isBallOut)
+        {
+            // move player left
+            if (_player.Left &gt; 0 &amp;&amp; Input.Down(&quot;left&quot;))
+            {
+                playerVelocity -= (float)deltaTime * playerSpeed;
+            }
+            // move player right
+            if (_player.Right &lt; windowSize.X &amp;&amp; Input.Down(&quot;right&quot;))
+            {
+                playerVelocity += (float)deltaTime * playerSpeed;
+            }
+        }
+
+        // update player position
+        _player.X += playerVelocity;
+
+        // test collision with blocks
+        Block collidedBlock = null;
+        foreach (var block in _blocks)
+        {
+            // check collision with block + some extra margin
+            var rect = block.Rectangle;
+            rect.X -= 5;
+            rect.Width += 10;
+            rect.Y -= 5;
+            rect.Height += 10;
+
+            // ball hit block
+            if (rect.Contains(_ballPosition))
+            {
+                AddExplosion(_ballPosition, block.Color);
+                collidedBlock = block;
+                if ((_ballPosition.Y &lt; block.Rectangle.Top + 6) || (_ballPosition.Y &gt; block.Rectangle.Bottom - 6))
+                {
+                    _ballSpeed.Y *= -1;
+                }
+                if ((_ballPosition.X &lt; block.Rectangle.Left + 5) || (_ballPosition.X &gt; block.Rectangle.Right - 5))
+                {
+                    _ballSpeed.X *= -1;
+                }
+                break;
+            }
+        }
+        if (collidedBlock != null) { _blocks.Remove(collidedBlock); }
+
+        // test collision with player paddle
+        if (_ballSpeed.Y &gt; 0)
+        {
+            // create a slightly larger rect for player collision
+            var playerCollision = _player;
+            playerCollision.X -= 10;
+            playerCollision.Width += 10;
+            playerCollision.Y -= 10;
+            playerCollision.Height += 15;
+
+            // check if hit ball
+            if (playerCollision.Contains(_ballPosition))
+            {
+                // update ball speed
+                _ballSpeed.Y = -_ballSpeed.Y;
+                _ballSpeed.X += playerVelocity * 0.1f;
+
+                // special case for corners
+                if (_ballPosition.X &lt; _player.Left + 10)
+                {
+                    if (_ballSpeed.X &gt; 0) _ballSpeed.X = 0f;
+                    _ballSpeed.X -= 0.65f;
+                    AddExplosion(_ballPosition, new Color(1f, 0.5f, 0f, 1f));
+                }
+                else if (_ballPosition.X &gt; _player.Right - 10)
+                {
+                    if (_ballSpeed.X &lt; 0) _ballSpeed.X = 0f;
+                    _ballSpeed.X += 0.65f;
+                    AddExplosion(_ballPosition, new Color(1f, 0.5f, 0f, 1f));
+                }
+            }
+        }
+    }
+
+    // adds an explosion effect
+    private void AddExplosion(PointF position, Color color)
+    {
+        _explosions.Add(new Explosion()
+        {
+            Color = color,
+            Position = position,
+            Radius = 5,
+        });
+    }
+
+    // draw scene
+    protected override void Draw()
+    {
+        // draw trail effects on texture
+        Gfx.SetRenderTarget(_trailEffectTexture);
+        Gfx.DrawCircle(_ballPosition, _ballRadius, new Color(0.75f, 0.35f, 0.1f), true);
+        foreach (var explosion in _explosions)
+        {
+            Gfx.DrawCircle(explosion.Position, (int)(explosion.Radius), explosion.Color, false);
+        }
+
+        // make older trails fade out
+        Gfx.DrawRectangle(new RectangleI(0, 0, Gfx.WindowSize.X, Gfx.WindowSize.Y), new Color(0.9f, 0.9f, 0.9f, 1f), true, BlendModes.Multiply);
+        Gfx.SetRenderTarget(null);
+
+        // clear screen
+        Gfx.ClearScreen(_isBallOut ? Color.Red : Color.Black);
+
+        // draw blocks
+        foreach (var block in _blocks)
+        {
+            Gfx.DrawRectangle(block.Rectangle, block.Color, true);
+            Gfx.DrawRectangle(block.Rectangle, Color.Black, false);
+        }
+
+        // present trail on screen
+        Gfx.DrawImage(_trailEffectTexture, PointF.Zero, BlendModes.Additive);
+
+        // draw player
+        Gfx.DrawRectangle(_player, Color.Green, true);
+        Gfx.DrawRectangle(_player, Color.Black, false);
+
+        // draw ball
+        var brightness = (float)Math.Abs(Math.Sin((float)Game.ElapsedTime * 2));
+        Gfx.DrawCircle(_ballPosition, _ballRadius, new Color(1f, 0.5f + brightness / 2f, brightness), true);
+        Gfx.DrawCircle(_ballPosition, _ballRadius, Color.Black, false);
+
+        // draw explosions
+        foreach (var explosion in _explosions)
+        {
+            // outter circle
+            Gfx.DrawCircle(explosion.Position, (int)(explosion.Radius), explosion.Color, false);
+
+            // inner circle
+            var color = explosion.Color;
+            if (color.A &lt; 0.5) { color.A += 0.5f; }
+            Gfx.DrawCircle(explosion.Position, (int)(explosion.Radius) / 2, color, false);
+        }
+    }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RonenNess/WebGame2019/blob/master/others/BonEngineSharp/BonEngineSharp/Documentation/articles/examples_breakout.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

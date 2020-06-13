@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BonEngine Sharp </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="BonEngine Sharp ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bonengine-sharp">BonEngine Sharp</h1>
+
+<p><code>BonEngine</code> is a code-based game engine designed to be simple and straightforward, with as little setup as possible.
+It covers 2d rendering, assets, sound effects, music, input, config files, and more.</p>
+<p><code>BonEngineSharp</code> is a C# bind for the CPP <code>BonEngine</code> library.</p>
+<ul>
+<li><a href="https://github.com/RonenNess/BonEngineSharp">BonEngineSharp repo</a></li>
+<li><a href="https://github.com/RonenNess/BonEngine">BonEngine repo</a>.</li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<p>After you install <code>BonEngineSharp</code> via NuGet:</p>
+<pre><code>Install-Package BonEngineSharp
+</code></pre>
+<p>The engine is really easy to setup:</p>
+<pre><code class="lang-cs">using BonEngineSharp;
+
+/// &lt;summary&gt;
+/// A basic example scene.
+/// &lt;/summary&gt;
+class MyScene : Scene
+{
+    // called when scene loads
+    protected override void Load()
+    {
+    }
+
+    // called when scene unloads
+    protected override void Unload()
+    {
+    }
+
+    // called every frame to do updates
+    protected override void Update(double deltaTime)
+    {
+    }
+    
+    // called every frame to draw scene
+    protected override void Draw()
+    {
+    }
+
+    // called every constant interval to update physics related stuff
+    protected override void FixedUpdate(double deltaTime)
+    {
+    }
+}
+
+/// &lt;summary&gt;
+/// Start the application.
+/// &lt;/summary&gt;
+static void Main(string[] args)
+{
+    using (var scene = new MyScene()) {
+        BonEngine.Start(scene);
+    }
+}
+</code></pre>
+<p>Refer to the <code>Managers</code> section of the API to see the main functions you can access.</p>
+<p>Note: you must build your project as either x86 or x64; Any CPU won't work.</p>
+<h2 id="license">License</h2>
+<p><code>BonEngineSharp</code> is distributed with the permissive MIT license, so you can do pretty much anything (legal) with it.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RonenNess/WebGame2019/blob/master/others/BonEngineSharp/BonEngineSharp/Documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

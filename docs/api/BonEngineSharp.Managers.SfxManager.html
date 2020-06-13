@@ -1,0 +1,648 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SfxManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SfxManager
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Managers.SfxManager">
+  
+  
+  <h1 id="BonEngineSharp_Managers_SfxManager" data-uid="BonEngineSharp.Managers.SfxManager" class="text-break">Class SfxManager
+  </h1>
+  <div class="markdown level0 summary"><p>Sfx manager.
+Used to play sound effects and music.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BonEngineSharp.Managers.IManager.html">IManager</a></div>
+    <div class="level2"><span class="xref">SfxManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Managers.html">BonEngineSharp.Managers</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Managers_SfxManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SfxManager : IManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager__ctor_" data-uid="BonEngineSharp.Managers.SfxManager.#ctor*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager__ctor" data-uid="BonEngineSharp.Managers.SfxManager.#ctor">SfxManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SfxManager()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_Id_" data-uid="BonEngineSharp.Managers.SfxManager.Id*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_Id" data-uid="BonEngineSharp.Managers.SfxManager.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Get manager id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Managers.IManager.html#BonEngineSharp_Managers_IManager_Id">IManager.Id</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_PauseMusic_" data-uid="BonEngineSharp.Managers.SfxManager.PauseMusic*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_PauseMusic_System_Boolean_" data-uid="BonEngineSharp.Managers.SfxManager.PauseMusic(System.Boolean)">PauseMusic(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Pause / resume currently played music track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseMusic(bool pause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">pause</span></td>
+        <td><p>True to pause, false to resume.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_PlayMusic_" data-uid="BonEngineSharp.Managers.SfxManager.PlayMusic*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_PlayMusic_BonEngineSharp_Assets_MusicAsset_System_Int32_System_Int32_" data-uid="BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset,System.Int32,System.Int32)">PlayMusic(MusicAsset, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Play a music track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayMusic(MusicAsset music, int volume = 100, int loops = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></td>
+        <td><span class="parametername">music</span></td>
+        <td><p>Music asset to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">volume</span></td>
+        <td><p>Music volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">loops</span></td>
+        <td><p>How many times to repeat music (-1 = endless, 0 = once, above 0 = number of times).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_PlaySound_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single)">PlaySound(SoundAsset, Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Play a sound effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundChannelId PlaySound(SoundAsset sound, int volume = 100, int loops = 0, float pitch = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.SoundAsset.html">SoundAsset</a></td>
+        <td><span class="parametername">sound</span></td>
+        <td><p>Sound to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">volume</span></td>
+        <td><p>Sound volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">loops</span></td>
+        <td><p>How many times to repeat this sound (-1 = endless, 0 = once, above 0 = number of times).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pitch</span></td>
+        <td><p>Sound pitch effect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.SoundChannelId.html">SoundChannelId</a></td>
+        <td><p>Channel id, which you can use later to modify sound. Can be Invalid if there was no available channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_PlaySound_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)">PlaySound(SoundAsset, Int32, Int32, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Play a sound effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundChannelId PlaySound(SoundAsset sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.SoundAsset.html">SoundAsset</a></td>
+        <td><span class="parametername">sound</span></td>
+        <td><p>Sound to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">volume</span></td>
+        <td><p>Sound volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">loops</span></td>
+        <td><p>How many times to repeat this sound (-1 = endless, 0 = once, above 0 = number of times).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pitch</span></td>
+        <td><p>Sound pitch effect.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">panLeft</span></td>
+        <td><p>Pan sound left - value should be 0.0-1.0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">panRight</span></td>
+        <td><p>Pan sound right - value should be 0.0-1.0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td><p>Sound source distance (affect volume) - value should be 0.0-1.0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.SoundChannelId.html">SoundChannelId</a></td>
+        <td><p>Channel id, which you can use later to modify sound. Can be Invalid if there was no available channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_SetAudioProperties_" data-uid="BonEngineSharp.Managers.SfxManager.SetAudioProperties*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_SetAudioProperties_System_Int32_BonEngineSharp_Defs_AudioFormats_System_Boolean_System_Int32_" data-uid="BonEngineSharp.Managers.SfxManager.SetAudioProperties(System.Int32,BonEngineSharp.Defs.AudioFormats,System.Boolean,System.Int32)">SetAudioProperties(Int32, AudioFormats, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initialize / set audio device properties.
+If not called, BonEngine will initialize with defaults.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAudioProperties(int frequency = 22050, AudioFormats format, bool stereo = true, int audioChunkSize = 4096)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Audio frequency.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.AudioFormats.html">AudioFormats</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Audio format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">stereo</span></td>
+        <td><p>Support stereo?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">audioChunkSize</span></td>
+        <td><p>Size of the chunks to break sound tracks into. Smaller values means more responsiveness, but also more CPU to play sounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_SetChannelDistance_" data-uid="BonEngineSharp.Managers.SfxManager.SetChannelDistance*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_SetChannelDistance_BonEngineSharp_Defs_SoundChannelId_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.SetChannelDistance(BonEngineSharp.Defs.SoundChannelId,System.Single)">SetChannelDistance(SoundChannelId, Single)</h4>
+  <div class="markdown level1 summary"><p>Set sound channel distance,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChannelDistance(SoundChannelId channel, float distance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.SoundChannelId.html">SoundChannelId</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td><p>Channel distance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_SetChannelPanning_" data-uid="BonEngineSharp.Managers.SfxManager.SetChannelPanning*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_SetChannelPanning_BonEngineSharp_Defs_SoundChannelId_System_Single_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.SetChannelPanning(BonEngineSharp.Defs.SoundChannelId,System.Single,System.Single)">SetChannelPanning(SoundChannelId, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set sound channel panning,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChannelPanning(SoundChannelId channel, float panLeft, float panRight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.SoundChannelId.html">SoundChannelId</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">panLeft</span></td>
+        <td><p>Pan sound left - value should be 0.0-1.0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">panRight</span></td>
+        <td><p>Pan sound right - value should be 0.0-1.0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_SetChannelVolume_" data-uid="BonEngineSharp.Managers.SfxManager.SetChannelVolume*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_SetChannelVolume_BonEngineSharp_Defs_SoundChannelId_System_Int32_" data-uid="BonEngineSharp.Managers.SfxManager.SetChannelVolume(BonEngineSharp.Defs.SoundChannelId,System.Int32)">SetChannelVolume(SoundChannelId, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set sound channel distance,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChannelVolume(SoundChannelId channel, int volume)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.SoundChannelId.html">SoundChannelId</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">volume</span></td>
+        <td><p>Channel volume.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_SetMasterVolume_" data-uid="BonEngineSharp.Managers.SfxManager.SetMasterVolume*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_SetMasterVolume_System_Int32_System_Int32_" data-uid="BonEngineSharp.Managers.SfxManager.SetMasterVolume(System.Int32,System.Int32)">SetMasterVolume(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set master volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMasterVolume(int soundEffectsVolume, int musicVolume)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">soundEffectsVolume</span></td>
+        <td><p>Volume for sound effects.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">musicVolume</span></td>
+        <td><p>Volume for music.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_SetMusicVolume_" data-uid="BonEngineSharp.Managers.SfxManager.SetMusicVolume*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_SetMusicVolume_System_Int32_" data-uid="BonEngineSharp.Managers.SfxManager.SetMusicVolume(System.Int32)">SetMusicVolume(Int32)</h4>
+  <div class="markdown level1 summary"><p>Set the volume of the currently played music track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMusicVolume(int volume)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">volume</span></td>
+        <td><p>Music volume.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_StopChannel_" data-uid="BonEngineSharp.Managers.SfxManager.StopChannel*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_StopChannel_BonEngineSharp_Defs_SoundChannelId_" data-uid="BonEngineSharp.Managers.SfxManager.StopChannel(BonEngineSharp.Defs.SoundChannelId)">StopChannel(SoundChannelId)</h4>
+  <div class="markdown level1 summary"><p>Stop a playing channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopChannel(SoundChannelId channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.SoundChannelId.html">SoundChannelId</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_StopMusic_" data-uid="BonEngineSharp.Managers.SfxManager.StopMusic*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_StopMusic" data-uid="BonEngineSharp.Managers.SfxManager.StopMusic">StopMusic()</h4>
+  <div class="markdown level1 summary"><p>Stop the currently played music track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopMusic()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

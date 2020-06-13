@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AssetsManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AssetsManager
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Managers.AssetsManager">
+  
+  
+  <h1 id="BonEngineSharp_Managers_AssetsManager" data-uid="BonEngineSharp.Managers.AssetsManager" class="text-break">Class AssetsManager
+  </h1>
+  <div class="markdown level0 summary"><p>Assets manager.
+Responsible to load or create game assets. Use this manager when you want to load textures, sound effects, music, config, ect.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BonEngineSharp.Managers.IManager.html">IManager</a></div>
+    <div class="level2"><span class="xref">AssetsManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Managers.html">BonEngineSharp.Managers</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Managers_AssetsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AssetsManager : IManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager__ctor_" data-uid="BonEngineSharp.Managers.AssetsManager.#ctor*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager__ctor" data-uid="BonEngineSharp.Managers.AssetsManager.#ctor">AssetsManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetsManager()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BonEngineSharp_Managers_AssetsManager_AssetsRoot" data-uid="BonEngineSharp.Managers.AssetsManager.AssetsRoot">AssetsRoot</h4>
+  <div class="markdown level1 summary"><p>Optional root folder to load all assets from</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AssetsRoot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_Id_" data-uid="BonEngineSharp.Managers.AssetsManager.Id*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_Id" data-uid="BonEngineSharp.Managers.AssetsManager.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Get manager id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Managers.IManager.html#BonEngineSharp_Managers_IManager_Id">IManager.Id</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_ClearCache_" data-uid="BonEngineSharp.Managers.AssetsManager.ClearCache*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_ClearCache" data-uid="BonEngineSharp.Managers.AssetsManager.ClearCache">ClearCache()</h4>
+  <div class="markdown level1 summary"><p>Clear assets cache.
+Note: this will not release assets that you still hold a reference to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCache()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_CreateEmptyConfig_" data-uid="BonEngineSharp.Managers.AssetsManager.CreateEmptyConfig*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_CreateEmptyConfig" data-uid="BonEngineSharp.Managers.AssetsManager.CreateEmptyConfig">CreateEmptyConfig()</h4>
+  <div class="markdown level1 summary"><p>Creates an empty config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigAsset CreateEmptyConfig()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_CreateEmptyImage_" data-uid="BonEngineSharp.Managers.AssetsManager.CreateEmptyImage*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_CreateEmptyImage_BonEngineSharp_Framework_PointI_BonEngineSharp_Defs_ImageFilterMode_" data-uid="BonEngineSharp.Managers.AssetsManager.CreateEmptyImage(BonEngineSharp.Framework.PointI,BonEngineSharp.Defs.ImageFilterMode)">CreateEmptyImage(PointI, ImageFilterMode)</h4>
+  <div class="markdown level1 summary"><p>Creates an empty image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageAsset CreateEmptyImage(PointI size, ImageFilterMode filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Image size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.ImageFilterMode.html">ImageFilterMode</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>Image filtering mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><p>Loaded image asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_LoadConfig_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadConfig*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadConfig_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String,System.Boolean)">LoadConfig(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a config asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigAsset LoadConfig(string filename, bool useCache = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Config path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
+        <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></td>
+        <td><p>Loaded config asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_LoadFont_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadFont*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadFont_System_String_System_Int32_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean)">LoadFont(String, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a font asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontAsset LoadFont(string filename, int fontSize, bool useCache = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Font track path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td><p>Font native size to load.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
+        <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.FontAsset.html">FontAsset</a></td>
+        <td><p>Loaded font asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_LoadImage_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadImage*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadImage_System_String_BonEngineSharp_Defs_ImageFilterMode_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadImage(System.String,BonEngineSharp.Defs.ImageFilterMode,System.Boolean)">LoadImage(String, ImageFilterMode, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads an image asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageAsset LoadImage(string filename, ImageFilterMode filter, bool useCache = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Image path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.ImageFilterMode.html">ImageFilterMode</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>Image filtering mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
+        <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><p>Loaded image asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_LoadMusic_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadMusic*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadMusic_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String,System.Boolean)">LoadMusic(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a music asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MusicAsset LoadMusic(string filename, bool useCache = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Music file path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
+        <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></td>
+        <td><p>Loaded music asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_LoadSound_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadSound*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadSound_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadSound(System.String,System.Boolean)">LoadSound(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a sound track asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundAsset LoadSound(string filename, bool useCache = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Sound track path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
+        <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.SoundAsset.html">SoundAsset</a></td>
+        <td><p>Loaded sound asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_SaveConfig_" data-uid="BonEngineSharp.Managers.AssetsManager.SaveConfig*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_SaveConfig_BonEngineSharp_Assets_ConfigAsset_System_String_" data-uid="BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset,System.String)">SaveConfig(ConfigAsset, String)</h4>
+  <div class="markdown level1 summary"><p>Saves a config file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveConfig(ConfigAsset config, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if saving was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_ToAssetsPath_" data-uid="BonEngineSharp.Managers.AssetsManager.ToAssetsPath*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_ToAssetsPath_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean)">ToAssetsPath(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Add 'AssetsRoot' to an asset path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToAssetsPath(string filename, bool validate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

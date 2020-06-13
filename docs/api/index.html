@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BonEngine Sharp </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="BonEngine Sharp ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bonengine-sharp">BonEngine Sharp</h1>
+
+<p><code>BonEngine</code> is a code-based game engine designed to be simple and straightforward, with as little setup as possible. It covers 2d rendering, assets, sound effects, music, input, config files, and more.</p>
+<h2 id="install">Install</h2>
+<p>To install use nuget:</p>
+<pre><code>Install-Package BonEngineSharp
+</code></pre>
+<p>Or grab the latest build from releases and add reference manually.</p>
+<h3 id="important---no-any-cpu">Important - no <code>Any CPU</code></h3>
+<p>Since<code>BonEngineSharp</code> is a wrapper around a CPP library, your project needs to be built as either <code>x86</code> or <code>x64</code>, but it can't be <code>Any CPU</code>. Same code can be used for both platforms, there's no difference in API or how you use the engine.</p>
+<h2 id="how-to-use">How To Use</h2>
+<p><code>BonEngine</code> is very easy to setup:</p>
+<pre><code class="lang-cs">using BonEngineSharp;
+
+/// &lt;summary&gt;
+/// A basic example scene.
+/// &lt;/summary&gt;
+class MyScene : Scene
+{
+    // called when scene loads
+    protected override void Load()
+    {
+    }
+
+    // called when scene unloads
+    protected override void Unload()
+    {
+    }
+
+    // called every frame to do updates
+    protected override void Update(double deltaTime)
+    {
+    }
+    
+    // called every frame to draw scene
+    protected override void Draw()
+    {
+    }
+
+    // called every constant interval to update physics related stuff
+    protected override void FixedUpdate(double deltaTime)
+    {
+    }
+}
+
+/// &lt;summary&gt;
+/// Start the application.
+/// &lt;/summary&gt;
+static void Main(string[] args)
+{
+    using (var scene = new MyScene()) {
+        BonEngine.Start(scene);
+    }
+}
+</code></pre>
+<p>Once running, you can change your active scene:</p>
+<pre><code class="lang-cs">Game.ChangeScene(newScene);
+</code></pre>
+<h3 id="managers">Managers</h3>
+<p><code>BonEngine</code> is divided into 7 subsystems, called <code>managers</code>. These managers implement the vast majority of the engine's APIs, and they are:</p>
+<h4 id="game">Game</h4>
+<p>Application and global game stuff, like changing scene, exiting game, load config from file, retrieve delta time, ect.</p>
+<h4 id="assets">Assets</h4>
+<p>Load and create assets - images, sound effects, music, config files, ect.</p>
+<h4 id="gfx">Gfx</h4>
+<p>Everything related to graphics and rendering.</p>
+<h4 id="sfx">Sfx</h4>
+<p>Everything related to sound effects and music.</p>
+<h4 id="input">Input</h4>
+<p>Implements user input, either by querying keyboard and mouse states or by checking &quot;actions&quot; which are bound to different keys.</p>
+<h4 id="log">Log</h4>
+<p>Provide basic logs.</p>
+<h4 id="diagnostics">Diagnostics</h4>
+<p>Get diagnostics and debug data, like FPS, number of draw calls, ect.</p>
+<h2 id="some-examples">Some Examples</h2>
+<p>Lets review some simple examples.</p>
+<h3 id="drawing-images---gfxdrawimage">Drawing Images - Gfx.DrawImage()</h3>
+<pre><code class="lang-cs">using BonEngineSharp;
+using BonEngineSharp.Assets;
+using BonEngineSharp.Framework;
+
+class MyScene : BonEngineSharp.Scene
+{
+    // image to draw
+    private ImageAsset _srcImage;
+    
+    // called when scene loads - load image from file
+    protected override void Load()
+    {
+        _srcImage = Assets.LoadImage(&quot;my_image.png&quot;);
+    }
+    
+    // called every frame to draw scene - draw image
+    protected override void Draw()
+    {
+        Gfx.DrawImage(_srcImage, new PointI(100, 100));
+    }
+}
+</code></pre>
+<h3 id="drawing-shapes---gfxdrawrectangle">Drawing Shapes - Gfx.DrawRectangle()</h3>
+<pre><code class="lang-cs">using BonEngineSharp;
+using BonEngineSharp.Framework;
+
+class MyScene : BonEngineSharp.Scene
+{ 
+    // called every frame to draw scene - draws a rectangle
+    protected override void Draw()
+    {
+        Gfx.DrawRectangle(new RectangleI(50, 50, 25, 25), Color.Red, true);
+    }
+}
+</code></pre>
+<h3 id="drawing-text---gfxdrawtext">Drawing Text - Gfx.DrawText()</h3>
+<pre><code class="lang-cs">using BonEngineSharp;
+using BonEngineSharp.Assets;
+using BonEngineSharp.Framework;
+
+class MyScene : BonEngineSharp.Scene
+{ 
+    // font to use
+    private FontAsset _font;
+    
+    // called when scene loads - load font to use
+    protected override void Load()
+    {
+        _font = Assets.LoadFont(&quot;OpenSans-Regular.ttf&quot;, 32);
+    }
+    
+    // called every frame to draw scene - draw text
+    protected override void Draw()
+    {
+        Gfx.DrawText(_font, &quot;Hello BonEngine!&quot;, new PointF(50, 50));
+    }
+}
+</code></pre>
+<h3 id="drawing-sprites---gfxdrawsprite">Drawing Sprites - Gfx.DrawSprite()</h3>
+<pre><code class="lang-cs">using BonEngineSharp;
+using BonEngineSharp.Assets;
+using BonEngineSharp.Framework;
+
+class MyScene : BonEngineSharp.Scene
+{
+    // sprite to draw
+    private Sprite _sprite;
+    
+    // called when scene loads - setup sprite
+    // note: spritesheets and animations exists in the engine, but are not covered in this example
+    protected override void Load()
+    {
+        _sprite = new Sprite()
+        {
+            Position = new PointF(500, 500),
+            Origin = new PointF(0.5f, 1.0f),
+            Image = Assets.LoadImage(&quot;sprite.png&quot;)
+        };
+    }
+    
+    // called every frame to draw scene - draw sprite
+    protected override void Draw()
+    {
+        Gfx.DrawSprite(_sprite);
+    }
+}
+</code></pre>
+<h3 id="playing-music---sfxplaymusic">Playing Music - Sfx.PlayMusic()</h3>
+<pre><code class="lang-cs">using BonEngineSharp;
+using BonEngineSharp.Assets;
+using BonEngineSharp.Framework;
+
+class MyScene : BonEngineSharp.Scene
+{ 
+    // music to play
+    private MusicAsset _music;
+    
+    // called when scene loads - load and starts playing music
+    protected override void Load()
+    {
+        _music = Assets.LoadMusic(&quot;my_song.ogg&quot;);
+        Sfx.PlayMusic(_music);
+    }
+}
+</code></pre>
+<h3 id="playing-sounds---sfxplaysound">Playing Sounds - Sfx.PlaySound()</h3>
+<pre><code class="lang-cs">using BonEngineSharp;
+using BonEngineSharp.Assets;
+using BonEngineSharp.Framework;
+
+class MyScene : BonEngineSharp.Scene
+{ 
+    // music to play
+    private SoundAsset _sound;
+    
+    // called when scene loads - load and plays sound effect once
+    protected override void Load()
+    {
+        _sound = Assets.LoadSound(&quot;boom.wav&quot;);
+        Sfx.PlaySound(_sound, 100, 0);
+    }
+}
+</code></pre>
+<h3 id="getting-input---inputdown--inputcursorposition">Getting Input - Input.Down() / Input.CursorPosition</h3>
+<pre><code class="lang-cs">using BonEngineSharp;
+using BonEngineSharp.Framework;
+
+class MyScene : BonEngineSharp.Scene
+{ 
+    // called every frame to control player
+    protected override void Update(double deltaTime)
+    {
+        // check bound action
+        if (Input.Down(&quot;left&quot;))
+        {
+            // move left
+        }
+        
+        // check key directly
+        if (Input.Down(KeyCodes.KeySpace))
+        {
+            // attack
+        }
+        
+        // get mouse position 
+        var mouse = Input.CursorPosition;
+    }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RonenNess/WebGame2019/blob/master/others/BonEngineSharp/BonEngineSharp/Documentation/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

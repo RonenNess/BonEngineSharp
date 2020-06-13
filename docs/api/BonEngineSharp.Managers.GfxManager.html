@@ -1,0 +1,1189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GfxManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GfxManager
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Managers.GfxManager">
+  
+  
+  <h1 id="BonEngineSharp_Managers_GfxManager" data-uid="BonEngineSharp.Managers.GfxManager" class="text-break">Class GfxManager
+  </h1>
+  <div class="markdown level0 summary"><p>Gfx manager.
+Responsible to rendering sprites, shapes, texts, and control the main window's properties.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BonEngineSharp.Managers.IManager.html">IManager</a></div>
+    <div class="level2"><span class="xref">GfxManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Managers.html">BonEngineSharp.Managers</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Managers_GfxManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GfxManager : IManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager__ctor_" data-uid="BonEngineSharp.Managers.GfxManager.#ctor*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager__ctor" data-uid="BonEngineSharp.Managers.GfxManager.#ctor">GfxManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GfxManager()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_Id_" data-uid="BonEngineSharp.Managers.GfxManager.Id*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_Id" data-uid="BonEngineSharp.Managers.GfxManager.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Get manager id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Managers.IManager.html#BonEngineSharp_Managers_IManager_Id">IManager.Id</a></div>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_Viewport_" data-uid="BonEngineSharp.Managers.GfxManager.Viewport*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_Viewport" data-uid="BonEngineSharp.Managers.GfxManager.Viewport">Viewport</h4>
+  <div class="markdown level1 summary"><p>Set rendering viewport (limits where you can render).
+To disable viewport, set RectangleI.Empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleI Viewport { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_WindowSize_" data-uid="BonEngineSharp.Managers.GfxManager.WindowSize*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_WindowSize" data-uid="BonEngineSharp.Managers.GfxManager.WindowSize">WindowSize</h4>
+  <div class="markdown level1 summary"><p>Get current window size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointI WindowSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_ClearScreen_" data-uid="BonEngineSharp.Managers.GfxManager.ClearScreen*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_ClearScreen_BonEngineSharp_Framework_Color_" data-uid="BonEngineSharp.Managers.GfxManager.ClearScreen(BonEngineSharp.Framework.Color)">ClearScreen(Color)</h4>
+  <div class="markdown level1 summary"><p>Clear the entire screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearScreen(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Color to clear to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_ClearScreen_" data-uid="BonEngineSharp.Managers.GfxManager.ClearScreen*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_ClearScreen_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_RectangleI_" data-uid="BonEngineSharp.Managers.GfxManager.ClearScreen(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.RectangleI)">ClearScreen(Color, RectangleI)</h4>
+  <div class="markdown level1 summary"><p>Clear a region of screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearScreen(Color color, RectangleI region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Color to clear to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>Region to clear.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawCircle_" data-uid="BonEngineSharp.Managers.GfxManager.DrawCircle*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawCircle_BonEngineSharp_Framework_PointI_System_Int32_BonEngineSharp_Framework_Color_System_Boolean_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawCircle(BonEngineSharp.Framework.PointI,System.Int32,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes)">DrawCircle(PointI, Int32, Color, Boolean, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draws a circle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCircle(PointI center, int radius, Color color, bool filled, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>Circle center.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td><p>Circle radius.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Drawing color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">filled</span></td>
+        <td><p>Draw filled / hollow circle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawImage_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawImage_BonEngineSharp_Assets_ImageAsset_BonEngineSharp_Framework_PointF_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage(BonEngineSharp.Assets.ImageAsset,BonEngineSharp.Framework.PointF,BonEngineSharp.Defs.BlendModes)">DrawImage(ImageAsset, PointF, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draws an image on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(ImageAsset image, PointF position, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Drawing position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawImage_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawImage_BonEngineSharp_Assets_ImageAsset_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_PointI_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage(BonEngineSharp.Assets.ImageAsset,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointI,BonEngineSharp.Defs.BlendModes)">DrawImage(ImageAsset, PointF, PointI, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draws an image on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(ImageAsset image, PointF position, PointI size, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Drawing position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Drawing size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawImage_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawImage_BonEngineSharp_Assets_ImageAsset_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_PointI_BonEngineSharp_Defs_BlendModes_BonEngineSharp_Framework_RectangleI_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage(BonEngineSharp.Assets.ImageAsset,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointI,BonEngineSharp.Defs.BlendModes,BonEngineSharp.Framework.RectangleI)">DrawImage(ImageAsset, PointF, PointI, BlendModes, RectangleI)</h4>
+  <div class="markdown level1 summary"><p>Draws an image on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(ImageAsset image, PointF position, PointI size, BlendModes blend, RectangleI sourceRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Drawing position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Drawing size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td><span class="parametername">sourceRect</span></td>
+        <td><p>Source rectangle to draw.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawImage_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawImage_BonEngineSharp_Assets_ImageAsset_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_PointI_BonEngineSharp_Defs_BlendModes_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_PointF_System_Single_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage(BonEngineSharp.Assets.ImageAsset,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointI,BonEngineSharp.Defs.BlendModes,BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.PointF,System.Single)">DrawImage(ImageAsset, PointF, PointI, BlendModes, RectangleI, PointF, Single)</h4>
+  <div class="markdown level1 summary"><p>Draws an image on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(ImageAsset image, PointF position, PointI size, BlendModes blend, RectangleI sourceRect, PointF origin, float rotation = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Drawing position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Drawing size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td><span class="parametername">sourceRect</span></td>
+        <td><p>Source rectangle to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>Rotation and source position origin (relative to size).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Rotation, in degrees.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawImage_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawImage_BonEngineSharp_Assets_ImageAsset_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_PointI_BonEngineSharp_Defs_BlendModes_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_PointF_System_Single_BonEngineSharp_Framework_Color_" data-uid="BonEngineSharp.Managers.GfxManager.DrawImage(BonEngineSharp.Assets.ImageAsset,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointI,BonEngineSharp.Defs.BlendModes,BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.PointF,System.Single,BonEngineSharp.Framework.Color)">DrawImage(ImageAsset, PointF, PointI, BlendModes, RectangleI, PointF, Single, Color)</h4>
+  <div class="markdown level1 summary"><p>Draws an image on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(ImageAsset image, PointF position, PointI size, BlendModes blend, RectangleI sourceRect, PointF origin, float rotation, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Drawing position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Drawing size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td><span class="parametername">sourceRect</span></td>
+        <td><p>Source rectangle to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>Rotation and source position origin (relative to size).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Rotation, in degrees.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Tint color.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawLine_" data-uid="BonEngineSharp.Managers.GfxManager.DrawLine*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawLine_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_Color_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawLine(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.Color,BonEngineSharp.Defs.BlendModes)">DrawLine(PointI, PointI, Color, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draw a line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLine(PointI from, PointI to, Color color, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Source point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Destination point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Line color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawPixel_" data-uid="BonEngineSharp.Managers.GfxManager.DrawPixel*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawPixel_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_Color_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawPixel(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.Color,BonEngineSharp.Defs.BlendModes)">DrawPixel(PointI, Color, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draw a pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPixel(PointI position, Color color, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Pixel position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Pixel color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawRectangle_" data-uid="BonEngineSharp.Managers.GfxManager.DrawRectangle*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawRectangle_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_Color_System_Boolean_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes)">DrawRectangle(RectangleI, Color, Boolean, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draws a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRectangle(RectangleI rectangle, Color color, bool filled, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td><span class="parametername">rectangle</span></td>
+        <td><p>Rectangle to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Drawing color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">filled</span></td>
+        <td><p>Draw filled / hollow rectangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawSprite_" data-uid="BonEngineSharp.Managers.GfxManager.DrawSprite*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawSprite_BonEngineSharp_Framework_Sprite_" data-uid="BonEngineSharp.Managers.GfxManager.DrawSprite(BonEngineSharp.Framework.Sprite)">DrawSprite(Sprite)</h4>
+  <div class="markdown level1 summary"><p>Draw a sprite on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSprite(Sprite sprite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Sprite to draw.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawSprite_" data-uid="BonEngineSharp.Managers.GfxManager.DrawSprite*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawSprite_BonEngineSharp_Framework_Sprite_BonEngineSharp_Framework_PointF_" data-uid="BonEngineSharp.Managers.GfxManager.DrawSprite(BonEngineSharp.Framework.Sprite,BonEngineSharp.Framework.PointF)">DrawSprite(Sprite, PointF)</h4>
+  <div class="markdown level1 summary"><p>Draw a sprite on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSprite(Sprite sprite, PointF offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Sprite to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>Extra offset from sprite original position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawText_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawText_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF)">DrawText(FontAsset, String, PointF)</h4>
+  <div class="markdown level1 summary"><p>Draw text on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawText(FontAsset font, string text, PointF position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.FontAsset.html">FontAsset</a></td>
+        <td><span class="parametername">font</span></td>
+        <td><p>Font to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Text position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawText_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawText_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_System_Int32_System_Int32_System_Int32_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color,System.Int32,System.Int32,System.Int32,BonEngineSharp.Defs.BlendModes)">DrawText(FontAsset, String, PointF, Color, Color, Int32, Int32, Int32, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draw text on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawText(FontAsset font, string text, PointF position, Color color, Color strokeColor, int strokeWidth = 1, int fontSize = 0, int maxWidth = 0, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.FontAsset.html">FontAsset</a></td>
+        <td><span class="parametername">font</span></td>
+        <td><p>Font to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Text position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Text color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">strokeColor</span></td>
+        <td><p>Stroke color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">strokeWidth</span></td>
+        <td><p>Stroke width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td><p>Font size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td><p>Max line width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawText_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawText_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_Color_System_Int32_System_Int32_BonEngineSharp_Defs_BlendModes_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.Color,System.Int32,System.Int32,BonEngineSharp.Defs.BlendModes)">DrawText(FontAsset, String, PointF, Color, Int32, Int32, BlendModes)</h4>
+  <div class="markdown level1 summary"><p>Draw text on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawText(FontAsset font, string text, PointF position, Color color, int fontSize = 0, int maxWidth = 0, BlendModes blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.FontAsset.html">FontAsset</a></td>
+        <td><span class="parametername">font</span></td>
+        <td><p>Font to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Text position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Text color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td><p>Font size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td><p>Max line width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_DrawText_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_DrawText_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_Color_System_Int32_System_Int32_BonEngineSharp_Defs_BlendModes_BonEngineSharp_Framework_PointF_System_Single_" data-uid="BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.Color,System.Int32,System.Int32,BonEngineSharp.Defs.BlendModes,BonEngineSharp.Framework.PointF,System.Single)">DrawText(FontAsset, String, PointF, Color, Int32, Int32, BlendModes, PointF, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw text on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawText(FontAsset font, string text, PointF position, Color color, int fontSize, int maxWidth, BlendModes blend, PointF origin, float rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.FontAsset.html">FontAsset</a></td>
+        <td><span class="parametername">font</span></td>
+        <td><p>Font to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Text position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Text color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td><p>Font size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td><p>Max line width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>Blend mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>Text origin.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Text rotation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_SetRenderTarget_" data-uid="BonEngineSharp.Managers.GfxManager.SetRenderTarget*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_SetRenderTarget_BonEngineSharp_Assets_ImageAsset_" data-uid="BonEngineSharp.Managers.GfxManager.SetRenderTarget(BonEngineSharp.Assets.ImageAsset)">SetRenderTarget(ImageAsset)</h4>
+  <div class="markdown level1 summary"><p>Set current render target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(ImageAsset image)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image to draw on, or null to clear render target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_SetTitle_" data-uid="BonEngineSharp.Managers.GfxManager.SetTitle*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_SetTitle_System_String_" data-uid="BonEngineSharp.Managers.GfxManager.SetTitle(System.String)">SetTitle(String)</h4>
+  <div class="markdown level1 summary"><p>Set window title.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTitle(string title)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>New title.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_SetWindowProperties_" data-uid="BonEngineSharp.Managers.GfxManager.SetWindowProperties*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_SetWindowProperties_System_String_System_Int32_System_Int32_BonEngineSharp_Defs_WindowModes_System_Boolean_" data-uid="BonEngineSharp.Managers.GfxManager.SetWindowProperties(System.String,System.Int32,System.Int32,BonEngineSharp.Defs.WindowModes,System.Boolean)">SetWindowProperties(String, Int32, Int32, WindowModes, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set window properties.
+This will recreate the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWindowProperties(string title, int width, int height, WindowModes windowMode, bool showCursor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Window title.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Window width (0 for fullscreen).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Window height (0 for fullscreen).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.WindowModes.html">WindowModes</a></td>
+        <td><span class="parametername">windowMode</span></td>
+        <td><p>Window startup mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">showCursor</span></td>
+        <td><p>Show / hide cursor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfigAsset
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConfigAsset
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Assets.ConfigAsset">
+  
+  
+  <h1 id="BonEngineSharp_Assets_ConfigAsset" data-uid="BonEngineSharp.Assets.ConfigAsset" class="text-break">Class ConfigAsset
+  </h1>
+  <div class="markdown level0 summary"><p>Config asset type.
+This asset loads a config file (.ini format in default implementation) and provide API to retrieve or set data from it.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BonEngineSharp.Assets.IAsset.html">IAsset</a></div>
+    <div class="level2"><span class="xref">ConfigAsset</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset__handle">IAsset._handle</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Dispose">IAsset.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_HaveHandle">IAsset.HaveHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_IsValid">IAsset.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Path">IAsset.Path</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Assets.html">BonEngineSharp.Assets</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Assets_ConfigAsset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConfigAsset : IAsset, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset__ctor_" data-uid="BonEngineSharp.Assets.ConfigAsset.#ctor*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset__ctor_System_IntPtr_" data-uid="BonEngineSharp.Assets.ConfigAsset.#ctor(System.IntPtr)">ConfigAsset(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Create the asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigAsset(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Asset handle inside the low-level engine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_AssetType_" data-uid="BonEngineSharp.Assets.ConfigAsset.AssetType*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_AssetType" data-uid="BonEngineSharp.Assets.ConfigAsset.AssetType">AssetType</h4>
+  <div class="markdown level1 summary"><p>Get asset type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AssetType AssetType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.AssetType.html">AssetType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_AssetType">IAsset.AssetType</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_Finalize_" data-uid="BonEngineSharp.Assets.ConfigAsset.Finalize*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_Finalize" data-uid="BonEngineSharp.Assets.ConfigAsset.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Dispose on destructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Finalize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Finalize">IAsset.Finalize()</a></div>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetBool_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetBool*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetBool_System_String_System_String_System_Boolean_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetBool(System.String,System.String,System.Boolean)">GetBool(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get a bool value from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBool(string section, string key, bool defaultVal = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetFloat_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetFloat*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetFloat_System_String_System_String_System_Single_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetFloat(System.String,System.String,System.Single)">GetFloat(String, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Get a float value from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(string section, string key, float defaultVal = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetInt_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetInt*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetInt_System_String_System_String_System_Int32_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetInt(System.String,System.String,System.Int32)">GetInt(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get an int value from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt(string section, string key, int defaultVal = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetStr_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetStr*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetStr_System_String_System_String_System_String_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetStr(System.String,System.String,System.String)">GetStr(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Get a string value from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStr(string section, string key, string defaultVal = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_Keys_" data-uid="BonEngineSharp.Assets.ConfigAsset.Keys*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_Keys_System_String_" data-uid="BonEngineSharp.Assets.ConfigAsset.Keys(System.String)">Keys(String)</h4>
+  <div class="markdown level1 summary"><p>Get all keys in a section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] Keys(string section)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get keys from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_RemoveKey_" data-uid="BonEngineSharp.Assets.ConfigAsset.RemoveKey*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_RemoveKey_System_String_System_String_" data-uid="BonEngineSharp.Assets.ConfigAsset.RemoveKey(System.String,System.String)">RemoveKey(String, String)</h4>
+  <div class="markdown level1 summary"><p>Remove a key from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveKey(string section, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to remove key from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_Sections_" data-uid="BonEngineSharp.Assets.ConfigAsset.Sections*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_Sections" data-uid="BonEngineSharp.Assets.ConfigAsset.Sections">Sections()</h4>
+  <div class="markdown level1 summary"><p>Get all sections in config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] Sections()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_SetValue_" data-uid="BonEngineSharp.Assets.ConfigAsset.SetValue*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_SetValue_System_String_System_String_System_Object_" data-uid="BonEngineSharp.Assets.ConfigAsset.SetValue(System.String,System.String,System.Object)">SetValue(String, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Set value in config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(string section, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to set value in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to set (will be stringified with ToString()).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_ToIniString_" data-uid="BonEngineSharp.Assets.ConfigAsset.ToIniString*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_ToIniString" data-uid="BonEngineSharp.Assets.ConfigAsset.ToIniString">ToIniString()</h4>
+  <div class="markdown level1 summary"><p>Convert this config to string in ini format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToIniString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Config as ini file string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

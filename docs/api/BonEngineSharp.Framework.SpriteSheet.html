@@ -1,0 +1,596 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SpriteSheet
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SpriteSheet
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Framework.SpriteSheet">
+  
+  
+  <h1 id="BonEngineSharp_Framework_SpriteSheet" data-uid="BonEngineSharp.Framework.SpriteSheet" class="text-break">Class SpriteSheet
+  </h1>
+  <div class="markdown level0 summary"><p>Define the properties of a spritesheet, which sprites we have in it, and sprite animations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SpriteSheet</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Framework.html">BonEngineSharp.Framework</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Framework_SpriteSheet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SpriteSheet : Object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet__ctor_" data-uid="BonEngineSharp.Framework.SpriteSheet.#ctor*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet__ctor" data-uid="BonEngineSharp.Framework.SpriteSheet.#ctor">SpriteSheet()</h4>
+  <div class="markdown level1 summary"><p>Create empty spritesheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteSheet()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet__ctor_" data-uid="BonEngineSharp.Framework.SpriteSheet.#ctor*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet__ctor_BonEngineSharp_Assets_ConfigAsset_" data-uid="BonEngineSharp.Framework.SpriteSheet.#ctor(BonEngineSharp.Assets.ConfigAsset)">SpriteSheet(ConfigAsset)</h4>
+  <div class="markdown level1 summary"><p>Create the spritesheet from config file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteSheet(ConfigAsset config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Config asset to load spritesheet from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_SpritesCount_" data-uid="BonEngineSharp.Framework.SpriteSheet.SpritesCount*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_SpritesCount" data-uid="BonEngineSharp.Framework.SpriteSheet.SpritesCount">SpritesCount</h4>
+  <div class="markdown level1 summary"><p>How many sprites we have on X and Y axis inside the spritesheet.
+This defines how we calculate the size and position of a specific sprite in sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointI SpritesCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_AddAnimation_" data-uid="BonEngineSharp.Framework.SpriteSheet.AddAnimation*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_AddAnimation_BonEngineSharp_Framework_SpriteAnimation_" data-uid="BonEngineSharp.Framework.SpriteSheet.AddAnimation(BonEngineSharp.Framework.SpriteAnimation)">AddAnimation(SpriteAnimation)</h4>
+  <div class="markdown level1 summary"><p>Add animation to spritesheet.
+Can override existing keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAnimation(SpriteAnimation animation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.SpriteAnimation.html">SpriteAnimation</a></td>
+        <td><span class="parametername">animation</span></td>
+        <td><p>Animation to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_AddBookmark_" data-uid="BonEngineSharp.Framework.SpriteSheet.AddBookmark*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_AddBookmark_System_String_BonEngineSharp_Framework_PointI_" data-uid="BonEngineSharp.Framework.SpriteSheet.AddBookmark(System.String,BonEngineSharp.Framework.PointI)">AddBookmark(String, PointI)</h4>
+  <div class="markdown level1 summary"><p>Set a new bookmark in spritesheet.
+Can override existing keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBookmark(string bookmarkId, PointI spriteIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">bookmarkId</span></td>
+        <td><p>Bookmark id to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">spriteIndex</span></td>
+        <td><p>Bookmark index in spritesheet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_Animate_" data-uid="BonEngineSharp.Framework.SpriteSheet.Animate*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_Animate_BonEngineSharp_Framework_Sprite_System_String_System_Double__System_Double_System_Int32__System_Boolean__System_Single_" data-uid="BonEngineSharp.Framework.SpriteSheet.Animate(BonEngineSharp.Framework.Sprite,System.String,System.Double@,System.Double,System.Int32@,System.Boolean@,System.Single)">Animate(Sprite, String, ref Double, Double, out Int32, out Boolean, Single)</h4>
+  <div class="markdown level1 summary"><p>Animate sprite based on animation id and progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Animate(Sprite sprite, string animation, ref double progress, double deltaTime, out int currStep, out bool didFinish, float sizeFactor = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Sprite to animate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">animation</span></td>
+        <td><p>Animation id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">progress</span></td>
+        <td><p>Animation total progress, in seconds. This param is updated every call so you need to preserve it between calls.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td><p>How much to advance animation in current call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">currStep</span></td>
+        <td><p>Will contain current animation step index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">didFinish</span></td>
+        <td><p>Will be set to true if animation ended (for repeating animations, will be true during the frame it reset back to step 0).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sizeFactor</span></td>
+        <td><p>Set the size of the sprite to be the spritesheet's single sprite size, multiplied by this value. If set to 0, will not change sprite size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_Animate_" data-uid="BonEngineSharp.Framework.SpriteSheet.Animate*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_Animate_BonEngineSharp_Framework_Sprite_System_String_System_Double__System_Double_System_Single_" data-uid="BonEngineSharp.Framework.SpriteSheet.Animate(BonEngineSharp.Framework.Sprite,System.String,System.Double@,System.Double,System.Single)">Animate(Sprite, String, ref Double, Double, Single)</h4>
+  <div class="markdown level1 summary"><p>Animate sprite based on animation id and progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Animate(Sprite sprite, string animation, ref double progress, double deltaTime, float sizeFactor = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Sprite to animate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">animation</span></td>
+        <td><p>Animation id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">progress</span></td>
+        <td><p>Animation total progress, in seconds. This param is updated every call so you need to preserve it between calls.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td><p>How much to advance animation in current call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sizeFactor</span></td>
+        <td><p>Set the size of the sprite to be the spritesheet's single sprite size, multiplied by this value. If set to 0, will not change sprite size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_GetAnimation_" data-uid="BonEngineSharp.Framework.SpriteSheet.GetAnimation*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_GetAnimation_System_String_" data-uid="BonEngineSharp.Framework.SpriteSheet.GetAnimation(System.String)">GetAnimation(String)</h4>
+  <div class="markdown level1 summary"><p>Get animation by id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteAnimation GetAnimation(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Animation id to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.SpriteAnimation.html">SpriteAnimation</a></td>
+        <td><p>Animation instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_GetBookmark_" data-uid="BonEngineSharp.Framework.SpriteSheet.GetBookmark*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_GetBookmark_System_String_" data-uid="BonEngineSharp.Framework.SpriteSheet.GetBookmark(System.String)">GetBookmark(String)</h4>
+  <div class="markdown level1 summary"><p>Get bookmark value from id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointI GetBookmark(string bookmarkId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">bookmarkId</span></td>
+        <td><p>Bookmark id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><p>Bookmark value, as index in spritesheet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_LoadFromConfig_" data-uid="BonEngineSharp.Framework.SpriteSheet.LoadFromConfig*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_LoadFromConfig_BonEngineSharp_Assets_ConfigAsset_" data-uid="BonEngineSharp.Framework.SpriteSheet.LoadFromConfig(BonEngineSharp.Assets.ConfigAsset)">LoadFromConfig(ConfigAsset)</h4>
+  <div class="markdown level1 summary"><p>Load spritesheet properties from config asset.
+Note: this will replace all existing settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadFromConfig(ConfigAsset config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Config file to load from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BonEngineSharp_Framework_SpriteSheet_LoadFromConfig_BonEngineSharp_Assets_ConfigAsset__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Config must contain the following section:
+[general]
+- sprites_count = how many sprites there are in this spritesheet, format is: &quot;x,y&quot;.
+- animations = list of comma-separated animations found in this spritesheet config.
+for every animation listed here, you need to also include a section with animation data.
+check out 'SpriteAnimation' constructor for more info.</p>
+<p>[bookmarks]
+- optional, contains a list of values where every key is a bookmark identifier and value is sprite index &quot;x,y&quot;.
+later, you can use this to set sprites from spritesheet by names. for example: sheet.SetSprite(sprite, &quot;item_sword&quot;);</p>
+<p>For more info, check out demo_spritesheet.ini in test assets folder.</p>
+</div>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_SetSprite_" data-uid="BonEngineSharp.Framework.SpriteSheet.SetSprite*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_SetSprite_BonEngineSharp_Framework_Sprite_BonEngineSharp_Framework_PointI_System_Single_" data-uid="BonEngineSharp.Framework.SpriteSheet.SetSprite(BonEngineSharp.Framework.Sprite,BonEngineSharp.Framework.PointI,System.Single)">SetSprite(Sprite, PointI, Single)</h4>
+  <div class="markdown level1 summary"><p>Set a sprite's source rectangle from index in spritesheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSprite(Sprite sprite, PointI indexInSheet, float sizeFactor = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Sprite to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">indexInSheet</span></td>
+        <td><p>Index in spritesheet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sizeFactor</span></td>
+        <td><p>Set the size of the sprite to be the spritesheet's single sprite size, multiplied by this value. If set to 0, will not change sprite size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteSheet_SetSprite_" data-uid="BonEngineSharp.Framework.SpriteSheet.SetSprite*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteSheet_SetSprite_BonEngineSharp_Framework_Sprite_System_String_System_Single_" data-uid="BonEngineSharp.Framework.SpriteSheet.SetSprite(BonEngineSharp.Framework.Sprite,System.String,System.Single)">SetSprite(Sprite, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Set a sprite's source rectangle from bookmark in spritesheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSprite(Sprite sprite, string bookmarkId, float sizeFactor = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Sprite.html">Sprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Sprite to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">bookmarkId</span></td>
+        <td><p>Bookmark id to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sizeFactor</span></td>
+        <td><p>Set the size of the sprite to be the spritesheet's single sprite size, multiplied by this value. If set to 0, will not change sprite size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

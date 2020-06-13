@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scene
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scene
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Scene">
+  
+  
+  <h1 id="BonEngineSharp_Scene" data-uid="BonEngineSharp.Scene" class="text-break">Class Scene
+  </h1>
+  <div class="markdown level0 summary"><p>A BonEngine scene.
+This is the main class you use to implement your game logic, by overriding its protected key methods: Load, Unload, Start, Update, FixedUpdate and Draw.
+These methods are invoked by the Engine while running its main loop.</p>
+<p>You can also use multiple scenes to implement different 'screens' or level types in your game (for example a scene for main menu and a scene for actual game).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html">ManagerGetters</a></div>
+    <div class="level2"><span class="xref">Scene</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_GetManager__1_System_String_">ManagerGetters.GetManager&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_Gfx">ManagerGetters.Gfx</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_Sfx">ManagerGetters.Sfx</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_Input">ManagerGetters.Input</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_Assets">ManagerGetters.Assets</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_Game">ManagerGetters.Game</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_Diagnostics">ManagerGetters.Diagnostics</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Managers.ManagerGetters.html#BonEngineSharp_Managers_ManagerGetters_Log">ManagerGetters.Log</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.html">BonEngineSharp</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Scene_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Scene : ManagerGetters, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Scene__ctor_" data-uid="BonEngineSharp.Scene.#ctor*"></a>
+  <h4 id="BonEngineSharp_Scene__ctor" data-uid="BonEngineSharp.Scene.#ctor">Scene()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Scene_IsFirstScene_" data-uid="BonEngineSharp.Scene.IsFirstScene*"></a>
+  <h4 id="BonEngineSharp_Scene_IsFirstScene" data-uid="BonEngineSharp.Scene.IsFirstScene">IsFirstScene</h4>
+  <div class="markdown level1 summary"><p>Get if this the first scene loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFirstScene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Scene_Dispose_" data-uid="BonEngineSharp.Scene.Dispose*"></a>
+  <h4 id="BonEngineSharp_Scene_Dispose" data-uid="BonEngineSharp.Scene.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Destroy this scene.
+Do not call this on the active scene! You don't need to call this, it will be called automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Scene_Draw_" data-uid="BonEngineSharp.Scene.Draw*"></a>
+  <h4 id="BonEngineSharp_Scene_Draw" data-uid="BonEngineSharp.Scene.Draw">Draw()</h4>
+  <div class="markdown level1 summary"><p>Called every frame right after Update(). Used to draw the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Draw()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Scene_Finalize_" data-uid="BonEngineSharp.Scene.Finalize*"></a>
+  <h4 id="BonEngineSharp_Scene_Finalize" data-uid="BonEngineSharp.Scene.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Destroy the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Finalize()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Scene_FixedUpdate_" data-uid="BonEngineSharp.Scene.FixedUpdate*"></a>
+  <h4 id="BonEngineSharp_Scene_FixedUpdate_System_Double_" data-uid="BonEngineSharp.Scene.FixedUpdate(System.Double)">FixedUpdate(Double)</h4>
+  <div class="markdown level1 summary"><p>Called with constant intervals before the normal Update() calls. Useful for physics-related calculations.
+Note: for every Update() call there may be zero or more FixedUpdate() calls, depending on your game running speed and fixed interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void FixedUpdate(double deltaTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td><p>Time passed, in seconds, since last call. Will be constant value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Scene_Load_" data-uid="BonEngineSharp.Scene.Load*"></a>
+  <h4 id="BonEngineSharp_Scene_Load" data-uid="BonEngineSharp.Scene.Load">Load()</h4>
+  <div class="markdown level1 summary"><p>Called when scene loads, which is when it becomes the newly active scene.</p>
+<p>For scenes that are not the first scene, this occurs at the begining of the main loop, after the previous frame have completely ended.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Load()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Scene_Start_" data-uid="BonEngineSharp.Scene.Start*"></a>
+  <h4 id="BonEngineSharp_Scene_Start" data-uid="BonEngineSharp.Scene.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Called when scene loads, but only after the main loop started and everything in initialized.</p>
+<p>Mostly useful for first scenes, as any scene loaded after it will be loaded inside the main loop and call this immediately after Load().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Scene_Unload_" data-uid="BonEngineSharp.Scene.Unload*"></a>
+  <h4 id="BonEngineSharp_Scene_Unload" data-uid="BonEngineSharp.Scene.Unload">Unload()</h4>
+  <div class="markdown level1 summary"><p>Called when scene unloads - either when being replaced by another scene, or when game exit while this scene is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Unload()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Scene_Update_" data-uid="BonEngineSharp.Scene.Update*"></a>
+  <h4 id="BonEngineSharp_Scene_Update_System_Double_" data-uid="BonEngineSharp.Scene.Update(System.Double)">Update(Double)</h4>
+  <div class="markdown level1 summary"><p>Called every frame once, and used to update things. Most of your game logic goes here (with exception of things that go into FixedUpdate(), if you need any).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Update(double deltaTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td><p>Time passed, in seconds, since last call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
