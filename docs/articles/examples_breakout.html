@@ -71,7 +71,13 @@
 
 <p>This scene implements a simple Breakout game without using any loaded assets. Run this scene from any <code>BonEngine</code> application and it will work.</p>
 <p><img src="../images/example_breakout.jpg" alt="example_breakout.jpg"></p>
-<pre><code class="lang-cs">/// &lt;summary&gt;
+<pre><code class="lang-cs">using System;
+using System.Collections.Generic;
+using BonEngineSharp.Framework;
+using BonEngineSharp.Assets;
+using BonEngineSharp.Defs;
+
+/// &lt;summary&gt;
 /// Implements a breakout minigame.
 /// &lt;/summary&gt;
 class BreakoutGame : BonEngineSharp.Scene
@@ -110,8 +116,8 @@ class BreakoutGame : BonEngineSharp.Scene
     // block size
     PointI BlockSize = new PointI(80, 25);
 
-    // load the scene
-    protected override void Load()
+    // start the scene
+    protected override void Start()
     {
         // set level and starting positions
         _ballPosition.Set(400, 500);
@@ -330,7 +336,7 @@ class BreakoutGame : BonEngineSharp.Scene
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/RonenNess/WebGame2019/blob/master/others/BonEngineSharp/BonEngineSharp/Documentation/articles/examples_breakout.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/RonenNess/BonEngineSharp/blob/master/Documentation/articles/examples_breakout.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

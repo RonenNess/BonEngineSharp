@@ -4315,6 +4315,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.SpriteSheet.Animate
   fullName: BonEngineSharp.Framework.SpriteSheet.Animate
   nameWithType: SpriteSheet.Animate
+- uid: BonEngineSharp.Framework.SpriteSheet.ContainsAnimation(System.String)
+  name: ContainsAnimation(String)
+  href: api/BonEngineSharp.Framework.SpriteSheet.html#BonEngineSharp_Framework_SpriteSheet_ContainsAnimation_System_String_
+  commentId: M:BonEngineSharp.Framework.SpriteSheet.ContainsAnimation(System.String)
+  fullName: BonEngineSharp.Framework.SpriteSheet.ContainsAnimation(System.String)
+  nameWithType: SpriteSheet.ContainsAnimation(String)
+- uid: BonEngineSharp.Framework.SpriteSheet.ContainsAnimation*
+  name: ContainsAnimation
+  href: api/BonEngineSharp.Framework.SpriteSheet.html#BonEngineSharp_Framework_SpriteSheet_ContainsAnimation_
+  commentId: Overload:BonEngineSharp.Framework.SpriteSheet.ContainsAnimation
+  fullName: BonEngineSharp.Framework.SpriteSheet.ContainsAnimation
+  nameWithType: SpriteSheet.ContainsAnimation
 - uid: BonEngineSharp.Framework.SpriteSheet.GetAnimation(System.String)
   name: GetAnimation(String)
   href: api/BonEngineSharp.Framework.SpriteSheet.html#BonEngineSharp_Framework_SpriteSheet_GetAnimation_System_String_

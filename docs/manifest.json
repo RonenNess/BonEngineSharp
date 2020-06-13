@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "c:/Projects/WebGame2019/others/BonEngineSharp/BonEngineSharp/Documentation",
+  "source_base_path": "c:/Projects/BonEngineSharp/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.SpriteSheet.html",
-          "hash": "eE4dD2tEUdYHOXuGMsFdkQ=="
+          "hash": "4jAPlxslsyfEHCdGJQmFnA=="
         }
       },
       "is_incremental": false,
@@ -585,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/examples_breakout.html",
-          "hash": "iQ0pdxcb1vo5P0jSJ/7Pzg=="
+          "hash": "YpdP5YUhtKpuYKfJIDC8jw=="
         }
       },
       "is_incremental": false,
