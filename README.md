@@ -115,7 +115,7 @@ Get diagnostics and debug data, like FPS, number of draw calls, ect.
 
 ## Some Examples
 
-Lets review some simple examples.
+Lets review some simple examples (note: more examples can be found under the `BonEngineSharpTest` project).
 
 ### Drawing Images - Gfx.DrawImage()
 
