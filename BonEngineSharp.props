@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Reference Include="BonEngineSharp" Condition="'$(Platform)' == 'x64' or '$(Platform)' == 'AnyCPU'">
+		<HintPath>$(MSBuildThisFileDirectory)\..\build\x64\BonEngineSharp.dll</HintPath>
+    </Reference>
+	<Reference Include="BonEngineSharp" Condition="'$(Platform)' == 'x86'">
+		<HintPath>$(MSBuildThisFileDirectory)\..\build\x86\BonEngineSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

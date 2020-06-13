@@ -1,0 +1,1 @@
+docfx & docfx -t _exported_templates\default --serve
