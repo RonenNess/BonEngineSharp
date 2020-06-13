@@ -2,7 +2,9 @@
 
 `BonEngine` is a code-based game engine designed to be simple and straightforward, with as little setup as possible. It covers 2d rendering, assets, sound effects, music, input, config files, and more.
 
-`BonEngineSharp` is a C# bind of `BonEngine`. The APIs are nearly identical, so in this doc we'll only cover few examples and not the whole API. To view the full API you can check out the [BonEngine repo](https://github.com/RonenNess/BonEngine).
+`BonEngineSharp` is a C# bind of `BonEngine`. The APIs are nearly identical, so in this doc we'll only cover few examples and not the whole API. 
+
+To view the full API you can check out [API docs](https://ronenness.github.io/BonEngineSharp/) or the base [BonEngine repo](https://github.com/RonenNess/BonEngine).
 
 ## Install
 
