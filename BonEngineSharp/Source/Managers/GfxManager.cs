@@ -141,21 +141,14 @@ namespace BonEngineSharp.Managers
         /// <param name="text">Text to draw.</param>
         /// <param name="position">Text position.</param>
         /// <param name="color">Text color.</param>
-        /// <param name="strokeColor">Stroke color.</param>
-        /// <param name="strokeWidth">Stroke width.</param>
+        /// <param name="outlineColor">Text outline color.</param>
+        /// <param name="outlineWidth">Text outline width.</param>
         /// <param name="fontSize">Font size.</param>
         /// <param name="maxWidth">Max line width.</param>
         /// <param name="blend">Blend mode.</param>
-        public void DrawText(FontAsset font, string text, PointF position, Color color, Color strokeColor, int strokeWidth = 1, int fontSize = 0, int maxWidth = 0, BlendModes blend = BlendModes.AlphaBlend)
+        public void DrawText(FontAsset font, string text, PointF position, Color color, Color outlineColor, int outlineWidth = 1, int fontSize = 0, int maxWidth = 0, BlendModes blend = BlendModes.AlphaBlend)
         {
-            if (strokeWidth > 0)
-            {
-                _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X - strokeWidth, position.Y - strokeWidth, strokeColor.R, strokeColor.G, strokeColor.B, strokeColor.A, fontSize, maxWidth, (int)BlendModes.AlphaBlend, 0, 0, 0);
-                _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X + strokeWidth, position.Y - strokeWidth, strokeColor.R, strokeColor.G, strokeColor.B, strokeColor.A, fontSize, maxWidth, (int)BlendModes.AlphaBlend, 0, 0, 0);
-                _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X - strokeWidth, position.Y + strokeWidth, strokeColor.R, strokeColor.G, strokeColor.B, strokeColor.A, fontSize, maxWidth, (int)BlendModes.AlphaBlend, 0, 0, 0);
-                _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X + strokeWidth, position.Y + strokeWidth, strokeColor.R, strokeColor.G, strokeColor.B, strokeColor.A, fontSize, maxWidth, (int)BlendModes.AlphaBlend, 0, 0, 0);
-            }
-            _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X, position.Y, color.R, color.G, color.B, color.A, fontSize, maxWidth, (int)blend, 0, 0, 0);
+            _BonEngineBind.BON_Gfx_DrawTextWithOutline(font._handle, text, position.X, position.Y, color.R, color.G, color.B, color.A, fontSize, maxWidth, (int)blend, 0, 0, 0, outlineWidth, outlineColor.R, outlineColor.G, outlineColor.B, outlineColor.A);
         }
 
         /// <summary>

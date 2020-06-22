@@ -30,6 +30,12 @@ namespace BonEngineSharp
         public static extern void BON_Gfx_DrawText(IntPtr font, [MarshalAs(UnmanagedType.LPStr)] string text, float x, float y, float r, float g, float b, float a, int fontSize, int maxWidth, int blend, float originX, float originY, float rotation);
 
         /// <summary>
+        /// Draw text with outline on screen.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void BON_Gfx_DrawTextWithOutline(IntPtr font, [MarshalAs(UnmanagedType.LPStr)] string text, float x, float y, float r, float g, float b, float a, int fontSize, int maxWidth, int blend, float originX, float originY, float rotation, int outlineWidth, float outlineR, float outlineG, float outlineB, float outlineA);
+
+        /// <summary>
         /// Draw a line.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]

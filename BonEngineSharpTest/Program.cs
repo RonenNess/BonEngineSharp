@@ -115,8 +115,8 @@ namespace BonEngineSharpTest
                 Gfx.ClearScreen(Color.FromBytes(32, 150, 242));
 
                 // header and instructions
-                Gfx.DrawText(_fontBig, "Welcome to BonEngine!", new PointF(50, 50));
-                Gfx.DrawText(_font, "Click on a demo to start it.", new PointF(60, 120));
+                Gfx.DrawText(_fontBig, "Welcome to BonEngine!", new PointF(50, 50), Color.White, Color.Black, outlineWidth: 2);
+                Gfx.DrawText(_font, "Click on a demo to start it.", new PointF(60, 120), Color.White, Color.Black, outlineWidth: 1);
 
                 // draw demos
                 foreach (var demo in _demos)

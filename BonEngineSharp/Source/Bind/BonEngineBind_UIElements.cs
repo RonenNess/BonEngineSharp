@@ -351,5 +351,420 @@ namespace BonEngineSharp
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
 		public static extern void BON_UIElement_ValidateOffsetInsideParent(IntPtr element);
+
+        /// <summary>
+        /// Get caption from button.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern IntPtr BON_UIButton_Caption(IntPtr element);
+
+        /// <summary>
+        /// Get caption from checkbox.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern IntPtr BON_UICheckbox_Caption(IntPtr element);
+
+        /// <summary>
+        /// Get if checkbox is checked.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern bool BON_UICheckbox_Checked(IntPtr element);
+
+        /// <summary>
+        /// Set checkbox value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UICheckbox_SetValue(IntPtr element, bool value);
+
+        /// <summary>
+        /// Toggle checkbox.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UICheckbox_Toggle(IntPtr element);
+
+        /// <summary>
+        /// Get caption from radio button.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern IntPtr BON_UIRadio_Caption(IntPtr element);
+
+        /// <summary>
+        /// Get if radio button is checked.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern bool BON_UIRadio_Checked(IntPtr element);
+
+        /// <summary>
+        /// Set radio button value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIRadio_SetValue(IntPtr element, bool value);
+
+        /// <summary>
+        /// Toggle radio button.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIRadio_Toggle(IntPtr element);
+
+        /// <summary>
+        /// Get ui image image.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern IntPtr BON_UIImage_GetImage(IntPtr element);
+
+        /// <summary>
+        /// Set ui image image.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetImage(IntPtr element, IntPtr image);
+
+        /// <summary>
+        /// Set ui image source rect.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetSourceRect(IntPtr element, int x, int y, int width, int height);
+
+        /// <summary>
+        /// Get ui image source rect.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_GetSourceRect(IntPtr element,ref int x,ref int y,ref int width,ref int height);
+
+        /// <summary>
+        /// Set ui image source rect highlight.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetSourceRectHighlight(IntPtr element, int x, int y, int width, int height);
+
+        /// <summary>
+        /// Get ui image source rect highlight.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_GetSourceRectHighlight(IntPtr element,ref int x,ref int y,ref int width,ref int height);
+
+        /// <summary>
+        /// Set ui image source rect pressed.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetSourceRectPressed(IntPtr element, int x, int y, int width, int height);
+
+        /// <summary>
+        /// Get ui image source rect pressed.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_GetSourceRectPressed(IntPtr element,ref int x,ref int y,ref int width,ref int height);
+
+        /// <summary>
+        /// Set ui image blend mode.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetBlendMode(IntPtr element, int blend);
+
+        /// <summary>
+        /// Get ui image blend mode.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIImage_GetBlendMode(IntPtr element);
+
+        /// <summary>
+        /// Set ui image blend mode.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetImageTypes(IntPtr element, int type);
+
+        /// <summary>
+        /// Get ui image blend mode.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIImage_GetImageTypes(IntPtr element);
+
+        /// <summary>
+        /// Set ui image scale.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetImageScale(IntPtr element, float scale);
+
+        /// <summary>
+        /// Get ui image scale.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern float BON_UIImage_GetImageScale(IntPtr element);
+
+        /// <summary>
+        /// Set element slided image sides.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_SetSlicedImageSides(IntPtr element, int left, int top, int right, int bottom);
+
+        /// <summary>
+        /// Get element slided image sides.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIImage_GetSlicedImageSides(IntPtr element,ref int left,ref int top,ref int right,ref int bottom);
+
+        /// <summary>
+        /// Get list background
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern IntPtr BON_UIList_Background(IntPtr element);
+
+        /// <summary>
+        /// Set list line height.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_SetLineHeight(IntPtr element, int height);
+
+        /// <summary>
+        /// Get list line height.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIList_GetLineHeight(IntPtr element);
+
+        /// <summary>
+        /// Set if to show list scrollbar.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_ShowScrollbar(IntPtr element, bool show);
+
+        /// <summary>
+        /// Add item to list.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_AddItem(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string item);
+
+        /// <summary>
+        /// Remove item from list.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_RemoveItem(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string item, bool removeAll);
+
+        /// <summary>
+        /// Remove item from list.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_RemoveItemByIndex(IntPtr element, int index);
+
+        /// <summary>
+        /// Remove item from list.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_Clear(IntPtr element);
+
+        /// <summary>
+        /// Get list selected index.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIList_SelectedIndex(IntPtr element);
+
+        /// <summary>
+        /// Get list selected item.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]  
+		public static extern IntPtr BON_UIList_SelectedItem(IntPtr element);
+
+		/// <summary>
+		/// Get list selected item, converted to string.
+		/// </summary>
+		public static string BON_UIList_SelectedItem_Str(IntPtr asset)
+		{
+			return Marshal.PtrToStringAnsi(BON_UIList_SelectedItem(asset));
+		}
+
+		/// <summary>
+		/// Set selected value.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_Select(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string item);
+
+        /// <summary>
+        /// Set selected value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_SelectIndex(IntPtr element, int index);
+
+        /// <summary>
+        /// Clear list selection.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIList_ClearSelection(IntPtr element);
+
+        /// <summary>
+        /// Set slider max value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UISlider_SetMaxValue(IntPtr element, int maxVal);
+
+        /// <summary>
+        /// Get slider max value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UISlider_GetMaxValue(IntPtr element);
+
+        /// <summary>
+        /// Set slider value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UISlider_SetValue(IntPtr element, int val);
+
+        /// <summary>
+        /// Get slider value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UISlider_GetValue(IntPtr element);
+
+        /// <summary>
+        /// Get text font.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern IntPtr BON_UIText_GetFont(IntPtr element);
+
+        /// <summary>
+        /// Set text font.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetFont(IntPtr element, IntPtr font);
+
+        /// <summary>
+        /// Get text outline.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIText_GetOutlineWidth(IntPtr element);
+
+        /// <summary>
+        /// Set text outline.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetOutlineWidth(IntPtr element, int width);
+
+        /// <summary>
+        /// Get text outline highlight.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIText_GetOutlineHighlightWidth(IntPtr element);
+
+        /// <summary>
+        /// Set text outline highlight.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetOutlineHighlightWidth(IntPtr element, int width);
+
+        /// <summary>
+        /// Get text outline pressed.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIText_GetOutlinePressedWidth(IntPtr element);
+
+        /// <summary>
+        /// Set text outline pressed.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetOutlinePressedWidth(IntPtr element, int width);
+
+        /// <summary>
+        /// Get text font size.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIText_GetFontSize(IntPtr element);
+
+        /// <summary>
+        /// Set text font size.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetFontSize(IntPtr element, int size);
+
+        /// <summary>
+        /// Get text alignment.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIText_GetAlignment(IntPtr element);
+
+        /// <summary>
+        /// Set text alignment.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetAlignment(IntPtr element, int alignment);
+
+        /// <summary>
+        /// Get text text.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]  
+		public static extern IntPtr BON_UIText_GetText(IntPtr element);
+
+		/// <summary>
+		/// Get text string, converted to string.
+		/// </summary>
+		public static string BON_UIText_GetText_Str(IntPtr asset)
+		{
+			return Marshal.PtrToStringAnsi(BON_UIText_GetText(asset));
+		}
+
+		/// <summary>
+		/// Set text text.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetText(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string text);
+
+        /// <summary>
+        /// Set element outline color.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetOutlineColor(IntPtr element, float r, float g, float b, float a);
+
+        /// <summary>
+        /// Get element outline color.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_GetOutlineColor(IntPtr element, ref float r, ref float g, ref float b, ref float a);
+
+        /// <summary>
+        /// Set element highlight outline color.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetOutlineHighlightColor(IntPtr element, float r, float g, float b, float a);
+
+        /// <summary>
+        /// Get element highlight outline color.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_GetOutlineHighlightColor(IntPtr element, ref float r, ref float g, ref float b, ref float a);
+
+        /// <summary>
+        /// Set element pressed outline color.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_SetOutlinePressedColor(IntPtr element, float r, float g, float b, float a);
+
+        /// <summary>
+        /// Get element pressed outline color.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIText_GetOutlinePressedColor(IntPtr element, ref float r, ref float g, ref float b, ref float a);
+
+        /// <summary>
+        /// Get title from window.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern IntPtr BON_UIWindow_Title(IntPtr element);
+
+        /// <summary>
+        /// Get scrollbar max value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern void BON_UIScrollbar_SetMaxValue(IntPtr element, int maxVal);
+
+        /// <summary>
+        /// Get scrollbar max value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIScrollbar_GetMaxValue(IntPtr element);
+
+        /// <summary>
+        /// Get scrollbar value.
+        /// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
+		public static extern int BON_UIScrollbar_GetValue(IntPtr element);
+
+
+
 	}
 }
