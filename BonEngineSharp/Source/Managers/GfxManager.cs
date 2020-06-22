@@ -218,16 +218,46 @@ namespace BonEngineSharp.Managers
         /// <summary>
         /// Get current window size.
         /// </summary>
-        public PointI WindowSize => new PointI(_BonEngineBind.BON_Gfx_WindowSizeX(), _BonEngineBind.BON_Gfx_WindowSizeY());
+        public PointI WindowSize
+        {
+            get
+            {
+                var ret = new PointI();
+                _BonEngineBind.BON_Gfx_WindowSize(ref ret.X, ref ret.Y);
+                return ret;
+            }
+        }
 
         /// <summary>
-        /// Set current render target.
+        /// Get currently renderable size.
+        /// If a viewport is set, will return viewport size.
+        /// If a render target is set, will return render target size.
+        /// If none of the above are set, will just return window size.
         /// </summary>
-        /// <param name="image">Image to draw on, or null to clear render target.</param>
-        public void SetRenderTarget(ImageAsset image)
+        public PointI RenderableSize
         {
-            _BonEngineBind.BON_Gfx_SetRenderTarget(image != null ? image._handle : IntPtr.Zero);
+            get
+            {
+                var ret = new PointI();
+                _BonEngineBind.BON_Gfx_RenderableSize(ref ret.X, ref ret.Y);
+                return ret;
+            }    
         }
+
+        /// <summary>
+        /// Get or set render target.
+        /// Render target is a texture to draw on. Later you can use this texture and draw it as sprite.
+        /// </summary>
+        public ImageAsset RenderTarget
+        {
+            get { return _renderTarget; }
+            set
+            {
+                _renderTarget = value;
+                _BonEngineBind.BON_Gfx_SetRenderTarget(value != null ? value._handle : IntPtr.Zero);
+            }
+        }
+        ImageAsset _renderTarget;
 
         /// <summary>
         /// Draws a rectangle.

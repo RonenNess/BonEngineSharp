@@ -140,10 +140,10 @@ namespace BonEngineSharpTest.Demos
             Gfx.DrawText(_font, "FPS: " + Diagnostics.FpsCount.ToString(), new PointF(10, 10), Color.White, Color.Black, 1, 22);
 
             // draw lightmap
-            Gfx.SetRenderTarget(_lightsMapTexture);
+            Gfx.RenderTarget = _lightsMapTexture;
             Gfx.ClearScreen(Color.Black);
             Gfx.DrawImage(_lightImage, Input.CursorPosition, new PointI(500, 500), BlendModes.Additive, RectangleI.Empty, PointF.Half);
-            Gfx.SetRenderTarget(null);
+            Gfx.RenderTarget = null;
 
             // draw lightsmap on screen
             Gfx.DrawImage(_lightsMapTexture, PointF.Zero, BlendModes.Multiply);

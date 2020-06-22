@@ -347,5 +347,15 @@ namespace BonEngineSharp.Framework
         {
             return _animations.ContainsKey(animation);
         }
+
+        /// <summary>
+        /// Return if spritesheet contains a bookmark.
+        /// </summary>
+        /// <param name="bookmark">Bookmark id to check.</param>
+        /// <returns>True if bookmark exists in spritesheet.</returns>
+        public bool ContainsBookmark(string bookmark)
+        {
+            return _bookmarks.ContainsKey(bookmark);
+        }
     }
 }

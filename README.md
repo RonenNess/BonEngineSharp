@@ -110,6 +110,10 @@ Implements user input, either by querying keyboard and mouse states or by checki
 
 Provide basic logs.
 
+#### UI
+
+Provide UI system.
+
 #### Diagnostics
 
 Get diagnostics and debug data, like FPS, number of draw calls, ect.

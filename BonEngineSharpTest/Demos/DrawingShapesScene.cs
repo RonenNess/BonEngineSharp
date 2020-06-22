@@ -218,7 +218,7 @@ namespace BonEngineSharpTest.Demos
         protected override void Draw()
         {
             // draw trail effects on texture
-            Gfx.SetRenderTarget(_trailEffectTexture);
+            Gfx.RenderTarget = _trailEffectTexture;
             Gfx.DrawCircle(_ballPosition, _ballRadius, new Color(0.75f, 0.35f, 0.1f), true);
             foreach (var explosion in _explosions)
             {
@@ -227,7 +227,7 @@ namespace BonEngineSharpTest.Demos
 
             // make older trails fade out
             Gfx.DrawRectangle(new RectangleI(0, 0, Gfx.WindowSize.X, Gfx.WindowSize.Y), new Color(0.9f, 0.9f, 0.9f, 1f), true, BlendModes.Multiply);
-            Gfx.SetRenderTarget(null);
+            Gfx.RenderTarget = null;
 
             // clear screen
             Gfx.ClearScreen(_isBallOut ? Color.Red : Color.Black);

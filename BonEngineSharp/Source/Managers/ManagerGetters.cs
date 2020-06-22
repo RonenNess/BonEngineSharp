@@ -50,5 +50,10 @@ namespace BonEngineSharp.Managers
         /// Get Log manager.
         /// </summary>
         public LogManager Log => BonEngine._Engine.Log;
+
+        /// <summary>
+        /// Get UI manager.
+        /// </summary>
+        public UIManager UI => BonEngine._Engine.UI;
     }
 }

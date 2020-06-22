@@ -61,6 +61,7 @@ namespace BonEngineSharp
             RegisterManager(new GameManager());
             RegisterManager(new DiagnosticsManager());
             RegisterManager(new LogManager());
+            RegisterManager(new UIManager());
 
             // set built-in manager getters
             Gfx = _managers["gfx"] as GfxManager;
@@ -70,6 +71,7 @@ namespace BonEngineSharp
             Game = _managers["game"] as GameManager;
             Diagnostics = _managers["diagnostics"] as DiagnosticsManager;
             Log = _managers["log"] as LogManager;
+            UI = _managers["ui"] as UIManager;
         }
 
         /// <summary>
@@ -106,6 +108,11 @@ namespace BonEngineSharp
         /// Get Log manager.
         /// </summary>
         public LogManager Log { get; private set; }
+
+        /// <summary>
+        /// Get UI manager.
+        /// </summary>
+        public UIManager UI { get; private set; }
 
         /// <summary>
         /// Register a manager.

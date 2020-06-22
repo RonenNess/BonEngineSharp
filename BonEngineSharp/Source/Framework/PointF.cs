@@ -373,6 +373,18 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Lerp between two points.
+        /// </summary>
+        /// <param name="a">From point.</param>
+        /// <param name="b">To point.</param>
+        /// <param name="delta">Lerp factor.</param>
+        /// <returns>Lerped point.</returns>
+        public static PointF Lerp(PointF a, PointF b, float delta)
+        {
+            return new PointF((a.X * (1f - delta) + b.X * delta), (a.Y * (1f - delta) + b.Y * delta));
+        }
+
+        /// <summary>
         /// Implement hash code of point.
         /// </summary>
         public override int GetHashCode()

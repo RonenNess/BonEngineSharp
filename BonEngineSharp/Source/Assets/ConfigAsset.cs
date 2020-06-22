@@ -31,7 +31,7 @@ namespace BonEngineSharp.Assets
         /// <returns>Value from config, or defaultVal if not found.</returns>
         public string GetStr(string section, string key, string defaultVal = null)
         {
-            return _BonEngineBind.BON_Config_GetStr_(_handle, section, key, default);
+            return _BonEngineBind.BON_Config_GetStr_(_handle, section, key, defaultVal);
         }
 
         /// <summary>

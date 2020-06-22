@@ -101,7 +101,7 @@ namespace BonEngineSharpTest.Demos
             Gfx.ClearScreen(Color.FromBytes(32, 150, 242));
 
             // set render target
-            Gfx.SetRenderTarget(_targetTexture);
+            Gfx.RenderTarget = _targetTexture;
 
             // draw background dirt
             var backgroundSize = new PointI(_dirtImage.Width * 2, _dirtImage.Height * 2);
@@ -120,7 +120,7 @@ namespace BonEngineSharpTest.Demos
             }
 
             // clear render target
-            Gfx.SetRenderTarget(null);
+            Gfx.RenderTarget = null;
 
             // draw render target on screen, with larger size so we'll only see parts of it
             var position = new PointF(-150 + (float)Math.Sin(Game.ElapsedTime / 2f) * 150f, -150 + (float)Math.Cos(Game.ElapsedTime / 2f) * 150f);

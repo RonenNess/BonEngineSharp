@@ -601,4 +601,202 @@ namespace BonEngineSharp.Defs
 		/// </summary>
 		S16MSB
 	}
+
+	/// <summary>
+	/// UI text alignment.
+	/// </summary>
+	public enum UITextAlignment
+	{
+		/// <summary>
+		/// Align text left.
+		/// </summary>
+		Left = 0,
+
+		/// <summary>
+		/// Align text right.
+		/// </summary>
+		Right = 1,
+
+		/// <summary>
+		/// Align text to center.
+		/// </summary>
+		Center = 2
+	}
+
+	/// <summary>
+	/// UI Size unit types.
+	/// </summary>
+	public enum UISizeType
+	{
+		/// <summary>
+		/// Coordinates are in absolute pixels.
+		/// </summary>
+		Pixels = 0,
+
+		/// <summary>
+		/// Coordinates are relative to parent size.
+		/// </summary>
+		PercentOfParent = 1,
+	}
+
+	/// <summary>
+	/// UI size - represent a UI element size with width, height and types.
+	/// </summary>
+	public struct UISize
+	{
+		/// <summary>
+		/// Width value.
+		/// </summary>
+		public int Width;
+
+		/// <summary>
+		/// Height value.
+		/// </summary>
+		public int Height;
+
+		/// <summary>
+		/// Width units type.
+		/// </summary>
+		public UISizeType WidthType;
+
+		/// <summary>
+		/// Height units type.
+		/// </summary>
+		public UISizeType HeightType;
+	}
+
+	/// <summary>
+	/// Represent value with 4 sides - top, bottom, left, right.
+	/// </summary>
+	public struct UISides
+	{
+		/// <summary>
+		/// Left side value.
+		/// </summary>
+		public int Left;
+
+		/// <summary>
+		/// Right side value.
+		/// </summary>
+		public int Right;
+
+		/// <summary>
+		/// Top side value.
+		/// </summary>
+		public int Top;
+
+		/// <summary>
+		/// Bottom side value.
+		/// </summary>
+		public int Bottom;
+    }
+
+	/// <summary>
+	/// All built-in UI types.
+	/// </summary>
+	public enum UIElementType
+	{
+		/// <summary>
+		/// Base element type.
+		/// </summary>
+		Element,
+
+		/// <summary>
+		/// Button element.
+		/// </summary>
+		Button,
+
+		/// <summary>
+		/// Checkbox element.
+		/// </summary>
+		Checkbox,
+
+		/// <summary>
+		/// Radio button element.
+		/// </summary>
+		Radio,
+
+		/// <summary>
+		/// Image element.
+		/// </summary>
+		Image,
+
+		/// <summary>
+		/// List element.
+		/// </summary>
+		List,
+
+		/// <summary>
+		/// Text / paragraph element.
+		/// </summary>
+		Text,
+
+		/// <summary>
+		/// Scrollbar element.
+		/// </summary>
+		Scrollbar,
+
+		/// <summary>
+		/// Slider element.
+		/// </summary>
+		Slider,
+
+		/// <summary>
+		/// Container window element.
+		/// </summary>
+		Window,
+	}
+
+	/// <summary>
+	/// UI Image drawing types.
+	/// This defines how to scale and what parts of the UI image to draw.
+	/// </summary>
+	public enum UIImageTypes
+	{
+		/// <summary>
+		/// Draw image stretched over the calculated destination rect.
+		/// </summary>
+		Stretch,
+
+		/// <summary>
+		/// Draw image as tiles that cover the calculated destination rect.
+		/// </summary>
+		Tiled,
+
+		/// <summary>
+		/// Draw image as a 9-sliced texture with 4 sides, 4 corners, and tiled center.
+		/// </summary>
+		Sliced,
+
+		/// <summary>
+		/// Draw image once, no matter the element size, scaled by texture scale.
+		/// </summary>
+		Single,
+	}
+
+	/// <summary>
+	/// UI Element state.
+	/// </summary>
+	public enum UIElementState
+	{
+		/// <summary>
+		/// There's no interaction with this element.
+		/// </summary>
+		Idle,
+
+		/// <summary>
+		/// User points on this element.
+		/// </summary>
+		PointedOn,
+
+		/// <summary>
+		/// User clicks or somehow interacts with element.
+		/// </summary>
+		PressedDown,
+
+		/// <summary>
+		/// User right-clicks element.
+		/// </summary>
+		AltPressedDown,
+	}
 }
