@@ -565,9 +565,9 @@ namespace BonEngineSharp
 		/// <summary>
 		/// Get list selected item, converted to string.
 		/// </summary>
-		public static string BON_UIList_SelectedItem_Str(IntPtr asset)
+		public static string BON_UIList_SelectedItem_Str(IntPtr element)
 		{
-			return Marshal.PtrToStringAnsi(BON_UIList_SelectedItem(asset));
+			return Marshal.PtrToStringAnsi(BON_UIList_SelectedItem(element));
 		}
 
 		/// <summary>

@@ -19,7 +19,7 @@ namespace BonEngineSharp.UI
         internal protected IntPtr _handle = IntPtr.Zero;
 
 		// if true, will release (delete) the cpp side element when disposed.
-		bool _releaseElementOnDispose = true;
+		internal bool _releaseElementOnDispose = true;
 
         /// <summary>
         /// Get element type.

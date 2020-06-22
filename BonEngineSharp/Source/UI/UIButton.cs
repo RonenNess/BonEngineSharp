@@ -14,6 +14,23 @@ namespace BonEngineSharp.UI
         public override UIElementType ElementType => UIElementType.Button;
 
         /// <summary>
+        /// Get button caption element.
+        /// </summary>
+        public UIText Caption
+        {
+            get
+            {
+                if (_caption == null)
+                {
+                    _caption = new UIText(_BonEngineBind.BON_UIButton_Caption(_handle));
+                    _caption._releaseElementOnDispose = false;
+                }
+                return _caption;
+            }
+        }
+        UIText _caption;
+
+        /// <summary>
         /// Create the UI element.
         /// </summary>
         /// <param name="handle">UI element handle inside the low-level engine.</param>

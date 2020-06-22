@@ -14,6 +14,40 @@ namespace BonEngineSharp.UI
         public override UIElementType ElementType => UIElementType.Checkbox;
 
         /// <summary>
+        /// Get Checkbox caption element.
+        /// </summary>
+        public UIText Caption
+        {
+            get
+            {
+                if (_caption == null)
+                {
+                    _caption = new UIText(_BonEngineBind.BON_UICheckbox_Caption(_handle));
+                    _caption._releaseElementOnDispose = false;
+                }
+                return _caption;
+            }
+        }
+        UIText _caption;
+
+        /// <summary>
+        /// Get / set if this checkbox is checked.
+        /// </summary>
+        public bool Checked
+        {
+            get { return _BonEngineBind.BON_UICheckbox_Checked(_handle); }
+            set { _BonEngineBind.BON_UICheckbox_SetValue(_handle, value); }
+        }
+
+        /// <summary>
+        /// Toggle checkbox state.
+        /// </summary>
+        public void Toggle()
+        {
+            _BonEngineBind.BON_UICheckbox_Toggle(_handle);
+        }
+
+        /// <summary>
         /// Create the UI element.
         /// </summary>
         /// <param name="handle">UI element handle inside the low-level engine.</param>

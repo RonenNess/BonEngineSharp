@@ -14,6 +14,9 @@ namespace BonEngineSharp.Assets
         /// </summary>
         internal protected IntPtr _handle = IntPtr.Zero;
 
+        // if true, will release (delete) the cpp side asset when disposed.
+        internal bool _releaseElementOnDispose = true;
+
         /// <summary>
         /// Create the asset.
         /// </summary>
@@ -58,7 +61,7 @@ namespace BonEngineSharp.Assets
         {
             if (HaveHandle)
             {
-                _BonEngineBind.BON_Assets_FreeAssetPointer(_handle);
+                if (_releaseElementOnDispose) { _BonEngineBind.BON_Assets_FreeAssetPointer(_handle); }
                 _handle = IntPtr.Zero;
             }
         }
