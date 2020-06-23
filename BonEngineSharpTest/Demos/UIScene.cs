@@ -67,7 +67,7 @@ namespace BonEngineSharpTest.Demos
 
             // create another window
             var secondWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Some More..");
-            secondWindow.Offset = new PointI(200, 100);
+            secondWindow.Offset = new PointI(300, 100);
             secondWindow.AutoArrangeChildren = true;
 
             // some checkboxes
