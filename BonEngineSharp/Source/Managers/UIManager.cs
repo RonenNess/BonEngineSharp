@@ -38,6 +38,15 @@ namespace BonEngineSharp.Managers
 		}
 
 		/// <summary>
+		/// Set cursor from stylesheet file path.
+		/// </summary>
+		public void SetCursor(string stylesheetPath)
+        {
+			var image = CreateImage(stylesheetPath, null);
+			SetCursor(image);
+		}
+
+		/// <summary>
 		/// Draw a cursor.
 		/// </summary>
 		public void DrawCursor()
@@ -46,13 +55,22 @@ namespace BonEngineSharp.Managers
         }
 
 		/// <summary>
-		/// Draw a UI element.
+		/// Draw a UI system.
 		/// </summary>
-		/// <param name="root">UI element to draw.</param>
+		/// <param name="root">UI system root element to draw.</param>
 		/// <param name="drawCursor">If true, will draw element and all its children recursively.</param>
 		public void Draw(UIElement root, bool drawCursor = true)
         {
 			_BonEngineBind.BON_UI_Draw(root._handle, drawCursor);
+        }
+
+		/// <summary>
+		/// Debug draw a UI system.
+		/// </summary>
+		/// <param name="root">UI system root element to draw.</param>
+		public void DebugDraw(UIElement root)
+        {
+			root.DebugDraw(true);
         }
 
 		/// <summary>
@@ -91,7 +109,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIElement CreateContainer(string stylesheet, UIElement parent)
 		{
-			return InitNewElement(new UIElement(_BonEngineBind.BON_UI_CreateContainer(stylesheet, parent._handle)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIElement(_BonEngineBind.BON_UI_CreateContainer(stylesheet, parentHandle)));
 		}
 
 		/// <summary>
@@ -102,7 +122,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIImage CreateImage(string stylesheet, UIElement parent)
 		{
-			return InitNewElement(new UIImage(_BonEngineBind.BON_UI_CreateImage(stylesheet, parent._handle)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIImage(_BonEngineBind.BON_UI_CreateImage(stylesheet, parentHandle)));
 		}
 
 		/// <summary>
@@ -114,7 +136,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIText CreateText(string stylesheet, UIElement parent, string text = null)
 		{
-			return InitNewElement(new UIText(_BonEngineBind.BON_UI_CreateText(stylesheet, parent._handle, text)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIText(_BonEngineBind.BON_UI_CreateText(stylesheet, parentHandle, text)));
 		}
 
 		/// <summary>
@@ -126,7 +150,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIWindow CreateWindow(string stylesheet, UIElement parent, string title = null)
 		{
-			return InitNewElement(new UIWindow(_BonEngineBind.BON_UI_CreateWindow(stylesheet, parent._handle, title)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIWindow(_BonEngineBind.BON_UI_CreateWindow(stylesheet, parentHandle, title)));
 		}
 
 		/// <summary>
@@ -138,7 +164,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIButton CreateButton(string stylesheet, UIElement parent, string text = null)
 		{
-			return InitNewElement(new UIButton(_BonEngineBind.BON_UI_CreateButton(stylesheet, parent._handle, text)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIButton(_BonEngineBind.BON_UI_CreateButton(stylesheet, parentHandle, text)));
 		}
 
 		/// <summary>
@@ -150,7 +178,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UICheckBox CreateCheckBox(string stylesheet, UIElement parent, string text = null)
 		{
-			return InitNewElement(new UICheckBox(_BonEngineBind.BON_UI_CreateCheckbox(stylesheet, parent._handle, text)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UICheckBox(_BonEngineBind.BON_UI_CreateCheckbox(stylesheet, parentHandle, text)));
 		}
 
 		/// <summary>
@@ -162,7 +192,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIRadioButton CreateRadioButton(string stylesheet, UIElement parent, string text = null)
 		{
-			return InitNewElement(new UIRadioButton(_BonEngineBind.BON_UI_CreateCheckbox(stylesheet, parent._handle, text)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIRadioButton(_BonEngineBind.BON_UI_CreateRadioButton(stylesheet, parentHandle, text)));
 		}
 
 		/// <summary>
@@ -171,9 +203,11 @@ namespace BonEngineSharp.Managers
 		/// <param name="stylesheet">Stylesheet path to load.</param>
 		/// <param name="parent">Optional parent to attach element to.</param>
 		/// <returns>New UI element.</returns>
-		public UISlider CreateRadioButton(string stylesheet, UIElement parent)
+		public UISlider CreateSlider(string stylesheet, UIElement parent)
 		{
-			return InitNewElement(new UISlider(_BonEngineBind.BON_UI_CreateSlider(stylesheet, parent._handle)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UISlider(_BonEngineBind.BON_UI_CreateSlider(stylesheet, parentHandle)));
 		}
 
 		/// <summary>
@@ -184,7 +218,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIList CreateList(string stylesheet, UIElement parent)
 		{
-			return InitNewElement(new UIList(_BonEngineBind.BON_UI_CreateSlider(stylesheet, parent._handle)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIList(_BonEngineBind.BON_UI_CreateList(stylesheet, parentHandle)));
 		}
 
 		/// <summary>
@@ -195,7 +231,9 @@ namespace BonEngineSharp.Managers
 		/// <returns>New UI element.</returns>
 		public UIVerticalScrollbar CreateVerticalScrollbar(string stylesheet, UIElement parent)
 		{
-			return InitNewElement(new UIVerticalScrollbar(_BonEngineBind.BON_UI_CreateSlider(stylesheet, parent._handle)));
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIVerticalScrollbar(_BonEngineBind.BON_UI_CreateVerticalScrollbar(stylesheet, parentHandle)));
 		}
 	}
 }

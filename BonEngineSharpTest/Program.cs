@@ -59,6 +59,7 @@ namespace BonEngineSharpTest
                 AddDemo("Basic Lights", new Demos.BasicLightsScene());
                 AddDemo("Custom Managers", new Demos.CustomManagerScene());
                 AddDemo("Drawing Shapes", new Demos.DrawingShapesScene());
+                AddDemo("UI System", new Demos.UIScene());
             }
 
             /// <summary>

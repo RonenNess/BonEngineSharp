@@ -149,6 +149,30 @@ namespace BonEngineSharp
 		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIElement_GetLimitDragToParentArea(IntPtr element);
 
 		/// <summary>
+		/// Set if should ignore parent auto arranging.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIElement_SetExemptFromAutoArrange(IntPtr element, bool val);
+
+		/// <summary>
+		/// Get if should ignore parent auto arranging.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIElement_GetExemptFromAutoArrange(IntPtr element);
+
+		/// <summary>
+		/// Set if should ignore parent auto arranging.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIElement_SetAutoArrangeChildren(IntPtr element, bool val);
+
+		/// <summary>
+		/// Get if should ignore parent auto arranging.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIElement_GetAutoArrangeChildren(IntPtr element);
+
+		/// <summary>
 		/// Set if should ignore parent padding.
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
@@ -287,6 +311,18 @@ namespace BonEngineSharp
 		public static extern void BON_UIElement_GetPadding(IntPtr element, ref int left, ref int top, ref int right, ref int bottom);
 
 		/// <summary>
+		/// Set margin.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIElement_SetMargin(IntPtr element, int left, int top, int right, int bottom);
+
+		/// <summary>
+		/// Get margin.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIElement_GetMargin(IntPtr element, ref int left, ref int top, ref int right, ref int bottom);
+
+		/// <summary>
 		/// Get parent.
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
@@ -347,6 +383,12 @@ namespace BonEngineSharp
 		public static extern void BON_UIElement_GetCalculatedDestRect(IntPtr element, ref int x, ref int y, ref int width, ref int height);
 
 		/// <summary>
+		/// Get element actual dest rect.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIElement_GetActualDestRect(IntPtr element, ref int x, ref int y, ref int width, ref int height);
+
+		/// <summary>
 		/// Validate element offset is in parent.
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
@@ -367,12 +409,40 @@ namespace BonEngineSharp
         /// <summary>
         /// Get if checkbox is checked.
         /// </summary>
-		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
-		public static extern bool BON_UICheckbox_Checked(IntPtr element);
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UICheckbox_Checked(IntPtr element);
 
-        /// <summary>
-        /// Set checkbox value.
-        /// </summary>
+		/// <summary>
+		/// Get if checkbox allow uncheck.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UICheckbox_GetAllowUncheck(IntPtr element);
+
+		/// <summary>
+		/// Set if checkbox allow uncheck.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UICheckbox_SetAllowUncheck(IntPtr element, bool value);
+
+		/// <summary>
+		/// Set if radio allows uncheck.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIRadio_GetAllowUncheck(IntPtr element);
+
+		/// <summary>
+		/// Get if radio allows uncheck.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIRadio_SetAllowUncheck(IntPtr element, bool value);
+
+
+
+
+
+		/// <summary>
+		/// Set checkbox value.
+		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UICheckbox_SetValue(IntPtr element, bool value);
 
@@ -391,8 +461,8 @@ namespace BonEngineSharp
         /// <summary>
         /// Get if radio button is checked.
         /// </summary>
-		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
-		public static extern bool BON_UIRadio_Checked(IntPtr element);
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIRadio_Checked(IntPtr element);
 
         /// <summary>
         /// Set radio button value.

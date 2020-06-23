@@ -14,6 +14,15 @@ namespace BonEngineSharp.UI
         public override UIElementType ElementType => UIElementType.Checkbox;
 
         /// <summary>
+        /// Get / set if users can uncheck this checkbox by clicking it again.
+        /// </summary>
+        public bool AllowUncheck
+        {
+            get { return _BonEngineBind.BON_UICheckbox_GetAllowUncheck(_handle); }
+            set { _BonEngineBind.BON_UICheckbox_SetAllowUncheck(_handle, value); }
+        }
+
+        /// <summary>
         /// Get Checkbox caption element.
         /// </summary>
         public UIText Caption

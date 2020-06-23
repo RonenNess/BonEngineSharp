@@ -309,6 +309,36 @@ namespace BonEngineSharp.UI
         }
 
 		/// <summary>
+		/// If true, will ignore parent auto arrange.
+		/// </summary>
+		public bool ExemptFromAutoArrange
+        {
+			get
+            {
+				return _BonEngineBind.BON_UIElement_GetExemptFromAutoArrange(_handle);
+            }
+			set
+            {
+				_BonEngineBind.BON_UIElement_SetExemptFromAutoArrange(_handle, value);
+			}
+        }
+
+		/// <summary>
+		/// If true, will automatically arrange children position based on their actual dest rect.
+		/// </summary>
+		public bool AutoArrangeChildren
+		{
+			get
+			{
+				return _BonEngineBind.BON_UIElement_GetAutoArrangeChildren(_handle);
+			}
+			set
+			{
+				_BonEngineBind.BON_UIElement_SetAutoArrangeChildren(_handle, value);
+			}
+		}
+
+		/// <summary>
 		/// Get / set element origin.
 		/// Origin is the point on the element that touches the calculated position.
 		/// For example, if Origin is 0,0, it means the element calculated position will be the element top-left corner.
@@ -481,6 +511,24 @@ namespace BonEngineSharp.UI
 		}
 
 		/// <summary>
+		/// Get / set margin. 
+		/// Margin adds distance to neighbor elements when auto-arranging them.
+		/// </summary>
+		public UISides Margin
+		{
+			get
+			{
+				UISides ret = new UISides();
+				_BonEngineBind.BON_UIElement_GetMargin(_handle, ref ret.Left, ref ret.Top, ref ret.Right, ref ret.Bottom);
+				return ret;
+			}
+			set
+			{
+				_BonEngineBind.BON_UIElement_SetMargin(_handle, value.Left, value.Top, value.Right, value.Bottom);
+			}
+		}
+
+		/// <summary>
 		/// Get parent element.
 		/// </summary>
 		public UIElement Parent => new UIElement(_BonEngineBind.BON_UIElement_GetParent(_handle));
@@ -550,7 +598,7 @@ namespace BonEngineSharp.UI
 		/// Get calculated destination rect (position and size of element).
 		/// Updated after Update() is called.
 		/// </summary>
-		RectangleI CalculatedDestRect
+		public RectangleI CalculatedDestRect
         {
 			get
             {
@@ -559,6 +607,21 @@ namespace BonEngineSharp.UI
 				return ret;
 			}
         }
+
+		/// <summary>
+		/// Get actual destination rect.
+		/// Updated after Update() is called. 
+		/// This is usually the same as CalculatedDestRect, except for special cases like with text.
+		/// </summary>
+		public RectangleI ActualDestRect
+		{
+			get
+			{
+				RectangleI ret = new RectangleI();
+				_BonEngineBind.BON_UIElement_GetActualDestRect(_handle, ref ret.X, ref ret.Y, ref ret.Width, ref ret.Height);
+				return ret;
+			}
+		}
 
 		/// <summary>
 		/// Validate the element offset is inside parent boundaries.
