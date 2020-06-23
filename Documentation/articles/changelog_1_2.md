@@ -1,7 +1,5 @@
 # 1.2
 
-**Released on: 01/07/2020**
-
 Key changes:
 
 - Added UI system.
