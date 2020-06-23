@@ -1,0 +1,1326 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UIElement
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UIElement
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.UI.UIElement">
+  
+  
+  <h1 id="BonEngineSharp_UI_UIElement" data-uid="BonEngineSharp.UI.UIElement" class="text-break">Class UIElement
+  </h1>
+  <div class="markdown level0 summary"><p>UI Element base class.
+This is the basic class all UI Elements inherit from and its main purpose is to manage the handle to the CPP-side elements.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UIElement</span></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIButton.html">UIButton</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UICheckBox.html">UICheckBox</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIImage.html">UIImage</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIList.html">UIList</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIRadioButton.html">UIRadioButton</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UISlider.html">UISlider</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIText.html">UIText</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIVerticalScrollbar.html">UIVerticalScrollbar</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIWindow.html">UIWindow</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.UI.html">BonEngineSharp.UI</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_UI_UIElement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UIElement : Object, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement__ctor_" data-uid="BonEngineSharp.UI.UIElement.#ctor*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement__ctor_System_IntPtr_" data-uid="BonEngineSharp.UI.UIElement.#ctor(System.IntPtr)">UIElement(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Create the UI element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>UI element handle inside the low-level engine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BonEngineSharp_UI_UIElement__handle" data-uid="BonEngineSharp.UI.UIElement._handle">_handle</h4>
+  <div class="markdown level1 summary"><p>The element's handle in BonEngine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IntPtr _handle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_ActualDestRect_" data-uid="BonEngineSharp.UI.UIElement.ActualDestRect*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_ActualDestRect" data-uid="BonEngineSharp.UI.UIElement.ActualDestRect">ActualDestRect</h4>
+  <div class="markdown level1 summary"><p>Get actual destination rect.
+Updated after Update() is called.
+This is usually the same as CalculatedDestRect, except for special cases like with text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleI ActualDestRect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Anchor_" data-uid="BonEngineSharp.UI.UIElement.Anchor*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Anchor" data-uid="BonEngineSharp.UI.UIElement.Anchor">Anchor</h4>
+  <div class="markdown level1 summary"><p>Get / set element anchor.
+Anchor is the element base position, relative to parent destination rect.
+For example, values of 1,1, will position element at the bottom-right corner of its parent.
+Note that you need to combine this property with Origin if you want to decide which part of this element will stick to the anchor position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointF Anchor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_AutoArrangeChildren_" data-uid="BonEngineSharp.UI.UIElement.AutoArrangeChildren*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_AutoArrangeChildren" data-uid="BonEngineSharp.UI.UIElement.AutoArrangeChildren">AutoArrangeChildren</h4>
+  <div class="markdown level1 summary"><p>If true, will automatically arrange children position based on their actual dest rect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoArrangeChildren { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_CalculatedDestRect_" data-uid="BonEngineSharp.UI.UIElement.CalculatedDestRect*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_CalculatedDestRect" data-uid="BonEngineSharp.UI.UIElement.CalculatedDestRect">CalculatedDestRect</h4>
+  <div class="markdown level1 summary"><p>Get calculated destination rect (position and size of element).
+Updated after Update() is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleI CalculatedDestRect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_CaptureInput_" data-uid="BonEngineSharp.UI.UIElement.CaptureInput*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_CaptureInput" data-uid="BonEngineSharp.UI.UIElement.CaptureInput">CaptureInput</h4>
+  <div class="markdown level1 summary"><p>Get / set if this element capture input events and prevent them from propagating to other elements.
+If true and you click on this element, click will not reach anything under it. If false, you can click this element and also elements behind it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CaptureInput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Color_" data-uid="BonEngineSharp.UI.UIElement.Color*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Color" data-uid="BonEngineSharp.UI.UIElement.Color">Color</h4>
+  <div class="markdown level1 summary"><p>Get / set element color while idle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_ColorHighlight_" data-uid="BonEngineSharp.UI.UIElement.ColorHighlight*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_ColorHighlight" data-uid="BonEngineSharp.UI.UIElement.ColorHighlight">ColorHighlight</h4>
+  <div class="markdown level1 summary"><p>Get / set element color while user points on it / focused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorHighlight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_ColorPressed_" data-uid="BonEngineSharp.UI.UIElement.ColorPressed*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_ColorPressed" data-uid="BonEngineSharp.UI.UIElement.ColorPressed">ColorPressed</h4>
+  <div class="markdown level1 summary"><p>Get / set element color while being pressed / active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorPressed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_CopyParentState_" data-uid="BonEngineSharp.UI.UIElement.CopyParentState*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_CopyParentState" data-uid="BonEngineSharp.UI.UIElement.CopyParentState">CopyParentState</h4>
+  <div class="markdown level1 summary"><p>Get / set if this element should always copy its parent state.
+This is useful for things like a label attached to a button, where you want to highlight the text when the background button is highlighted too.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CopyParentState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Draggable_" data-uid="BonEngineSharp.UI.UIElement.Draggable*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Draggable" data-uid="BonEngineSharp.UI.UIElement.Draggable">Draggable</h4>
+  <div class="markdown level1 summary"><p>Get / set if this element is draggable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Draggable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_ElementType_" data-uid="BonEngineSharp.UI.UIElement.ElementType*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_ElementType" data-uid="BonEngineSharp.UI.UIElement.ElementType">ElementType</h4>
+  <div class="markdown level1 summary"><p>Get element type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual UIElementType ElementType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_ExemptFromAutoArrange_" data-uid="BonEngineSharp.UI.UIElement.ExemptFromAutoArrange*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_ExemptFromAutoArrange" data-uid="BonEngineSharp.UI.UIElement.ExemptFromAutoArrange">ExemptFromAutoArrange</h4>
+  <div class="markdown level1 summary"><p>If true, will ignore parent auto arrange.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExemptFromAutoArrange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_ForceActiveState_" data-uid="BonEngineSharp.UI.UIElement.ForceActiveState*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_ForceActiveState" data-uid="BonEngineSharp.UI.UIElement.ForceActiveState">ForceActiveState</h4>
+  <div class="markdown level1 summary"><p>If true, will force the element state to be active / pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForceActiveState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_HaveHandle_" data-uid="BonEngineSharp.UI.UIElement.HaveHandle*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_HaveHandle" data-uid="BonEngineSharp.UI.UIElement.HaveHandle">HaveHandle</h4>
+  <div class="markdown level1 summary"><p>Get if this element got a handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool HaveHandle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Interactive_" data-uid="BonEngineSharp.UI.UIElement.Interactive*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Interactive" data-uid="BonEngineSharp.UI.UIElement.Interactive">Interactive</h4>
+  <div class="markdown level1 summary"><p>Get / set if this element is interactive.
+Elements that are not interactive will ignore all input events, mouse or keyboard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Interactive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_IsBeingDragged_" data-uid="BonEngineSharp.UI.UIElement.IsBeingDragged*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_IsBeingDragged" data-uid="BonEngineSharp.UI.UIElement.IsBeingDragged">IsBeingDragged</h4>
+  <div class="markdown level1 summary"><p>Get if this element is being dragged right now.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBeingDragged { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_LimitDragToParentArea_" data-uid="BonEngineSharp.UI.UIElement.LimitDragToParentArea*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_LimitDragToParentArea" data-uid="BonEngineSharp.UI.UIElement.LimitDragToParentArea">LimitDragToParentArea</h4>
+  <div class="markdown level1 summary"><p>Get / set if should limit dragging to parent element bounding box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LimitDragToParentArea { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Margin_" data-uid="BonEngineSharp.UI.UIElement.Margin*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Margin" data-uid="BonEngineSharp.UI.UIElement.Margin">Margin</h4>
+  <div class="markdown level1 summary"><p>Get / set margin.
+Margin adds distance to neighbor elements when auto-arranging them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISides Margin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UISides.html">UISides</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Offset_" data-uid="BonEngineSharp.UI.UIElement.Offset*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Offset" data-uid="BonEngineSharp.UI.UIElement.Offset">Offset</h4>
+  <div class="markdown level1 summary"><p>Get / set element offset.
+Offset is the element offset, in pixel, from its calculated position based on Anchor and Origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointI Offset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Origin_" data-uid="BonEngineSharp.UI.UIElement.Origin*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Origin" data-uid="BonEngineSharp.UI.UIElement.Origin">Origin</h4>
+  <div class="markdown level1 summary"><p>Get / set element origin.
+Origin is the point on the element that touches the calculated position.
+For example, if Origin is 0,0, it means the element calculated position will be the element top-left corner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointF Origin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Padding_" data-uid="BonEngineSharp.UI.UIElement.Padding*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Padding" data-uid="BonEngineSharp.UI.UIElement.Padding">Padding</h4>
+  <div class="markdown level1 summary"><p>Get / set padding.
+Padding adds distance between the boundaries of this element and its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISides Padding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UISides.html">UISides</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Parent_" data-uid="BonEngineSharp.UI.UIElement.Parent*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Parent" data-uid="BonEngineSharp.UI.UIElement.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Get parent element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement Parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Size_" data-uid="BonEngineSharp.UI.UIElement.Size*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Size" data-uid="BonEngineSharp.UI.UIElement.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Get / set element size.
+For width and height we also have unit types, that define the meaning of the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISize Size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UISize.html">UISize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Visible_" data-uid="BonEngineSharp.UI.UIElement.Visible*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Visible" data-uid="BonEngineSharp.UI.UIElement.Visible">Visible</h4>
+  <div class="markdown level1 summary"><p>Get / set if this element is visible.
+Note: if element is not visible, its children will be hidden too.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement__Init_" data-uid="BonEngineSharp.UI.UIElement._Init*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement__Init" data-uid="BonEngineSharp.UI.UIElement._Init">_Init()</h4>
+  <div class="markdown level1 summary"><p>Initialize element.
+This is called automatically by the UI manager, call this only if you create custom elements outside of it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _Init()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_AddChild_" data-uid="BonEngineSharp.UI.UIElement.AddChild*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_AddChild_BonEngineSharp_UI_UIElement_" data-uid="BonEngineSharp.UI.UIElement.AddChild(BonEngineSharp.UI.UIElement)">AddChild(UIElement)</h4>
+  <div class="markdown level1 summary"><p>Add child element to this element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChild(UIElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>Element to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_DebugDraw_" data-uid="BonEngineSharp.UI.UIElement.DebugDraw*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_DebugDraw_System_Boolean_" data-uid="BonEngineSharp.UI.UIElement.DebugDraw(System.Boolean)">DebugDraw(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Debug draw UI symbols (bounding boxes, paddings, ect).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DebugDraw(bool recursive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>If true, will debug draw child elements recursively.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Dispose_" data-uid="BonEngineSharp.UI.UIElement.Dispose*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Dispose" data-uid="BonEngineSharp.UI.UIElement.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Destroy the asset pointer by releasing its handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Draw_" data-uid="BonEngineSharp.UI.UIElement.Draw*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Draw" data-uid="BonEngineSharp.UI.UIElement.Draw">Draw()</h4>
+  <div class="markdown level1 summary"><p>Draw this element and its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Finalize_" data-uid="BonEngineSharp.UI.UIElement.Finalize*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Finalize" data-uid="BonEngineSharp.UI.UIElement.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Dispose on destructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Finalize()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_IgnoreParentPadding_" data-uid="BonEngineSharp.UI.UIElement.IgnoreParentPadding*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_IgnoreParentPadding_System_Boolean_" data-uid="BonEngineSharp.UI.UIElement.IgnoreParentPadding(System.Boolean)">IgnoreParentPadding(Boolean)</h4>
+  <div class="markdown level1 summary"><p>If true, will ignore parent padding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IgnoreParentPadding(bool ignore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignore</span></td>
+        <td><p>True to ignore parent padding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_IterateChildren_" data-uid="BonEngineSharp.UI.UIElement.IterateChildren*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_IterateChildren_System_Action_BonEngineSharp_UI_UIElement__" data-uid="BonEngineSharp.UI.UIElement.IterateChildren(System.Action{BonEngineSharp.UI.UIElement})">IterateChildren(Action&lt;UIElement&gt;)</h4>
+  <div class="markdown level1 summary"><p>Iterate children under this element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IterateChildren(Action&lt;UIElement&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_LoadStyleFrom_" data-uid="BonEngineSharp.UI.UIElement.LoadStyleFrom*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_LoadStyleFrom_BonEngineSharp_Assets_ConfigAsset_" data-uid="BonEngineSharp.UI.UIElement.LoadStyleFrom(BonEngineSharp.Assets.ConfigAsset)">LoadStyleFrom(ConfigAsset)</h4>
+  <div class="markdown level1 summary"><p>Load stylesheet from config file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadStyleFrom(ConfigAsset config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Config asset to load stylesheet from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_MarkAsDirty_" data-uid="BonEngineSharp.UI.UIElement.MarkAsDirty*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_MarkAsDirty" data-uid="BonEngineSharp.UI.UIElement.MarkAsDirty">MarkAsDirty()</h4>
+  <div class="markdown level1 summary"><p>Mark this element as dirty (requires update).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkAsDirty()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_MoveToFront_" data-uid="BonEngineSharp.UI.UIElement.MoveToFront*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_MoveToFront" data-uid="BonEngineSharp.UI.UIElement.MoveToFront">MoveToFront()</h4>
+  <div class="markdown level1 summary"><p>Move this element to front.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToFront()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_OnDraw_" data-uid="BonEngineSharp.UI.UIElement.OnDraw*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_OnDraw_System_Action_BonEngineSharp_UI_UIElement__" data-uid="BonEngineSharp.UI.UIElement.OnDraw(System.Action{BonEngineSharp.UI.UIElement})">OnDraw(Action&lt;UIElement&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register callback to respond to draw events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDraw(Action&lt;UIElement&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_OnMouseEnter_" data-uid="BonEngineSharp.UI.UIElement.OnMouseEnter*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_OnMouseEnter_System_Action_BonEngineSharp_UI_UIElement__" data-uid="BonEngineSharp.UI.UIElement.OnMouseEnter(System.Action{BonEngineSharp.UI.UIElement})">OnMouseEnter(Action&lt;UIElement&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register callback to respond to mouse enter events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMouseEnter(Action&lt;UIElement&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_OnMouseLeave_" data-uid="BonEngineSharp.UI.UIElement.OnMouseLeave*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_OnMouseLeave_System_Action_BonEngineSharp_UI_UIElement__" data-uid="BonEngineSharp.UI.UIElement.OnMouseLeave(System.Action{BonEngineSharp.UI.UIElement})">OnMouseLeave(Action&lt;UIElement&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register callback to respond to mouse leave events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMouseLeave(Action&lt;UIElement&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_OnMousePressed_" data-uid="BonEngineSharp.UI.UIElement.OnMousePressed*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_OnMousePressed_System_Action_BonEngineSharp_UI_UIElement__" data-uid="BonEngineSharp.UI.UIElement.OnMousePressed(System.Action{BonEngineSharp.UI.UIElement})">OnMousePressed(Action&lt;UIElement&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register callback to respond to mouse pressed events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMousePressed(Action&lt;UIElement&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_OnMouseReleased_" data-uid="BonEngineSharp.UI.UIElement.OnMouseReleased*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_OnMouseReleased_System_Action_BonEngineSharp_UI_UIElement__" data-uid="BonEngineSharp.UI.UIElement.OnMouseReleased(System.Action{BonEngineSharp.UI.UIElement})">OnMouseReleased(Action&lt;UIElement&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register callback to respond to mouse released events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMouseReleased(Action&lt;UIElement&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_OnValueChange_" data-uid="BonEngineSharp.UI.UIElement.OnValueChange*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_OnValueChange_System_Action_BonEngineSharp_UI_UIElement__" data-uid="BonEngineSharp.UI.UIElement.OnValueChange(System.Action{BonEngineSharp.UI.UIElement})">OnValueChange(Action&lt;UIElement&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register callback to respond to draw events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnValueChange(Action&lt;UIElement&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Remove_" data-uid="BonEngineSharp.UI.UIElement.Remove*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Remove" data-uid="BonEngineSharp.UI.UIElement.Remove">Remove()</h4>
+  <div class="markdown level1 summary"><p>Remove element from its parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_RemoveChild_" data-uid="BonEngineSharp.UI.UIElement.RemoveChild*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_RemoveChild_BonEngineSharp_UI_UIElement_" data-uid="BonEngineSharp.UI.UIElement.RemoveChild(BonEngineSharp.UI.UIElement)">RemoveChild(UIElement)</h4>
+  <div class="markdown level1 summary"><p>Remove child element from this element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveChild(UIElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>Element to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_SetHeightToMax_" data-uid="BonEngineSharp.UI.UIElement.SetHeightToMax*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_SetHeightToMax" data-uid="BonEngineSharp.UI.UIElement.SetHeightToMax">SetHeightToMax()</h4>
+  <div class="markdown level1 summary"><p>Set height value to max.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHeightToMax()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_SetWidthToMax_" data-uid="BonEngineSharp.UI.UIElement.SetWidthToMax*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_SetWidthToMax" data-uid="BonEngineSharp.UI.UIElement.SetWidthToMax">SetWidthToMax()</h4>
+  <div class="markdown level1 summary"><p>Set width value to max.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWidthToMax()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_Update_" data-uid="BonEngineSharp.UI.UIElement.Update*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_Update_System_Double_" data-uid="BonEngineSharp.UI.UIElement.Update(System.Double)">Update(Double)</h4>
+  <div class="markdown level1 summary"><p>Update UI Element and its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(double deltaTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td><p>Delta time, in seconds, since last update call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_ValidateOffsetInsideParent_" data-uid="BonEngineSharp.UI.UIElement.ValidateOffsetInsideParent*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_ValidateOffsetInsideParent" data-uid="BonEngineSharp.UI.UIElement.ValidateOffsetInsideParent">ValidateOffsetInsideParent()</h4>
+  <div class="markdown level1 summary"><p>Validate the element offset is inside parent boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValidateOffsetInsideParent()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

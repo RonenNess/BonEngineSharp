@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.ConfigAsset.html",
-          "hash": "jca13ztCCtANTLmAihxegg=="
+          "hash": "rbxFT+tAPb7zc9YFZeqhPQ=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.FontAsset.html",
-          "hash": "RrMaY1Vy9TQv4XCBZ9y7vA=="
+          "hash": "CNyJ4Xz0esnYl/7HWozHNg=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.IAsset.html",
-          "hash": "lPHUjrOjLfUkCFD4ifT7Sg=="
+          "hash": "rQSRwwIGgaQMLbz+rb36oA=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.ImageAsset.html",
-          "hash": "V+n3TgVQRXh5cp/TXqKRGA=="
+          "hash": "5DtDVeXPzlWYkdrgFxP8Cg=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.MusicAsset.html",
-          "hash": "kzHOZMreJjHbs40iW0fT9Q=="
+          "hash": "WZMqskiqSWPpfffqOSDaDQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.SoundAsset.html",
-          "hash": "HsDVfrhYCo2dy+XZjQnL5w=="
+          "hash": "X630UQZ9T/ZfDUz8Jj+cPg=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.html",
-          "hash": "xI6F7c2b62SBrBVEPzUfwg=="
+          "hash": "P2OYLSUfb/0Dj8d7+cGzHQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.BonEngine.html",
-          "hash": "L3BOqKsOWkw9hT5fAXBj6Q=="
+          "hash": "2GIiKwRL0R4vOk4thvhvcQ=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.AssetType.html",
-          "hash": "Kv8/L6geg4etmWQgcPyIAA=="
+          "hash": "zjFUnfWRNe7XZRD1pVe6SQ=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.AudioFormats.html",
-          "hash": "pPgDHi1PMdsoTEazYcEr4w=="
+          "hash": "ftCNK6Lv5T4jWWccTjBeBg=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.BlendModes.html",
-          "hash": "WhUarqUsaK6H5/Mb9nJYxg=="
+          "hash": "Ao3YF+Lbhy/rPZbBRSBfnw=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.DiagnosticsCounters.html",
-          "hash": "YMTLfE9JfMmfjP+KTpcEcQ=="
+          "hash": "xKcEv2EbbQAg3Rn2PvW68Q=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.EngineStates.html",
-          "hash": "4qf5T+so9SlNIEw73lzNyw=="
+          "hash": "D/wci3r3njl2vVqgA/B/Kg=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.ImageFilterMode.html",
-          "hash": "u0mwRCQGL9D26B97J9T33w=="
+          "hash": "6KZKzclAEArIPOtweRz74g=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.KeyCodes.html",
-          "hash": "kXaZo3VJhAWTtZONgmuaiA=="
+          "hash": "KcUV3nEmut4xYtuF445f/A=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.LogLevel.html",
-          "hash": "9O2S8vL0lA/H2fIhwPcA6g=="
+          "hash": "I+vZ2fbOy9CGAwXHk8cj4A=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,91 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.SoundChannelId.html",
-          "hash": "FuMGvX1aRX1WOCind4TS/g=="
+          "hash": "HJyjk3TuHwz24AHYXyjCkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.UIElementState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.UIElementState.html",
+          "hash": "8+g8x6WQEdA1+lI9uClMeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.UIElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.UIElementType.html",
+          "hash": "NddEleihFZPF28Fg6YEMbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.UIImageTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.UIImageTypes.html",
+          "hash": "A9p7dWwYF18OGg5QgQ/lQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.UISides.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.UISides.html",
+          "hash": "oROej7puPB1lqGDfWUSgFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.UISize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.UISize.html",
+          "hash": "AVge/PxuhB0tVtewGFcY+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.UISizeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.UISizeType.html",
+          "hash": "Sr5Coz9jVu4KBUyLwpxY2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.UITextAlignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.UITextAlignment.html",
+          "hash": "pnmC91h1SzT7LNofPhayog=="
         }
       },
       "is_incremental": false,
@@ -213,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.WindowModes.html",
-          "hash": "85iYj0ejc7g04xp6Wqhe+w=="
+          "hash": "iWQemYU5+YS4A1+h0P6Kxg=="
         }
       },
       "is_incremental": false,
@@ -225,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.html",
-          "hash": "ENKqnIaSL7qZFgSFryBBng=="
+          "hash": "zXGjis6cUqhVpszasbWtJQ=="
         }
       },
       "is_incremental": false,
@@ -237,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Engine.html",
-          "hash": "kO70ZqRc1hUUxyrtMQdjrA=="
+          "hash": "Pc4pPAlDj/BpnM93NBb1Ng=="
         }
       },
       "is_incremental": false,
@@ -249,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.Color.html",
-          "hash": "rrIncMBUTY1CSazJrJqWuw=="
+          "hash": "CzopGdzQ2Fz2Zcil61VWSg=="
         }
       },
       "is_incremental": false,
@@ -261,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.PointF.html",
-          "hash": "yv2DBxlUt+XQIh5pLxURqw=="
+          "hash": "zWCuhxpMYACmTEmC7VXStg=="
         }
       },
       "is_incremental": false,
@@ -273,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.PointI.html",
-          "hash": "cmsSUnmLev4HtjHhwNgc5w=="
+          "hash": "45MbqEkiKJEciCiAHAq2dw=="
         }
       },
       "is_incremental": false,
@@ -285,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.RectangleF.html",
-          "hash": "7Go23xXqSxChzIXicYcwyg=="
+          "hash": "uGl9qXgVelBKY2BNoYYecA=="
         }
       },
       "is_incremental": false,
@@ -297,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.RectangleI.html",
-          "hash": "PmieEKTLG8RiWNwMs3R36w=="
+          "hash": "5N9HyQ1xDqwasupWV+/ilA=="
         }
       },
       "is_incremental": false,
@@ -309,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.Sprite.html",
-          "hash": "yLG38frYvZxUeE25N5Wr5w=="
+          "hash": "VjMd0hHOP1Gx09C8zCqV9A=="
         }
       },
       "is_incremental": false,
@@ -321,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.SpriteAnimation.html",
-          "hash": "/nE/CVPr4zP1WeKMHXaYwg=="
+          "hash": "58y6Paq0c1xFaTLEWrgwqw=="
         }
       },
       "is_incremental": false,
@@ -333,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.SpriteAnimationStep.html",
-          "hash": "zEXIeDNIk9cpOjir8V3Eaw=="
+          "hash": "fetZQLdUKrYMva7OjwJIPg=="
         }
       },
       "is_incremental": false,
@@ -345,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.SpriteSheet.html",
-          "hash": "4jAPlxslsyfEHCdGJQmFnA=="
+          "hash": "IQ/vZJWhCt5hgdx2mixgkA=="
         }
       },
       "is_incremental": false,
@@ -357,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.html",
-          "hash": "KDPWZ4QzR10xneFWtFR89w=="
+          "hash": "X6sGDrUQMHBrbx83L4n/+Q=="
         }
       },
       "is_incremental": false,
@@ -369,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.AssetsManager.html",
-          "hash": "7dF8jK7W4RTK0OMCaQWBbQ=="
+          "hash": "V2f70wnClRX8u3l4tpInrA=="
         }
       },
       "is_incremental": false,
@@ -381,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.CustomManager.html",
-          "hash": "K427+asNnhcS4BvMkRgTXQ=="
+          "hash": "MrdNN1LvTk5xxOiT4UDM7Q=="
         }
       },
       "is_incremental": false,
@@ -393,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.DiagnosticsManager.html",
-          "hash": "1B1eBwk+nQsV2ooUtSRy/A=="
+          "hash": "dDF3tg6ftu3Z01K4YKH4Jg=="
         }
       },
       "is_incremental": false,
@@ -405,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.GameManager.html",
-          "hash": "wZF9tXxHzG7MzWNQHWJNPw=="
+          "hash": "HlXE4VL8smHi5tw2lyNNDg=="
         }
       },
       "is_incremental": false,
@@ -417,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.GfxManager.html",
-          "hash": "zrCe9X3MMiBZ5MTb4gr1Zw=="
+          "hash": "ifIRHaKDYngWSXlrTGWemw=="
         }
       },
       "is_incremental": false,
@@ -429,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.IManager.html",
-          "hash": "HaFoGVjqByizpkug2T+vzA=="
+          "hash": "tEkLZH/Ie53pVpmimIyFZw=="
         }
       },
       "is_incremental": false,
@@ -441,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.InputManager.html",
-          "hash": "TFdz48sRpz/XYk3gNfkOSA=="
+          "hash": "N8U2ViXBKXT2Zxzgg+BYwQ=="
         }
       },
       "is_incremental": false,
@@ -453,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.LogManager.html",
-          "hash": "n9CnZ+vy4n3elbUlj+h6uw=="
+          "hash": "zLjLVcL13Bm5bz0ZJxYkUg=="
         }
       },
       "is_incremental": false,
@@ -465,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.ManagerGetters.html",
-          "hash": "+ceiIRM4t8n5qjZzmaqU2A=="
+          "hash": "OZHFE6pYQwi3F7AQWkFPlQ=="
         }
       },
       "is_incremental": false,
@@ -477,7 +561,19 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.SfxManager.html",
-          "hash": "5fovsxBYE9dYGzut7t37iw=="
+          "hash": "vuv5yZdsGEJZ2vf+zWqLmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Managers.UIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Managers.UIManager.html",
+          "hash": "j/Ug7fjR5wcx8BTFPQn18Q=="
         }
       },
       "is_incremental": false,
@@ -489,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.html",
-          "hash": "qll9E6C+KOIMDe/QZ0taIA=="
+          "hash": "uQmb5RYfIZyliRq6WBhGxQ=="
         }
       },
       "is_incremental": false,
@@ -501,7 +597,139 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Scene.html",
-          "hash": "r+wc8uqPjKqQcChelGNT6A=="
+          "hash": "fk8hwNXtWCYyGjXvarevrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIButton.html",
+          "hash": "pGRzRsUiTOmb8JSyubIgRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UICheckBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UICheckBox.html",
+          "hash": "/g5+vQ3bz+SLbhKCtF4h1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIElement.html",
+          "hash": "snBtY1YFU0PoyXmnkRT8AA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIImage.html",
+          "hash": "gfwmdVaPpK5e7AZgIocuXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIList.html",
+          "hash": "DAcpIibvvZQ+fnDKasqrAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIRadioButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIRadioButton.html",
+          "hash": "7SSQlWfuboq1uiRnuE9ZBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UISlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UISlider.html",
+          "hash": "jD4hn5nzQ8RZ+WXRyx579w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIText.html",
+          "hash": "a3VCP3JhKQjtWKNFOk3IWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIVerticalScrollbar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIVerticalScrollbar.html",
+          "hash": "MySUOMrF9vUwqnsxvKGQzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.UIWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.UIWindow.html",
+          "hash": "9APpCZanqvAcTz7A3gvZiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.UI.html",
+          "hash": "BXO36gm28tAVzUIW4VeNOg=="
         }
       },
       "is_incremental": false,
@@ -513,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.html",
-          "hash": "zD6fjk4PWrUutHDTR2F08g=="
+          "hash": "FMmVQUaez/XnZbAnNo+lqA=="
         }
       },
       "is_incremental": false,
@@ -525,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "PhWyg0V2TIWfrvMEYkUE3w=="
+          "hash": "Sd7LmS0qV7yF2wx8cVBNkA=="
         }
       },
       "is_incremental": false,
@@ -537,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wDTSNygmMCkMXT6Obpxg5w=="
+          "hash": "RZ8zEmF/Pj/hgcfPO6q0UA=="
         }
       },
       "is_incremental": false,
@@ -549,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelog.html",
-          "hash": "2yFM8NybV7DEinlR8geabg=="
+          "hash": "st6wkLhNtq7Yicf/CjG7mQ=="
         }
       },
       "is_incremental": false,
@@ -561,7 +789,31 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelog_1_1.html",
-          "hash": "xGIPncZHnSqVbPzEmafDxQ=="
+          "hash": "abgTMZBm3i1M7qMa8cxVYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelog_1_2.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog_1_2.html",
+          "hash": "PfBc5vKmrGvHExikXhviow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelog_1_21.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog_1_21.html",
+          "hash": "J4xV5xsaaKlQ4Sd4uRzf6Q=="
         }
       },
       "is_incremental": false,
@@ -573,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/examples.html",
-          "hash": "VDAB+kx8bTVxzmF1AFlpZw=="
+          "hash": "4uI0GQOUYsfIW9j0KGmmpA=="
         }
       },
       "is_incremental": false,
@@ -585,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/examples_breakout.html",
-          "hash": "YpdP5YUhtKpuYKfJIDC8jw=="
+          "hash": "7FJUqCFygPPwvZ0sNnYHwA=="
         }
       },
       "is_incremental": false,
@@ -597,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "fppKoEXF+rnz6xL7izfIvA=="
+          "hash": "J9KRaIhnSSKELGODVvyslg=="
         }
       },
       "is_incremental": false,
@@ -609,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "y9KZ44RFw4hKCXuvp8kf9w=="
+          "hash": "Bjgli6juIMQu2O2yCOM9xg=="
         }
       },
       "is_incremental": false,
@@ -632,7 +884,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "TevVDqvom6T+G0XYyGsJIw=="
+          "hash": "6H2jERcpqnbkdexKX4Ovrw=="
         }
       },
       "is_incremental": false,
@@ -663,14 +915,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 7,
-          "skipped_file_count": 7
+          "total_file_count": 9,
+          "skipped_file_count": 9
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 43,
-          "skipped_file_count": 43
+          "total_file_count": 62,
+          "skipped_file_count": 62
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

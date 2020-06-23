@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GfxManager
    ">
-    <meta name="generator" content="docfx 2.54.0.0">
+    <meta name="generator" content="docfx 2.55.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -131,6 +131,62 @@ Responsible to rendering sprites, shapes, texts, and control the main window's p
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="BonEngineSharp.Managers.IManager.html#BonEngineSharp_Managers_IManager_Id">IManager.Id</a></div>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_RenderableSize_" data-uid="BonEngineSharp.Managers.GfxManager.RenderableSize*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_RenderableSize" data-uid="BonEngineSharp.Managers.GfxManager.RenderableSize">RenderableSize</h4>
+  <div class="markdown level1 summary"><p>Get currently renderable size.
+If a viewport is set, will return viewport size.
+If a render target is set, will return render target size.
+If none of the above are set, will just return window size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointI RenderableSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_GfxManager_RenderTarget_" data-uid="BonEngineSharp.Managers.GfxManager.RenderTarget*"></a>
+  <h4 id="BonEngineSharp_Managers_GfxManager_RenderTarget" data-uid="BonEngineSharp.Managers.GfxManager.RenderTarget">RenderTarget</h4>
+  <div class="markdown level1 summary"><p>Get or set render target.
+Render target is a texture to draw on. Later you can use this texture and draw it as sprite.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageAsset RenderTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="BonEngineSharp_Managers_GfxManager_Viewport_" data-uid="BonEngineSharp.Managers.GfxManager.Viewport*"></a>
@@ -829,7 +885,7 @@ To disable viewport, set RectangleI.Empty.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DrawText(FontAsset font, string text, PointF position, Color color, Color strokeColor, int strokeWidth = 1, int fontSize = 0, int maxWidth = 0, BlendModes blend)</code></pre>
+    <pre><code class="lang-csharp hljs">public void DrawText(FontAsset font, string text, PointF position, Color color, Color outlineColor, int outlineWidth = 1, int fontSize = 0, int maxWidth = 0, BlendModes blend)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -867,14 +923,14 @@ To disable viewport, set RectangleI.Empty.</p>
       </tr>
       <tr>
         <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
-        <td><span class="parametername">strokeColor</span></td>
-        <td><p>Stroke color.</p>
+        <td><span class="parametername">outlineColor</span></td>
+        <td><p>Text outline color.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">strokeWidth</span></td>
-        <td><p>Stroke width.</p>
+        <td><span class="parametername">outlineWidth</span></td>
+        <td><p>Text outline width.</p>
 </td>
       </tr>
       <tr>
@@ -1035,35 +1091,6 @@ To disable viewport, set RectangleI.Empty.</p>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">rotation</span></td>
         <td><p>Text rotation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BonEngineSharp_Managers_GfxManager_SetRenderTarget_" data-uid="BonEngineSharp.Managers.GfxManager.SetRenderTarget*"></a>
-  <h4 id="BonEngineSharp_Managers_GfxManager_SetRenderTarget_BonEngineSharp_Assets_ImageAsset_" data-uid="BonEngineSharp.Managers.GfxManager.SetRenderTarget(BonEngineSharp.Assets.ImageAsset)">SetRenderTarget(ImageAsset)</h4>
-  <div class="markdown level1 summary"><p>Set current render target.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetRenderTarget(ImageAsset image)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
-        <td><span class="parametername">image</span></td>
-        <td><p>Image to draw on, or null to clear render target.</p>
 </td>
       </tr>
     </tbody>

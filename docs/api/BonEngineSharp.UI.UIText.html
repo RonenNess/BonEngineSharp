@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UIText
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UIText
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.UI.UIText">
+  
+  
+  <h1 id="BonEngineSharp_UI_UIText" data-uid="BonEngineSharp.UI.UIText" class="text-break">Class UIText
+  </h1>
+  <div class="markdown level0 summary"><p>UI Text element.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></div>
+    <div class="level2"><span class="xref">UIText</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement__handle">UIElement._handle</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_OnMousePressed_System_Action_BonEngineSharp_UI_UIElement__">UIElement.OnMousePressed(Action&lt;UIElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_OnMouseReleased_System_Action_BonEngineSharp_UI_UIElement__">UIElement.OnMouseReleased(Action&lt;UIElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_OnMouseEnter_System_Action_BonEngineSharp_UI_UIElement__">UIElement.OnMouseEnter(Action&lt;UIElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_OnMouseLeave_System_Action_BonEngineSharp_UI_UIElement__">UIElement.OnMouseLeave(Action&lt;UIElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_OnDraw_System_Action_BonEngineSharp_UI_UIElement__">UIElement.OnDraw(Action&lt;UIElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_OnValueChange_System_Action_BonEngineSharp_UI_UIElement__">UIElement.OnValueChange(Action&lt;UIElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_IterateChildren_System_Action_BonEngineSharp_UI_UIElement__">UIElement.IterateChildren(Action&lt;UIElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement__Init">UIElement._Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_IgnoreParentPadding_System_Boolean_">UIElement.IgnoreParentPadding(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_LoadStyleFrom_BonEngineSharp_Assets_ConfigAsset_">UIElement.LoadStyleFrom(ConfigAsset)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_MarkAsDirty">UIElement.MarkAsDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_SetWidthToMax">UIElement.SetWidthToMax()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_SetHeightToMax">UIElement.SetHeightToMax()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_AddChild_BonEngineSharp_UI_UIElement_">UIElement.AddChild(UIElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_RemoveChild_BonEngineSharp_UI_UIElement_">UIElement.RemoveChild(UIElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Remove">UIElement.Remove()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Draw">UIElement.Draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Update_System_Double_">UIElement.Update(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_MoveToFront">UIElement.MoveToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_DebugDraw_System_Boolean_">UIElement.DebugDraw(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_ValidateOffsetInsideParent">UIElement.ValidateOffsetInsideParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Finalize">UIElement.Finalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Dispose">UIElement.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Interactive">UIElement.Interactive</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_CaptureInput">UIElement.CaptureInput</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_CopyParentState">UIElement.CopyParentState</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Visible">UIElement.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Draggable">UIElement.Draggable</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_IsBeingDragged">UIElement.IsBeingDragged</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_LimitDragToParentArea">UIElement.LimitDragToParentArea</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_ForceActiveState">UIElement.ForceActiveState</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_ExemptFromAutoArrange">UIElement.ExemptFromAutoArrange</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_AutoArrangeChildren">UIElement.AutoArrangeChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Origin">UIElement.Origin</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Color">UIElement.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_ColorHighlight">UIElement.ColorHighlight</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_ColorPressed">UIElement.ColorPressed</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Offset">UIElement.Offset</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Anchor">UIElement.Anchor</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Size">UIElement.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Padding">UIElement.Padding</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Margin">UIElement.Margin</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Parent">UIElement.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_CalculatedDestRect">UIElement.CalculatedDestRect</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_ActualDestRect">UIElement.ActualDestRect</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_HaveHandle">UIElement.HaveHandle</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.UI.html">BonEngineSharp.UI</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_UI_UIText_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UIText : UIElement, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_UI_UIText__ctor_" data-uid="BonEngineSharp.UI.UIText.#ctor*"></a>
+  <h4 id="BonEngineSharp_UI_UIText__ctor_System_IntPtr_" data-uid="BonEngineSharp.UI.UIText.#ctor(System.IntPtr)">UIText(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Create the UI element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIText(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>UI element handle inside the low-level engine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_Alignment_" data-uid="BonEngineSharp.UI.UIText.Alignment*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_Alignment" data-uid="BonEngineSharp.UI.UIText.Alignment">Alignment</h4>
+  <div class="markdown level1 summary"><p>Set / get text alignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UITextAlignment Alignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UITextAlignment.html">UITextAlignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_ElementType_" data-uid="BonEngineSharp.UI.UIText.ElementType*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_ElementType" data-uid="BonEngineSharp.UI.UIText.ElementType">ElementType</h4>
+  <div class="markdown level1 summary"><p>Get element type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UIElementType ElementType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_ElementType">UIElement.ElementType</a></div>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_Font_" data-uid="BonEngineSharp.UI.UIText.Font*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_Font" data-uid="BonEngineSharp.UI.UIText.Font">Font</h4>
+  <div class="markdown level1 summary"><p>Set / get text font.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontAsset Font { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.FontAsset.html">FontAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_FontSize_" data-uid="BonEngineSharp.UI.UIText.FontSize*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_FontSize" data-uid="BonEngineSharp.UI.UIText.FontSize">FontSize</h4>
+  <div class="markdown level1 summary"><p>Set / get text font size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FontSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_OutlineColor_" data-uid="BonEngineSharp.UI.UIText.OutlineColor*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_OutlineColor" data-uid="BonEngineSharp.UI.UIText.OutlineColor">OutlineColor</h4>
+  <div class="markdown level1 summary"><p>Get / set text outline color while idle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color OutlineColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_OutlineColorHighlight_" data-uid="BonEngineSharp.UI.UIText.OutlineColorHighlight*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_OutlineColorHighlight" data-uid="BonEngineSharp.UI.UIText.OutlineColorHighlight">OutlineColorHighlight</h4>
+  <div class="markdown level1 summary"><p>Get / set text outline color while user points on it / focused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color OutlineColorHighlight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_OutlineColorPressed_" data-uid="BonEngineSharp.UI.UIText.OutlineColorPressed*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_OutlineColorPressed" data-uid="BonEngineSharp.UI.UIText.OutlineColorPressed">OutlineColorPressed</h4>
+  <div class="markdown level1 summary"><p>Get / set text outline color while being pressed / active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color OutlineColorPressed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_OutlineWidth_" data-uid="BonEngineSharp.UI.UIText.OutlineWidth*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_OutlineWidth" data-uid="BonEngineSharp.UI.UIText.OutlineWidth">OutlineWidth</h4>
+  <div class="markdown level1 summary"><p>Set / get text outline width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutlineWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_OutlineWidthHighlight_" data-uid="BonEngineSharp.UI.UIText.OutlineWidthHighlight*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_OutlineWidthHighlight" data-uid="BonEngineSharp.UI.UIText.OutlineWidthHighlight">OutlineWidthHighlight</h4>
+  <div class="markdown level1 summary"><p>Set / get text outline highlighted width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutlineWidthHighlight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_OutlineWidthPressed_" data-uid="BonEngineSharp.UI.UIText.OutlineWidthPressed*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_OutlineWidthPressed" data-uid="BonEngineSharp.UI.UIText.OutlineWidthPressed">OutlineWidthPressed</h4>
+  <div class="markdown level1 summary"><p>Set / get text outline pressed width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutlineWidthPressed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIText_Text_" data-uid="BonEngineSharp.UI.UIText.Text*"></a>
+  <h4 id="BonEngineSharp_UI_UIText_Text" data-uid="BonEngineSharp.UI.UIText.Text">Text</h4>
+  <div class="markdown level1 summary"><p>Set / get text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Text { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
