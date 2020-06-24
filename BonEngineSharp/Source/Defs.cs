@@ -663,6 +663,17 @@ namespace BonEngineSharp.Defs
 		/// Height units type.
 		/// </summary>
 		public UISizeType HeightType;
+
+		/// <summary>
+		/// Create the UI size struct.
+		/// </summary>
+		public UISize(int width, UISizeType widthType, int height, UISizeType heightType)
+        {
+			Width = width;
+			WidthType = widthType;
+			Height = height;
+			HeightType = heightType;
+        }
 	}
 
 	/// <summary>
@@ -689,7 +700,18 @@ namespace BonEngineSharp.Defs
 		/// Bottom side value.
 		/// </summary>
 		public int Bottom;
-    }
+
+		/// <summary>
+		/// Create the UI sides struct.
+		/// </summary>
+		public UISides(int left, int top, int right, int bottom)
+		{
+			Left = left;
+			Top = top;
+			Right = right;
+			Bottom = bottom;
+		}
+	}
 
 	/// <summary>
 	/// All built-in UI types.

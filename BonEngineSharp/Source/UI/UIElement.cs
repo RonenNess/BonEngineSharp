@@ -7,33 +7,89 @@ using BonEngineSharp.Framework;
 
 namespace BonEngineSharp.UI
 {
-    /// <summary>
-    /// UI Element base class.
-    /// This is the basic class all UI Elements inherit from and its main purpose is to manage the handle to the CPP-side elements.
-    /// </summary>
-    public class UIElement : IDisposable
-    {
-        /// <summary>
-        /// The element's handle in BonEngine.
-        /// </summary>
-        internal protected IntPtr _handle = IntPtr.Zero;
+	/// <summary>
+	/// UI Element base class.
+	/// This is the basic class all UI Elements inherit from and its main purpose is to manage the handle to the CPP-side elements.
+	/// </summary>
+	public class UIElement : IDisposable
+	{
+		/// <summary>
+		/// The element's handle in BonEngine.
+		/// </summary>
+		internal protected IntPtr _handle = IntPtr.Zero;
 
 		// if true, will release (delete) the cpp side element when disposed.
 		internal bool _releaseElementOnDispose = true;
 
-        /// <summary>
-        /// Get element type.
-        /// </summary>
-        public virtual UIElementType ElementType => UIElementType.Element;
+		/// <summary>
+		/// Get element type.
+		/// </summary>
+		public virtual UIElementType ElementType => UIElementType.Element;
+
+		/// <summary>
+		/// Set width in pixels.
+		/// </summary>
+		public int WidthPixels
+		{
+			set
+            {
+				var size = Size;
+				size.Width = value;
+				size.WidthType = UISizeType.Pixels;
+				Size = size;
+            }
+		}
+
+		/// <summary>
+		/// Set height in pixels.
+		/// </summary>
+		public int HeightPixels
+		{
+			set
+			{
+				var size = Size;
+				size.Height = value;
+				size.HeightType = UISizeType.Pixels;
+				Size = size;
+			}
+		}
+
+		/// <summary>
+		/// Set width in percents.
+		/// </summary>
+		public int WidthPercents
+		{
+			set
+			{
+				var size = Size;
+				size.Width = value;
+				size.WidthType = UISizeType.PercentOfParent;
+				Size = size;
+			}
+		}
+
+		/// <summary>
+		/// Set height in percents.
+		/// </summary>
+		public int HeightPercents
+		{
+			set
+			{
+				var size = Size;
+				size.Height = value;
+				size.HeightType = UISizeType.PercentOfParent;
+				Size = size;
+			}
+		}
 
 		/// <summary>
 		/// Implement UI element callbacks.
 		/// </summary>
-        #region Callbacks
+		#region Callbacks
 
-        // cache of callbacks so we can register them without getting them deleted under our feet.
-        // these actions wrap the private _onXXX() functions, which in turn invoke the callbacks.
-        _BonEngineBind.UICallback _ref_onMousePressed;
+		// cache of callbacks so we can register them without getting them deleted under our feet.
+		// these actions wrap the private _onXXX() functions, which in turn invoke the callbacks.
+		_BonEngineBind.UICallback _ref_onMousePressed;
 		_BonEngineBind.UICallback _ref_onMouseReleased;
 		_BonEngineBind.UICallback _ref_onMouseEnter;
 		_BonEngineBind.UICallback _ref_onMouseLeave;

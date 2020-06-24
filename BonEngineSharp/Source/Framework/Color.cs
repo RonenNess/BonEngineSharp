@@ -65,6 +65,20 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Create color from string with byte values.
+        /// </summary>
+        public static Color FromString(string str)
+        {
+            var parts = str.Split(',');
+            return FromBytes(
+                byte.Parse(parts[0].Trim()),
+                byte.Parse(parts[1].Trim()),
+                byte.Parse(parts[2].Trim()),
+                parts.Length > 3 ? byte.Parse(parts[3].Trim()) : (byte)255
+            );
+        }
+
+        /// <summary>
         /// White color const.
         /// </summary>
         public static readonly Color White = FromRGBA(1, 1, 1, 1);

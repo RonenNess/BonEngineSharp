@@ -138,6 +138,22 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Create rectangle from string.
+        /// </summary>
+        /// <param name="str">String to convert to rectangle (x,y,wight,height)</param>
+        /// <returns>Rectangle instance.</returns>
+        public static RectangleF FromString(string str)
+        {
+            var parts = str.Split(',');
+            return new RectangleF(
+                    float.Parse(parts[0].Trim()),
+                    float.Parse(parts[1].Trim()),
+                    float.Parse(parts[2].Trim()),
+                    float.Parse(parts[3].Trim())
+                );
+        }
+
+        /// <summary>
         /// Get absolute center point.
         /// Check if contains a point.
         /// </summary>

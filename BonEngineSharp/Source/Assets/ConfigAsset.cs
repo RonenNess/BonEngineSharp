@@ -1,5 +1,6 @@
 ﻿using System;
 using BonEngineSharp.Defs;
+using BonEngineSharp.Framework;
 
 namespace BonEngineSharp.Assets
 {
@@ -68,6 +69,98 @@ namespace BonEngineSharp.Assets
         public bool GetBool(string section, string key, bool defaultVal = false)
         {
             return _BonEngineBind.BON_Config_GetBool(_handle, section, key, defaultVal);
+        }
+
+        /// <summary>
+        /// Get PointF from config.
+        /// </summary>
+        /// <param name="section">Section to get value from.</param>
+        /// <param name="key">Key to get.</param>
+        /// <param name="defaultVal">Default value to return if not found.</param>
+        /// <returns>Value from config, or defaultVal if not found.</returns>
+        public PointF GetPointF(string section, string key, PointF defaultVal)
+        {
+            var asStr = GetStr(section, key, null);
+            if (asStr == null) { return defaultVal; }
+            return PointF.FromString(asStr.Trim());
+        }
+
+        /// <summary>
+        /// Get PointI from config.
+        /// </summary>
+        /// <param name="section">Section to get value from.</param>
+        /// <param name="key">Key to get.</param>
+        /// <param name="defaultVal">Default value to return if not found.</param>
+        /// <returns>Value from config, or defaultVal if not found.</returns>
+        public PointI GetPointI(string section, string key, PointI defaultVal)
+        {
+            var asStr = GetStr(section, key, null);
+            if (asStr == null) { return defaultVal; }
+            return PointI.FromString(asStr.Trim());
+        }
+
+        /// <summary>
+        /// Get RectangleF from config.
+        /// </summary>
+        /// <param name="section">Section to get value from.</param>
+        /// <param name="key">Key to get.</param>
+        /// <param name="defaultVal">Default value to return if not found.</param>
+        /// <returns>Value from config, or defaultVal if not found.</returns>
+        public RectangleF GetRectangleF(string section, string key, RectangleF defaultVal)
+        {
+            var asStr = GetStr(section, key, null);
+            if (asStr == null) { return defaultVal; }
+            return RectangleF.FromString(asStr.Trim());
+        }
+
+        /// <summary>
+        /// Get RectangleI from config.
+        /// </summary>
+        /// <param name="section">Section to get value from.</param>
+        /// <param name="key">Key to get.</param>
+        /// <param name="defaultVal">Default value to return if not found.</param>
+        /// <returns>Value from config, or defaultVal if not found.</returns>
+        public RectangleI GetRectangleI(string section, string key, RectangleI defaultVal)
+        {
+            var asStr = GetStr(section, key, null);
+            if (asStr == null) { return defaultVal; }
+            return RectangleI.FromString(asStr.Trim());
+        }
+
+        /// <summary>
+        /// Get Color from config (from bytes, ie 0-255 values: r,g,b,a).
+        /// </summary>
+        /// <param name="section">Section to get value from.</param>
+        /// <param name="key">Key to get.</param>
+        /// <param name="defaultVal">Default value to return if not found.</param>
+        /// <returns>Value from config, or defaultVal if not found.</returns>
+        public Color GetColor(string section, string key, Color defaultVal)
+        {
+            var asStr = GetStr(section, key, null);
+            if (asStr == null) { return defaultVal; }
+            return Color.FromString(asStr.Trim());
+        }
+
+        /// <summary>
+        /// Get generic type by trying to convert string to given type.
+        /// </summary>
+        /// <typeparam name="T">Type to convert to.</typeparam>
+        /// <param name="section">Section to get value from.</param>
+        /// <param name="key">Key to get.</param>
+        /// <param name="defaultVal">Default value to return if not found.</param>
+        /// <returns>Value from config, or defaultVal if not found.</returns>
+        public T GetGeneric<T>(string section, string key, T defaultVal) where T : struct, IConvertible
+        {
+            var asStr = GetStr(section, key, null);
+            if (asStr == null) { return defaultVal; }
+            if (typeof(T).IsEnum)
+            {
+                return Enum.Parse<T>(asStr);
+            }
+            else
+            {
+                return (T)Convert.ChangeType(asStr, typeof(T));
+            }
         }
 
         /// <summary>
