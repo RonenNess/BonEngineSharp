@@ -143,6 +143,25 @@ namespace BonEngineSharp.Managers
         /// <param name="color">Text color.</param>
         /// <param name="outlineColor">Text outline color.</param>
         /// <param name="outlineWidth">Text outline width.</param>
+        /// <param name="origin">Text origin point.</param>
+        /// <param name="rotation">Rotate text.</param>
+        /// <param name="fontSize">Font size.</param>
+        /// <param name="maxWidth">Max line width.</param>
+        /// <param name="blend">Blend mode.</param>
+        public void DrawText(FontAsset font, string text, PointF position, Color color, Color outlineColor, int outlineWidth, PointF origin, float rotation, int fontSize = 0, int maxWidth = 0, BlendModes blend = BlendModes.AlphaBlend)
+        {
+            _BonEngineBind.BON_Gfx_DrawTextWithOutline(font._handle, text, position.X, position.Y, color.R, color.G, color.B, color.A, fontSize, maxWidth, (int)blend, origin.X, origin.Y, rotation, outlineWidth, outlineColor.R, outlineColor.G, outlineColor.B, outlineColor.A);
+        }
+
+        /// <summary>
+        /// Draw text on screen.
+        /// </summary>
+        /// <param name="font">Font to use.</param>
+        /// <param name="text">Text to draw.</param>
+        /// <param name="position">Text position.</param>
+        /// <param name="color">Text color.</param>
+        /// <param name="outlineColor">Text outline color.</param>
+        /// <param name="outlineWidth">Text outline width.</param>
         /// <param name="fontSize">Font size.</param>
         /// <param name="maxWidth">Max line width.</param>
         /// <param name="blend">Blend mode.</param>

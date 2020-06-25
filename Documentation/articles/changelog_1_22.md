@@ -9,5 +9,6 @@ Key changes:
 
 All Changes:
 
-- Added Config asset new getters - point, rectangle, color, enum..
+- Added Config asset new getters - point, rectangle, color, enum.
 - Extended UI Element API.
+- Added origin and rotation to text with outline.
