@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConfigAsset
    ">
-    <meta name="generator" content="docfx 2.55.0.0">
+    <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -246,6 +246,63 @@ This asset loads a config file (.ini format in default implementation) and provi
   </table>
   
   
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetColor_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetColor*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetColor_System_String_System_String_BonEngineSharp_Framework_Color_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetColor(System.String,System.String,BonEngineSharp.Framework.Color)">GetColor(String, String, Color)</h4>
+  <div class="markdown level1 summary"><p>Get Color from config (from bytes, ie 0-255 values: r,g,b,a).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetColor(string section, string key, Color defaultVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Assets_ConfigAsset_GetFloat_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetFloat*"></a>
   <h4 id="BonEngineSharp_Assets_ConfigAsset_GetFloat_System_String_System_String_System_Single_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetFloat(System.String,System.String,System.Single)">GetFloat(String, String, Single)</h4>
   <div class="markdown level1 summary"><p>Get a float value from config.</p>
@@ -303,6 +360,80 @@ This asset loads a config file (.ini format in default implementation) and provi
   </table>
   
   
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetGeneric_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetGeneric*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetGeneric__1_System_String_System_String___0_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetGeneric``1(System.String,System.String,``0)">GetGeneric&lt;T&gt;(String, String, T)</h4>
+  <div class="markdown level1 summary"><p>Get generic type by trying to convert string to given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetGeneric&lt;T&gt;(string section, string key, T defaultVal)
+    where T : struct, IConvertible, ValueType</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type to convert to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Assets_ConfigAsset_GetInt_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetInt*"></a>
   <h4 id="BonEngineSharp_Assets_ConfigAsset_GetInt_System_String_System_String_System_Int32_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetInt(System.String,System.String,System.Int32)">GetInt(String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>Get an int value from config.</p>
@@ -353,6 +484,234 @@ This asset loads a config file (.ini format in default implementation) and provi
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetPointF_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetPointF*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetPointF_System_String_System_String_BonEngineSharp_Framework_PointF_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetPointF(System.String,System.String,BonEngineSharp.Framework.PointF)">GetPointF(String, String, PointF)</h4>
+  <div class="markdown level1 summary"><p>Get PointF from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointF GetPointF(string section, string key, PointF defaultVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointF.html">PointF</a></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetPointI_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetPointI*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetPointI_System_String_System_String_BonEngineSharp_Framework_PointI_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetPointI(System.String,System.String,BonEngineSharp.Framework.PointI)">GetPointI(String, String, PointI)</h4>
+  <div class="markdown level1 summary"><p>Get PointI from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointI GetPointI(string section, string key, PointI defaultVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetRectangleF_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetRectangleF*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetRectangleF_System_String_System_String_BonEngineSharp_Framework_RectangleF_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetRectangleF(System.String,System.String,BonEngineSharp.Framework.RectangleF)">GetRectangleF(String, String, RectangleF)</h4>
+  <div class="markdown level1 summary"><p>Get RectangleF from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleF GetRectangleF(string section, string key, RectangleF defaultVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleF.html">RectangleF</a></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleF.html">RectangleF</a></td>
+        <td><p>Value from config, or defaultVal if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ConfigAsset_GetRectangleI_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetRectangleI*"></a>
+  <h4 id="BonEngineSharp_Assets_ConfigAsset_GetRectangleI_System_String_System_String_BonEngineSharp_Framework_RectangleI_" data-uid="BonEngineSharp.Assets.ConfigAsset.GetRectangleI(System.String,System.String,BonEngineSharp.Framework.RectangleI)">GetRectangleI(String, String, RectangleI)</h4>
+  <div class="markdown level1 summary"><p>Get RectangleI from config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleI GetRectangleI(string section, string key, RectangleI defaultVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">section</span></td>
+        <td><p>Section to get value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>Default value to return if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
         <td><p>Value from config, or defaultVal if not found.</p>
 </td>
       </tr>

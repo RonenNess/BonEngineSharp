@@ -67,6 +67,18 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetBool
   fullName: BonEngineSharp.Assets.ConfigAsset.GetBool
   nameWithType: ConfigAsset.GetBool
+- uid: BonEngineSharp.Assets.ConfigAsset.GetColor(System.String,System.String,BonEngineSharp.Framework.Color)
+  name: GetColor(String, String, Color)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetColor_System_String_System_String_BonEngineSharp_Framework_Color_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetColor(System.String,System.String,BonEngineSharp.Framework.Color)
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetColor(System.String, System.String, BonEngineSharp.Framework.Color)
+  nameWithType: ConfigAsset.GetColor(String, String, Color)
+- uid: BonEngineSharp.Assets.ConfigAsset.GetColor*
+  name: GetColor
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetColor_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetColor
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetColor
+  nameWithType: ConfigAsset.GetColor
 - uid: BonEngineSharp.Assets.ConfigAsset.GetFloat(System.String,System.String,System.Single)
   name: GetFloat(String, String, Single)
   href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetFloat_System_String_System_String_System_Single_
@@ -79,6 +91,21 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetFloat
   fullName: BonEngineSharp.Assets.ConfigAsset.GetFloat
   nameWithType: ConfigAsset.GetFloat
+- uid: BonEngineSharp.Assets.ConfigAsset.GetGeneric*
+  name: GetGeneric
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetGeneric_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetGeneric
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetGeneric
+  nameWithType: ConfigAsset.GetGeneric
+- uid: BonEngineSharp.Assets.ConfigAsset.GetGeneric``1(System.String,System.String,``0)
+  name: GetGeneric<T>(String, String, T)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetGeneric__1_System_String_System_String___0_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetGeneric``1(System.String,System.String,``0)
+  name.vb: GetGeneric(Of T)(String, String, T)
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetGeneric<T>(System.String, System.String, T)
+  fullName.vb: BonEngineSharp.Assets.ConfigAsset.GetGeneric(Of T)(System.String, System.String, T)
+  nameWithType: ConfigAsset.GetGeneric<T>(String, String, T)
+  nameWithType.vb: ConfigAsset.GetGeneric(Of T)(String, String, T)
 - uid: BonEngineSharp.Assets.ConfigAsset.GetInt(System.String,System.String,System.Int32)
   name: GetInt(String, String, Int32)
   href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetInt_System_String_System_String_System_Int32_
@@ -91,6 +118,54 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetInt
   fullName: BonEngineSharp.Assets.ConfigAsset.GetInt
   nameWithType: ConfigAsset.GetInt
+- uid: BonEngineSharp.Assets.ConfigAsset.GetPointF(System.String,System.String,BonEngineSharp.Framework.PointF)
+  name: GetPointF(String, String, PointF)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetPointF_System_String_System_String_BonEngineSharp_Framework_PointF_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetPointF(System.String,System.String,BonEngineSharp.Framework.PointF)
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetPointF(System.String, System.String, BonEngineSharp.Framework.PointF)
+  nameWithType: ConfigAsset.GetPointF(String, String, PointF)
+- uid: BonEngineSharp.Assets.ConfigAsset.GetPointF*
+  name: GetPointF
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetPointF_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetPointF
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetPointF
+  nameWithType: ConfigAsset.GetPointF
+- uid: BonEngineSharp.Assets.ConfigAsset.GetPointI(System.String,System.String,BonEngineSharp.Framework.PointI)
+  name: GetPointI(String, String, PointI)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetPointI_System_String_System_String_BonEngineSharp_Framework_PointI_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetPointI(System.String,System.String,BonEngineSharp.Framework.PointI)
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetPointI(System.String, System.String, BonEngineSharp.Framework.PointI)
+  nameWithType: ConfigAsset.GetPointI(String, String, PointI)
+- uid: BonEngineSharp.Assets.ConfigAsset.GetPointI*
+  name: GetPointI
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetPointI_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetPointI
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetPointI
+  nameWithType: ConfigAsset.GetPointI
+- uid: BonEngineSharp.Assets.ConfigAsset.GetRectangleF(System.String,System.String,BonEngineSharp.Framework.RectangleF)
+  name: GetRectangleF(String, String, RectangleF)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetRectangleF_System_String_System_String_BonEngineSharp_Framework_RectangleF_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetRectangleF(System.String,System.String,BonEngineSharp.Framework.RectangleF)
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetRectangleF(System.String, System.String, BonEngineSharp.Framework.RectangleF)
+  nameWithType: ConfigAsset.GetRectangleF(String, String, RectangleF)
+- uid: BonEngineSharp.Assets.ConfigAsset.GetRectangleF*
+  name: GetRectangleF
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetRectangleF_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetRectangleF
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetRectangleF
+  nameWithType: ConfigAsset.GetRectangleF
+- uid: BonEngineSharp.Assets.ConfigAsset.GetRectangleI(System.String,System.String,BonEngineSharp.Framework.RectangleI)
+  name: GetRectangleI(String, String, RectangleI)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetRectangleI_System_String_System_String_BonEngineSharp_Framework_RectangleI_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetRectangleI(System.String,System.String,BonEngineSharp.Framework.RectangleI)
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetRectangleI(System.String, System.String, BonEngineSharp.Framework.RectangleI)
+  nameWithType: ConfigAsset.GetRectangleI(String, String, RectangleI)
+- uid: BonEngineSharp.Assets.ConfigAsset.GetRectangleI*
+  name: GetRectangleI
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetRectangleI_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetRectangleI
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetRectangleI
+  nameWithType: ConfigAsset.GetRectangleI
 - uid: BonEngineSharp.Assets.ConfigAsset.GetStr(System.String,System.String,System.String)
   name: GetStr(String, String, String)
   href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetStr_System_String_System_String_System_String_
@@ -2644,6 +2719,18 @@ references:
   commentId: T:BonEngineSharp.Defs.UISides
   fullName: BonEngineSharp.Defs.UISides
   nameWithType: UISides
+- uid: BonEngineSharp.Defs.UISides.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: UISides(Int32, Int32, Int32, Int32)
+  href: api/BonEngineSharp.Defs.UISides.html#BonEngineSharp_Defs_UISides__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:BonEngineSharp.Defs.UISides.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: BonEngineSharp.Defs.UISides.UISides(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: UISides.UISides(Int32, Int32, Int32, Int32)
+- uid: BonEngineSharp.Defs.UISides.#ctor*
+  name: UISides
+  href: api/BonEngineSharp.Defs.UISides.html#BonEngineSharp_Defs_UISides__ctor_
+  commentId: Overload:BonEngineSharp.Defs.UISides.#ctor
+  fullName: BonEngineSharp.Defs.UISides.UISides
+  nameWithType: UISides.UISides
 - uid: BonEngineSharp.Defs.UISides.Bottom
   name: Bottom
   href: api/BonEngineSharp.Defs.UISides.html#BonEngineSharp_Defs_UISides_Bottom
@@ -2674,6 +2761,18 @@ references:
   commentId: T:BonEngineSharp.Defs.UISize
   fullName: BonEngineSharp.Defs.UISize
   nameWithType: UISize
+- uid: BonEngineSharp.Defs.UISize.#ctor(System.Int32,BonEngineSharp.Defs.UISizeType,System.Int32,BonEngineSharp.Defs.UISizeType)
+  name: UISize(Int32, UISizeType, Int32, UISizeType)
+  href: api/BonEngineSharp.Defs.UISize.html#BonEngineSharp_Defs_UISize__ctor_System_Int32_BonEngineSharp_Defs_UISizeType_System_Int32_BonEngineSharp_Defs_UISizeType_
+  commentId: M:BonEngineSharp.Defs.UISize.#ctor(System.Int32,BonEngineSharp.Defs.UISizeType,System.Int32,BonEngineSharp.Defs.UISizeType)
+  fullName: BonEngineSharp.Defs.UISize.UISize(System.Int32, BonEngineSharp.Defs.UISizeType, System.Int32, BonEngineSharp.Defs.UISizeType)
+  nameWithType: UISize.UISize(Int32, UISizeType, Int32, UISizeType)
+- uid: BonEngineSharp.Defs.UISize.#ctor*
+  name: UISize
+  href: api/BonEngineSharp.Defs.UISize.html#BonEngineSharp_Defs_UISize__ctor_
+  commentId: Overload:BonEngineSharp.Defs.UISize.#ctor
+  fullName: BonEngineSharp.Defs.UISize.UISize
+  nameWithType: UISize.UISize
 - uid: BonEngineSharp.Defs.UISize.Height
   name: Height
   href: api/BonEngineSharp.Defs.UISize.html#BonEngineSharp_Defs_UISize_Height
@@ -3055,6 +3154,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.Color.FromRGBA
   fullName: BonEngineSharp.Framework.Color.FromRGBA
   nameWithType: Color.FromRGBA
+- uid: BonEngineSharp.Framework.Color.FromString(System.String)
+  name: FromString(String)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_FromString_System_String_
+  commentId: M:BonEngineSharp.Framework.Color.FromString(System.String)
+  fullName: BonEngineSharp.Framework.Color.FromString(System.String)
+  nameWithType: Color.FromString(String)
+- uid: BonEngineSharp.Framework.Color.FromString*
+  name: FromString
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_FromString_
+  commentId: Overload:BonEngineSharp.Framework.Color.FromString
+  fullName: BonEngineSharp.Framework.Color.FromString
+  nameWithType: Color.FromString
 - uid: BonEngineSharp.Framework.Color.G
   name: G
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_G
@@ -3079,12 +3190,36 @@ references:
   commentId: F:BonEngineSharp.Framework.Color.HalfTransparent
   fullName: BonEngineSharp.Framework.Color.HalfTransparent
   nameWithType: Color.HalfTransparent
+- uid: BonEngineSharp.Framework.Color.Increase(System.Single,System.Boolean)
+  name: Increase(Single, Boolean)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Increase_System_Single_System_Boolean_
+  commentId: M:BonEngineSharp.Framework.Color.Increase(System.Single,System.Boolean)
+  fullName: BonEngineSharp.Framework.Color.Increase(System.Single, System.Boolean)
+  nameWithType: Color.Increase(Single, Boolean)
+- uid: BonEngineSharp.Framework.Color.Increase*
+  name: Increase
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Increase_
+  commentId: Overload:BonEngineSharp.Framework.Color.Increase
+  fullName: BonEngineSharp.Framework.Color.Increase
+  nameWithType: Color.Increase
 - uid: BonEngineSharp.Framework.Color.Purple
   name: Purple
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Purple
   commentId: F:BonEngineSharp.Framework.Color.Purple
   fullName: BonEngineSharp.Framework.Color.Purple
   nameWithType: Color.Purple
+- uid: BonEngineSharp.Framework.Color.PutInRange(System.Single,System.Single)
+  name: PutInRange(Single, Single)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_PutInRange_System_Single_System_Single_
+  commentId: M:BonEngineSharp.Framework.Color.PutInRange(System.Single,System.Single)
+  fullName: BonEngineSharp.Framework.Color.PutInRange(System.Single, System.Single)
+  nameWithType: Color.PutInRange(Single, Single)
+- uid: BonEngineSharp.Framework.Color.PutInRange*
+  name: PutInRange
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_PutInRange_
+  commentId: Overload:BonEngineSharp.Framework.Color.PutInRange
+  fullName: BonEngineSharp.Framework.Color.PutInRange
+  nameWithType: Color.PutInRange
 - uid: BonEngineSharp.Framework.Color.R
   name: R
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_R
@@ -3109,6 +3244,18 @@ references:
   commentId: F:BonEngineSharp.Framework.Color.Red
   fullName: BonEngineSharp.Framework.Color.Red
   nameWithType: Color.Red
+- uid: BonEngineSharp.Framework.Color.Reduce(System.Single,System.Boolean)
+  name: Reduce(Single, Boolean)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Reduce_System_Single_System_Boolean_
+  commentId: M:BonEngineSharp.Framework.Color.Reduce(System.Single,System.Boolean)
+  fullName: BonEngineSharp.Framework.Color.Reduce(System.Single, System.Boolean)
+  nameWithType: Color.Reduce(Single, Boolean)
+- uid: BonEngineSharp.Framework.Color.Reduce*
+  name: Reduce
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Reduce_
+  commentId: Overload:BonEngineSharp.Framework.Color.Reduce
+  fullName: BonEngineSharp.Framework.Color.Reduce
+  nameWithType: Color.Reduce
 - uid: BonEngineSharp.Framework.Color.Teal
   name: Teal
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Teal
@@ -4039,6 +4186,18 @@ references:
   commentId: F:BonEngineSharp.Framework.RectangleF.Empty
   fullName: BonEngineSharp.Framework.RectangleF.Empty
   nameWithType: RectangleF.Empty
+- uid: BonEngineSharp.Framework.RectangleF.FromString(System.String)
+  name: FromString(String)
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_FromString_System_String_
+  commentId: M:BonEngineSharp.Framework.RectangleF.FromString(System.String)
+  fullName: BonEngineSharp.Framework.RectangleF.FromString(System.String)
+  nameWithType: RectangleF.FromString(String)
+- uid: BonEngineSharp.Framework.RectangleF.FromString*
+  name: FromString
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_FromString_
+  commentId: Overload:BonEngineSharp.Framework.RectangleF.FromString
+  fullName: BonEngineSharp.Framework.RectangleF.FromString
+  nameWithType: RectangleF.FromString
 - uid: BonEngineSharp.Framework.RectangleF.Height
   name: Height
   href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Height
@@ -4219,6 +4378,18 @@ references:
   commentId: F:BonEngineSharp.Framework.RectangleI.Empty
   fullName: BonEngineSharp.Framework.RectangleI.Empty
   nameWithType: RectangleI.Empty
+- uid: BonEngineSharp.Framework.RectangleI.FromString(System.String)
+  name: FromString(String)
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_FromString_System_String_
+  commentId: M:BonEngineSharp.Framework.RectangleI.FromString(System.String)
+  fullName: BonEngineSharp.Framework.RectangleI.FromString(System.String)
+  nameWithType: RectangleI.FromString(String)
+- uid: BonEngineSharp.Framework.RectangleI.FromString*
+  name: FromString
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_FromString_
+  commentId: Overload:BonEngineSharp.Framework.RectangleI.FromString
+  fullName: BonEngineSharp.Framework.RectangleI.FromString
+  nameWithType: RectangleI.FromString
 - uid: BonEngineSharp.Framework.RectangleI.Height
   name: Height
   href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Height
@@ -5281,6 +5452,12 @@ references:
   commentId: M:BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF)
   fullName: BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset, System.String, BonEngineSharp.Framework.PointF)
   nameWithType: GfxManager.DrawText(FontAsset, String, PointF)
+- uid: BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color,System.Int32,BonEngineSharp.Framework.PointF,System.Single,System.Int32,System.Int32,BonEngineSharp.Defs.BlendModes)
+  name: DrawText(FontAsset, String, PointF, Color, Color, Int32, PointF, Single, Int32, Int32, BlendModes)
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawText_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_System_Int32_BonEngineSharp_Framework_PointF_System_Single_System_Int32_System_Int32_BonEngineSharp_Defs_BlendModes_
+  commentId: M:BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color,System.Int32,BonEngineSharp.Framework.PointF,System.Single,System.Int32,System.Int32,BonEngineSharp.Defs.BlendModes)
+  fullName: BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset, System.String, BonEngineSharp.Framework.PointF, BonEngineSharp.Framework.Color, BonEngineSharp.Framework.Color, System.Int32, BonEngineSharp.Framework.PointF, System.Single, System.Int32, System.Int32, BonEngineSharp.Defs.BlendModes)
+  nameWithType: GfxManager.DrawText(FontAsset, String, PointF, Color, Color, Int32, PointF, Single, Int32, Int32, BlendModes)
 - uid: BonEngineSharp.Managers.GfxManager.DrawText(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color,System.Int32,System.Int32,System.Int32,BonEngineSharp.Defs.BlendModes)
   name: DrawText(FontAsset, String, PointF, Color, Color, Int32, Int32, Int32, BlendModes)
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawText_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_System_Int32_System_Int32_System_Int32_BonEngineSharp_Defs_BlendModes_
@@ -6742,6 +6919,30 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIElement.HaveHandle
   fullName: BonEngineSharp.UI.UIElement.HaveHandle
   nameWithType: UIElement.HaveHandle
+- uid: BonEngineSharp.UI.UIElement.HeightPercents
+  name: HeightPercents
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_HeightPercents
+  commentId: P:BonEngineSharp.UI.UIElement.HeightPercents
+  fullName: BonEngineSharp.UI.UIElement.HeightPercents
+  nameWithType: UIElement.HeightPercents
+- uid: BonEngineSharp.UI.UIElement.HeightPercents*
+  name: HeightPercents
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_HeightPercents_
+  commentId: Overload:BonEngineSharp.UI.UIElement.HeightPercents
+  fullName: BonEngineSharp.UI.UIElement.HeightPercents
+  nameWithType: UIElement.HeightPercents
+- uid: BonEngineSharp.UI.UIElement.HeightPixels
+  name: HeightPixels
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_HeightPixels
+  commentId: P:BonEngineSharp.UI.UIElement.HeightPixels
+  fullName: BonEngineSharp.UI.UIElement.HeightPixels
+  nameWithType: UIElement.HeightPixels
+- uid: BonEngineSharp.UI.UIElement.HeightPixels*
+  name: HeightPixels
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_HeightPixels_
+  commentId: Overload:BonEngineSharp.UI.UIElement.HeightPixels
+  fullName: BonEngineSharp.UI.UIElement.HeightPixels
+  nameWithType: UIElement.HeightPixels
 - uid: BonEngineSharp.UI.UIElement.IgnoreParentPadding(System.Boolean)
   name: IgnoreParentPadding(Boolean)
   href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_IgnoreParentPadding_System_Boolean_
@@ -7087,6 +7288,30 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIElement.Visible
   fullName: BonEngineSharp.UI.UIElement.Visible
   nameWithType: UIElement.Visible
+- uid: BonEngineSharp.UI.UIElement.WidthPercents
+  name: WidthPercents
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_WidthPercents
+  commentId: P:BonEngineSharp.UI.UIElement.WidthPercents
+  fullName: BonEngineSharp.UI.UIElement.WidthPercents
+  nameWithType: UIElement.WidthPercents
+- uid: BonEngineSharp.UI.UIElement.WidthPercents*
+  name: WidthPercents
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_WidthPercents_
+  commentId: Overload:BonEngineSharp.UI.UIElement.WidthPercents
+  fullName: BonEngineSharp.UI.UIElement.WidthPercents
+  nameWithType: UIElement.WidthPercents
+- uid: BonEngineSharp.UI.UIElement.WidthPixels
+  name: WidthPixels
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_WidthPixels
+  commentId: P:BonEngineSharp.UI.UIElement.WidthPixels
+  fullName: BonEngineSharp.UI.UIElement.WidthPixels
+  nameWithType: UIElement.WidthPixels
+- uid: BonEngineSharp.UI.UIElement.WidthPixels*
+  name: WidthPixels
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_WidthPixels_
+  commentId: Overload:BonEngineSharp.UI.UIElement.WidthPixels
+  fullName: BonEngineSharp.UI.UIElement.WidthPixels
+  nameWithType: UIElement.WidthPixels
 - uid: BonEngineSharp.UI.UIImage
   name: UIImage
   href: api/BonEngineSharp.UI.UIImage.html

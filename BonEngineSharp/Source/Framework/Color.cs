@@ -39,6 +39,51 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Decrease all color components and make sure in valid range (0-1).
+        /// </summary>
+        /// <param name="amount">Quantity to reduce.</param>
+        /// <param name="includeAlpha">If true, will reduce opacity as well.</param>
+        public void Decrease(float amount, bool includeAlpha)
+        {
+            R -= amount;
+            G -= amount;
+            B -= amount;
+            if (includeAlpha) A -= amount;
+            PutInRange();
+        }
+
+        /// <summary>
+        /// Increase all color components and make sure in valid range (0-1).
+        /// </summary>
+        /// <param name="amount">Quantity to reduce.</param>
+        /// <param name="includeAlpha">If true, will reduce opacity as well.</param>
+        public void Increase(float amount, bool includeAlpha)
+        {
+            R += amount;
+            G += amount;
+            B += amount;
+            if (includeAlpha) A += amount;
+            PutInRange();
+        }
+
+        /// <summary>
+        /// Make sure all color values are in given valid range.
+        /// </summary>
+        /// <param name="min">Min value for color components.</param>
+        /// <param name="max">Max value for color components.</param>
+        public void PutInRange(float min = 0f, float max = 1f)
+        {
+            if (R < min) R = min;
+            if (R > max) R = max;
+            if (G < min) G = min;
+            if (G > max) G = max;
+            if (B < min) B = min;
+            if (B > max) B = max;
+            if (A < min) A = min;
+            if (A > max) A = max;
+        }
+
+        /// <summary>
         /// Create color from components.
         /// </summary>
         public static Color FromRGBA(float r, float g, float b, float a = 1f)

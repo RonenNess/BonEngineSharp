@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Color
    ">
-    <meta name="generator" content="docfx 2.55.0.0">
+    <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -654,6 +654,119 @@
   </table>
   
   
+  <a id="BonEngineSharp_Framework_Color_FromString_" data-uid="BonEngineSharp.Framework.Color.FromString*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_FromString_System_String_" data-uid="BonEngineSharp.Framework.Color.FromString(System.String)">FromString(String)</h4>
+  <div class="markdown level1 summary"><p>Create color from string with byte values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color FromString(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_Increase_" data-uid="BonEngineSharp.Framework.Color.Increase*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_Increase_System_Single_System_Boolean_" data-uid="BonEngineSharp.Framework.Color.Increase(System.Single,System.Boolean)">Increase(Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Increase all color components and make sure in valid range (0-1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Increase(float amount, bool includeAlpha)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>Quantity to reduce.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAlpha</span></td>
+        <td><p>If true, will reduce opacity as well.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_PutInRange_" data-uid="BonEngineSharp.Framework.Color.PutInRange*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_PutInRange_System_Single_System_Single_" data-uid="BonEngineSharp.Framework.Color.PutInRange(System.Single,System.Single)">PutInRange(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Make sure all color values are in given valid range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutInRange(float min = 0F, float max = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>Min value for color components.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>Max value for color components.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Framework_Color_Random_" data-uid="BonEngineSharp.Framework.Color.Random*"></a>
   <h4 id="BonEngineSharp_Framework_Color_Random" data-uid="BonEngineSharp.Framework.Color.Random">Random()</h4>
   <div class="markdown level1 summary"><p>Create and return a random color.</p>
@@ -675,6 +788,41 @@
       <tr>
         <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
         <td><p>Random color.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_Reduce_" data-uid="BonEngineSharp.Framework.Color.Reduce*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_Reduce_System_Single_System_Boolean_" data-uid="BonEngineSharp.Framework.Color.Reduce(System.Single,System.Boolean)">Reduce(Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Decrease all color components and make sure in valid range (0-1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reduce(float amount, bool includeAlpha)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>Quantity to reduce.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAlpha</span></td>
+        <td><p>If true, will reduce opacity as well.</p>
 </td>
       </tr>
     </tbody>
