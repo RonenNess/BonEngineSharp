@@ -111,7 +111,7 @@ namespace BonEngineSharpTest.Demos
         protected override void Draw()
         {
             // clear screen
-            Gfx.ClearScreen(Color.FromBytes(32, 150, 242));
+            Gfx.ClearScreen(Color.Cornflower);
 
             // draw ui
             UI.Draw(_uiroot, false);

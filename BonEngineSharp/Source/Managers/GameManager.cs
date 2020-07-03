@@ -14,6 +14,11 @@ namespace BonEngineSharp.Managers
         public override string Id => "game";
 
         /// <summary>
+        /// Currently active scene.
+        /// </summary>
+        private Scene _activeScene;
+
+        /// <summary>
         /// Exit application.
         /// </summary>
         public void Exit()
@@ -27,6 +32,8 @@ namespace BonEngineSharp.Managers
         /// <param name="scene">Scene to switch to.</param>
         public void ChangeScene(Scene scene)
         {
+            // store the currently active scene to make sure it won't get collected by the GC by accident.
+            _activeScene = scene;
             _BonEngineBind.BON_Game_ChangeScene(scene.GetOrCreateHandle());
         }
 

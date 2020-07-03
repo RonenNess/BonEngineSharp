@@ -28,6 +28,42 @@ namespace BonEngineSharp.Framework
         public float A;
 
         /// <summary>
+        /// Red component as byte.
+        /// </summary>
+        public byte RByte
+        {
+            get { return (byte)(R * 255f); }
+            set { R = (float)value / 255f; }
+        }
+
+        /// <summary>
+        /// Green component as byte.
+        /// </summary>
+        public byte GByte
+        {
+            get { return (byte)(G * 255f); }
+            set { G = (float)value / 255f; }
+        }
+
+        /// <summary>
+        /// Blue component as byte.
+        /// </summary>
+        public byte BByte
+        {
+            get { return (byte)(B * 255f); }
+            set { B = (float)value / 255f; }
+        }
+
+        /// <summary>
+        /// Opacity as byte.
+        /// </summary>
+        public byte AByte
+        {
+            get { return (byte)(A * 255f); }
+            set { A = (float)value / 255f; }
+        }
+
+        /// <summary>
         /// Create the color component.
         /// </summary>
         public Color(float r, float g, float b, float a = 1f)
@@ -182,6 +218,26 @@ namespace BonEngineSharp.Framework
         /// Teal color const.
         /// </summary>
         public static readonly Color Teal = FromRGBA(0, 1, 1, 1);
+
+        /// <summary>
+        /// Famous blue-ish Cornflower color (commonly used as background color).
+        /// </summary>
+        public static readonly Color Cornflower = new Color(0.2f, 0.5f, 1.0f);
+
+        /// <summary>
+        /// Convert color to pretty string, either as bytes or float values.
+        /// </summary>
+        public string ToString(bool asByte)
+        {
+            if (asByte)
+            {
+                return RByte.ToString() + "," + GByte.ToString() + "," + BByte.ToString() + "," + AByte.ToString();
+            }
+            else
+            {
+                return R.ToString() + "," + G.ToString() + "," + B.ToString() + "," + A.ToString();
+            }
+        }
 
         // for randomness
         static Random _rand = new Random();

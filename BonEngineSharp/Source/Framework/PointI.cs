@@ -82,6 +82,14 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Divide point with a scalar.
+        /// </summary>
+        public PointI Divide(float scalar)
+        {
+            return new PointI((int)((float)X / scalar), (int)((float)Y / scalar));
+        }
+
+        /// <summary>
         /// Divide point with a point.
         /// </summary>
         public PointI Divide(PointI other)

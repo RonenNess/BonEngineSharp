@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Projects/BonEngineSharp/Documentation",
+  "source_base_path": "c:/Projects/BonEngineSharp/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.ImageAsset.html",
-          "hash": "V+n3TgVQRXh5cp/TXqKRGA=="
+          "hash": "sBznE0drLBn6sqkKSrr9RA=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.Color.html",
-          "hash": "3gLBvlg/e6TZLfQETXlCDA=="
+          "hash": "nWQpwdXi4SvsXxwlOZoJ1g=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.PointI.html",
-          "hash": "OhzsBFWDnjP+nV4EWdqH8Q=="
+          "hash": "mCK3ibYKE4CenVZH2WgOog=="
         }
       },
       "is_incremental": false,
@@ -833,6 +833,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/changelog_1_23.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog_1_23.html",
+          "hash": "Z5+7Ml3iBNBBK4tsXK7VRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/examples.md",
       "output": {
         ".html": {
@@ -873,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "noAomAvra+S8sLgHmx3ukA=="
+          "hash": "YjZ872tXwrIhK6qQ14B/Rg=="
         }
       },
       "is_incremental": false,
@@ -927,8 +939,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 10,
-          "skipped_file_count": 10
+          "total_file_count": 11,
+          "skipped_file_count": 11
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,

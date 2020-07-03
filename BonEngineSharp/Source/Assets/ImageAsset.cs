@@ -1,5 +1,6 @@
 ﻿using System;
 using BonEngineSharp.Defs;
+using BonEngineSharp.Framework;
 
 namespace BonEngineSharp.Assets
 {
@@ -61,6 +62,59 @@ namespace BonEngineSharp.Assets
             }
         }
         int _height;
+
+        /// <summary>
+        /// Save image asset to file.
+        /// </summary>
+        /// <param name="path">Filename for the output image.</param>
+        public void SaveToFile(string path)
+        {
+            _BonEngineBind.BON_Image_SaveToFile(_handle, path);
+        }
+
+        /// <summary>
+        /// Prepare a reading buffer so we can query pixels data from this image asset.
+        /// You must call this before calling GetPixel().
+        /// </summary>
+        /// <param name="sourceRect">Source rect to read.</param>
+        public void PrepareReadingBuffer(RectangleI sourceRect)
+        {
+            _BonEngineBind.BON_Image_PrepareReadingBuffer(_handle, sourceRect.X, sourceRect.Y, sourceRect.Width, sourceRect.Height);
+        }
+
+        /// <summary>
+        /// Prepare a reading buffer so we can query pixels data from this image asset.
+        /// You must call this before calling GetPixel().
+        /// </summary>
+        public void PrepareReadingBuffer()
+        {
+            PrepareReadingBuffer(RectangleI.Empty);
+        }
+
+        /// <summary>
+        /// Free a reading buffer created by PrepareReadingBuffer().
+        /// This is done automatically anyway when asset is freed from memory on the CPP side of BonEngine.
+        /// </summary>
+        public void FreeReadingBuffer()
+        {
+            _BonEngineBind.BON_Image_FreeReadingBuffer(_handle);
+        }
+
+        /// <summary>
+        /// Get pixel color from image.
+        /// Note: you must call PrepareReadingBuffer() before using this function, otherwise you'll just get 0,0,0,0 values.
+        /// </summary>
+        /// <param name="position">Pixel position to query.</param>
+        /// <returns>Pixel color.</returns>
+        public Color GetPixel(PointI position)
+        {
+            float r = 0;
+            float g = 0;
+            float b = 0;
+            float a = 0;
+            _BonEngineBind.BON_Image_GetPixel(_handle, position.X, position.Y, ref r, ref g, ref b, ref a);
+            return new Framework.Color(r, g, b, a);
+        }
 
         /// <summary>
         /// Get image filtering mode.

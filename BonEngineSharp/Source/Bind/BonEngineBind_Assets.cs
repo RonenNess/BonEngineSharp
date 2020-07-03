@@ -121,6 +121,31 @@ namespace BonEngineSharp
         public static extern int BON_Image_Height(IntPtr asset);
 
         /// <summary>
+        /// Save image to file.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Image_SaveToFile(IntPtr asset, [MarshalAs(UnmanagedType.LPStr)] string filename);
+
+        /// <summary>
+        /// Prepare image for reading pixels from it.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Image_PrepareReadingBuffer(IntPtr asset, int x, int y, int w, int h);
+
+        /// <summary>
+        /// Free reading buffer after PrepareReadingBuffer() was called.
+        /// Happens automatically anyway when asset is destroyed.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Image_FreeReadingBuffer(IntPtr asset);
+
+        /// <summary>
+        /// Get pixel from image. Must call PrepareReadingBuffer() before calling this.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Image_GetPixel(IntPtr asset, int x, int y, ref float r, ref float g, ref float b, ref float a);
+
+        /// <summary>
         /// Get string value from config, with raw return value.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]

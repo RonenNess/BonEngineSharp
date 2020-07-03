@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http.Headers;
 using System.Security.Cryptography.X509Certificates;
 using BonEngineSharp.Assets;
@@ -20,6 +21,16 @@ namespace BonEngineSharp.UI
 
 		// if true, will release (delete) the cpp side element when disposed.
 		internal bool _releaseElementOnDispose = true;
+
+		/// <summary>
+		/// Child elements.
+		/// This list is not actually used, but its important to prevent the GC from collecting children while
+		/// they still have callbacks attached to them.
+		/// </summary>
+		List<UIElement> _children = new List<UIElement>();
+
+		// parent element.
+		UIElement _parent;
 
 		/// <summary>
 		/// Get element type.
@@ -596,6 +607,8 @@ namespace BonEngineSharp.UI
 		public void AddChild(UIElement element)
 		{
 			_BonEngineBind.BON_UIElement_AddChild(_handle, element._handle);
+			_children.Add(element);
+			element._parent = this;
 		}
 
 		/// <summary>
@@ -605,7 +618,9 @@ namespace BonEngineSharp.UI
 		public void RemoveChild(UIElement element)
         {
 			_BonEngineBind.BON_UIElement_RemoveChild(_handle, element._handle);
-        }
+			_children.Remove(element);
+			element._parent = null;
+		}
 
 		/// <summary>
 		/// Remove element from its parent.
@@ -613,6 +628,8 @@ namespace BonEngineSharp.UI
 		public void Remove()
         {
 			_BonEngineBind.BON_UIElement_RemoveSelf(_handle);
+			_parent._children.Remove(this);
+			_parent = null;
 		}
 
 		/// <summary>

@@ -442,6 +442,30 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ImageAsset.Finalize
   fullName: BonEngineSharp.Assets.ImageAsset.Finalize
   nameWithType: ImageAsset.Finalize
+- uid: BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer
+  name: FreeReadingBuffer()
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_FreeReadingBuffer
+  commentId: M:BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer
+  fullName: BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer()
+  nameWithType: ImageAsset.FreeReadingBuffer()
+- uid: BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer*
+  name: FreeReadingBuffer
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_FreeReadingBuffer_
+  commentId: Overload:BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer
+  fullName: BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer
+  nameWithType: ImageAsset.FreeReadingBuffer
+- uid: BonEngineSharp.Assets.ImageAsset.GetPixel(BonEngineSharp.Framework.PointI)
+  name: GetPixel(PointI)
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_GetPixel_BonEngineSharp_Framework_PointI_
+  commentId: M:BonEngineSharp.Assets.ImageAsset.GetPixel(BonEngineSharp.Framework.PointI)
+  fullName: BonEngineSharp.Assets.ImageAsset.GetPixel(BonEngineSharp.Framework.PointI)
+  nameWithType: ImageAsset.GetPixel(PointI)
+- uid: BonEngineSharp.Assets.ImageAsset.GetPixel*
+  name: GetPixel
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_GetPixel_
+  commentId: Overload:BonEngineSharp.Assets.ImageAsset.GetPixel
+  fullName: BonEngineSharp.Assets.ImageAsset.GetPixel
+  nameWithType: ImageAsset.GetPixel
 - uid: BonEngineSharp.Assets.ImageAsset.Height
   name: Height
   href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_Height
@@ -454,6 +478,36 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ImageAsset.Height
   fullName: BonEngineSharp.Assets.ImageAsset.Height
   nameWithType: ImageAsset.Height
+- uid: BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer
+  name: PrepareReadingBuffer()
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_PrepareReadingBuffer
+  commentId: M:BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer
+  fullName: BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer()
+  nameWithType: ImageAsset.PrepareReadingBuffer()
+- uid: BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer(BonEngineSharp.Framework.RectangleI)
+  name: PrepareReadingBuffer(RectangleI)
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_PrepareReadingBuffer_BonEngineSharp_Framework_RectangleI_
+  commentId: M:BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer(BonEngineSharp.Framework.RectangleI)
+  fullName: BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer(BonEngineSharp.Framework.RectangleI)
+  nameWithType: ImageAsset.PrepareReadingBuffer(RectangleI)
+- uid: BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer*
+  name: PrepareReadingBuffer
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_PrepareReadingBuffer_
+  commentId: Overload:BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer
+  fullName: BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer
+  nameWithType: ImageAsset.PrepareReadingBuffer
+- uid: BonEngineSharp.Assets.ImageAsset.SaveToFile(System.String)
+  name: SaveToFile(String)
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_SaveToFile_System_String_
+  commentId: M:BonEngineSharp.Assets.ImageAsset.SaveToFile(System.String)
+  fullName: BonEngineSharp.Assets.ImageAsset.SaveToFile(System.String)
+  nameWithType: ImageAsset.SaveToFile(String)
+- uid: BonEngineSharp.Assets.ImageAsset.SaveToFile*
+  name: SaveToFile
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_SaveToFile_
+  commentId: Overload:BonEngineSharp.Assets.ImageAsset.SaveToFile
+  fullName: BonEngineSharp.Assets.ImageAsset.SaveToFile
+  nameWithType: ImageAsset.SaveToFile
 - uid: BonEngineSharp.Assets.ImageAsset.Width
   name: Width
   href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_Width
@@ -3112,12 +3166,36 @@ references:
   commentId: F:BonEngineSharp.Framework.Color.A
   fullName: BonEngineSharp.Framework.Color.A
   nameWithType: Color.A
+- uid: BonEngineSharp.Framework.Color.AByte
+  name: AByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_AByte
+  commentId: P:BonEngineSharp.Framework.Color.AByte
+  fullName: BonEngineSharp.Framework.Color.AByte
+  nameWithType: Color.AByte
+- uid: BonEngineSharp.Framework.Color.AByte*
+  name: AByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_AByte_
+  commentId: Overload:BonEngineSharp.Framework.Color.AByte
+  fullName: BonEngineSharp.Framework.Color.AByte
+  nameWithType: Color.AByte
 - uid: BonEngineSharp.Framework.Color.B
   name: B
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_B
   commentId: F:BonEngineSharp.Framework.Color.B
   fullName: BonEngineSharp.Framework.Color.B
   nameWithType: Color.B
+- uid: BonEngineSharp.Framework.Color.BByte
+  name: BByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_BByte
+  commentId: P:BonEngineSharp.Framework.Color.BByte
+  fullName: BonEngineSharp.Framework.Color.BByte
+  nameWithType: Color.BByte
+- uid: BonEngineSharp.Framework.Color.BByte*
+  name: BByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_BByte_
+  commentId: Overload:BonEngineSharp.Framework.Color.BByte
+  fullName: BonEngineSharp.Framework.Color.BByte
+  nameWithType: Color.BByte
 - uid: BonEngineSharp.Framework.Color.Black
   name: Black
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Black
@@ -3130,6 +3208,24 @@ references:
   commentId: F:BonEngineSharp.Framework.Color.Blue
   fullName: BonEngineSharp.Framework.Color.Blue
   nameWithType: Color.Blue
+- uid: BonEngineSharp.Framework.Color.Cornflower
+  name: Cornflower
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Cornflower
+  commentId: F:BonEngineSharp.Framework.Color.Cornflower
+  fullName: BonEngineSharp.Framework.Color.Cornflower
+  nameWithType: Color.Cornflower
+- uid: BonEngineSharp.Framework.Color.Decrease(System.Single,System.Boolean)
+  name: Decrease(Single, Boolean)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Decrease_System_Single_System_Boolean_
+  commentId: M:BonEngineSharp.Framework.Color.Decrease(System.Single,System.Boolean)
+  fullName: BonEngineSharp.Framework.Color.Decrease(System.Single, System.Boolean)
+  nameWithType: Color.Decrease(Single, Boolean)
+- uid: BonEngineSharp.Framework.Color.Decrease*
+  name: Decrease
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Decrease_
+  commentId: Overload:BonEngineSharp.Framework.Color.Decrease
+  fullName: BonEngineSharp.Framework.Color.Decrease
+  nameWithType: Color.Decrease
 - uid: BonEngineSharp.Framework.Color.FromBytes(System.Byte,System.Byte,System.Byte,System.Byte)
   name: FromBytes(Byte, Byte, Byte, Byte)
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_FromBytes_System_Byte_System_Byte_System_Byte_System_Byte_
@@ -3172,6 +3268,18 @@ references:
   commentId: F:BonEngineSharp.Framework.Color.G
   fullName: BonEngineSharp.Framework.Color.G
   nameWithType: Color.G
+- uid: BonEngineSharp.Framework.Color.GByte
+  name: GByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_GByte
+  commentId: P:BonEngineSharp.Framework.Color.GByte
+  fullName: BonEngineSharp.Framework.Color.GByte
+  nameWithType: Color.GByte
+- uid: BonEngineSharp.Framework.Color.GByte*
+  name: GByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_GByte_
+  commentId: Overload:BonEngineSharp.Framework.Color.GByte
+  fullName: BonEngineSharp.Framework.Color.GByte
+  nameWithType: Color.GByte
 - uid: BonEngineSharp.Framework.Color.Gray
   name: Gray
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Gray
@@ -3238,30 +3346,42 @@ references:
   commentId: Overload:BonEngineSharp.Framework.Color.Random
   fullName: BonEngineSharp.Framework.Color.Random
   nameWithType: Color.Random
+- uid: BonEngineSharp.Framework.Color.RByte
+  name: RByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_RByte
+  commentId: P:BonEngineSharp.Framework.Color.RByte
+  fullName: BonEngineSharp.Framework.Color.RByte
+  nameWithType: Color.RByte
+- uid: BonEngineSharp.Framework.Color.RByte*
+  name: RByte
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_RByte_
+  commentId: Overload:BonEngineSharp.Framework.Color.RByte
+  fullName: BonEngineSharp.Framework.Color.RByte
+  nameWithType: Color.RByte
 - uid: BonEngineSharp.Framework.Color.Red
   name: Red
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Red
   commentId: F:BonEngineSharp.Framework.Color.Red
   fullName: BonEngineSharp.Framework.Color.Red
   nameWithType: Color.Red
-- uid: BonEngineSharp.Framework.Color.Reduce(System.Single,System.Boolean)
-  name: Reduce(Single, Boolean)
-  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Reduce_System_Single_System_Boolean_
-  commentId: M:BonEngineSharp.Framework.Color.Reduce(System.Single,System.Boolean)
-  fullName: BonEngineSharp.Framework.Color.Reduce(System.Single, System.Boolean)
-  nameWithType: Color.Reduce(Single, Boolean)
-- uid: BonEngineSharp.Framework.Color.Reduce*
-  name: Reduce
-  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Reduce_
-  commentId: Overload:BonEngineSharp.Framework.Color.Reduce
-  fullName: BonEngineSharp.Framework.Color.Reduce
-  nameWithType: Color.Reduce
 - uid: BonEngineSharp.Framework.Color.Teal
   name: Teal
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Teal
   commentId: F:BonEngineSharp.Framework.Color.Teal
   fullName: BonEngineSharp.Framework.Color.Teal
   nameWithType: Color.Teal
+- uid: BonEngineSharp.Framework.Color.ToString(System.Boolean)
+  name: ToString(Boolean)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_ToString_System_Boolean_
+  commentId: M:BonEngineSharp.Framework.Color.ToString(System.Boolean)
+  fullName: BonEngineSharp.Framework.Color.ToString(System.Boolean)
+  nameWithType: Color.ToString(Boolean)
+- uid: BonEngineSharp.Framework.Color.ToString*
+  name: ToString
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_ToString_
+  commentId: Overload:BonEngineSharp.Framework.Color.ToString
+  fullName: BonEngineSharp.Framework.Color.ToString
+  nameWithType: Color.ToString
 - uid: BonEngineSharp.Framework.Color.Transparent
   name: Transparent
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Transparent
@@ -3808,6 +3928,12 @@ references:
   commentId: M:BonEngineSharp.Framework.PointI.Divide(System.Int32,System.Int32)
   fullName: BonEngineSharp.Framework.PointI.Divide(System.Int32, System.Int32)
   nameWithType: PointI.Divide(Int32, Int32)
+- uid: BonEngineSharp.Framework.PointI.Divide(System.Single)
+  name: Divide(Single)
+  href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_Divide_System_Single_
+  commentId: M:BonEngineSharp.Framework.PointI.Divide(System.Single)
+  fullName: BonEngineSharp.Framework.PointI.Divide(System.Single)
+  nameWithType: PointI.Divide(Single)
 - uid: BonEngineSharp.Framework.PointI.Divide*
   name: Divide
   href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_Divide_

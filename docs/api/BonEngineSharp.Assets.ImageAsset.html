@@ -265,6 +265,135 @@ Used to render sprites on screen, or as a render target to draw on.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Finalize">IAsset.Finalize()</a></div>
+  
+  
+  <a id="BonEngineSharp_Assets_ImageAsset_FreeReadingBuffer_" data-uid="BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer*"></a>
+  <h4 id="BonEngineSharp_Assets_ImageAsset_FreeReadingBuffer" data-uid="BonEngineSharp.Assets.ImageAsset.FreeReadingBuffer">FreeReadingBuffer()</h4>
+  <div class="markdown level1 summary"><p>Free a reading buffer created by PrepareReadingBuffer().
+This is done automatically anyway when asset is freed from memory on the CPP side of BonEngine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeReadingBuffer()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Assets_ImageAsset_GetPixel_" data-uid="BonEngineSharp.Assets.ImageAsset.GetPixel*"></a>
+  <h4 id="BonEngineSharp_Assets_ImageAsset_GetPixel_BonEngineSharp_Framework_PointI_" data-uid="BonEngineSharp.Assets.ImageAsset.GetPixel(BonEngineSharp.Framework.PointI)">GetPixel(PointI)</h4>
+  <div class="markdown level1 summary"><p>Get pixel color from image.
+Note: you must call PrepareReadingBuffer() before using this function, otherwise you'll just get 0,0,0,0 values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetPixel(PointI position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Pixel position to query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><p>Pixel color.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ImageAsset_PrepareReadingBuffer_" data-uid="BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer*"></a>
+  <h4 id="BonEngineSharp_Assets_ImageAsset_PrepareReadingBuffer" data-uid="BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer">PrepareReadingBuffer()</h4>
+  <div class="markdown level1 summary"><p>Prepare a reading buffer so we can query pixels data from this image asset.
+You must call this before calling GetPixel().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareReadingBuffer()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_Assets_ImageAsset_PrepareReadingBuffer_" data-uid="BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer*"></a>
+  <h4 id="BonEngineSharp_Assets_ImageAsset_PrepareReadingBuffer_BonEngineSharp_Framework_RectangleI_" data-uid="BonEngineSharp.Assets.ImageAsset.PrepareReadingBuffer(BonEngineSharp.Framework.RectangleI)">PrepareReadingBuffer(RectangleI)</h4>
+  <div class="markdown level1 summary"><p>Prepare a reading buffer so we can query pixels data from this image asset.
+You must call this before calling GetPixel().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareReadingBuffer(RectangleI sourceRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.RectangleI.html">RectangleI</a></td>
+        <td><span class="parametername">sourceRect</span></td>
+        <td><p>Source rect to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_ImageAsset_SaveToFile_" data-uid="BonEngineSharp.Assets.ImageAsset.SaveToFile*"></a>
+  <h4 id="BonEngineSharp_Assets_ImageAsset_SaveToFile_System_String_" data-uid="BonEngineSharp.Assets.ImageAsset.SaveToFile(System.String)">SaveToFile(String)</h4>
+  <div class="markdown level1 summary"><p>Save image asset to file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToFile(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Filename for the output image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>

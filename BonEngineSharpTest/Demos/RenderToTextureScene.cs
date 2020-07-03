@@ -30,6 +30,15 @@ namespace BonEngineSharpTest.Demos
         // window size
         PointI _windowSize;
 
+        // current camera offset
+        PointF _cameraOffset;
+
+        // did we draw the scene already?
+        bool _wasDrawn = false;
+
+        // if true, will not move camera around
+        bool _paused;
+
         /// <summary>
         /// On scene load.
         /// </summary>
@@ -90,6 +99,18 @@ namespace BonEngineSharpTest.Demos
             {
                 Game.Exit();
             }
+
+            // if user click 's', save image
+            if (Input.ReleasedNow(KeyCodes.KeyS))
+            {
+                _targetTexture.SaveToFile("demo.png");
+            }
+
+            // if user click 'p', pause image movement
+            if (Input.ReleasedNow(KeyCodes.KeyP))
+            {
+                _paused = !_paused;
+            }
         }
 
         /// <summary>
@@ -98,34 +119,46 @@ namespace BonEngineSharpTest.Demos
         protected override void Draw()
         {
             // clear screen
-            Gfx.ClearScreen(Color.FromBytes(32, 150, 242));
+            Gfx.ClearScreen(Color.Cornflower);
 
-            // set render target
-            Gfx.RenderTarget = _targetTexture;
-
-            // draw background dirt
-            var backgroundSize = new PointI(_dirtImage.Width * 2, _dirtImage.Height * 2);
-            for (int i = 0; i < Gfx.WindowSize.X / backgroundSize.X + 1; ++i)
+            // draw scene on texture once
+            if (!_wasDrawn)
             {
-                for (int j = 0; j < Gfx.WindowSize.Y / backgroundSize.Y + 1; ++j)
+                // set render target
+                Gfx.RenderTarget = _targetTexture;
+
+                // draw background dirt
+                var backgroundSize = new PointI(_dirtImage.Width * 2, _dirtImage.Height * 2);
+                for (int i = 0; i < Gfx.WindowSize.X / backgroundSize.X + 1; ++i)
                 {
-                    Gfx.DrawImage(_dirtImage, new PointF(i, j).Multiply(backgroundSize), backgroundSize, BlendModes.Opaque);
+                    for (int j = 0; j < Gfx.WindowSize.Y / backgroundSize.Y + 1; ++j)
+                    {
+                        Gfx.DrawImage(_dirtImage, new PointF(i, j).Multiply(backgroundSize), backgroundSize, BlendModes.Opaque);
+                    }
                 }
-            }
 
-            // draw sprites
-            foreach (var sprite in _sprites)
-            {
-                Gfx.DrawSprite(sprite);
-            }
+                // draw sprites
+                foreach (var sprite in _sprites)
+                {
+                    Gfx.DrawSprite(sprite);
+                }
 
-            // clear render target
-            Gfx.RenderTarget = null;
+                // clear render target
+                Gfx.RenderTarget = null;
+                _wasDrawn = true;
+
+                // allow reading pixels from texture
+                _targetTexture.PrepareReadingBuffer();
+            }
 
             // draw render target on screen, with larger size so we'll only see parts of it
-            var position = new PointF(-150 + (float)Math.Sin(Game.ElapsedTime / 2f) * 150f, -150 + (float)Math.Cos(Game.ElapsedTime / 2f) * 150f);
-            var size = Gfx.WindowSize.Multiply(1.5f);
-            Gfx.DrawImage(_targetTexture, position, size);
+            float screenScale = 1.5f;
+            if (!_paused)
+            {
+                _cameraOffset = new PointF(-150 + (float)Math.Sin(Game.ElapsedTime / 2f) * 150f, -150 + (float)Math.Cos(Game.ElapsedTime / 2f) * 150f);
+            }
+            var size = Gfx.WindowSize.Multiply(screenScale);
+            Gfx.DrawImage(_targetTexture, _cameraOffset, size);
 
             // draw minimap
             var mapSize = new PointI((int)(150 * 1.333f), 150);
@@ -138,11 +171,20 @@ namespace BonEngineSharpTest.Demos
             Gfx.DrawText(_font, "This scene demonstrates drawing to texture.\n" +
                 "First we draw to texture, then we draw it on screen,\n" +
                 "and finally we use the same texture as a minimap at the corner.\n" +
+                "- Press S to save image to file.\n" +
+                "- Press P to pause camera movement.\n" +
                 "- Press Escape to exit.", new PointF(80, 210), Color.White, Color.Black, 1, 22);
 
             // write FPS and other info
             Gfx.DrawText(_font, "FPS: " + Diagnostics.FpsCount.ToString(), new PointF(10, 10), Color.White, Color.Black, 1, 22);
-          
+
+            // write pixel we point on
+
+            // enable reading pixels   
+            PointI pixelPosition = Input.CursorPosition.Substract(_cameraOffset).Divide(screenScale);
+            Color pixel = _targetTexture.GetPixel(pixelPosition);
+            Gfx.DrawText(_font, "Pixel Color: " + pixel.ToString(true), new PointF(10, Gfx.RenderableSize.Y - 40), Color.White, Color.Black, 1, 22);
+
             // draw cursor
             Gfx.DrawImage(_cursor, Input.CursorPosition, new PointI(42, 42));
         }

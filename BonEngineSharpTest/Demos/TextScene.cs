@@ -42,7 +42,7 @@ namespace BonEngineSharpTest.Demos
         protected override void Draw()
         {
             // clear screen
-            Gfx.ClearScreen(Color.FromBytes(32, 150, 242));
+            Gfx.ClearScreen(Color.Cornflower);
 
             // title and text
             Gfx.DrawText(_fontBig, "Drawing Texts", new PointF(80, 120), Color.White, Color.Black, 1, 42);

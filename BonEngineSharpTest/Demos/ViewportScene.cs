@@ -96,7 +96,7 @@ namespace BonEngineSharpTest.Demos
         protected override void Draw()
         {
             // clear screen
-            Gfx.ClearScreen(Color.FromBytes(32, 150, 242));
+            Gfx.ClearScreen(Color.Cornflower);
 
             // draw sprites
             foreach (var sprite in _sprites)

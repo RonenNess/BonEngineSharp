@@ -113,7 +113,7 @@ namespace BonEngineSharpTest
             protected override void Draw()
             {
                 // clear screen
-                Gfx.ClearScreen(Color.FromBytes(32, 150, 242));
+                Gfx.ClearScreen(Color.Cornflower);
 
                 // header and instructions
                 Gfx.DrawText(_fontBig, "Welcome to BonEngine!", new PointF(50, 50), Color.White, Color.Black, outlineWidth: 2);
