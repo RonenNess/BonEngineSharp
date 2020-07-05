@@ -36,14 +36,14 @@ namespace BonEngineSharpTest.Demos
             // create ui root
             _uiroot = UI.CreateRoot();
 
-            // create main window
-            var window = UI.CreateWindow("ui/window.ini", _uiroot, "UI Example");
-            window.AutoArrangeChildren = true;
-            window.Offset = new PointI(100, 80);
+            // create button and list window
+            var buttonAndListWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Button & List");
+            buttonAndListWindow.AutoArrangeChildren = true;
+            buttonAndListWindow.Offset = new PointI(50, 40);
 
             // add into text and button
-            UI.CreateText("ui/small_text.ini", window, "This demo shows some built-in UI elements. \nFor example, here's a button:");
-            var button = UI.CreateButton("ui/button.ini", window, "Click Me!");
+            UI.CreateText("ui/small_text.ini", buttonAndListWindow, "This demo shows some built-in UI elements. \nFor example, here's a button:");
+            var button = UI.CreateButton("ui/button.ini", buttonAndListWindow, "Click Me!");
             int clickCounts = 1;
             button.OnMouseReleased((UIElement elem) =>
             {
@@ -51,47 +51,87 @@ namespace BonEngineSharpTest.Demos
             });
 
             // add a list
-            var listTitle = UI.CreateText("ui/small_text.ini", window, "And here's a list:");
-            var list = UI.CreateList("ui/list.ini", window);
+            var listTitle = UI.CreateText("ui/small_text.ini", buttonAndListWindow, "And here's a list:");
+            var list = UI.CreateList("ui/list.ini", buttonAndListWindow);
             for (var i = 1; i <= 15; ++i)
             {
                 list.AddItem("Item #" + i);
             }
 
             // add text to show selected
-            var listSelected = UI.CreateText("ui/small_text.ini", window, "Selected: ");
+            var listSelected = UI.CreateText("ui/small_text.ini", buttonAndListWindow, "Selected: ");
             list.OnValueChange((UIElement element) =>
             {
                 listSelected.Text = "Selected: " + list.SelectedItem;
             });
 
-            // create another window
-            var secondWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Some More..");
-            secondWindow.Offset = new PointI(300, 100);
-            secondWindow.AutoArrangeChildren = true;
+            // create another window for checkboxes and slider
+            var checkboxSliderWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Checkbox, Radio & Slider");
+            checkboxSliderWindow.Offset = new PointI(200, 80);
+            checkboxSliderWindow.AutoArrangeChildren = true;
 
             // some checkboxes
-            UI.CreateText("ui/small_text.ini", secondWindow, "Checkboxes: ");
-            var checkbox1 = UI.CreateCheckBox("ui/checkbox.ini", secondWindow, "This is a checkbox");
-            _debugDrawCheckbox = UI.CreateCheckBox("ui/checkbox.ini", secondWindow, "Debug draw UI");
+            UI.CreateText("ui/small_text.ini", checkboxSliderWindow, "Checkboxes: ");
+            var checkbox1 = UI.CreateCheckBox("ui/checkbox.ini", checkboxSliderWindow, "This is a checkbox");
+            _debugDrawCheckbox = UI.CreateCheckBox("ui/checkbox.ini", checkboxSliderWindow, "Debug draw UI");
 
             // some radio buttons
-            var radioIntro = UI.CreateText("ui/small_text.ini", secondWindow, "Radio buttons: ");
+            var radioIntro = UI.CreateText("ui/small_text.ini", checkboxSliderWindow, "Radio buttons: ");
             for (var i = 1; i <= 3; ++i)
             {
-                var radio = UI.CreateRadioButton("ui/radiobutton.ini", secondWindow, "Radio Button #" + i);
+                var radio = UI.CreateRadioButton("ui/radiobutton.ini", checkboxSliderWindow, "Radio Button #" + i);
             }
 
             // add slider
-            var sliderText = UI.CreateText("ui/small_text.ini", secondWindow, "Slider Input [value=0]:");
-            var slider = UI.CreateSlider("ui/slider.ini", secondWindow);
+            var sliderText = UI.CreateText("ui/small_text.ini", checkboxSliderWindow, "Slider Input [value=0]:");
+            var slider = UI.CreateSlider("ui/slider.ini", checkboxSliderWindow);
             slider.OnValueChange((UIElement element) =>
             {
                 sliderText.Text = "Slider Input [value=" + slider.Value + "]:";
             });
 
-            // make original window front
-            window.MoveToFront();
+            // create another window for text inputs
+            var textInputsWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Text Inputs");
+            textInputsWindow.Offset = new PointI(350, 120);
+            textInputsWindow.AutoArrangeChildren = true;
+
+            // add text input
+            UITextInput textInput = UI.CreateTextInput("ui/textinput.ini", textInputsWindow, "", "Free text input..");
+            textInput.MaxLength = 16;
+
+            // add numbers input
+            UITextInput numbersInput = UI.CreateTextInput("ui/textinput.ini", textInputsWindow, "", "Numbers input..");
+            numbersInput.InputMode = UITextInputMode.NumbersOnly;
+            numbersInput.MaxLength = 16;
+
+            // add characters input
+            UITextInput alphaInput = UI.CreateTextInput("ui/textinput.ini", textInputsWindow, "", "Alpha input..");
+            alphaInput.InputMode = UITextInputMode.AlphaOnly;
+            alphaInput.MaxLength = 16;
+
+            // add numbers and alpha input
+            UITextInput numbersAlphaInput = UI.CreateTextInput("ui/textinput.ini", textInputsWindow, "", "Numbers & alpha input..");
+            numbersAlphaInput.InputMode = UITextInputMode.NumbersOnly | UITextInputMode.AlphaOnly;
+            numbersAlphaInput.MaxLength = 16;
+
+            // add upper input
+            UITextInput upperInput = UI.CreateTextInput("ui/textinput.ini", textInputsWindow, "", "UPPERCASE INPUT..");
+            upperInput.InputMode = UITextInputMode.Uppercase;
+            upperInput.MaxLength = 16;
+
+            // add lower input
+            UITextInput lowerInput = UI.CreateTextInput("ui/textinput.ini", textInputsWindow, "", "lowercase input..");
+            lowerInput.InputMode = UITextInputMode.Lowercase;
+            lowerInput.MaxLength = 16;
+
+            // add upper alpha input
+            UITextInput upperAlphaInput = UI.CreateTextInput("ui/textinput.ini", textInputsWindow, "", "UPPERCASE ALPHA INPUT..");
+            upperAlphaInput.InputMode = UITextInputMode.Uppercase | UITextInputMode.AlphaOnly;
+            upperAlphaInput.MaxLength = 16;
+
+            // order windows
+            checkboxSliderWindow.MoveToFront();
+            buttonAndListWindow.MoveToFront();
         }
 
         // on updates do animations and controls

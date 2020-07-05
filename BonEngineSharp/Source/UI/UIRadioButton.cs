@@ -6,7 +6,7 @@ namespace BonEngineSharp.UI
     /// <summary>
     /// UI radio button element.
     /// </summary>
-    public class UIRadioButton : UIElement
+    public class UIRadioButton : UICheckBox
     {
         /// <summary>
         /// Get element type.
@@ -16,7 +16,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Get / set if users can uncheck this button by clicking it again.
         /// </summary>
-        public bool AllowUncheck
+        public override bool AllowUncheck
         {
             get { return _BonEngineBind.BON_UIRadio_GetAllowUncheck(_handle); }
             set { _BonEngineBind.BON_UIRadio_SetAllowUncheck(_handle, value); }
@@ -25,7 +25,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Get radio button caption element.
         /// </summary>
-        public UIText Caption
+        public override UIText Caption
         {
             get
             {
@@ -42,7 +42,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Get / set if this radio button is checked.
         /// </summary>
-        public bool Checked
+        public override bool Checked
         {
             get { return _BonEngineBind.BON_UIRadio_Checked(_handle); }
             set { _BonEngineBind.BON_UIRadio_SetValue(_handle, value); }
@@ -51,7 +51,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Toggle radio button state.
         /// </summary>
-        public void Toggle()
+        public override void Toggle()
         {
             _BonEngineBind.BON_UIRadio_Toggle(_handle);
         }

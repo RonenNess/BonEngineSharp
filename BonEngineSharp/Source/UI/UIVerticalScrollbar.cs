@@ -6,7 +6,7 @@ namespace BonEngineSharp.UI
     /// <summary>
     /// UI Button element.
     /// </summary>
-    public class UIVerticalScrollbar : UIElement
+    public class UIVerticalScrollbar : UIImage
     {
         /// <summary>
         /// Get element type.

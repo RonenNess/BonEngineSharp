@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UIButton
+    <title>Class UITextInput
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UIButton
+    <meta name="title" content="Class UITextInput
    ">
     <meta name="generator" content="docfx 2.54.0.0">
     
@@ -68,12 +68,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BonEngineSharp.UI.UIButton">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.UI.UITextInput">
   
   
-  <h1 id="BonEngineSharp_UI_UIButton" data-uid="BonEngineSharp.UI.UIButton" class="text-break">Class UIButton
+  <h1 id="BonEngineSharp_UI_UITextInput" data-uid="BonEngineSharp.UI.UITextInput" class="text-break">Class UITextInput
   </h1>
-  <div class="markdown level0 summary"><p>UI Button element.</p>
+  <div class="markdown level0 summary"><p>UI single-line text input element.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -81,7 +81,7 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></div>
     <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIImage.html">UIImage</a></div>
-    <div class="level3"><span class="xref">UIButton</span></div>
+    <div class="level3"><span class="xref">UITextInput</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -269,22 +269,22 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.UI.html">BonEngineSharp.UI</a></h6>
   <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
-  <h5 id="BonEngineSharp_UI_UIButton_syntax">Syntax</h5>
+  <h5 id="BonEngineSharp_UI_UITextInput_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UIButton : UIImage, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class UITextInput : UIImage, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="BonEngineSharp_UI_UIButton__ctor_" data-uid="BonEngineSharp.UI.UIButton.#ctor*"></a>
-  <h4 id="BonEngineSharp_UI_UIButton__ctor_System_IntPtr_" data-uid="BonEngineSharp.UI.UIButton.#ctor(System.IntPtr)">UIButton(IntPtr)</h4>
+  <a id="BonEngineSharp_UI_UITextInput__ctor_" data-uid="BonEngineSharp.UI.UITextInput.#ctor*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput__ctor_System_IntPtr_" data-uid="BonEngineSharp.UI.UITextInput.#ctor(System.IntPtr)">UITextInput(IntPtr)</h4>
   <div class="markdown level1 summary"><p>Create the UI element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UIButton(IntPtr handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public UITextInput(IntPtr handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,14 +308,14 @@
   </h3>
   
   
-  <a id="BonEngineSharp_UI_UIButton_Caption_" data-uid="BonEngineSharp.UI.UIButton.Caption*"></a>
-  <h4 id="BonEngineSharp_UI_UIButton_Caption" data-uid="BonEngineSharp.UI.UIButton.Caption">Caption</h4>
-  <div class="markdown level1 summary"><p>Get button caption element.</p>
+  <a id="BonEngineSharp_UI_UITextInput_AllowTabs_" data-uid="BonEngineSharp.UI.UITextInput.AllowTabs*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_AllowTabs" data-uid="BonEngineSharp.UI.UITextInput.AllowTabs">AllowTabs</h4>
+  <div class="markdown level1 summary"><p>Get / set if the text input allow tabs (treated as 4 spaces).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UIText Caption { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool AllowTabs { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,15 +327,67 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.UI.UIText.html">UIText</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BonEngineSharp_UI_UIButton_ElementType_" data-uid="BonEngineSharp.UI.UIButton.ElementType*"></a>
-  <h4 id="BonEngineSharp_UI_UIButton_ElementType" data-uid="BonEngineSharp.UI.UIButton.ElementType">ElementType</h4>
+  <a id="BonEngineSharp_UI_UITextInput_CaretBlinkingInterval_" data-uid="BonEngineSharp.UI.UITextInput.CaretBlinkingInterval*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_CaretBlinkingInterval" data-uid="BonEngineSharp.UI.UITextInput.CaretBlinkingInterval">CaretBlinkingInterval</h4>
+  <div class="markdown level1 summary"><p>Get / set the interval, in seconds, of the caret blinking animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CaretBlinkingInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_CaretCharacter_" data-uid="BonEngineSharp.UI.UITextInput.CaretCharacter*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_CaretCharacter" data-uid="BonEngineSharp.UI.UITextInput.CaretCharacter">CaretCharacter</h4>
+  <div class="markdown level1 summary"><p>Get / set the character used to mark the caret position in the text input element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char CaretCharacter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_ElementType_" data-uid="BonEngineSharp.UI.UITextInput.ElementType*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_ElementType" data-uid="BonEngineSharp.UI.UITextInput.ElementType">ElementType</h4>
   <div class="markdown level1 summary"><p>Get element type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -360,6 +412,191 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="BonEngineSharp.UI.UIImage.html#BonEngineSharp_UI_UIImage_ElementType">UIImage.ElementType</a></div>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_InputMode_" data-uid="BonEngineSharp.UI.UITextInput.InputMode*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_InputMode" data-uid="BonEngineSharp.UI.UITextInput.InputMode">InputMode</h4>
+  <div class="markdown level1 summary"><p>Get / set text input mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UITextInputMode InputMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UITextInputMode.html">UITextInputMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_IsReceivingInput_" data-uid="BonEngineSharp.UI.UITextInput.IsReceivingInput*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_IsReceivingInput" data-uid="BonEngineSharp.UI.UITextInput.IsReceivingInput">IsReceivingInput</h4>
+  <div class="markdown level1 summary"><p>Get / set if the text input is currently active and accepting input.
+This is set automatically when you click on the element and unset when you click outside / press enter,
+however you can set it manually to focus the user on the element, or if you want to force him to stop typing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReceivingInput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_MaxLength_" data-uid="BonEngineSharp.UI.UITextInput.MaxLength*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_MaxLength" data-uid="BonEngineSharp.UI.UITextInput.MaxLength">MaxLength</h4>
+  <div class="markdown level1 summary"><p>Get / set text input max length limit.
+Set to 0 for no limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_PlaceholderElement_" data-uid="BonEngineSharp.UI.UITextInput.PlaceholderElement*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_PlaceholderElement" data-uid="BonEngineSharp.UI.UITextInput.PlaceholderElement">PlaceholderElement</h4>
+  <div class="markdown level1 summary"><p>Get placeholder element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIText PlaceholderElement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIText.html">UIText</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_PlaceholderText_" data-uid="BonEngineSharp.UI.UITextInput.PlaceholderText*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_PlaceholderText" data-uid="BonEngineSharp.UI.UITextInput.PlaceholderText">PlaceholderText</h4>
+  <div class="markdown level1 summary"><p>Get / set the text input placeholder value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlaceholderText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_TextElement_" data-uid="BonEngineSharp.UI.UITextInput.TextElement*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_TextElement" data-uid="BonEngineSharp.UI.UITextInput.TextElement">TextElement</h4>
+  <div class="markdown level1 summary"><p>Get text element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIText TextElement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIText.html">UIText</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_UI_UITextInput_Value_" data-uid="BonEngineSharp.UI.UITextInput.Value*"></a>
+  <h4 id="BonEngineSharp_UI_UITextInput_Value" data-uid="BonEngineSharp.UI.UITextInput.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Get / set the text input current value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IDisposable</span>

@@ -601,6 +601,14 @@ namespace BonEngineSharp.UI
 		public UIElement Parent => new UIElement(_BonEngineBind.BON_UIElement_GetParent(_handle));
 
 		/// <summary>
+		/// Add a child element to childrens list, without actually updating the CPP side.
+		/// </summary>
+		internal void _addChildToInternalList(UIElement element)
+        {
+			_children.Add(element);
+        }
+
+		/// <summary>
 		/// Add child element to this element.
 		/// </summary>
 		/// <param name="element">Element to add.</param>

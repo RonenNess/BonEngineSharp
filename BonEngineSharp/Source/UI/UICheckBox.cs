@@ -6,7 +6,7 @@ namespace BonEngineSharp.UI
     /// <summary>
     /// UI checkbox element.
     /// </summary>
-    public class UICheckBox : UIElement
+    public class UICheckBox : UIImage
     {
         /// <summary>
         /// Get element type.
@@ -16,7 +16,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Get / set if users can uncheck this checkbox by clicking it again.
         /// </summary>
-        public bool AllowUncheck
+        public virtual bool AllowUncheck
         {
             get { return _BonEngineBind.BON_UICheckbox_GetAllowUncheck(_handle); }
             set { _BonEngineBind.BON_UICheckbox_SetAllowUncheck(_handle, value); }
@@ -25,7 +25,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Get Checkbox caption element.
         /// </summary>
-        public UIText Caption
+        public virtual UIText Caption
         {
             get
             {
@@ -42,7 +42,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Get / set if this checkbox is checked.
         /// </summary>
-        public bool Checked
+        public virtual bool Checked
         {
             get { return _BonEngineBind.BON_UICheckbox_Checked(_handle); }
             set { _BonEngineBind.BON_UICheckbox_SetValue(_handle, value); }
@@ -51,7 +51,7 @@ namespace BonEngineSharp.UI
         /// <summary>
         /// Toggle checkbox state.
         /// </summary>
-        public void Toggle()
+        public virtual void Toggle()
         {
             _BonEngineBind.BON_UICheckbox_Toggle(_handle);
         }

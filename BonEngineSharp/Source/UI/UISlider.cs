@@ -6,7 +6,7 @@ namespace BonEngineSharp.UI
     /// <summary>
     /// UI slider element.
     /// </summary>
-    public class UISlider : UIElement
+    public class UISlider : UIImage
     {
         /// <summary>
         /// Get element type.

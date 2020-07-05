@@ -105,6 +105,32 @@ Used to recieve user input, either by querying keyboard keys and mouse directly,
   </h3>
   
   
+  <a id="BonEngineSharp_Managers_InputManager_Clipboard_" data-uid="BonEngineSharp.Managers.InputManager.Clipboard*"></a>
+  <h4 id="BonEngineSharp_Managers_InputManager_Clipboard" data-uid="BonEngineSharp.Managers.InputManager.Clipboard">Clipboard</h4>
+  <div class="markdown level1 summary"><p>Set / get clipboard buffer as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Clipboard { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Managers_InputManager_CursorDelta_" data-uid="BonEngineSharp.Managers.InputManager.CursorDelta*"></a>
   <h4 id="BonEngineSharp_Managers_InputManager_CursorDelta" data-uid="BonEngineSharp.Managers.InputManager.CursorDelta">CursorDelta</h4>
   <div class="markdown level1 summary"><p>Get cursor (mouse) position change since last frame.</p>
@@ -338,6 +364,51 @@ Used to recieve user input, either by querying keyboard keys and mouse directly,
   </table>
   
   
+  <a id="BonEngineSharp_Managers_InputManager_GetAssignedKeys_" data-uid="BonEngineSharp.Managers.InputManager.GetAssignedKeys*"></a>
+  <h4 id="BonEngineSharp_Managers_InputManager_GetAssignedKeys_System_String_" data-uid="BonEngineSharp.Managers.InputManager.GetAssignedKeys(System.String)">GetAssignedKeys(String)</h4>
+  <div class="markdown level1 summary"><p>Get array with all keys currently assigned to an action id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyCodes[] GetAssignedKeys(string action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Action id to query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.KeyCodes.html">KeyCodes</a>[]</td>
+        <td><p>Array with keys assigned to action id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Managers_InputManager_PressedNow_" data-uid="BonEngineSharp.Managers.InputManager.PressedNow*"></a>
   <h4 id="BonEngineSharp_Managers_InputManager_PressedNow_BonEngineSharp_Defs_KeyCodes_" data-uid="BonEngineSharp.Managers.InputManager.PressedNow(BonEngineSharp.Defs.KeyCodes)">PressedNow(KeyCodes)</h4>
   <div class="markdown level1 summary"><p>Get if a key was pressed in this update or fixed update frame.</p>
@@ -512,6 +583,35 @@ Used to recieve user input, either by querying keyboard keys and mouse directly,
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True if any of the keys bound to this action id were released during this frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_InputManager_TextInput_" data-uid="BonEngineSharp.Managers.InputManager.TextInput*"></a>
+  <h4 id="BonEngineSharp_Managers_InputManager_TextInput" data-uid="BonEngineSharp.Managers.InputManager.TextInput">TextInput()</h4>
+  <div class="markdown level1 summary"><p>Get text input data.
+This data struct contains input information relevant to text typing by user.
+It includes the new characters typed this frame + additional commands like backspace, delete, copy, paste, ect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextInputData TextInput()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.TextInputData.html">TextInputData</a></td>
+        <td><p>Text input data struct.</p>
 </td>
       </tr>
     </tbody>

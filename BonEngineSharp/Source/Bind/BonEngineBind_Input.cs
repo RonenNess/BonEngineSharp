@@ -30,6 +30,60 @@ namespace BonEngineSharp
         [return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_Input_PressedNow([MarshalAs(UnmanagedType.LPStr)] string actionId);
 
         /// <summary>
+        /// Get list of key codes assigned to given action id.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern IntPtr BON_Input_GetAssignedKeys([MarshalAs(UnmanagedType.LPStr)] string actionId, ref int retLength);
+
+        /// <summary>
+        /// Get clipboard content.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr BON_Input_GetClipboard();
+
+        /// <summary>
+        /// Get clipboard content, converted to string.
+        /// </summary>
+        public static string BON_Input_GetClipboard_Str()
+        {
+            return Marshal.PtrToStringAnsi(BON_Input_GetClipboard());
+        }
+
+        /// <summary>
+        /// Set clipboard content.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Input_SetClipboard([MarshalAs(UnmanagedType.LPStr)] string value);
+
+        /// <summary>
+        /// Struct to get text input data - must match the CPP side.
+        /// </summary>
+        [StructLayout(LayoutKind.Sequential)]
+        public struct TextInputData
+        {
+            public byte Backspace;
+            public byte Delete;
+            public byte Copy;
+            public byte Paste;
+            public byte Tab;
+            public byte Up;
+            public byte Down;
+            public byte Left;
+            public byte Right;
+            public byte Home;
+            public byte End;
+            public byte Insert;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)]
+            public char[] Text;
+        };
+
+        /// <summary>
+        /// Set clipboard content.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+        public static extern TextInputData BON_Input_GetTextInput();
+
+        /// <summary>
         /// Set master volumes.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]

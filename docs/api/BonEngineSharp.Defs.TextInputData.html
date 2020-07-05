@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UIElementType
+    <title>Class TextInputData
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UIElementType
+    <meta name="title" content="Class TextInputData
    ">
     <meta name="generator" content="docfx 2.54.0.0">
     
@@ -68,36 +68,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Defs.UIElementType">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Defs.TextInputData">
   
   
-  <h1 id="BonEngineSharp_Defs_UIElementType" data-uid="BonEngineSharp.Defs.UIElementType" class="text-break">Class UIElementType
+  <h1 id="BonEngineSharp_Defs_TextInputData" data-uid="BonEngineSharp.Defs.TextInputData" class="text-break">Class TextInputData
   </h1>
-  <div class="markdown level0 summary"><p>All built-in UI types.</p>
+  <div class="markdown level0 summary"><p>Contains text input information from the input manager.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UIElementType</span></div>
+    <div class="level1"><span class="xref">TextInputData</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Defs.html">BonEngineSharp.Defs</a></h6>
   <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
-  <h5 id="BonEngineSharp_Defs_UIElementType_syntax">Syntax</h5>
+  <h5 id="BonEngineSharp_Defs_TextInputData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class UIElementType : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class TextInputData : ValueType</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Button" data-uid="BonEngineSharp.Defs.UIElementType.Button">Button</h4>
-  <div class="markdown level1 summary"><p>Button element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Backspace" data-uid="BonEngineSharp.Defs.TextInputData.Backspace">Backspace</h4>
+  <div class="markdown level1 summary"><p>Was backspace pressed (need to remove a character).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Button</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Backspace</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -109,20 +109,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Checkbox" data-uid="BonEngineSharp.Defs.UIElementType.Checkbox">Checkbox</h4>
-  <div class="markdown level1 summary"><p>Checkbox element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Copy" data-uid="BonEngineSharp.Defs.TextInputData.Copy">Copy</h4>
+  <div class="markdown level1 summary"><p>Was copy command issued (ctrl+c).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Checkbox</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Copy</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -134,20 +134,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Element" data-uid="BonEngineSharp.Defs.UIElementType.Element">Element</h4>
-  <div class="markdown level1 summary"><p>Base element type.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Delete" data-uid="BonEngineSharp.Defs.TextInputData.Delete">Delete</h4>
+  <div class="markdown level1 summary"><p>Was delete pressed (need to delete a character).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Element</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Delete</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,20 +159,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Image" data-uid="BonEngineSharp.Defs.UIElementType.Image">Image</h4>
-  <div class="markdown level1 summary"><p>Image element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Down" data-uid="BonEngineSharp.Defs.TextInputData.Down">Down</h4>
+  <div class="markdown level1 summary"><p>Was down pressed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Image</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Down</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,20 +184,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_List" data-uid="BonEngineSharp.Defs.UIElementType.List">List</h4>
-  <div class="markdown level1 summary"><p>List element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_End" data-uid="BonEngineSharp.Defs.TextInputData.End">End</h4>
+  <div class="markdown level1 summary"><p>Was End pressed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType List</code></pre>
+    <pre><code class="lang-csharp hljs">public bool End</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,20 +209,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Radio" data-uid="BonEngineSharp.Defs.UIElementType.Radio">Radio</h4>
-  <div class="markdown level1 summary"><p>Radio button element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Home" data-uid="BonEngineSharp.Defs.TextInputData.Home">Home</h4>
+  <div class="markdown level1 summary"><p>Was Home pressed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Radio</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Home</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -234,20 +234,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Scrollbar" data-uid="BonEngineSharp.Defs.UIElementType.Scrollbar">Scrollbar</h4>
-  <div class="markdown level1 summary"><p>Scrollbar element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Insert" data-uid="BonEngineSharp.Defs.TextInputData.Insert">Insert</h4>
+  <div class="markdown level1 summary"><p>Was Insert pressed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Scrollbar</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Insert</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -259,20 +259,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Slider" data-uid="BonEngineSharp.Defs.UIElementType.Slider">Slider</h4>
-  <div class="markdown level1 summary"><p>Slider element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Left" data-uid="BonEngineSharp.Defs.TextInputData.Left">Left</h4>
+  <div class="markdown level1 summary"><p>Was left pressed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Slider</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Left</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -284,20 +284,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Text" data-uid="BonEngineSharp.Defs.UIElementType.Text">Text</h4>
-  <div class="markdown level1 summary"><p>Text / paragraph element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Paste" data-uid="BonEngineSharp.Defs.TextInputData.Paste">Paste</h4>
+  <div class="markdown level1 summary"><p>Was paste command issued (ctrl+v).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Text</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Paste</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -309,20 +309,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_TextInput" data-uid="BonEngineSharp.Defs.UIElementType.TextInput">TextInput</h4>
-  <div class="markdown level1 summary"><p>Inline text input element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Right" data-uid="BonEngineSharp.Defs.TextInputData.Right">Right</h4>
+  <div class="markdown level1 summary"><p>Was right pressed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType TextInput</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Right</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -334,19 +334,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_value__" data-uid="BonEngineSharp.Defs.UIElementType.value__">value__</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Tab" data-uid="BonEngineSharp.Defs.TextInputData.Tab">Tab</h4>
+  <div class="markdown level1 summary"><p>Was tab pressed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int value__</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Tab</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -358,20 +359,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_UIElementType_Window" data-uid="BonEngineSharp.Defs.UIElementType.Window">Window</h4>
-  <div class="markdown level1 summary"><p>Container window element.</p>
+  <h4 id="BonEngineSharp_Defs_TextInputData_Text" data-uid="BonEngineSharp.Defs.TextInputData.Text">Text</h4>
+  <div class="markdown level1 summary"><p>New characters entered this frame.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const UIElementType Window</code></pre>
+    <pre><code class="lang-csharp hljs">public string Text</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -383,7 +384,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BonEngineSharp.Defs.UIElementType.html">UIElementType</a></td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Defs_TextInputData_Up" data-uid="BonEngineSharp.Defs.TextInputData.Up">Up</h4>
+  <div class="markdown level1 summary"><p>Was up pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Up</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

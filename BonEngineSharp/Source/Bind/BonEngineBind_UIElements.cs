@@ -436,10 +436,6 @@ namespace BonEngineSharp
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
 		public static extern void BON_UIRadio_SetAllowUncheck(IntPtr element, bool value);
 
-
-
-
-
 		/// <summary>
 		/// Set checkbox value.
 		/// </summary>
@@ -602,9 +598,15 @@ namespace BonEngineSharp
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UIList_AddItem(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string item);
 
-        /// <summary>
-        /// Remove item from list.
-        /// </summary>
+		/// <summary>
+		/// Get if list contains an item.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIList_Contains(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string item);
+
+		/// <summary>
+		/// Remove item from list.
+		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UIList_RemoveItem(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string item, bool removeAll);
 
@@ -754,9 +756,21 @@ namespace BonEngineSharp
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UIText_SetAlignment(IntPtr element, int alignment);
 
-        /// <summary>
-        /// Get text text.
-        /// </summary>
+		/// <summary>
+		/// Get text word wrap state.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIText_GetWordWrap(IntPtr element);
+
+		/// <summary>
+		/// Set text word wrap state.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIText_SetWordWrap(IntPtr element, bool value);
+
+		/// <summary>
+		/// Get text text.
+		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]  
 		public static extern IntPtr BON_UIText_GetText(IntPtr element);
 
@@ -834,7 +848,128 @@ namespace BonEngineSharp
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern int BON_UIScrollbar_GetValue(IntPtr element);
 
+		/// <summary>
+		/// Set text input caret character.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetCaretCharacter(IntPtr element, char value);
 
+		/// <summary>
+		/// Get text input caret character.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern char BON_UITextInput_GetCaretCharacter(IntPtr element);
 
+		/// <summary>
+		/// Set text input input mode.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetInputMode(IntPtr element, int value);
+
+		/// <summary>
+		/// Get text input input mode.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern int BON_UITextInput_GetInputMode(IntPtr element);
+
+		/// <summary>
+		/// Get text input text element.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern IntPtr BON_UITextInput_Text(IntPtr element);
+
+		/// <summary>
+		/// Get text input placeholder element.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern IntPtr BON_UITextInput_Placeholder(IntPtr element);
+
+		/// <summary>
+		/// Get text input caret blinking interval.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetCaretBlinkingInterval(IntPtr element, float value);
+
+		/// <summary>
+		/// Set text input caret blinking interval.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern float BON_UITextInput_GetCaretBlinkingInterval(IntPtr element);
+
+		/// <summary>
+		/// Set if text input is currently receiving input.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetReceivingInput(IntPtr element, bool value);
+
+		/// <summary>
+		/// Get if text input is currently receiving input.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UITextInput_GetReceivingInput(IntPtr element);
+
+		/// <summary>
+		/// Set if text input allows tab input.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetAllowTabs(IntPtr element, bool value);
+
+		/// <summary>
+		/// Get if text input allows tab input.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UITextInput_GetAllowTabs(IntPtr element);
+
+		/// <summary>
+		/// Set text input max length.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetMaxLength(IntPtr element, int value);
+
+		/// <summary>
+		/// Get text input max length.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern int BON_UITextInput_GetMaxLength(IntPtr element);
+
+		/// <summary>
+		/// Set text input value.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetValue(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string value);
+
+		/// <summary>
+		/// Get text input value.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+		public static extern IntPtr BON_UITextInput_GetValue(IntPtr element);
+
+		/// <summary>
+		/// Get text string, converted to string.
+		/// </summary>
+		public static string BON_UITextInput_GetValue_Str(IntPtr element)
+		{
+			return Marshal.PtrToStringAnsi(BON_UITextInput_GetValue(element));
+		}
+
+		/// <summary>
+		/// Set text input placeholder.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UITextInput_SetPlaceholder(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string value);
+
+		/// <summary>
+		/// Get text input placeholder.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+		public static extern IntPtr BON_UITextInput_GetPlaceholder(IntPtr element);
+
+		/// <summary>
+		/// Get text placeholder, converted to string.
+		/// </summary>
+		public static string BON_UITextInput_GetPlaceholder_Str(IntPtr element)
+		{
+			return Marshal.PtrToStringAnsi(BON_UITextInput_GetPlaceholder(element));
+		}
 	}
 }

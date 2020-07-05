@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace BonEngineSharp.Defs
 {
 	/// <summary>
@@ -132,90 +134,90 @@ namespace BonEngineSharp.Defs
 	/// Diagnostics counters we can query from the Diagnostics manager.
 	/// </summary>
 	public enum DiagnosticsCounters
-    {
-        /// <summary>
-        /// Draw calls during this frame.
-        /// </summary>
-        DrawCalls,
+	{
+		/// <summary>
+		/// Draw calls during this frame.
+		/// </summary>
+		DrawCalls,
 
-        /// <summary>
-        /// Play sound calls during this frame.
-        /// </summary>
-        PlaySoundCalls,
+		/// <summary>
+		/// Play sound calls during this frame.
+		/// </summary>
+		PlaySoundCalls,
 
-        /// <summary>
-        /// Currently loaded assets count.
-        /// </summary>
-        LoadedAssets,
+		/// <summary>
+		/// Currently loaded assets count.
+		/// </summary>
+		LoadedAssets,
 
-        /// <summary>
-        /// Last built-in counter value.
-        /// If you want to add custom counters, start here and go up until 'MaxCounters'.
-        /// </summary>
-        _BuiltInCounterCount,
+		/// <summary>
+		/// Last built-in counter value.
+		/// If you want to add custom counters, start here and go up until 'MaxCounters'.
+		/// </summary>
+		_BuiltInCounterCount,
 
-        /// <summary>
-        /// Max counters value.
-        /// </summary>
-        _MaxCounters = 50,
-    };
+		/// <summary>
+		/// Max counters value.
+		/// </summary>
+		_MaxCounters = 50,
+	};
 
-    /// <summary>
-    /// Window startup modes - used when recreating the window via the Gfx manager.
-    /// </summary>
-    public enum WindowModes
-    {
-        /// <summary>
-        /// Windowed mode.
-        /// </summary>
+	/// <summary>
+	/// Window startup modes - used when recreating the window via the Gfx manager.
+	/// </summary>
+	public enum WindowModes
+	{
+		/// <summary>
+		/// Windowed mode.
+		/// </summary>
 		Windowed,
 
-        /// <summary>
-        /// Windowed mode without border.
-        /// </summary>
+		/// <summary>
+		/// Windowed mode without border.
+		/// </summary>
 		WindowedBorderless,
 
-        /// <summary>
-        /// Fullscreen mode (change resolution).
-        /// </summary>
+		/// <summary>
+		/// Fullscreen mode (change resolution).
+		/// </summary>
 		Fullscreen,
-    }
+	}
 
-    /// <summary>
-    /// Possible rendering blend modes for drawing images and shapes.
-    /// </summary>
-    public enum BlendModes
-    {
-        /// <summary>
-        /// Render without any transparency or opacity.
-        /// </summary>
-        Opaque = 0,
+	/// <summary>
+	/// Possible rendering blend modes for drawing images and shapes.
+	/// </summary>
+	public enum BlendModes
+	{
+		/// <summary>
+		/// Render without any transparency or opacity.
+		/// </summary>
+		Opaque = 0,
 
-        /// <summary>
-        /// Render with alpha channels.
-        /// </summary>
-        AlphaBlend = 1,
+		/// <summary>
+		/// Render with alpha channels.
+		/// </summary>
+		AlphaBlend = 1,
 
-        /// <summary>
-        /// Render with additive (lighten) effect.
-        /// </summary>
-        Additive = 2,
+		/// <summary>
+		/// Render with additive (lighten) effect.
+		/// </summary>
+		Additive = 2,
 
-        /// <summary>
-        /// Render with mod effect.
-        /// </summary>
-        Mod = 3,
+		/// <summary>
+		/// Render with mod effect.
+		/// </summary>
+		Mod = 3,
 
-        /// <summary>
-        /// Render with multiply (darken) effect.
-        /// </summary>
-        Multiply = 4,
+		/// <summary>
+		/// Render with multiply (darken) effect.
+		/// </summary>
+		Multiply = 4,
 
-        /// <summary>
-        /// Blend modes count.
-        /// </summary>
-        _Count = 5,
-    };
+		/// <summary>
+		/// Blend modes count.
+		/// </summary>
+		_Count = 5,
+	};
 
 #pragma warning disable CS1591
 	/// <summary>
@@ -640,6 +642,77 @@ namespace BonEngineSharp.Defs
 	}
 
 	/// <summary>
+	/// Contains text input information from the input manager.
+	/// </summary>
+	public struct TextInputData
+	{
+		/// <summary>
+		/// Was backspace pressed (need to remove a character).
+		/// </summary>
+		public bool Backspace;
+
+		/// <summary>
+		/// Was delete pressed (need to delete a character).
+		/// </summary>
+		public bool Delete;
+
+		/// <summary>
+		/// Was copy command issued (ctrl+c).
+		/// </summary>
+		public bool Copy;
+
+		/// <summary>
+		/// Was paste command issued (ctrl+v).
+		/// </summary>
+		public bool Paste;
+
+		/// <summary>
+		/// Was tab pressed.
+		/// </summary>
+		public bool Tab;
+
+		/// <summary>
+		/// Was up pressed.
+		/// </summary>
+		public bool Up;
+
+		/// <summary>
+		/// Was down pressed.
+		/// </summary>
+		public bool Down;
+
+		/// <summary>
+		/// Was left pressed.
+		/// </summary>
+		public bool Left;
+
+		/// <summary>
+		/// Was right pressed.
+		/// </summary>
+		public bool Right;
+
+		/// <summary>
+		/// Was Home pressed.
+		/// </summary>
+		public bool Home;
+
+		/// <summary>
+		/// Was End pressed.
+		/// </summary>
+		public bool End;
+
+		/// <summary>
+		/// Was Insert pressed.
+		/// </summary>
+		public bool Insert;
+
+		/// <summary>
+		/// New characters entered this frame.
+		/// </summary>
+		public string Text;
+	};
+
+	/// <summary>
 	/// UI size - represent a UI element size with width, height and types.
 	/// </summary>
 	public struct UISize
@@ -668,12 +741,12 @@ namespace BonEngineSharp.Defs
 		/// Create the UI size struct.
 		/// </summary>
 		public UISize(int width, UISizeType widthType, int height, UISizeType heightType)
-        {
+		{
 			Width = width;
 			WidthType = widthType;
 			Height = height;
 			HeightType = heightType;
-        }
+		}
 	}
 
 	/// <summary>
@@ -764,6 +837,11 @@ namespace BonEngineSharp.Defs
 		Slider,
 
 		/// <summary>
+		/// Inline text input element.
+		/// </summary>
+		TextInput,
+
+		/// <summary>
 		/// Container window element.
 		/// </summary>
 		Window,
@@ -820,5 +898,43 @@ namespace BonEngineSharp.Defs
 		/// User right-clicks element.
 		/// </summary>
 		AltPressedDown,
+	}
+
+	/// <summary>
+	/// UI text input modes - determine what type of characters a UI text input accepts, and how to process them.
+	/// </summary>
+	[Flags]
+	public enum UITextInputMode
+	{
+		/// <summary>
+		/// Allow any text input.
+		/// Don't use this one as flag, set it as value.
+		/// </summary>
+		AnyText = 0,
+
+		/// <summary>
+		/// Allow only numbers.
+		/// </summary>
+		NumbersOnly = 1,
+
+		/// <summary>
+		/// Don't allow numbers.
+		/// </summary>
+		NoNumbers = 1 << 1,
+
+		/// <summary>
+		/// Make all input uppercase.
+		/// </summary>
+		Uppercase = 1 << 2,
+
+		/// <summary>
+		/// Make all input lowercase.
+		/// </summary>
+		Lowercase = 1 << 3,
+
+		/// <summary>
+		/// Allow only characters.
+		/// </summary>
+		AlphaOnly = 1 << 4,
 	}
 }

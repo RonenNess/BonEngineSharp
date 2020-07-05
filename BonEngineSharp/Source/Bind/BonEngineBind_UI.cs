@@ -45,7 +45,7 @@ namespace BonEngineSharp
 		/// Update a UI system and to all interactions.
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
-		public static extern void BON_UI_UpdateUI(IntPtr root);
+		public static extern IntPtr BON_UI_UpdateUI(IntPtr root);
 
 		/// <summary>
 		/// Create and return a new root element.
@@ -70,6 +70,14 @@ namespace BonEngineSharp
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
 		public static extern IntPtr BON_UI_CreateText([MarshalAs(UnmanagedType.LPStr)] string stylesheet, IntPtr parent, [MarshalAs(UnmanagedType.LPStr)] string text);
+
+
+		/// <summary>
+		/// Create and return a text input element.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+		public static extern IntPtr BON_UI_CreateTextInput([MarshalAs(UnmanagedType.LPStr)] string stylesheet, IntPtr parent, [MarshalAs(UnmanagedType.LPStr)] string startingVal, [MarshalAs(UnmanagedType.LPStr)] string placeholder);
+
 
 		/// <summary>
 		/// Create and return awindow element.

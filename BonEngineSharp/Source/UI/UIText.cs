@@ -125,6 +125,15 @@ namespace BonEngineSharp.UI
 		}
 
 		/// <summary>
+		/// Set / get if should wrap words (break line) when exceeding element max width.
+		/// </summary>
+		public bool WordWrap
+        {
+			get { return _BonEngineBind.BON_UIText_GetWordWrap(_handle); }
+			set { _BonEngineBind.BON_UIText_SetWordWrap(_handle, value); }
+		}
+
+		/// <summary>
 		/// Set / get text.
 		/// </summary>
 		public string Text

@@ -1,5 +1,8 @@
 ﻿using BonEngineSharp.Defs;
 using BonEngineSharp.Framework;
+using System;
+using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace BonEngineSharp.Managers
 {
@@ -75,6 +78,34 @@ namespace BonEngineSharp.Managers
 		}
 
 		/// <summary>
+		/// Get text input data.
+		/// This data struct contains input information relevant to text typing by user. 
+		/// It includes the new characters typed this frame + additional commands like backspace, delete, copy, paste, ect.
+		/// </summary>
+		/// <returns>Text input data struct.</returns>
+		public TextInputData TextInput()
+        {
+			var _data = _BonEngineBind.BON_Input_GetTextInput();
+			var ret = new TextInputData()
+			{
+				Backspace = _data.Backspace != 0,
+				Copy = _data.Copy != 0,
+				Paste = _data.Paste != 0,
+				Delete = _data.Delete != 0,
+				Tab = _data.Tab != 0,
+				Up = _data.Up != 0,
+				Down = _data.Down != 0,
+				Left = _data.Left != 0,
+				Right = _data.Right != 0,
+				Home = _data.Home != 0,
+				End = _data.End != 0,
+				Insert = _data.Insert != 0,
+				Text = new string(_data.Text)
+			};
+			return ret;
+		}
+
+		/// <summary>
 		/// Get mouse wheel / scroll delta of current frame.
 		/// </summary>
 		public PointI ScrollDelta => new PointI(_BonEngineBind.BON_Input_ScrollDeltaX(), _BonEngineBind.BON_Input_ScrollDeltaY());
@@ -98,5 +129,39 @@ namespace BonEngineSharp.Managers
         {
 			_BonEngineBind.BON_Input_SetKeyBind((int)key, action);
         }
+
+		/// <summary>
+		/// Set / get clipboard buffer as string.
+		/// </summary>
+		public string Clipboard
+		{
+			get { return _BonEngineBind.BON_Input_GetClipboard_Str(); }
+			set { _BonEngineBind.BON_Input_SetClipboard(value); }
+		}
+
+		/// <summary>
+		/// Get array with all keys currently assigned to an action id.
+		/// </summary>
+		/// <param name="action">Action id to query.</param>
+		/// <returns>Array with keys assigned to action id.</returns>
+		public KeyCodes[] GetAssignedKeys(string action)
+        {
+			// get buffer from C++ side
+			int length = 0;
+			IntPtr buff = _BonEngineBind.BON_Input_GetAssignedKeys(action, ref length);
+
+			// no results? return empty
+			if (length == 0 || buff == IntPtr.Zero)
+            {
+				return new KeyCodes[] { };
+            }
+
+			// create array of ints
+			int[] temparray = new int[length];
+			Marshal.Copy(buff, temparray, 0, length);
+
+			// convert to key codes and return
+			return temparray.Select(x => (KeyCodes)x).ToArray();
+		}
 	}
 }

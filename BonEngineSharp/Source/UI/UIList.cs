@@ -68,6 +68,16 @@ namespace BonEngineSharp.UI
         }
 
 		/// <summary>
+		/// Return of list contains an item.
+		/// </summary>
+		/// <param name="item">Item to check.</param>
+		/// <returns>Returns true if list contains item.</returns>
+		public bool Contains(string item)
+        {
+			return _BonEngineBind.BON_UIList_Contains(_handle, item);
+        }
+
+		/// <summary>
 		/// Remove item from list by index.
 		/// </summary>
 		/// <param name="index">Item index to remove.</param>

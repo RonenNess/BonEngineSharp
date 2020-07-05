@@ -2623,6 +2623,90 @@ references:
   fullName.vb: BonEngineSharp.Defs.SoundChannelId.Widening
   nameWithType: SoundChannelId.Implicit
   nameWithType.vb: SoundChannelId.Widening
+- uid: BonEngineSharp.Defs.TextInputData
+  name: TextInputData
+  href: api/BonEngineSharp.Defs.TextInputData.html
+  commentId: T:BonEngineSharp.Defs.TextInputData
+  fullName: BonEngineSharp.Defs.TextInputData
+  nameWithType: TextInputData
+- uid: BonEngineSharp.Defs.TextInputData.Backspace
+  name: Backspace
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Backspace
+  commentId: F:BonEngineSharp.Defs.TextInputData.Backspace
+  fullName: BonEngineSharp.Defs.TextInputData.Backspace
+  nameWithType: TextInputData.Backspace
+- uid: BonEngineSharp.Defs.TextInputData.Copy
+  name: Copy
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Copy
+  commentId: F:BonEngineSharp.Defs.TextInputData.Copy
+  fullName: BonEngineSharp.Defs.TextInputData.Copy
+  nameWithType: TextInputData.Copy
+- uid: BonEngineSharp.Defs.TextInputData.Delete
+  name: Delete
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Delete
+  commentId: F:BonEngineSharp.Defs.TextInputData.Delete
+  fullName: BonEngineSharp.Defs.TextInputData.Delete
+  nameWithType: TextInputData.Delete
+- uid: BonEngineSharp.Defs.TextInputData.Down
+  name: Down
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Down
+  commentId: F:BonEngineSharp.Defs.TextInputData.Down
+  fullName: BonEngineSharp.Defs.TextInputData.Down
+  nameWithType: TextInputData.Down
+- uid: BonEngineSharp.Defs.TextInputData.End
+  name: End
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_End
+  commentId: F:BonEngineSharp.Defs.TextInputData.End
+  fullName: BonEngineSharp.Defs.TextInputData.End
+  nameWithType: TextInputData.End
+- uid: BonEngineSharp.Defs.TextInputData.Home
+  name: Home
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Home
+  commentId: F:BonEngineSharp.Defs.TextInputData.Home
+  fullName: BonEngineSharp.Defs.TextInputData.Home
+  nameWithType: TextInputData.Home
+- uid: BonEngineSharp.Defs.TextInputData.Insert
+  name: Insert
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Insert
+  commentId: F:BonEngineSharp.Defs.TextInputData.Insert
+  fullName: BonEngineSharp.Defs.TextInputData.Insert
+  nameWithType: TextInputData.Insert
+- uid: BonEngineSharp.Defs.TextInputData.Left
+  name: Left
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Left
+  commentId: F:BonEngineSharp.Defs.TextInputData.Left
+  fullName: BonEngineSharp.Defs.TextInputData.Left
+  nameWithType: TextInputData.Left
+- uid: BonEngineSharp.Defs.TextInputData.Paste
+  name: Paste
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Paste
+  commentId: F:BonEngineSharp.Defs.TextInputData.Paste
+  fullName: BonEngineSharp.Defs.TextInputData.Paste
+  nameWithType: TextInputData.Paste
+- uid: BonEngineSharp.Defs.TextInputData.Right
+  name: Right
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Right
+  commentId: F:BonEngineSharp.Defs.TextInputData.Right
+  fullName: BonEngineSharp.Defs.TextInputData.Right
+  nameWithType: TextInputData.Right
+- uid: BonEngineSharp.Defs.TextInputData.Tab
+  name: Tab
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Tab
+  commentId: F:BonEngineSharp.Defs.TextInputData.Tab
+  fullName: BonEngineSharp.Defs.TextInputData.Tab
+  nameWithType: TextInputData.Tab
+- uid: BonEngineSharp.Defs.TextInputData.Text
+  name: Text
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Text
+  commentId: F:BonEngineSharp.Defs.TextInputData.Text
+  fullName: BonEngineSharp.Defs.TextInputData.Text
+  nameWithType: TextInputData.Text
+- uid: BonEngineSharp.Defs.TextInputData.Up
+  name: Up
+  href: api/BonEngineSharp.Defs.TextInputData.html#BonEngineSharp_Defs_TextInputData_Up
+  commentId: F:BonEngineSharp.Defs.TextInputData.Up
+  fullName: BonEngineSharp.Defs.TextInputData.Up
+  nameWithType: TextInputData.Up
 - uid: BonEngineSharp.Defs.UIElementState
   name: UIElementState
   href: api/BonEngineSharp.Defs.UIElementState.html
@@ -2719,6 +2803,12 @@ references:
   commentId: F:BonEngineSharp.Defs.UIElementType.Text
   fullName: BonEngineSharp.Defs.UIElementType.Text
   nameWithType: UIElementType.Text
+- uid: BonEngineSharp.Defs.UIElementType.TextInput
+  name: TextInput
+  href: api/BonEngineSharp.Defs.UIElementType.html#BonEngineSharp_Defs_UIElementType_TextInput
+  commentId: F:BonEngineSharp.Defs.UIElementType.TextInput
+  fullName: BonEngineSharp.Defs.UIElementType.TextInput
+  nameWithType: UIElementType.TextInput
 - uid: BonEngineSharp.Defs.UIElementType.value__
   name: value__
   href: api/BonEngineSharp.Defs.UIElementType.html#BonEngineSharp_Defs_UIElementType_value__
@@ -2905,6 +2995,54 @@ references:
   commentId: F:BonEngineSharp.Defs.UITextAlignment.value__
   fullName: BonEngineSharp.Defs.UITextAlignment.value__
   nameWithType: UITextAlignment.value__
+- uid: BonEngineSharp.Defs.UITextInputMode
+  name: UITextInputMode
+  href: api/BonEngineSharp.Defs.UITextInputMode.html
+  commentId: T:BonEngineSharp.Defs.UITextInputMode
+  fullName: BonEngineSharp.Defs.UITextInputMode
+  nameWithType: UITextInputMode
+- uid: BonEngineSharp.Defs.UITextInputMode.AlphaOnly
+  name: AlphaOnly
+  href: api/BonEngineSharp.Defs.UITextInputMode.html#BonEngineSharp_Defs_UITextInputMode_AlphaOnly
+  commentId: F:BonEngineSharp.Defs.UITextInputMode.AlphaOnly
+  fullName: BonEngineSharp.Defs.UITextInputMode.AlphaOnly
+  nameWithType: UITextInputMode.AlphaOnly
+- uid: BonEngineSharp.Defs.UITextInputMode.AnyText
+  name: AnyText
+  href: api/BonEngineSharp.Defs.UITextInputMode.html#BonEngineSharp_Defs_UITextInputMode_AnyText
+  commentId: F:BonEngineSharp.Defs.UITextInputMode.AnyText
+  fullName: BonEngineSharp.Defs.UITextInputMode.AnyText
+  nameWithType: UITextInputMode.AnyText
+- uid: BonEngineSharp.Defs.UITextInputMode.Lowercase
+  name: Lowercase
+  href: api/BonEngineSharp.Defs.UITextInputMode.html#BonEngineSharp_Defs_UITextInputMode_Lowercase
+  commentId: F:BonEngineSharp.Defs.UITextInputMode.Lowercase
+  fullName: BonEngineSharp.Defs.UITextInputMode.Lowercase
+  nameWithType: UITextInputMode.Lowercase
+- uid: BonEngineSharp.Defs.UITextInputMode.NoNumbers
+  name: NoNumbers
+  href: api/BonEngineSharp.Defs.UITextInputMode.html#BonEngineSharp_Defs_UITextInputMode_NoNumbers
+  commentId: F:BonEngineSharp.Defs.UITextInputMode.NoNumbers
+  fullName: BonEngineSharp.Defs.UITextInputMode.NoNumbers
+  nameWithType: UITextInputMode.NoNumbers
+- uid: BonEngineSharp.Defs.UITextInputMode.NumbersOnly
+  name: NumbersOnly
+  href: api/BonEngineSharp.Defs.UITextInputMode.html#BonEngineSharp_Defs_UITextInputMode_NumbersOnly
+  commentId: F:BonEngineSharp.Defs.UITextInputMode.NumbersOnly
+  fullName: BonEngineSharp.Defs.UITextInputMode.NumbersOnly
+  nameWithType: UITextInputMode.NumbersOnly
+- uid: BonEngineSharp.Defs.UITextInputMode.Uppercase
+  name: Uppercase
+  href: api/BonEngineSharp.Defs.UITextInputMode.html#BonEngineSharp_Defs_UITextInputMode_Uppercase
+  commentId: F:BonEngineSharp.Defs.UITextInputMode.Uppercase
+  fullName: BonEngineSharp.Defs.UITextInputMode.Uppercase
+  nameWithType: UITextInputMode.Uppercase
+- uid: BonEngineSharp.Defs.UITextInputMode.value__
+  name: value__
+  href: api/BonEngineSharp.Defs.UITextInputMode.html#BonEngineSharp_Defs_UITextInputMode_value__
+  commentId: F:BonEngineSharp.Defs.UITextInputMode.value__
+  fullName: BonEngineSharp.Defs.UITextInputMode.value__
+  nameWithType: UITextInputMode.value__
 - uid: BonEngineSharp.Defs.WindowModes
   name: WindowModes
   href: api/BonEngineSharp.Defs.WindowModes.html
@@ -5752,6 +5890,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.InputManager.BindKey
   fullName: BonEngineSharp.Managers.InputManager.BindKey
   nameWithType: InputManager.BindKey
+- uid: BonEngineSharp.Managers.InputManager.Clipboard
+  name: Clipboard
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_Clipboard
+  commentId: P:BonEngineSharp.Managers.InputManager.Clipboard
+  fullName: BonEngineSharp.Managers.InputManager.Clipboard
+  nameWithType: InputManager.Clipboard
+- uid: BonEngineSharp.Managers.InputManager.Clipboard*
+  name: Clipboard
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_Clipboard_
+  commentId: Overload:BonEngineSharp.Managers.InputManager.Clipboard
+  fullName: BonEngineSharp.Managers.InputManager.Clipboard
+  nameWithType: InputManager.Clipboard
 - uid: BonEngineSharp.Managers.InputManager.CursorDelta
   name: CursorDelta
   href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_CursorDelta
@@ -5794,6 +5944,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.InputManager.Down
   fullName: BonEngineSharp.Managers.InputManager.Down
   nameWithType: InputManager.Down
+- uid: BonEngineSharp.Managers.InputManager.GetAssignedKeys(System.String)
+  name: GetAssignedKeys(String)
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_GetAssignedKeys_System_String_
+  commentId: M:BonEngineSharp.Managers.InputManager.GetAssignedKeys(System.String)
+  fullName: BonEngineSharp.Managers.InputManager.GetAssignedKeys(System.String)
+  nameWithType: InputManager.GetAssignedKeys(String)
+- uid: BonEngineSharp.Managers.InputManager.GetAssignedKeys*
+  name: GetAssignedKeys
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_GetAssignedKeys_
+  commentId: Overload:BonEngineSharp.Managers.InputManager.GetAssignedKeys
+  fullName: BonEngineSharp.Managers.InputManager.GetAssignedKeys
+  nameWithType: InputManager.GetAssignedKeys
 - uid: BonEngineSharp.Managers.InputManager.Id
   name: Id
   href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_Id
@@ -5854,6 +6016,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.InputManager.ScrollDelta
   fullName: BonEngineSharp.Managers.InputManager.ScrollDelta
   nameWithType: InputManager.ScrollDelta
+- uid: BonEngineSharp.Managers.InputManager.TextInput
+  name: TextInput()
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_TextInput
+  commentId: M:BonEngineSharp.Managers.InputManager.TextInput
+  fullName: BonEngineSharp.Managers.InputManager.TextInput()
+  nameWithType: InputManager.TextInput()
+- uid: BonEngineSharp.Managers.InputManager.TextInput*
+  name: TextInput
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_TextInput_
+  commentId: Overload:BonEngineSharp.Managers.InputManager.TextInput
+  fullName: BonEngineSharp.Managers.InputManager.TextInput
+  nameWithType: InputManager.TextInput
 - uid: BonEngineSharp.Managers.LogManager
   name: LogManager
   href: api/BonEngineSharp.Managers.LogManager.html
@@ -6523,6 +6697,15 @@ references:
   commentId: M:BonEngineSharp.Managers.UIManager.UpdateUI(BonEngineSharp.UI.UIElement)
   fullName: BonEngineSharp.Managers.UIManager.UpdateUI(BonEngineSharp.UI.UIElement)
   nameWithType: UIManager.UpdateUI(UIElement)
+- uid: BonEngineSharp.Managers.UIManager.UpdateUI(BonEngineSharp.UI.UIElement,BonEngineSharp.UI.UIElement@)
+  name: UpdateUI(UIElement, out UIElement)
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_UpdateUI_BonEngineSharp_UI_UIElement_BonEngineSharp_UI_UIElement__
+  commentId: M:BonEngineSharp.Managers.UIManager.UpdateUI(BonEngineSharp.UI.UIElement,BonEngineSharp.UI.UIElement@)
+  name.vb: UpdateUI(UIElement, ByRef UIElement)
+  fullName: BonEngineSharp.Managers.UIManager.UpdateUI(BonEngineSharp.UI.UIElement, out BonEngineSharp.UI.UIElement)
+  fullName.vb: BonEngineSharp.Managers.UIManager.UpdateUI(BonEngineSharp.UI.UIElement, ByRef BonEngineSharp.UI.UIElement)
+  nameWithType: UIManager.UpdateUI(UIElement, out UIElement)
+  nameWithType.vb: UIManager.UpdateUI(UIElement, ByRef UIElement)
 - uid: BonEngineSharp.Managers.UIManager.UpdateUI*
   name: UpdateUI
   href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_UpdateUI_
@@ -7630,6 +7813,18 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIList.ClearSelection
   fullName: BonEngineSharp.UI.UIList.ClearSelection
   nameWithType: UIList.ClearSelection
+- uid: BonEngineSharp.UI.UIList.Contains(System.String)
+  name: Contains(String)
+  href: api/BonEngineSharp.UI.UIList.html#BonEngineSharp_UI_UIList_Contains_System_String_
+  commentId: M:BonEngineSharp.UI.UIList.Contains(System.String)
+  fullName: BonEngineSharp.UI.UIList.Contains(System.String)
+  nameWithType: UIList.Contains(String)
+- uid: BonEngineSharp.UI.UIList.Contains*
+  name: Contains
+  href: api/BonEngineSharp.UI.UIList.html#BonEngineSharp_UI_UIList_Contains_
+  commentId: Overload:BonEngineSharp.UI.UIList.Contains
+  fullName: BonEngineSharp.UI.UIList.Contains
+  nameWithType: UIList.Contains
 - uid: BonEngineSharp.UI.UIList.ElementType
   name: ElementType
   href: api/BonEngineSharp.UI.UIList.html#BonEngineSharp_UI_UIList_ElementType
@@ -8008,6 +8203,168 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIText.Text
   fullName: BonEngineSharp.UI.UIText.Text
   nameWithType: UIText.Text
+- uid: BonEngineSharp.UI.UIText.WordWrap
+  name: WordWrap
+  href: api/BonEngineSharp.UI.UIText.html#BonEngineSharp_UI_UIText_WordWrap
+  commentId: P:BonEngineSharp.UI.UIText.WordWrap
+  fullName: BonEngineSharp.UI.UIText.WordWrap
+  nameWithType: UIText.WordWrap
+- uid: BonEngineSharp.UI.UIText.WordWrap*
+  name: WordWrap
+  href: api/BonEngineSharp.UI.UIText.html#BonEngineSharp_UI_UIText_WordWrap_
+  commentId: Overload:BonEngineSharp.UI.UIText.WordWrap
+  fullName: BonEngineSharp.UI.UIText.WordWrap
+  nameWithType: UIText.WordWrap
+- uid: BonEngineSharp.UI.UITextInput
+  name: UITextInput
+  href: api/BonEngineSharp.UI.UITextInput.html
+  commentId: T:BonEngineSharp.UI.UITextInput
+  fullName: BonEngineSharp.UI.UITextInput
+  nameWithType: UITextInput
+- uid: BonEngineSharp.UI.UITextInput.#ctor(System.IntPtr)
+  name: UITextInput(IntPtr)
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput__ctor_System_IntPtr_
+  commentId: M:BonEngineSharp.UI.UITextInput.#ctor(System.IntPtr)
+  fullName: BonEngineSharp.UI.UITextInput.UITextInput(System.IntPtr)
+  nameWithType: UITextInput.UITextInput(IntPtr)
+- uid: BonEngineSharp.UI.UITextInput.#ctor*
+  name: UITextInput
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput__ctor_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.#ctor
+  fullName: BonEngineSharp.UI.UITextInput.UITextInput
+  nameWithType: UITextInput.UITextInput
+- uid: BonEngineSharp.UI.UITextInput.AllowTabs
+  name: AllowTabs
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_AllowTabs
+  commentId: P:BonEngineSharp.UI.UITextInput.AllowTabs
+  fullName: BonEngineSharp.UI.UITextInput.AllowTabs
+  nameWithType: UITextInput.AllowTabs
+- uid: BonEngineSharp.UI.UITextInput.AllowTabs*
+  name: AllowTabs
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_AllowTabs_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.AllowTabs
+  fullName: BonEngineSharp.UI.UITextInput.AllowTabs
+  nameWithType: UITextInput.AllowTabs
+- uid: BonEngineSharp.UI.UITextInput.CaretBlinkingInterval
+  name: CaretBlinkingInterval
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_CaretBlinkingInterval
+  commentId: P:BonEngineSharp.UI.UITextInput.CaretBlinkingInterval
+  fullName: BonEngineSharp.UI.UITextInput.CaretBlinkingInterval
+  nameWithType: UITextInput.CaretBlinkingInterval
+- uid: BonEngineSharp.UI.UITextInput.CaretBlinkingInterval*
+  name: CaretBlinkingInterval
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_CaretBlinkingInterval_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.CaretBlinkingInterval
+  fullName: BonEngineSharp.UI.UITextInput.CaretBlinkingInterval
+  nameWithType: UITextInput.CaretBlinkingInterval
+- uid: BonEngineSharp.UI.UITextInput.CaretCharacter
+  name: CaretCharacter
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_CaretCharacter
+  commentId: P:BonEngineSharp.UI.UITextInput.CaretCharacter
+  fullName: BonEngineSharp.UI.UITextInput.CaretCharacter
+  nameWithType: UITextInput.CaretCharacter
+- uid: BonEngineSharp.UI.UITextInput.CaretCharacter*
+  name: CaretCharacter
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_CaretCharacter_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.CaretCharacter
+  fullName: BonEngineSharp.UI.UITextInput.CaretCharacter
+  nameWithType: UITextInput.CaretCharacter
+- uid: BonEngineSharp.UI.UITextInput.ElementType
+  name: ElementType
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_ElementType
+  commentId: P:BonEngineSharp.UI.UITextInput.ElementType
+  fullName: BonEngineSharp.UI.UITextInput.ElementType
+  nameWithType: UITextInput.ElementType
+- uid: BonEngineSharp.UI.UITextInput.ElementType*
+  name: ElementType
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_ElementType_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.ElementType
+  fullName: BonEngineSharp.UI.UITextInput.ElementType
+  nameWithType: UITextInput.ElementType
+- uid: BonEngineSharp.UI.UITextInput.InputMode
+  name: InputMode
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_InputMode
+  commentId: P:BonEngineSharp.UI.UITextInput.InputMode
+  fullName: BonEngineSharp.UI.UITextInput.InputMode
+  nameWithType: UITextInput.InputMode
+- uid: BonEngineSharp.UI.UITextInput.InputMode*
+  name: InputMode
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_InputMode_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.InputMode
+  fullName: BonEngineSharp.UI.UITextInput.InputMode
+  nameWithType: UITextInput.InputMode
+- uid: BonEngineSharp.UI.UITextInput.IsReceivingInput
+  name: IsReceivingInput
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_IsReceivingInput
+  commentId: P:BonEngineSharp.UI.UITextInput.IsReceivingInput
+  fullName: BonEngineSharp.UI.UITextInput.IsReceivingInput
+  nameWithType: UITextInput.IsReceivingInput
+- uid: BonEngineSharp.UI.UITextInput.IsReceivingInput*
+  name: IsReceivingInput
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_IsReceivingInput_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.IsReceivingInput
+  fullName: BonEngineSharp.UI.UITextInput.IsReceivingInput
+  nameWithType: UITextInput.IsReceivingInput
+- uid: BonEngineSharp.UI.UITextInput.MaxLength
+  name: MaxLength
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_MaxLength
+  commentId: P:BonEngineSharp.UI.UITextInput.MaxLength
+  fullName: BonEngineSharp.UI.UITextInput.MaxLength
+  nameWithType: UITextInput.MaxLength
+- uid: BonEngineSharp.UI.UITextInput.MaxLength*
+  name: MaxLength
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_MaxLength_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.MaxLength
+  fullName: BonEngineSharp.UI.UITextInput.MaxLength
+  nameWithType: UITextInput.MaxLength
+- uid: BonEngineSharp.UI.UITextInput.PlaceholderElement
+  name: PlaceholderElement
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_PlaceholderElement
+  commentId: P:BonEngineSharp.UI.UITextInput.PlaceholderElement
+  fullName: BonEngineSharp.UI.UITextInput.PlaceholderElement
+  nameWithType: UITextInput.PlaceholderElement
+- uid: BonEngineSharp.UI.UITextInput.PlaceholderElement*
+  name: PlaceholderElement
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_PlaceholderElement_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.PlaceholderElement
+  fullName: BonEngineSharp.UI.UITextInput.PlaceholderElement
+  nameWithType: UITextInput.PlaceholderElement
+- uid: BonEngineSharp.UI.UITextInput.PlaceholderText
+  name: PlaceholderText
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_PlaceholderText
+  commentId: P:BonEngineSharp.UI.UITextInput.PlaceholderText
+  fullName: BonEngineSharp.UI.UITextInput.PlaceholderText
+  nameWithType: UITextInput.PlaceholderText
+- uid: BonEngineSharp.UI.UITextInput.PlaceholderText*
+  name: PlaceholderText
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_PlaceholderText_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.PlaceholderText
+  fullName: BonEngineSharp.UI.UITextInput.PlaceholderText
+  nameWithType: UITextInput.PlaceholderText
+- uid: BonEngineSharp.UI.UITextInput.TextElement
+  name: TextElement
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_TextElement
+  commentId: P:BonEngineSharp.UI.UITextInput.TextElement
+  fullName: BonEngineSharp.UI.UITextInput.TextElement
+  nameWithType: UITextInput.TextElement
+- uid: BonEngineSharp.UI.UITextInput.TextElement*
+  name: TextElement
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_TextElement_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.TextElement
+  fullName: BonEngineSharp.UI.UITextInput.TextElement
+  nameWithType: UITextInput.TextElement
+- uid: BonEngineSharp.UI.UITextInput.Value
+  name: Value
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_Value
+  commentId: P:BonEngineSharp.UI.UITextInput.Value
+  fullName: BonEngineSharp.UI.UITextInput.Value
+  nameWithType: UITextInput.Value
+- uid: BonEngineSharp.UI.UITextInput.Value*
+  name: Value
+  href: api/BonEngineSharp.UI.UITextInput.html#BonEngineSharp_UI_UITextInput_Value_
+  commentId: Overload:BonEngineSharp.UI.UITextInput.Value
+  fullName: BonEngineSharp.UI.UITextInput.Value
+  nameWithType: UITextInput.Value
 - uid: BonEngineSharp.UI.UIVerticalScrollbar
   name: UIVerticalScrollbar
   href: api/BonEngineSharp.UI.UIVerticalScrollbar.html

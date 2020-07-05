@@ -6,7 +6,7 @@ namespace BonEngineSharp.UI
     /// <summary>
     /// UI window element.
     /// </summary>
-    public class UIWindow : UIElement
+    public class UIWindow : UIImage
     {
         /// <summary>
         /// Get element type.
