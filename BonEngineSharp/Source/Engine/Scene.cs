@@ -98,7 +98,6 @@ namespace BonEngineSharp
         private void _Unload()
         {
             Unload();
-            Dispose();
         }
 
         /// <summary>

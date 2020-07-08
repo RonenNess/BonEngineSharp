@@ -156,7 +156,8 @@ namespace BonEngineSharp
         /// </summary>
         public static string BON_Config_GetStr_(IntPtr config, string section, string name, string defaultVal)
         {
-            return Marshal.PtrToStringAnsi(BON_Config_GetStr(config, section, name, defaultVal));
+            var ret = BON_Config_GetStr(config, section, name, null);
+            return ret != IntPtr.Zero ? Marshal.PtrToStringAnsi(ret) : defaultVal;
         }
 
         /// <summary>
