@@ -5500,6 +5500,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.GameManager.#ctor
   fullName: BonEngineSharp.Managers.GameManager.GameManager
   nameWithType: GameManager.GameManager
+- uid: BonEngineSharp.Managers.GameManager.ActiveScene
+  name: ActiveScene
+  href: api/BonEngineSharp.Managers.GameManager.html#BonEngineSharp_Managers_GameManager_ActiveScene
+  commentId: P:BonEngineSharp.Managers.GameManager.ActiveScene
+  fullName: BonEngineSharp.Managers.GameManager.ActiveScene
+  nameWithType: GameManager.ActiveScene
+- uid: BonEngineSharp.Managers.GameManager.ActiveScene*
+  name: ActiveScene
+  href: api/BonEngineSharp.Managers.GameManager.html#BonEngineSharp_Managers_GameManager_ActiveScene_
+  commentId: Overload:BonEngineSharp.Managers.GameManager.ActiveScene
+  fullName: BonEngineSharp.Managers.GameManager.ActiveScene
+  nameWithType: GameManager.ActiveScene
 - uid: BonEngineSharp.Managers.GameManager.ChangeScene(BonEngineSharp.Scene)
   name: ChangeScene(Scene)
   href: api/BonEngineSharp.Managers.GameManager.html#BonEngineSharp_Managers_GameManager_ChangeScene_BonEngineSharp_Scene_
@@ -6595,6 +6607,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.UIManager.CreateText
   fullName: BonEngineSharp.Managers.UIManager.CreateText
   nameWithType: UIManager.CreateText
+- uid: BonEngineSharp.Managers.UIManager.CreateTextInput(System.String,BonEngineSharp.UI.UIElement,System.String,System.String)
+  name: CreateTextInput(String, UIElement, String, String)
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateTextInput_System_String_BonEngineSharp_UI_UIElement_System_String_System_String_
+  commentId: M:BonEngineSharp.Managers.UIManager.CreateTextInput(System.String,BonEngineSharp.UI.UIElement,System.String,System.String)
+  fullName: BonEngineSharp.Managers.UIManager.CreateTextInput(System.String, BonEngineSharp.UI.UIElement, System.String, System.String)
+  nameWithType: UIManager.CreateTextInput(String, UIElement, String, String)
+- uid: BonEngineSharp.Managers.UIManager.CreateTextInput*
+  name: CreateTextInput
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateTextInput_
+  commentId: Overload:BonEngineSharp.Managers.UIManager.CreateTextInput
+  fullName: BonEngineSharp.Managers.UIManager.CreateTextInput
+  nameWithType: UIManager.CreateTextInput
 - uid: BonEngineSharp.Managers.UIManager.CreateVerticalScrollbar(System.String,BonEngineSharp.UI.UIElement)
   name: CreateVerticalScrollbar(String, UIElement)
   href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateVerticalScrollbar_System_String_BonEngineSharp_UI_UIElement_
@@ -6802,6 +6826,18 @@ references:
   commentId: Overload:BonEngineSharp.Scene.Load
   fullName: BonEngineSharp.Scene.Load
   nameWithType: Scene.Load
+- uid: BonEngineSharp.Scene.SceneName
+  name: SceneName
+  href: api/BonEngineSharp.Scene.html#BonEngineSharp_Scene_SceneName
+  commentId: P:BonEngineSharp.Scene.SceneName
+  fullName: BonEngineSharp.Scene.SceneName
+  nameWithType: Scene.SceneName
+- uid: BonEngineSharp.Scene.SceneName*
+  name: SceneName
+  href: api/BonEngineSharp.Scene.html#BonEngineSharp_Scene_SceneName_
+  commentId: Overload:BonEngineSharp.Scene.SceneName
+  fullName: BonEngineSharp.Scene.SceneName
+  nameWithType: Scene.SceneName
 - uid: BonEngineSharp.Scene.Start
   name: Start()
   href: api/BonEngineSharp.Scene.html#BonEngineSharp_Scene_Start

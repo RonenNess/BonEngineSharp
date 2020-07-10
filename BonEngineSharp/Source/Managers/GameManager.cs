@@ -16,13 +16,14 @@ namespace BonEngineSharp.Managers
         /// <summary>
         /// Currently active scene.
         /// </summary>
-        private Scene _activeScene;
+        public Scene ActiveScene { get; private set; }
 
         /// <summary>
         /// Exit application.
         /// </summary>
         public void Exit()
         {
+            BonEngine._Engine.Log.Debug($"[C#] 'Game.Exit' called.");
             _BonEngineBind.BON_Game_Exit();
         }
 
@@ -33,7 +34,9 @@ namespace BonEngineSharp.Managers
         public void ChangeScene(Scene scene)
         {
             // store the currently active scene to make sure it won't get collected by the GC by accident.
-            _activeScene = scene;
+            var prevSceneName = ActiveScene != null ? ActiveScene.SceneName : "null";
+            BonEngine._Engine.Log.Debug($"[C#] Changing scene from `{prevSceneName}` to `{scene.SceneName}`.");
+            ActiveScene = scene;
             _BonEngineBind.BON_Game_ChangeScene(scene.GetOrCreateHandle());
         }
 
@@ -44,6 +47,7 @@ namespace BonEngineSharp.Managers
         public void LoadConfig(string path) 
         {
             path = BonEngine._Engine.Assets.ToAssetsPath(path, true);
+            BonEngine._Engine.Log.Debug($"[C#] Load game config file from `{path}`.");
             _BonEngineBind.BON_Game_LoadConfig(path);
         }
 

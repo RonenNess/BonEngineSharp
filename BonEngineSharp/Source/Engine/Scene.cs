@@ -28,6 +28,11 @@ namespace BonEngineSharp
         _BonEngineBind.DoubleParamCallback _FixedUpdateCbHandle;
 
         /// <summary>
+        /// Get scene name (by default will be just the class name).
+        /// </summary>
+        public virtual string SceneName => GetType().Name;
+
+        /// <summary>
         /// Get or create scene handle (the part in CPP side).
         /// </summary>
         /// <returns>Scene handle.</returns>
@@ -57,6 +62,7 @@ namespace BonEngineSharp
         /// </summary>
         ~Scene()
         {
+            Log.Debug($"[C#] Scene '{SceneName}' - destructor called.");
             Dispose();
         }
 
@@ -68,6 +74,7 @@ namespace BonEngineSharp
         {
             if (_handle != IntPtr.Zero)
             {
+                Log.Info($"[C#] Scene '{SceneName}' is being disposed.");
                 _BonEngineBind.BON_Scene_Destroy(_handle);
                 _LoadCbHandle = null;
                 _UnloadCbHandle = null;
@@ -89,6 +96,7 @@ namespace BonEngineSharp
         /// </summary>
         private void _Load()
         {
+            Log.Debug($"[C#] Scene '{SceneName}' - 'Load' called.");
             Load();
         }
 
@@ -97,6 +105,7 @@ namespace BonEngineSharp
         /// </summary>
         private void _Unload()
         {
+            Log.Debug($"[C#] Scene '{SceneName}' - 'Unload' called.");
             Unload();
         }
 
@@ -105,6 +114,7 @@ namespace BonEngineSharp
         /// </summary>
         private void _Start()
         {
+            Log.Debug($"[C#] Scene '{SceneName}' - 'Start' called.");
             Start();
         }
 
