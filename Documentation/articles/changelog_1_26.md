@@ -9,3 +9,4 @@ Key changes:
 All Changes:
 
 - Added API to query text bounding box.
+- Fixed bug that querying text bounding box also renders it.
