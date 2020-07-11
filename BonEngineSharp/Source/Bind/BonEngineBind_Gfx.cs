@@ -112,5 +112,12 @@ namespace BonEngineSharp
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern void BON_Gfx_ClearScreen(float r, float g, float b, float a, int x, int y, int w, int h);
+
+        /// <summary>
+        /// Get the estimated bounding box of a text drawing.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Gfx_GetTextBoundingBox(IntPtr font, [MarshalAs(UnmanagedType.LPStr)] string text, float x, float y, int fontSize, int maxWidth, float originX, float originY, float rotation, ref int outX, ref int outY, ref int outWidth, ref int outHeight);
+
     }
 }

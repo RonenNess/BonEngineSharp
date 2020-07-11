@@ -182,6 +182,24 @@ namespace BonEngineSharp.Managers
         }
 
         /// <summary>
+        /// Get the estimated bounding box of a text rendering.
+        /// </summary>
+        /// <param name="font">Font to use.</param>
+        /// <param name="text">Text to draw.</param>
+        /// <param name="position">Text position.</param>
+        /// <param name="fontSize">Font size.</param>
+        /// <param name="maxWidth">Max line width.</param>
+        /// <param name="origin">Text origin.</param>
+        /// <param name="rotation">Text rotation.</param>
+        /// <returns>Estimated text drawing bounding box.</returns>
+        public RectangleI GetTextBoundingBox(FontAsset font, string text, PointF position, int fontSize, int maxWidth, PointF origin, float rotation)
+        {
+            RectangleI ret = new RectangleI();
+            _BonEngineBind.BON_Gfx_GetTextBoundingBox(font._handle, text, position.X, position.Y, fontSize, maxWidth, origin.X, origin.Y, rotation, ref ret.X, ref ret.Y, ref ret.Width, ref ret.Height);
+            return ret;
+        }
+
+        /// <summary>
         /// Draw a line.
         /// </summary>
         /// <param name="from">Source point.</param>
