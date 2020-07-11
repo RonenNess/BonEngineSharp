@@ -8,40 +8,40 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <DocumentationFile>C:\Projects\WebGame2019\others\BonEngineSharp\BonEngineSharp\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
+    <DocumentationFile>$(SolutionDir)\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
     <DefineConstants>TRACE;BUILD_X86</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <DocumentationFile>C:\Projects\WebGame2019\others\BonEngineSharp\BonEngineSharp\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
+    <DocumentationFile>$(SolutionDir)\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
     <DefineConstants>TRACE;BUILD_X64</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <DocumentationFile>C:\Projects\WebGame2019\others\BonEngineSharp\BonEngineSharp\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
+    <DocumentationFile>$(SolutionDir)\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <DocumentationFile>C:\Projects\WebGame2019\others\BonEngineSharp\BonEngineSharp\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
+    <DocumentationFile>$(SolutionDir)\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <DocumentationFile>C:\Projects\WebGame2019\others\BonEngineSharp\BonEngineSharp\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
+    <DocumentationFile>$(SolutionDir)\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
     <DefineConstants>TRACE;BUILD_X86</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <DocumentationFile>C:\Projects\WebGame2019\others\BonEngineSharp\BonEngineSharp\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
+    <DocumentationFile>$(SolutionDir)\BonEngineSharp\BonEngineSharp.xml</DocumentationFile>
     <DefineConstants>TRACE;BUILD_X64</DefineConstants>
   </PropertyGroup>
 
