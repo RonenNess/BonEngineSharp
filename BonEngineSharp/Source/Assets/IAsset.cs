@@ -61,6 +61,7 @@ namespace BonEngineSharp.Assets
         {
             if (HaveHandle)
             {
+                BonEngine._Engine.Log.Debug($"[C#] Asset of type '{AssetType.ToString()}' and path '{Path}' is being disposed. Release pointer: {_releaseElementOnDispose.ToString()}.");
                 if (_releaseElementOnDispose) { _BonEngineBind.BON_Assets_FreeAssetPointer(_handle); }
                 _handle = IntPtr.Zero;
             }
