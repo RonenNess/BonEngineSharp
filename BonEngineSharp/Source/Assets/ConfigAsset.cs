@@ -1,6 +1,7 @@
 ﻿using System;
 using BonEngineSharp.Defs;
 using BonEngineSharp.Framework;
+using System.Linq;
 
 namespace BonEngineSharp.Assets
 {
@@ -182,6 +183,27 @@ namespace BonEngineSharp.Assets
         public void RemoveKey(string section, string key)
         {
             _BonEngineBind.BON_Config_RemoveKey(_handle, section, key);
+        }
+
+        /// <summary>
+        /// Return if a section exists.
+        /// </summary>
+        /// <param name="section">Section to check if exists.</param>
+        /// <returns>True if section exists, false otherwise.</returns>
+        public bool Exists(string section)
+        {
+            return Sections().Contains(section);
+        }
+
+        /// <summary>
+        /// Return if a key exists in section.
+        /// </summary>
+        /// <param name="section">Section to check if exists.</param>
+        /// <param name="key">Key to check if exists.</param>
+        /// <returns>True if section exists, false otherwise.</returns>
+        public bool Exists(string section, string key)
+        {
+            return GetStr(section, key, null) != null;
         }
 
         /// <summary>
