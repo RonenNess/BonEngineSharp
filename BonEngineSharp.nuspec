@@ -11,7 +11,7 @@
 	<projectUrl>https://github.com/RonenNess/BonEngineSharp</projectUrl>
 	<iconUrl>https://raw.githubusercontent.com/RonenNess/BonEngineSharp/master/nuget_icon.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<releaseNotes>TODO</releaseNotes>
+	<releaseNotes>Fixed some bugs and extended config asset API.</releaseNotes>
 	<description>BonEngine is a code-based game engine designed to be fast, simple and straightforward.</description>
 	<tags>game engine,gamedev,graphics,gamedev</tags>
 	<dependencies>

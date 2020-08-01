@@ -192,7 +192,7 @@ namespace BonEngineSharp.Assets
         /// <returns>True if section exists, false otherwise.</returns>
         public bool Exists(string section)
         {
-            return Sections().Contains(section);
+            return _BonEngineBind.BON_Config_SectionExists(_handle, section);
         }
 
         /// <summary>
@@ -203,7 +203,7 @@ namespace BonEngineSharp.Assets
         /// <returns>True if section exists, false otherwise.</returns>
         public bool Exists(string section, string key)
         {
-            return GetStr(section, key, null) != null;
+            return _BonEngineBind.BON_Config_KeyExists(_handle, section, key);
         }
 
         /// <summary>

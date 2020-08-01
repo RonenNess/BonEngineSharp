@@ -166,6 +166,19 @@ namespace BonEngineSharp
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         [return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_Config_GetBool(IntPtr config, [MarshalAs(UnmanagedType.LPStr)] string section, [MarshalAs(UnmanagedType.LPStr)] string name, bool defaultVal);
 
+
+        /// <summary>
+        /// Checks if a section exists.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        [return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_Config_SectionExists(IntPtr config, [MarshalAs(UnmanagedType.LPStr)] string section);
+
+        /// <summary>
+        /// Checks if a key exists in section.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        [return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_Config_KeyExists(IntPtr config, [MarshalAs(UnmanagedType.LPStr)] string section, [MarshalAs(UnmanagedType.LPStr)] string key);
+
         /// <summary>
         /// Get int value from config, with raw return value.
         /// </summary>

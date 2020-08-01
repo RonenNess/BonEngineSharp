@@ -1,10 +1,12 @@
 # 1.26
 
-**WIP**
+**[02/08/2020]**
 
 Key changes:
 
-- WIP
+- Fixed bug in freeing assets.
+- More logs.
+- 'Exists()' in config assets.
 
 All Changes:
 
@@ -14,3 +16,4 @@ All Changes:
 - Added some extra C# logs.
 - Added 'Exists' to config asset.
 - Added 'Tag' to assets.
+- Fixed bug with assets deletion from GC (fix on C++ side).

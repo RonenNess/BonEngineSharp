@@ -36,6 +36,7 @@ namespace BonEngineSharp.Managers
         /// <param name="blend">Blend mode.</param>
         public void DrawImage(ImageAsset image, PointF position, PointI size, BlendModes blend = BlendModes.AlphaBlend)
         {
+            if (!image.HaveHandle) { throw new Exception("Tried to render an image without handle!"); }
             _BonEngineBind.BON_Gfx_DrawImage(image._handle, position.X, position.Y, size.X, size.Y, (int)blend);
         }
 
@@ -80,6 +81,7 @@ namespace BonEngineSharp.Managers
         /// <param name="color">Tint color.</param>
         public void DrawImage(ImageAsset image, PointF position, PointI size, BlendModes blend, RectangleI sourceRect, PointF origin, float rotation, Color color)
         {
+            if (!image.HaveHandle) { throw new Exception("Tried to render an image without handle!"); }
             _BonEngineBind.BON_Gfx_DrawImageEx(image._handle, position.X, position.Y, size.X, size.Y, (int)blend, sourceRect.X, sourceRect.Y, sourceRect.Width, sourceRect.Height, origin.X, origin.Y, rotation, color.R, color.G, color.B, color.A);
         }
 
@@ -116,6 +118,7 @@ namespace BonEngineSharp.Managers
         /// <param name="rotation">Text rotation.</param>
         public void DrawText(FontAsset font, string text, PointF position, Color color, int fontSize, int maxWidth, BlendModes blend, PointF origin, float rotation)
         {
+            if (!font.HaveHandle) { throw new Exception("Tried to render a font without handle!"); }
             _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X, position.Y, color.R, color.G, color.B, color.A, fontSize, maxWidth, (int)blend, origin.X, origin.Y, rotation);
         }
 
@@ -131,6 +134,7 @@ namespace BonEngineSharp.Managers
         /// <param name="blend">Blend mode.</param>
         public void DrawText(FontAsset font, string text, PointF position, Color color, int fontSize = 0, int maxWidth = 0, BlendModes blend = BlendModes.AlphaBlend)
         {
+            if (!font.HaveHandle) { throw new Exception("Tried to render a font without handle!"); }
             _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X, position.Y, color.R, color.G, color.B, color.A, fontSize, maxWidth, (int)blend, 0, 0, 0);
         }
 
@@ -150,6 +154,7 @@ namespace BonEngineSharp.Managers
         /// <param name="blend">Blend mode.</param>
         public void DrawText(FontAsset font, string text, PointF position, Color color, Color outlineColor, int outlineWidth, PointF origin, float rotation, int fontSize = 0, int maxWidth = 0, BlendModes blend = BlendModes.AlphaBlend)
         {
+            if (!font.HaveHandle) { throw new Exception("Tried to render a font without handle!"); }
             _BonEngineBind.BON_Gfx_DrawTextWithOutline(font._handle, text, position.X, position.Y, color.R, color.G, color.B, color.A, fontSize, maxWidth, (int)blend, origin.X, origin.Y, rotation, outlineWidth, outlineColor.R, outlineColor.G, outlineColor.B, outlineColor.A);
         }
 
@@ -167,6 +172,7 @@ namespace BonEngineSharp.Managers
         /// <param name="blend">Blend mode.</param>
         public void DrawText(FontAsset font, string text, PointF position, Color color, Color outlineColor, int outlineWidth = 1, int fontSize = 0, int maxWidth = 0, BlendModes blend = BlendModes.AlphaBlend)
         {
+            if (!font.HaveHandle) { throw new Exception("Tried to render a font without handle!"); }
             _BonEngineBind.BON_Gfx_DrawTextWithOutline(font._handle, text, position.X, position.Y, color.R, color.G, color.B, color.A, fontSize, maxWidth, (int)blend, 0, 0, 0, outlineWidth, outlineColor.R, outlineColor.G, outlineColor.B, outlineColor.A);
         }
 
@@ -178,6 +184,7 @@ namespace BonEngineSharp.Managers
         /// <param name="position">Text position.</param>
         public void DrawText(FontAsset font, string text, PointF position)
         {
+            if (!font.HaveHandle) { throw new Exception("Tried to render a font without handle!"); }
             _BonEngineBind.BON_Gfx_DrawText(font._handle, text, position.X, position.Y, 1f, 1f, 1f, 1f, 0, 0, (int)BlendModes.AlphaBlend, 0, 0, 0);
         }
 
@@ -194,6 +201,7 @@ namespace BonEngineSharp.Managers
         /// <returns>Estimated text drawing bounding box.</returns>
         public RectangleI GetTextBoundingBox(FontAsset font, string text, PointF position, int fontSize, int maxWidth, PointF origin, float rotation)
         {
+            if (!font.HaveHandle) { throw new Exception("Tried to render a font without handle!"); }
             RectangleI ret = new RectangleI();
             _BonEngineBind.BON_Gfx_GetTextBoundingBox(font._handle, text, position.X, position.Y, fontSize, maxWidth, origin.X, origin.Y, rotation, ref ret.X, ref ret.Y, ref ret.Width, ref ret.Height);
             return ret;
