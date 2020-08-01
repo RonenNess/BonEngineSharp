@@ -13,3 +13,4 @@ All Changes:
 - Fixed XML path in project files.
 - Added some extra C# logs.
 - Added 'Exists' to config asset.
+- Added 'Tag' to assets.

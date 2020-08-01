@@ -18,6 +18,11 @@ namespace BonEngineSharp.Assets
         internal bool _releaseElementOnDispose = true;
 
         /// <summary>
+        /// Optional tag you can attach to assets to identify them later in logs.
+        /// </summary>
+        public string Tag;
+
+        /// <summary>
         /// Create the asset.
         /// </summary>
         /// <param name="handle">Asset handle inside the low-level engine.</param>
@@ -51,6 +56,7 @@ namespace BonEngineSharp.Assets
         /// </summary>
         ~IAsset()
         {
+            BonEngine._Engine.Log.Debug($"[C#] Asset of type '{AssetType.ToString()}' and path '{Path}' - destructor called.");
             Dispose();
         }
 
@@ -61,7 +67,7 @@ namespace BonEngineSharp.Assets
         {
             if (HaveHandle)
             {
-                BonEngine._Engine.Log.Debug($"[C#] Asset of type '{AssetType.ToString()}' and path '{Path}' is being disposed. Release pointer: {_releaseElementOnDispose.ToString()}.");
+                BonEngine._Engine.Log.Debug($"[C#] Asset of type '{AssetType.ToString()}' and path '{Path}' is being disposed. Tag: '{Tag ?? string.Empty}', Release pointer: {_releaseElementOnDispose.ToString()}.");
                 if (_releaseElementOnDispose) { _BonEngineBind.BON_Assets_FreeAssetPointer(_handle); }
                 _handle = IntPtr.Zero;
             }
