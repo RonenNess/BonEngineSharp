@@ -78,5 +78,14 @@ namespace BonEngineSharp.Framework
                 return ret;
             }
         }
+
+        /// <summary>
+        /// Clone this sprite.
+        /// </summary>
+        /// <returns>Cloned sprite.</returns>
+        public Sprite Clone()
+        {
+            return MemberwiseClone() as Sprite;
+        }
     }
 }

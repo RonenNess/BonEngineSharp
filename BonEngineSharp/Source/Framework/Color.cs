@@ -26,6 +26,15 @@ namespace BonEngineSharp.Framework
         /// Opacity.
         /// </summary>
         public float A;
+        
+        /// <summary>
+        /// Clone this color.
+        /// </summary>
+        /// <returns>Cloned color object.</returns>
+        public Color Clone()
+        {
+            return new Color(R, G, B, A);
+        }
 
         /// <summary>
         /// Red component as byte.

@@ -29,6 +29,15 @@ namespace BonEngineSharp.Framework
         public int Height;
 
         /// <summary>
+        /// Clone this rectangle.
+        /// </summary>
+        /// <returns>Cloned rectangle.</returns>
+        public RectangleI Clone()
+        {
+            return new RectangleI(X, Y, Width, Height);
+        }
+
+        /// <summary>
         /// Set / get rectangle left position.
         /// </summary>
         public int Left
