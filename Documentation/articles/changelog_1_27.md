@@ -9,3 +9,4 @@ Key changes:
 All Changes:
 
 - Added some Clone() methods.
+- Added 'Add' and 'AddSelf' to Colors.

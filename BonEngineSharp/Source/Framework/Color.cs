@@ -84,6 +84,35 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Clone self and add other color to clone.
+        /// </summary>
+        /// <param name="other">Color to add.</param>
+        /// <param name="includeAlpha">If true, will include alpha component.</param>
+        /// <returns>Cloned color with added other color.</returns>
+        public Color Add(Color other, bool includeAlpha = true)
+        {
+            var ret = Clone();
+            ret.R += other.R;
+            ret.G += other.G;
+            ret.B += other.B;
+            if (includeAlpha) { ret.A += other.A; }
+            return ret;
+        }
+
+        /// <summary>
+        /// Add other color to self.
+        /// </summary>
+        /// <param name="other">Color to add.</param>
+        /// <param name="includeAlpha">If true, will include alpha component.</param>
+        public void AddSelf(Color other, bool includeAlpha = true)
+        {
+            R += other.R;
+            G += other.G;
+            B += other.B;
+            if (includeAlpha) { A += other.A; }
+        }
+
+        /// <summary>
         /// Decrease all color components and make sure in valid range (0-1).
         /// </summary>
         /// <param name="amount">Quantity to reduce.</param>
