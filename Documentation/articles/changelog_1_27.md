@@ -10,3 +10,4 @@ All Changes:
 
 - Added some Clone() methods.
 - Added 'Duration' to animations.
+- Added 'Add' and 'AddSelf' to Colors.
