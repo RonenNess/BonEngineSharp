@@ -44,6 +44,22 @@ namespace BonEngineSharp.Framework
         public int StepsCount => _steps.Count;
 
         /// <summary>
+        /// Get animation duration.
+        /// </summary>
+        public float Duration
+        {
+            get
+            {
+                float ret = 0f;
+                foreach (var step in _steps)
+                {
+                    ret += step.Duration;
+                }
+                return ret;
+            }
+        }
+
+        /// <summary>
         /// Create empty sprite animation.
         /// </summary>
         /// <param name="identifier">Animation identifier.</param>

@@ -9,3 +9,4 @@ Key changes:
 All Changes:
 
 - Added some Clone() methods.
+- Added 'Duration' to animations.
