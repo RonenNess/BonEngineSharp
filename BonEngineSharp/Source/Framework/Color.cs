@@ -5,7 +5,7 @@ namespace BonEngineSharp.Framework
     /// <summary>
     /// Base color object.
     /// </summary>
-    public struct Color
+    public struct Color : IEquatable<Color>
     {
         /// <summary>
         /// Red component.
@@ -287,6 +287,56 @@ namespace BonEngineSharp.Framework
         public static Color Random()
         {
             return new Color((float)_rand.NextDouble(), (float)_rand.NextDouble(), (float)_rand.NextDouble(), 1f);
+        }
+
+        /// <summary>
+        /// Check if this color equals to another object.
+        /// </summary>
+        public override bool Equals(object obj)
+        {
+            if (!(obj is Color)) { return false; }
+            var other = (Color)obj;
+            return (other.R == R) && (other.G == G) && (other.B == B) && (other.A == A);
+        }
+
+        /// <summary>
+        /// Implement == operator.
+        /// </summary>
+        public static bool operator ==(Color obj1, Color obj2)
+        {
+            return obj1.Equals(obj2);
+        }
+
+        /// <summary>
+        /// Implement != operator.
+        /// </summary>
+        public static bool operator !=(Color obj1, Color obj2)
+        {
+            return !(obj1 == obj2);
+        }
+
+        /// <summary>
+        /// Check if this color equals to another color.
+        /// </summary>
+        public bool Equals(Color other)
+        {
+            return (other.R == R) && (other.G == G) && (other.B == B) && (other.A == A);
+        }
+
+        /// <summary>
+        /// Implement hash code of color.
+        /// </summary>
+        public override int GetHashCode()
+        {
+            unchecked // Overflow is fine, just wrap
+            {
+                int hash = 17;
+                hash = hash * 23 + (int)R;
+                hash = hash * 23 + (int)G;
+                hash = hash * 23 + (int)B;
+                hash = hash * 23 + (int)A;
+                return hash;
+            }
         }
     }
 }

@@ -5,7 +5,7 @@ namespace BonEngineSharp.Framework
     /// <summary>
     /// Point class.
     /// </summary>
-    public struct PointI
+    public struct PointI : IEquatable<PointI>
     {
         /// <summary>
         /// X component of the point.
@@ -380,12 +380,37 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
-        /// Check if this point equals to another point.
+        /// Check if this point equals to another object.
         /// </summary>
         public override bool Equals(object obj)
         {
+            if (!(obj is PointI)) { return false; }
             var other = (PointI)obj;
             return (other.X == X) && (other.Y == Y);
+        }
+
+        /// <summary>
+        /// Implement == operator.
+        /// </summary>
+        public static bool operator ==(PointI obj1, PointI obj2)
+        {
+            return obj1.Equals(obj2);
+        }
+
+        /// <summary>
+        /// Implement != operator.
+        /// </summary>
+        public static bool operator !=(PointI obj1, PointI obj2)
+        {
+            return !(obj1 == obj2);
+        }
+
+        /// <summary>
+        /// Check if this point equals to another point.
+        /// </summary>
+        public bool Equals(PointI other)
+        {
+            return other.X == X && other.Y == Y;
         }
 
         /// <summary>

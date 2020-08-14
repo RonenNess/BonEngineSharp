@@ -6,7 +6,7 @@ namespace BonEngineSharp.Framework
     /// <summary>
     /// Represent a rectangle.
     /// </summary>
-    public struct RectangleF
+    public struct RectangleF : IEquatable<RectangleF>
     {
         /// <summary>
         /// X position.
@@ -178,5 +178,54 @@ namespace BonEngineSharp.Framework
         /// </summary>
         public static implicit operator RectangleI(RectangleF p) => new RectangleI((int)p.X, (int)p.Y, (int)p.Width, (int)p.Height);
 
+        /// <summary>
+        /// Check if this Rectangle equals to another object.
+        /// </summary>
+        public override bool Equals(object obj)
+        {
+            if (!(obj is RectangleF)) { return false; }
+            var other = (RectangleF)obj;
+            return (other.X == X) && (other.Y == Y) && (other.Width == Width) && (other.Height == Height);
+        }
+
+        /// <summary>
+        /// Implement == operator.
+        /// </summary>
+        public static bool operator ==(RectangleF obj1, RectangleF obj2)
+        {
+            return obj1.Equals(obj2);
+        }
+
+        /// <summary>
+        /// Implement != operator.
+        /// </summary>
+        public static bool operator !=(RectangleF obj1, RectangleF obj2)
+        {
+            return !(obj1 == obj2);
+        }
+
+        /// <summary>
+        /// Check if this Rectangle equals to another Rectangle.
+        /// </summary>
+        public bool Equals(RectangleF other)
+        {
+            return (other.X == X) && (other.Y == Y) && (other.Width == Width) && (other.Height == Height);
+        }
+
+        /// <summary>
+        /// Implement hash code of color.
+        /// </summary>
+        public override int GetHashCode()
+        {
+            unchecked // Overflow is fine, just wrap
+            {
+                int hash = 17;
+                hash = hash * 23 + (int)X;
+                hash = hash * 23 + (int)Y;
+                hash = hash * 23 + (int)Width;
+                hash = hash * 23 + (int)Height;
+                return hash;
+            }
+        }
     }
 }

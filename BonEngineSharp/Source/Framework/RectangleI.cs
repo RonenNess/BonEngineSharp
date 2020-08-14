@@ -6,7 +6,7 @@ namespace BonEngineSharp.Framework
     /// <summary>
     /// Represent a rectangle.
     /// </summary>
-    public struct RectangleI
+    public struct RectangleI : IEquatable<RectangleI>
     {
         /// <summary>
         /// X position.
@@ -177,5 +177,55 @@ namespace BonEngineSharp.Framework
         /// Implicit conversion to RectangleF.
         /// </summary>
         public static implicit operator RectangleF(RectangleI p) => new RectangleF((float)p.X, (float)p.Y, (float)p.Width, (float)p.Height);
+
+        /// <summary>
+        /// Check if this Rectangle equals to another object.
+        /// </summary>
+        public override bool Equals(object obj)
+        {
+            if (!(obj is RectangleI)) { return false; }
+            var other = (RectangleI)obj;
+            return (other.X == X) && (other.Y == Y) && (other.Width == Width) && (other.Height == Height);
+        }
+
+        /// <summary>
+        /// Implement == operator.
+        /// </summary>
+        public static bool operator ==(RectangleI obj1, RectangleI obj2)
+        {
+            return obj1.Equals(obj2);
+        }
+
+        /// <summary>
+        /// Implement != operator.
+        /// </summary>
+        public static bool operator !=(RectangleI obj1, RectangleI obj2)
+        {
+            return !(obj1 == obj2);
+        }
+
+        /// <summary>
+        /// Check if this Rectangle equals to another Rectangle.
+        /// </summary>
+        public bool Equals(RectangleI other)
+        {
+            return (other.X == X) && (other.Y == Y) && (other.Width == Width) && (other.Height == Height);
+        }
+
+        /// <summary>
+        /// Implement hash code of color.
+        /// </summary>
+        public override int GetHashCode()
+        {
+            unchecked // Overflow is fine, just wrap
+            {
+                int hash = 17;
+                hash = hash * 23 + (int)X;
+                hash = hash * 23 + (int)Y;
+                hash = hash * 23 + (int)Width;
+                hash = hash * 23 + (int)Height;
+                return hash;
+            }
+        }
     }
 }
