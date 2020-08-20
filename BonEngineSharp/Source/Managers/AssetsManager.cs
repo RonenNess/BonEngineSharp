@@ -100,10 +100,25 @@ namespace BonEngineSharp.Managers
         /// <summary>
         /// Saves a config file.
         /// </summary>
+        /// <param name="config">Config asset to save.</param>
+        /// <param name="path">Output file path.</param>
+        /// <param name="useAssetsRoot">If true, will append path to assets root. If false, will treat it as relative path to working directory.</param>
         /// <returns>True if saving was successful.</returns>
-        public bool SaveConfig(ConfigAsset config, string path)
+        public bool SaveConfig(ConfigAsset config, string path, bool useAssetsRoot = true)
         {
-            return _BonEngineBind.BON_Assets_SaveConfig(config._handle, ToAssetsPath(path, false));
+            return _BonEngineBind.BON_Assets_SaveConfig(config._handle, useAssetsRoot ? ToAssetsPath(path, false) : path);
+        }
+
+        /// <summary>
+        /// Saves an image file.
+        /// </summary>
+        /// <param name="image">Image asset to save.</param>
+        /// <param name="path">Output file path.</param>
+        /// <param name="useAssetsRoot">If true, will append path to assets root. If false, will treat it as relative path to working directory.</param>
+        /// <returns>True if saving was successful.</returns>
+        public void SaveImage(ImageAsset image, string path, bool useAssetsRoot = true)
+        {
+            image.SaveToFile(useAssetsRoot ? ToAssetsPath(path, false) : path);
         }
 
         /// <summary>
