@@ -54,6 +54,12 @@ namespace BonEngineSharp
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern void BON_Input_SetClipboard([MarshalAs(UnmanagedType.LPStr)] string value);
+        
+        /// <summary>
+        /// Load controls from config asset.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Input_LoadControlsFromConfig(IntPtr config, bool replaceExisting);
 
         /// <summary>
         /// Struct to get text input data - must match the CPP side.

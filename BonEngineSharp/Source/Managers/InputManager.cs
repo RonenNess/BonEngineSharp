@@ -1,4 +1,5 @@
-﻿using BonEngineSharp.Defs;
+﻿using BonEngineSharp.Assets;
+using BonEngineSharp.Defs;
 using BonEngineSharp.Framework;
 using System;
 using System.Linq;
@@ -104,6 +105,16 @@ namespace BonEngineSharp.Managers
 			};
 			return ret;
 		}
+
+		/// <summary>
+		/// Load input binds from config asset.
+		/// </summary>
+		/// <param name="config">Config asset to load key binds from (must appear under 'controls' section).</param>
+		/// <param name="removeOldBinds">If true, will clear all previous key binds.</param>
+		public void LoadControlsFromConfig(ConfigAsset config, bool removeOldBinds)
+        {
+			_BonEngineBind.BON_Input_LoadControlsFromConfig(config._handle, removeOldBinds);
+        }
 
 		/// <summary>
 		/// Get mouse wheel / scroll delta of current frame.
