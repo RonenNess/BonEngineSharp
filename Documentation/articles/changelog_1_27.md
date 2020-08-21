@@ -6,6 +6,7 @@ Key changes:
 
 - Added 'LoadControlsFromConfig()' to Input Manager.
 - Fixed access violation when creating empty config asset.
+- Added 'Clear()' to Image Assets.
 
 All Changes:
 
@@ -18,3 +19,4 @@ All Changes:
 - Added flag if to use assets path when saving config file.
 - Added API to save image file from assets manager.
 - Added colors Lerp.
+- Added 'Clear()' to Image Assets.

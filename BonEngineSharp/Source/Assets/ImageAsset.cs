@@ -73,6 +73,14 @@ namespace BonEngineSharp.Assets
         }
 
         /// <summary>
+        /// Clears image to transparent pixels, including alpha channels.
+        /// </summary>
+        public void Clear()
+        {
+            _BonEngineBind.BON_Image_Clear(_handle);
+        }
+
+        /// <summary>
         /// Prepare a reading buffer so we can query pixels data from this image asset.
         /// You must call this before calling GetPixel().
         /// </summary>

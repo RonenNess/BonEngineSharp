@@ -121,6 +121,12 @@ namespace BonEngineSharp
         public static extern int BON_Image_Height(IntPtr asset);
 
         /// <summary>
+        /// Clears an image to transparent pixels.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Image_Clear(IntPtr asset);
+
+        /// <summary>
         /// Save image to file.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
