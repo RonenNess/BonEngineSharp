@@ -290,6 +290,18 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Lerp between two colors.
+        /// </summary>
+        /// <param name="a">From color.</param>
+        /// <param name="b">To color.</param>
+        /// <param name="delta">Lerp factor.</param>
+        /// <returns>Lerped color.</returns>
+        public static Color Lerp(Color a, Color b, float delta)
+        {
+            return new Color((a.R * (1f - delta) + b.R * delta), (a.G * (1f - delta) + b.G * delta), (a.B * (1f - delta) + b.B * delta), (a.A * (1f - delta) + b.A * delta));
+        }
+
+        /// <summary>
         /// Check if this color equals to another object.
         /// </summary>
         public override bool Equals(object obj)

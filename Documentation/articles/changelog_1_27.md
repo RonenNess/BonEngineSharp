@@ -17,3 +17,4 @@ All Changes:
 - Fixed access violation when creating empty config asset.
 - Added flag if to use assets path when saving config file.
 - Added API to save image file from assets manager.
+- Added colors Lerp.
