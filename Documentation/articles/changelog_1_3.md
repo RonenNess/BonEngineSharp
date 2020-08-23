@@ -1,15 +1,18 @@
-# 1.27
+# 1.3
 
 **[WIP]**
 
 Key changes:
 
+- Added 'Effects' assets.
 - Added 'LoadControlsFromConfig()' to Input Manager.
 - Fixed access violation when creating empty config asset.
 - Added 'Clear()' to Image Assets.
 
 All Changes:
 
+- Added 'Effects' assets.
+- Added 'Features' init struct.
 - Added some Clone() methods.
 - Added 'Duration' to animations.
 - Added 'Add' and 'AddSelf' to Colors.
