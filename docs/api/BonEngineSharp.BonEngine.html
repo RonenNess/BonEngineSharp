@@ -146,6 +146,33 @@
   </h3>
   
   
+  <a id="BonEngineSharp_BonEngine_GetActiveFeatures_" data-uid="BonEngineSharp.BonEngine.GetActiveFeatures*"></a>
+  <h4 id="BonEngineSharp_BonEngine_GetActiveFeatures" data-uid="BonEngineSharp.BonEngine.GetActiveFeatures">GetActiveFeatures()</h4>
+  <div class="markdown level1 summary"><p>Get currently active features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BonFeatures GetActiveFeatures()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BonFeatures.html">BonFeatures</a></td>
+        <td><p>Activated features, or null if Start() wasn't called yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_BonEngine_GetCustomManager_" data-uid="BonEngineSharp.BonEngine.GetCustomManager*"></a>
   <h4 id="BonEngineSharp_BonEngine_GetCustomManager_System_String_" data-uid="BonEngineSharp.BonEngine.GetCustomManager(System.String)">GetCustomManager(String)</h4>
   <div class="markdown level1 summary"><p>Get a custom manager instance.</p>
@@ -221,13 +248,13 @@
   
   
   <a id="BonEngineSharp_BonEngine_Start_" data-uid="BonEngineSharp.BonEngine.Start*"></a>
-  <h4 id="BonEngineSharp_BonEngine_Start_BonEngineSharp_Scene_" data-uid="BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene)">Start(Scene)</h4>
+  <h4 id="BonEngineSharp_BonEngine_Start_BonEngineSharp_Scene_BonEngineSharp_Defs_BonFeatures_" data-uid="BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene,BonEngineSharp.Defs.BonFeatures)">Start(Scene, BonFeatures)</h4>
   <div class="markdown level1 summary"><p>Start the engine.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Start(Scene scene)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Start(Scene scene, BonFeatures features = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,6 +270,12 @@
         <td><a class="xref" href="BonEngineSharp.Scene.html">Scene</a></td>
         <td><span class="parametername">scene</span></td>
         <td><p>Scene to set as first scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BonFeatures.html">BonFeatures</a></td>
+        <td><span class="parametername">features</span></td>
+        <td><p>Object describing which features / flags to enable for BonEngine initialization.</p>
 </td>
       </tr>
     </tbody>

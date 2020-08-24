@@ -81,11 +81,15 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">PointI</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a>&gt;</div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Framework.html">BonEngineSharp.Framework</a></h6>
   <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
   <h5 id="BonEngineSharp_Framework_PointI_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class PointI : ValueType</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class PointI : ValueType, IEquatable&lt;PointI&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -930,8 +934,51 @@
   
   
   <a id="BonEngineSharp_Framework_PointI_Equals_" data-uid="BonEngineSharp.Framework.PointI.Equals*"></a>
-  <h4 id="BonEngineSharp_Framework_PointI_Equals_System_Object_" data-uid="BonEngineSharp.Framework.PointI.Equals(System.Object)">Equals(Object)</h4>
+  <h4 id="BonEngineSharp_Framework_PointI_Equals_BonEngineSharp_Framework_PointI_" data-uid="BonEngineSharp.Framework.PointI.Equals(BonEngineSharp.Framework.PointI)">Equals(PointI)</h4>
   <div class="markdown level1 summary"><p>Check if this point equals to another point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(PointI other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_PointI_Equals_" data-uid="BonEngineSharp.Framework.PointI.Equals*"></a>
+  <h4 id="BonEngineSharp_Framework_PointI_Equals_System_Object_" data-uid="BonEngineSharp.Framework.PointI.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Check if this point equals to another object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1880,6 +1927,54 @@
   </h3>
   
   
+  <a id="BonEngineSharp_Framework_PointI_op_Equality_" data-uid="BonEngineSharp.Framework.PointI.op_Equality*"></a>
+  <h4 id="BonEngineSharp_Framework_PointI_op_Equality_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_" data-uid="BonEngineSharp.Framework.PointI.op_Equality(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI)">Equality(PointI, PointI)</h4>
+  <div class="markdown level1 summary"><p>Implement == operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PointI obj1, PointI obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Framework_PointI_op_Implicit_" data-uid="BonEngineSharp.Framework.PointI.op_Implicit*"></a>
   <h4 id="BonEngineSharp_Framework_PointI_op_Implicit_BonEngineSharp_Framework_PointI__BonEngineSharp_Framework_PointF" data-uid="BonEngineSharp.Framework.PointI.op_Implicit(BonEngineSharp.Framework.PointI)~BonEngineSharp.Framework.PointF">Implicit(PointI to PointF)</h4>
   <div class="markdown level1 summary"><p>Implicit conversion to pointF.</p>
@@ -1921,6 +2016,58 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="BonEngineSharp_Framework_PointI_op_Inequality_" data-uid="BonEngineSharp.Framework.PointI.op_Inequality*"></a>
+  <h4 id="BonEngineSharp_Framework_PointI_op_Inequality_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_" data-uid="BonEngineSharp.Framework.PointI.op_Inequality(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI)">Inequality(PointI, PointI)</h4>
+  <div class="markdown level1 summary"><p>Implement != operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PointI obj1, PointI obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;&gt;</span>
+  </div>
 </article>
           </div>
           

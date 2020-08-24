@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace BonEngineSharp.Assets
-   </title>
+    <title>1.26 </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace BonEngineSharp.Assets
-   ">
+    <meta name="title" content="1.26 ">
     <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,43 +66,26 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Assets">
-  
-  <h1 id="BonEngineSharp_Assets" data-uid="BonEngineSharp.Assets" class="text-break">Namespace BonEngineSharp.Assets
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></h4>
-      <section><p>Config asset type.
-This asset loads a config file (.ini format in default implementation) and provide API to retrieve or set data from it.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.Assets.EffectAsset.html">EffectAsset</a></h4>
-      <section><p>Effect asset type.
-This asset is used to render sprites and text with special effects.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.Assets.FontAsset.html">FontAsset</a></h4>
-      <section><p>Font asset type.
-This asset is used to render text.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.Assets.IAsset.html">IAsset</a></h4>
-      <section><p>Asset base class.
-This is the basic class all Assets inherit from and its main purpose is to manage the handle to the CPP-side asset.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></h4>
-      <section><p>Image asset type.
-Used to render sprites on screen, or as a render target to draw on.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></h4>
-      <section><p>Music asset type.
-This asset is used to play long music tracks in background.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.Assets.SoundAsset.html">SoundAsset</a></h4>
-      <section><p>Sound track asset type.
-This asset is used to play sound effects on mix channels. For music tracks, use the MusicAsset.</p>
-</section>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="126">1.26</h1>
+
+<p><strong>[02/08/2020]</strong></p>
+<p>Key changes:</p>
+<ul>
+<li>Fixed bug in freeing assets.</li>
+<li>More logs.</li>
+<li>'Exists()' in config assets.</li>
+</ul>
+<p>All Changes:</p>
+<ul>
+<li>Added API to query text bounding box.</li>
+<li>Fixed bug that querying text bounding box also renders it.</li>
+<li>Fixed XML path in project files.</li>
+<li>Added some extra C# logs.</li>
+<li>Added 'Exists' to config asset.</li>
+<li>Added 'Tag' to assets.</li>
+<li>Fixed bug with assets deletion from GC (fix on C++ side).</li>
+</ul>
 </article>
           </div>
           
@@ -112,6 +93,9 @@ This asset is used to play sound effects on mix channels. For music tracks, use 
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RonenNess/BonEngineSharp/blob/master/Documentation/articles/changelog_1_26.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

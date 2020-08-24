@@ -9,7 +9,19 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.ConfigAsset.html",
-          "hash": "VtF/CcQqKaK1m3hYrV5F7Q=="
+          "hash": "ZD8yTsNOUVckwf/umZajcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Assets.EffectAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Assets.EffectAsset.html",
+          "hash": "fFGdQNwiovbTrFHBHl0FGA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.FontAsset.html",
-          "hash": "RrMaY1Vy9TQv4XCBZ9y7vA=="
+          "hash": "4YnPheS/9axJNMNKrzZEYA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.IAsset.html",
-          "hash": "lPHUjrOjLfUkCFD4ifT7Sg=="
+          "hash": "PUHV8V4Ov1wJ9Gax23g7bA=="
         }
       },
       "is_incremental": false,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.ImageAsset.html",
-          "hash": "sBznE0drLBn6sqkKSrr9RA=="
+          "hash": "zEFktcZicat30eosssZXug=="
         }
       },
       "is_incremental": false,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.MusicAsset.html",
-          "hash": "kzHOZMreJjHbs40iW0fT9Q=="
+          "hash": "Om2yMFgU20FXNXxnv0sy8Q=="
         }
       },
       "is_incremental": false,
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.SoundAsset.html",
-          "hash": "HsDVfrhYCo2dy+XZjQnL5w=="
+          "hash": "CNYEv5+bGCHSHCFc4LuPrw=="
         }
       },
       "is_incremental": false,
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.html",
-          "hash": "xI6F7c2b62SBrBVEPzUfwg=="
+          "hash": "wVF+RjqXvKfMB2/nGXvp6A=="
         }
       },
       "is_incremental": false,
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.BonEngine.html",
-          "hash": "L3BOqKsOWkw9hT5fAXBj6Q=="
+          "hash": "EXr6GEzOU3snWBzVm7DGfA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.AssetType.html",
-          "hash": "Kv8/L6geg4etmWQgcPyIAA=="
+          "hash": "Jef3tVdt32BVkmVtY30rdA=="
         }
       },
       "is_incremental": false,
@@ -130,6 +142,18 @@
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.BlendModes.html",
           "hash": "WhUarqUsaK6H5/Mb9nJYxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BonEngineSharp.Defs.BonFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BonEngineSharp.Defs.BonFeatures.html",
+          "hash": "iJSkpxGH1JkK0ZIy8kubXw=="
         }
       },
       "is_incremental": false,
@@ -333,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.html",
-          "hash": "2H/mGAzcyhl/t6pSxjg8+w=="
+          "hash": "/CkAMyeNju3RnO8jBP9Q0A=="
         }
       },
       "is_incremental": false,
@@ -357,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.Color.html",
-          "hash": "nWQpwdXi4SvsXxwlOZoJ1g=="
+          "hash": "ro+TPA6i91sTapasyhtO8g=="
         }
       },
       "is_incremental": false,
@@ -369,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.PointF.html",
-          "hash": "qR9y+D1YMX3wf2d5jaOCsQ=="
+          "hash": "skJKXNx/hkYfO1ECRNKg1g=="
         }
       },
       "is_incremental": false,
@@ -381,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.PointI.html",
-          "hash": "mCK3ibYKE4CenVZH2WgOog=="
+          "hash": "x7wm/DlZsxYZNQVtV57zsQ=="
         }
       },
       "is_incremental": false,
@@ -393,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.RectangleF.html",
-          "hash": "xSWO1e5KCEu8rPl8Hdv3Qw=="
+          "hash": "wY5LCtg+s5nqJO/Qjd8VNQ=="
         }
       },
       "is_incremental": false,
@@ -405,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.RectangleI.html",
-          "hash": "a0/l0tNwymSRchoXInYCHQ=="
+          "hash": "kGy+cBjcVh3RMmrSCb7LyQ=="
         }
       },
       "is_incremental": false,
@@ -417,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.Sprite.html",
-          "hash": "yLG38frYvZxUeE25N5Wr5w=="
+          "hash": "6Sleba6MYQvpR7Kv6fqA7w=="
         }
       },
       "is_incremental": false,
@@ -429,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Framework.SpriteAnimation.html",
-          "hash": "/nE/CVPr4zP1WeKMHXaYwg=="
+          "hash": "zlth0OlwJUGpiwzeHGQa0A=="
         }
       },
       "is_incremental": false,
@@ -477,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.AssetsManager.html",
-          "hash": "7dF8jK7W4RTK0OMCaQWBbQ=="
+          "hash": "nkOW/9cN5nyoGpuRXnOd8A=="
         }
       },
       "is_incremental": false,
@@ -525,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.GfxManager.html",
-          "hash": "/jTrWIm+p++/OfSYCDhmmg=="
+          "hash": "kAddEyNa7HfF6MBgBt5AFQ=="
         }
       },
       "is_incremental": false,
@@ -549,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.InputManager.html",
-          "hash": "W+xTngKXGiMRnLifOCjzjA=="
+          "hash": "0H2WvxL9Jsdal/S0RYndkQ=="
         }
       },
       "is_incremental": false,
@@ -801,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "iPI7pVanHMArIr7RJWbvFA=="
+          "hash": "G8I7A5O2+Q7Fheb8tFalMg=="
         }
       },
       "is_incremental": false,
@@ -905,6 +929,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/changelog_1_26.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog_1_26.html",
+          "hash": "t6B4Ofc4smpPrH3t2zil2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelog_1_3.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog_1_3.html",
+          "hash": "wP3r3L8dyf9+6h9fxfCRag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/examples.md",
       "output": {
         ".html": {
@@ -945,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "H6NZy5RS4+9Eg+KrYL6Z9w=="
+          "hash": "abKJy6gP4gprBzfeRt4Dzg=="
         }
       },
       "is_incremental": false,
@@ -999,14 +1047,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 13,
-          "skipped_file_count": 13
+          "total_file_count": 15,
+          "skipped_file_count": 15
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 65,
-          "skipped_file_count": 65
+          "total_file_count": 67,
+          "skipped_file_count": 67
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

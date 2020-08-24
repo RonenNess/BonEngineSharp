@@ -81,11 +81,15 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Color</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a>&gt;</div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Framework.html">BonEngineSharp.Framework</a></h6>
   <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
   <h5 id="BonEngineSharp_Framework_Color_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Color : ValueType</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Color : ValueType, IEquatable&lt;Color&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -669,6 +673,119 @@
   </h3>
   
   
+  <a id="BonEngineSharp_Framework_Color_Add_" data-uid="BonEngineSharp.Framework.Color.Add*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_Add_BonEngineSharp_Framework_Color_System_Boolean_" data-uid="BonEngineSharp.Framework.Color.Add(BonEngineSharp.Framework.Color,System.Boolean)">Add(Color, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Clone self and add other color to clone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Add(Color other, bool includeAlpha = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>Color to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAlpha</span></td>
+        <td><p>If true, will include alpha component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><p>Cloned color with added other color.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_AddSelf_" data-uid="BonEngineSharp.Framework.Color.AddSelf*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_AddSelf_BonEngineSharp_Framework_Color_System_Boolean_" data-uid="BonEngineSharp.Framework.Color.AddSelf(BonEngineSharp.Framework.Color,System.Boolean)">AddSelf(Color, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Add other color to self.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSelf(Color other, bool includeAlpha = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>Color to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAlpha</span></td>
+        <td><p>If true, will include alpha component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_Clone_" data-uid="BonEngineSharp.Framework.Color.Clone*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_Clone" data-uid="BonEngineSharp.Framework.Color.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Clone this color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><p>Cloned color object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Framework_Color_Decrease_" data-uid="BonEngineSharp.Framework.Color.Decrease*"></a>
   <h4 id="BonEngineSharp_Framework_Color_Decrease_System_Single_System_Boolean_" data-uid="BonEngineSharp.Framework.Color.Decrease(System.Single,System.Boolean)">Decrease(Single, Boolean)</h4>
   <div class="markdown level1 summary"><p>Decrease all color components and make sure in valid range (0-1).</p>
@@ -699,6 +816,92 @@
         <td><span class="parametername">includeAlpha</span></td>
         <td><p>If true, will reduce opacity as well.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_Equals_" data-uid="BonEngineSharp.Framework.Color.Equals*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_Equals_BonEngineSharp_Framework_Color_" data-uid="BonEngineSharp.Framework.Color.Equals(BonEngineSharp.Framework.Color)">Equals(Color)</h4>
+  <div class="markdown level1 summary"><p>Check if this color equals to another color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Color other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_Equals_" data-uid="BonEngineSharp.Framework.Color.Equals*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_Equals_System_Object_" data-uid="BonEngineSharp.Framework.Color.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Check if this color equals to another object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -863,6 +1066,32 @@
   </table>
   
   
+  <a id="BonEngineSharp_Framework_Color_GetHashCode_" data-uid="BonEngineSharp.Framework.Color.GetHashCode*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_GetHashCode" data-uid="BonEngineSharp.Framework.Color.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Implement hash code of color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Framework_Color_Increase_" data-uid="BonEngineSharp.Framework.Color.Increase*"></a>
   <h4 id="BonEngineSharp_Framework_Color_Increase_System_Single_System_Boolean_" data-uid="BonEngineSharp.Framework.Color.Increase(System.Single,System.Boolean)">Increase(Single, Boolean)</h4>
   <div class="markdown level1 summary"><p>Increase all color components and make sure in valid range (0-1).</p>
@@ -892,6 +1121,63 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">includeAlpha</span></td>
         <td><p>If true, will reduce opacity as well.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_Lerp_" data-uid="BonEngineSharp.Framework.Color.Lerp*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_Lerp_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_System_Single_" data-uid="BonEngineSharp.Framework.Color.Lerp(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color,System.Single)">Lerp(Color, Color, Single)</h4>
+  <div class="markdown level1 summary"><p>Lerp between two colors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color Lerp(Color a, Color b, float delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>From color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>To color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>Lerp factor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><p>Lerped color.</p>
 </td>
       </tr>
     </tbody>
@@ -1001,6 +1287,108 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_op_Equality_" data-uid="BonEngineSharp.Framework.Color.op_Equality*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_op_Equality_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_" data-uid="BonEngineSharp.Framework.Color.op_Equality(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color)">Equality(Color, Color)</h4>
+  <div class="markdown level1 summary"><p>Implement == operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Color obj1, Color obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_Color_op_Inequality_" data-uid="BonEngineSharp.Framework.Color.op_Inequality*"></a>
+  <h4 id="BonEngineSharp_Framework_Color_op_Inequality_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_" data-uid="BonEngineSharp.Framework.Color.op_Inequality(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color)">Inequality(Color, Color)</h4>
+  <div class="markdown level1 summary"><p>Implement != operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Color obj1, Color obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;&gt;</span>
+  </div>
 </article>
           </div>
           

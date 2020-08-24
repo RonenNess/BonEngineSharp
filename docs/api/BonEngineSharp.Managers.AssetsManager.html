@@ -302,6 +302,57 @@ Note: this will not release assets that you still hold a reference to.</p>
   </table>
   
   
+  <a id="BonEngineSharp_Managers_AssetsManager_LoadEffect_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadEffect*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadEffect_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean)">LoadEffect(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads an effect asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EffectAsset LoadEffect(string filename, bool useCache = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Effect ini file path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
+        <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.EffectAsset.html">EffectAsset</a></td>
+        <td><p>Loaded effect asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Managers_AssetsManager_LoadFont_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadFont*"></a>
   <h4 id="BonEngineSharp_Managers_AssetsManager_LoadFont_System_String_System_Int32_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean)">LoadFont(String, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads a font asset.</p>
@@ -519,13 +570,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_SaveConfig_" data-uid="BonEngineSharp.Managers.AssetsManager.SaveConfig*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_SaveConfig_BonEngineSharp_Assets_ConfigAsset_System_String_" data-uid="BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset,System.String)">SaveConfig(ConfigAsset, String)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_SaveConfig_BonEngineSharp_Assets_ConfigAsset_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset,System.String,System.Boolean)">SaveConfig(ConfigAsset, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Saves a config file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SaveConfig(ConfigAsset config, string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool SaveConfig(ConfigAsset config, string path, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -540,12 +591,20 @@ Note: this will not release assets that you still hold a reference to.</p>
       <tr>
         <td><a class="xref" href="BonEngineSharp.Assets.ConfigAsset.html">ConfigAsset</a></td>
         <td><span class="parametername">config</span></td>
-        <td></td>
+        <td><p>Config asset to save.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>Output file path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, will append path to assets root. If false, will treat it as relative path to working directory.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -561,6 +620,47 @@ Note: this will not release assets that you still hold a reference to.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True if saving was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_AssetsManager_SaveImage_" data-uid="BonEngineSharp.Managers.AssetsManager.SaveImage*"></a>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_SaveImage_BonEngineSharp_Assets_ImageAsset_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.SaveImage(BonEngineSharp.Assets.ImageAsset,System.String,System.Boolean)">SaveImage(ImageAsset, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves an image file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveImage(ImageAsset image, string path, bool useAssetsRoot = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.ImageAsset.html">ImageAsset</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Image asset to save.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Output file path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, will append path to assets root. If false, will treat it as relative path to working directory.</p>
 </td>
       </tr>
     </tbody>

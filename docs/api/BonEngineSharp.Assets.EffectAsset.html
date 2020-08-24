@@ -1,0 +1,828 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EffectAsset
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EffectAsset
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Assets.EffectAsset">
+  
+  
+  <h1 id="BonEngineSharp_Assets_EffectAsset" data-uid="BonEngineSharp.Assets.EffectAsset" class="text-break">Class EffectAsset
+  </h1>
+  <div class="markdown level0 summary"><p>Effect asset type.
+This asset is used to render sprites and text with special effects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BonEngineSharp.Assets.IAsset.html">IAsset</a></div>
+    <div class="level2"><span class="xref">EffectAsset</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset__handle">IAsset._handle</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Tag">IAsset.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Dispose">IAsset.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_HaveHandle">IAsset.HaveHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Path">IAsset.Path</a>
+    </div>
+    <div>
+      <a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_FullIdentifier">IAsset.FullIdentifier</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Assets.html">BonEngineSharp.Assets</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Assets_EffectAsset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EffectAsset : IAsset, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset__ctor_" data-uid="BonEngineSharp.Assets.EffectAsset.#ctor*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset__ctor_System_IntPtr_" data-uid="BonEngineSharp.Assets.EffectAsset.#ctor(System.IntPtr)">EffectAsset(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Create the asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EffectAsset(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Asset handle inside the low-level engine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_AssetType_" data-uid="BonEngineSharp.Assets.EffectAsset.AssetType*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_AssetType" data-uid="BonEngineSharp.Assets.EffectAsset.AssetType">AssetType</h4>
+  <div class="markdown level1 summary"><p>Get asset type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AssetType AssetType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.AssetType.html">AssetType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_AssetType">IAsset.AssetType</a></div>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_IsValid_" data-uid="BonEngineSharp.Assets.EffectAsset.IsValid*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_IsValid" data-uid="BonEngineSharp.Assets.EffectAsset.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"><p>Return if this effect asset is properly loaded / valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_IsValid">IAsset.IsValid</a></div>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_UseTextures_" data-uid="BonEngineSharp.Assets.EffectAsset.UseTextures*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_UseTextures" data-uid="BonEngineSharp.Assets.EffectAsset.UseTextures">UseTextures</h4>
+  <div class="markdown level1 summary"><p>Return if this effect uses textures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseTextures { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_UseVertexColor_" data-uid="BonEngineSharp.Assets.EffectAsset.UseVertexColor*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_UseVertexColor" data-uid="BonEngineSharp.Assets.EffectAsset.UseVertexColor">UseVertexColor</h4>
+  <div class="markdown level1 summary"><p>Return if this effect uses vertex color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseVertexColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_Finalize_" data-uid="BonEngineSharp.Assets.EffectAsset.Finalize*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_Finalize" data-uid="BonEngineSharp.Assets.EffectAsset.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Dispose on destructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Finalize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Finalize">IAsset.Finalize()</a></div>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_BonEngineSharp_Framework_Color_System_Boolean_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,BonEngineSharp.Framework.Color,System.Boolean)">SetUniform(String, Color, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set color uniform (either vector3 or vector4, if using alpha).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, Color color, bool includeAlpha)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Color to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAlpha</span></td>
+        <td><p>If true, will also set alpha value (vector4). If false, will only set RGB (vector3).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32)">SetUniform(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set int uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, int val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>Value to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_System_Int32_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32)">SetUniform(String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set vector2 uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_System_Int32_System_Int32_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32,System.Int32)">SetUniform(String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set vector3 uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, int x, int y, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">SetUniform(String, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set vector4 uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, int x, int y, int z, int w)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>W value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single)">SetUniform(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Set float uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, float val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>Value to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_System_Single_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single)">SetUniform(String, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set vector2 uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, float x, float y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_System_Single_System_Single_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single,System.Single)">SetUniform(String, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set vector3 uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniform_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_System_Single_System_Single_System_Single_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single,System.Single,System.Single)">SetUniform(String, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set vector4 uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniform(string name, float x, float y, float z, float w)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>W value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniformMatrix2_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniformMatrix2_System_String_System_Boolean_System_Single___" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2(System.String,System.Boolean,System.Single[])">SetUniformMatrix2(String, Boolean, Single[])</h4>
+  <div class="markdown level1 summary"><p>Set matrix uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniformMatrix2(string name, bool transpose, float[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">transpose</span></td>
+        <td><p>Specifies whether to transpose the matrix as the values are loaded into the uniform variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Matrix values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniformMatrix3_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniformMatrix3_System_String_System_Boolean_System_Single___" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3(System.String,System.Boolean,System.Single[])">SetUniformMatrix3(String, Boolean, Single[])</h4>
+  <div class="markdown level1 summary"><p>Set matrix uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniformMatrix3(string name, bool transpose, float[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">transpose</span></td>
+        <td><p>Specifies whether to transpose the matrix as the values are loaded into the uniform variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Matrix values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Assets_EffectAsset_SetUniformMatrix4_" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4*"></a>
+  <h4 id="BonEngineSharp_Assets_EffectAsset_SetUniformMatrix4_System_String_System_Boolean_System_Single___" data-uid="BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4(System.String,System.Boolean,System.Single[])">SetUniformMatrix4(String, Boolean, Single[])</h4>
+  <div class="markdown level1 summary"><p>Set matrix uniform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniformMatrix4(string name, bool transpose, float[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Uniform name, as appear in shaders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">transpose</span></td>
+        <td><p>Specifies whether to transpose the matrix as the values are loaded into the uniform variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Matrix values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

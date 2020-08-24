@@ -43,6 +43,24 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ConfigAsset.AssetType
   fullName: BonEngineSharp.Assets.ConfigAsset.AssetType
   nameWithType: ConfigAsset.AssetType
+- uid: BonEngineSharp.Assets.ConfigAsset.Exists(System.String)
+  name: Exists(String)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_Exists_System_String_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.Exists(System.String)
+  fullName: BonEngineSharp.Assets.ConfigAsset.Exists(System.String)
+  nameWithType: ConfigAsset.Exists(String)
+- uid: BonEngineSharp.Assets.ConfigAsset.Exists(System.String,System.String)
+  name: Exists(String, String)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_Exists_System_String_System_String_
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.Exists(System.String,System.String)
+  fullName: BonEngineSharp.Assets.ConfigAsset.Exists(System.String, System.String)
+  nameWithType: ConfigAsset.Exists(String, String)
+- uid: BonEngineSharp.Assets.ConfigAsset.Exists*
+  name: Exists
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_Exists_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.Exists
+  fullName: BonEngineSharp.Assets.ConfigAsset.Exists
+  nameWithType: ConfigAsset.Exists
 - uid: BonEngineSharp.Assets.ConfigAsset.Finalize
   name: Finalize()
   href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_Finalize
@@ -238,6 +256,189 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ConfigAsset.ToIniString
   fullName: BonEngineSharp.Assets.ConfigAsset.ToIniString
   nameWithType: ConfigAsset.ToIniString
+- uid: BonEngineSharp.Assets.EffectAsset
+  name: EffectAsset
+  href: api/BonEngineSharp.Assets.EffectAsset.html
+  commentId: T:BonEngineSharp.Assets.EffectAsset
+  fullName: BonEngineSharp.Assets.EffectAsset
+  nameWithType: EffectAsset
+- uid: BonEngineSharp.Assets.EffectAsset.#ctor(System.IntPtr)
+  name: EffectAsset(IntPtr)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset__ctor_System_IntPtr_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.#ctor(System.IntPtr)
+  fullName: BonEngineSharp.Assets.EffectAsset.EffectAsset(System.IntPtr)
+  nameWithType: EffectAsset.EffectAsset(IntPtr)
+- uid: BonEngineSharp.Assets.EffectAsset.#ctor*
+  name: EffectAsset
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset__ctor_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.#ctor
+  fullName: BonEngineSharp.Assets.EffectAsset.EffectAsset
+  nameWithType: EffectAsset.EffectAsset
+- uid: BonEngineSharp.Assets.EffectAsset.AssetType
+  name: AssetType
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_AssetType
+  commentId: P:BonEngineSharp.Assets.EffectAsset.AssetType
+  fullName: BonEngineSharp.Assets.EffectAsset.AssetType
+  nameWithType: EffectAsset.AssetType
+- uid: BonEngineSharp.Assets.EffectAsset.AssetType*
+  name: AssetType
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_AssetType_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.AssetType
+  fullName: BonEngineSharp.Assets.EffectAsset.AssetType
+  nameWithType: EffectAsset.AssetType
+- uid: BonEngineSharp.Assets.EffectAsset.Finalize
+  name: Finalize()
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_Finalize
+  commentId: M:BonEngineSharp.Assets.EffectAsset.Finalize
+  fullName: BonEngineSharp.Assets.EffectAsset.Finalize()
+  nameWithType: EffectAsset.Finalize()
+- uid: BonEngineSharp.Assets.EffectAsset.Finalize*
+  name: Finalize
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_Finalize_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.Finalize
+  fullName: BonEngineSharp.Assets.EffectAsset.Finalize
+  nameWithType: EffectAsset.Finalize
+- uid: BonEngineSharp.Assets.EffectAsset.IsValid
+  name: IsValid
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_IsValid
+  commentId: P:BonEngineSharp.Assets.EffectAsset.IsValid
+  fullName: BonEngineSharp.Assets.EffectAsset.IsValid
+  nameWithType: EffectAsset.IsValid
+- uid: BonEngineSharp.Assets.EffectAsset.IsValid*
+  name: IsValid
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_IsValid_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.IsValid
+  fullName: BonEngineSharp.Assets.EffectAsset.IsValid
+  nameWithType: EffectAsset.IsValid
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,BonEngineSharp.Framework.Color,System.Boolean)
+  name: SetUniform(String, Color, Boolean)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_BonEngineSharp_Framework_Color_System_Boolean_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,BonEngineSharp.Framework.Color,System.Boolean)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, BonEngineSharp.Framework.Color, System.Boolean)
+  nameWithType: EffectAsset.SetUniform(String, Color, Boolean)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32)
+  name: SetUniform(String, Int32)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Int32)
+  nameWithType: EffectAsset.SetUniform(String, Int32)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32)
+  name: SetUniform(String, Int32, Int32)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_System_Int32_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Int32, System.Int32)
+  nameWithType: EffectAsset.SetUniform(String, Int32, Int32)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32,System.Int32)
+  name: SetUniform(String, Int32, Int32, Int32)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32,System.Int32)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Int32, System.Int32, System.Int32)
+  nameWithType: EffectAsset.SetUniform(String, Int32, Int32, Int32)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  name: SetUniform(String, Int32, Int32, Int32, Int32)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: EffectAsset.SetUniform(String, Int32, Int32, Int32, Int32)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single)
+  name: SetUniform(String, Single)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Single)
+  nameWithType: EffectAsset.SetUniform(String, Single)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single)
+  name: SetUniform(String, Single, Single)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_System_Single_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Single, System.Single)
+  nameWithType: EffectAsset.SetUniform(String, Single, Single)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single,System.Single)
+  name: SetUniform(String, Single, Single, Single)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_System_Single_System_Single_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single,System.Single)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Single, System.Single, System.Single)
+  nameWithType: EffectAsset.SetUniform(String, Single, Single, Single)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single,System.Single,System.Single)
+  name: SetUniform(String, Single, Single, Single, Single)
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_System_String_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniform(System.String,System.Single,System.Single,System.Single,System.Single)
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform(System.String, System.Single, System.Single, System.Single, System.Single)
+  nameWithType: EffectAsset.SetUniform(String, Single, Single, Single, Single)
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniform*
+  name: SetUniform
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniform_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.SetUniform
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniform
+  nameWithType: EffectAsset.SetUniform
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2(System.String,System.Boolean,System.Single[])
+  name: SetUniformMatrix2(String, Boolean, Single[])
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniformMatrix2_System_String_System_Boolean_System_Single___
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2(System.String,System.Boolean,System.Single[])
+  name.vb: SetUniformMatrix2(String, Boolean, Single())
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2(System.String, System.Boolean, System.Single[])
+  fullName.vb: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2(System.String, System.Boolean, System.Single())
+  nameWithType: EffectAsset.SetUniformMatrix2(String, Boolean, Single[])
+  nameWithType.vb: EffectAsset.SetUniformMatrix2(String, Boolean, Single())
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2*
+  name: SetUniformMatrix2
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniformMatrix2_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix2
+  nameWithType: EffectAsset.SetUniformMatrix2
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3(System.String,System.Boolean,System.Single[])
+  name: SetUniformMatrix3(String, Boolean, Single[])
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniformMatrix3_System_String_System_Boolean_System_Single___
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3(System.String,System.Boolean,System.Single[])
+  name.vb: SetUniformMatrix3(String, Boolean, Single())
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3(System.String, System.Boolean, System.Single[])
+  fullName.vb: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3(System.String, System.Boolean, System.Single())
+  nameWithType: EffectAsset.SetUniformMatrix3(String, Boolean, Single[])
+  nameWithType.vb: EffectAsset.SetUniformMatrix3(String, Boolean, Single())
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3*
+  name: SetUniformMatrix3
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniformMatrix3_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix3
+  nameWithType: EffectAsset.SetUniformMatrix3
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4(System.String,System.Boolean,System.Single[])
+  name: SetUniformMatrix4(String, Boolean, Single[])
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniformMatrix4_System_String_System_Boolean_System_Single___
+  commentId: M:BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4(System.String,System.Boolean,System.Single[])
+  name.vb: SetUniformMatrix4(String, Boolean, Single())
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4(System.String, System.Boolean, System.Single[])
+  fullName.vb: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4(System.String, System.Boolean, System.Single())
+  nameWithType: EffectAsset.SetUniformMatrix4(String, Boolean, Single[])
+  nameWithType.vb: EffectAsset.SetUniformMatrix4(String, Boolean, Single())
+- uid: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4*
+  name: SetUniformMatrix4
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_SetUniformMatrix4_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4
+  fullName: BonEngineSharp.Assets.EffectAsset.SetUniformMatrix4
+  nameWithType: EffectAsset.SetUniformMatrix4
+- uid: BonEngineSharp.Assets.EffectAsset.UseTextures
+  name: UseTextures
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_UseTextures
+  commentId: P:BonEngineSharp.Assets.EffectAsset.UseTextures
+  fullName: BonEngineSharp.Assets.EffectAsset.UseTextures
+  nameWithType: EffectAsset.UseTextures
+- uid: BonEngineSharp.Assets.EffectAsset.UseTextures*
+  name: UseTextures
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_UseTextures_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.UseTextures
+  fullName: BonEngineSharp.Assets.EffectAsset.UseTextures
+  nameWithType: EffectAsset.UseTextures
+- uid: BonEngineSharp.Assets.EffectAsset.UseVertexColor
+  name: UseVertexColor
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_UseVertexColor
+  commentId: P:BonEngineSharp.Assets.EffectAsset.UseVertexColor
+  fullName: BonEngineSharp.Assets.EffectAsset.UseVertexColor
+  nameWithType: EffectAsset.UseVertexColor
+- uid: BonEngineSharp.Assets.EffectAsset.UseVertexColor*
+  name: UseVertexColor
+  href: api/BonEngineSharp.Assets.EffectAsset.html#BonEngineSharp_Assets_EffectAsset_UseVertexColor_
+  commentId: Overload:BonEngineSharp.Assets.EffectAsset.UseVertexColor
+  fullName: BonEngineSharp.Assets.EffectAsset.UseVertexColor
+  nameWithType: EffectAsset.UseVertexColor
 - uid: BonEngineSharp.Assets.FontAsset
   name: FontAsset
   href: api/BonEngineSharp.Assets.FontAsset.html
@@ -352,6 +553,18 @@ references:
   commentId: Overload:BonEngineSharp.Assets.IAsset.Finalize
   fullName: BonEngineSharp.Assets.IAsset.Finalize
   nameWithType: IAsset.Finalize
+- uid: BonEngineSharp.Assets.IAsset.FullIdentifier
+  name: FullIdentifier
+  href: api/BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_FullIdentifier
+  commentId: P:BonEngineSharp.Assets.IAsset.FullIdentifier
+  fullName: BonEngineSharp.Assets.IAsset.FullIdentifier
+  nameWithType: IAsset.FullIdentifier
+- uid: BonEngineSharp.Assets.IAsset.FullIdentifier*
+  name: FullIdentifier
+  href: api/BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_FullIdentifier_
+  commentId: Overload:BonEngineSharp.Assets.IAsset.FullIdentifier
+  fullName: BonEngineSharp.Assets.IAsset.FullIdentifier
+  nameWithType: IAsset.FullIdentifier
 - uid: BonEngineSharp.Assets.IAsset.HaveHandle
   name: HaveHandle
   href: api/BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_HaveHandle
@@ -388,6 +601,12 @@ references:
   commentId: Overload:BonEngineSharp.Assets.IAsset.Path
   fullName: BonEngineSharp.Assets.IAsset.Path
   nameWithType: IAsset.Path
+- uid: BonEngineSharp.Assets.IAsset.Tag
+  name: Tag
+  href: api/BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_Tag
+  commentId: F:BonEngineSharp.Assets.IAsset.Tag
+  fullName: BonEngineSharp.Assets.IAsset.Tag
+  nameWithType: IAsset.Tag
 - uid: BonEngineSharp.Assets.ImageAsset
   name: ImageAsset
   href: api/BonEngineSharp.Assets.ImageAsset.html
@@ -418,6 +637,18 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ImageAsset.AssetType
   fullName: BonEngineSharp.Assets.ImageAsset.AssetType
   nameWithType: ImageAsset.AssetType
+- uid: BonEngineSharp.Assets.ImageAsset.Clear
+  name: Clear()
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_Clear
+  commentId: M:BonEngineSharp.Assets.ImageAsset.Clear
+  fullName: BonEngineSharp.Assets.ImageAsset.Clear()
+  nameWithType: ImageAsset.Clear()
+- uid: BonEngineSharp.Assets.ImageAsset.Clear*
+  name: Clear
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_Clear_
+  commentId: Overload:BonEngineSharp.Assets.ImageAsset.Clear
+  fullName: BonEngineSharp.Assets.ImageAsset.Clear
+  nameWithType: ImageAsset.Clear
 - uid: BonEngineSharp.Assets.ImageAsset.FilteringMode
   name: FilteringMode
   href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_FilteringMode
@@ -658,6 +889,18 @@ references:
   commentId: Overload:BonEngineSharp.BonEngine._Engine
   fullName: BonEngineSharp.BonEngine._Engine
   nameWithType: BonEngine._Engine
+- uid: BonEngineSharp.BonEngine.GetActiveFeatures
+  name: GetActiveFeatures()
+  href: api/BonEngineSharp.BonEngine.html#BonEngineSharp_BonEngine_GetActiveFeatures
+  commentId: M:BonEngineSharp.BonEngine.GetActiveFeatures
+  fullName: BonEngineSharp.BonEngine.GetActiveFeatures()
+  nameWithType: BonEngine.GetActiveFeatures()
+- uid: BonEngineSharp.BonEngine.GetActiveFeatures*
+  name: GetActiveFeatures
+  href: api/BonEngineSharp.BonEngine.html#BonEngineSharp_BonEngine_GetActiveFeatures_
+  commentId: Overload:BonEngineSharp.BonEngine.GetActiveFeatures
+  fullName: BonEngineSharp.BonEngine.GetActiveFeatures
+  nameWithType: BonEngine.GetActiveFeatures
 - uid: BonEngineSharp.BonEngine.GetCustomManager(System.String)
   name: GetCustomManager(String)
   href: api/BonEngineSharp.BonEngine.html#BonEngineSharp_BonEngine_GetCustomManager_System_String_
@@ -682,12 +925,12 @@ references:
   commentId: Overload:BonEngineSharp.BonEngine.RegisterCustomManager
   fullName: BonEngineSharp.BonEngine.RegisterCustomManager
   nameWithType: BonEngine.RegisterCustomManager
-- uid: BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene)
-  name: Start(Scene)
-  href: api/BonEngineSharp.BonEngine.html#BonEngineSharp_BonEngine_Start_BonEngineSharp_Scene_
-  commentId: M:BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene)
-  fullName: BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene)
-  nameWithType: BonEngine.Start(Scene)
+- uid: BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene,BonEngineSharp.Defs.BonFeatures)
+  name: Start(Scene, BonFeatures)
+  href: api/BonEngineSharp.BonEngine.html#BonEngineSharp_BonEngine_Start_BonEngineSharp_Scene_BonEngineSharp_Defs_BonFeatures_
+  commentId: M:BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene,BonEngineSharp.Defs.BonFeatures)
+  fullName: BonEngineSharp.BonEngine.Start(BonEngineSharp.Scene, BonEngineSharp.Defs.BonFeatures)
+  nameWithType: BonEngine.Start(Scene, BonFeatures)
 - uid: BonEngineSharp.BonEngine.Start*
   name: Start
   href: api/BonEngineSharp.BonEngine.html#BonEngineSharp_BonEngine_Start_
@@ -742,6 +985,12 @@ references:
   commentId: F:BonEngineSharp.Defs.AssetType.Config
   fullName: BonEngineSharp.Defs.AssetType.Config
   nameWithType: AssetType.Config
+- uid: BonEngineSharp.Defs.AssetType.Effect
+  name: Effect
+  href: api/BonEngineSharp.Defs.AssetType.html#BonEngineSharp_Defs_AssetType_Effect
+  commentId: F:BonEngineSharp.Defs.AssetType.Effect
+  fullName: BonEngineSharp.Defs.AssetType.Effect
+  nameWithType: AssetType.Effect
 - uid: BonEngineSharp.Defs.AssetType.Font
   name: Font
   href: api/BonEngineSharp.Defs.AssetType.html#BonEngineSharp_Defs_AssetType_Font
@@ -868,6 +1117,36 @@ references:
   commentId: F:BonEngineSharp.Defs.BlendModes.value__
   fullName: BonEngineSharp.Defs.BlendModes.value__
   nameWithType: BlendModes.value__
+- uid: BonEngineSharp.Defs.BonFeatures
+  name: BonFeatures
+  href: api/BonEngineSharp.Defs.BonFeatures.html
+  commentId: T:BonEngineSharp.Defs.BonFeatures
+  fullName: BonEngineSharp.Defs.BonFeatures
+  nameWithType: BonFeatures
+- uid: BonEngineSharp.Defs.BonFeatures.#ctor
+  name: BonFeatures()
+  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures__ctor
+  commentId: M:BonEngineSharp.Defs.BonFeatures.#ctor
+  fullName: BonEngineSharp.Defs.BonFeatures.BonFeatures()
+  nameWithType: BonFeatures.BonFeatures()
+- uid: BonEngineSharp.Defs.BonFeatures.#ctor*
+  name: BonFeatures
+  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures__ctor_
+  commentId: Overload:BonEngineSharp.Defs.BonFeatures.#ctor
+  fullName: BonEngineSharp.Defs.BonFeatures.BonFeatures
+  nameWithType: BonFeatures.BonFeatures
+- uid: BonEngineSharp.Defs.BonFeatures.EffectsEnabled
+  name: EffectsEnabled
+  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_EffectsEnabled
+  commentId: F:BonEngineSharp.Defs.BonFeatures.EffectsEnabled
+  fullName: BonEngineSharp.Defs.BonFeatures.EffectsEnabled
+  nameWithType: BonFeatures.EffectsEnabled
+- uid: BonEngineSharp.Defs.BonFeatures.ForceOpenGL
+  name: ForceOpenGL
+  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_ForceOpenGL
+  commentId: F:BonEngineSharp.Defs.BonFeatures.ForceOpenGL
+  fullName: BonEngineSharp.Defs.BonFeatures.ForceOpenGL
+  nameWithType: BonFeatures.ForceOpenGL
 - uid: BonEngineSharp.Defs.DiagnosticsCounters
   name: DiagnosticsCounters
   href: api/BonEngineSharp.Defs.DiagnosticsCounters.html
@@ -3316,6 +3595,30 @@ references:
   commentId: Overload:BonEngineSharp.Framework.Color.AByte
   fullName: BonEngineSharp.Framework.Color.AByte
   nameWithType: Color.AByte
+- uid: BonEngineSharp.Framework.Color.Add(BonEngineSharp.Framework.Color,System.Boolean)
+  name: Add(Color, Boolean)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Add_BonEngineSharp_Framework_Color_System_Boolean_
+  commentId: M:BonEngineSharp.Framework.Color.Add(BonEngineSharp.Framework.Color,System.Boolean)
+  fullName: BonEngineSharp.Framework.Color.Add(BonEngineSharp.Framework.Color, System.Boolean)
+  nameWithType: Color.Add(Color, Boolean)
+- uid: BonEngineSharp.Framework.Color.Add*
+  name: Add
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Add_
+  commentId: Overload:BonEngineSharp.Framework.Color.Add
+  fullName: BonEngineSharp.Framework.Color.Add
+  nameWithType: Color.Add
+- uid: BonEngineSharp.Framework.Color.AddSelf(BonEngineSharp.Framework.Color,System.Boolean)
+  name: AddSelf(Color, Boolean)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_AddSelf_BonEngineSharp_Framework_Color_System_Boolean_
+  commentId: M:BonEngineSharp.Framework.Color.AddSelf(BonEngineSharp.Framework.Color,System.Boolean)
+  fullName: BonEngineSharp.Framework.Color.AddSelf(BonEngineSharp.Framework.Color, System.Boolean)
+  nameWithType: Color.AddSelf(Color, Boolean)
+- uid: BonEngineSharp.Framework.Color.AddSelf*
+  name: AddSelf
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_AddSelf_
+  commentId: Overload:BonEngineSharp.Framework.Color.AddSelf
+  fullName: BonEngineSharp.Framework.Color.AddSelf
+  nameWithType: Color.AddSelf
 - uid: BonEngineSharp.Framework.Color.B
   name: B
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_B
@@ -3346,6 +3649,18 @@ references:
   commentId: F:BonEngineSharp.Framework.Color.Blue
   fullName: BonEngineSharp.Framework.Color.Blue
   nameWithType: Color.Blue
+- uid: BonEngineSharp.Framework.Color.Clone
+  name: Clone()
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Clone
+  commentId: M:BonEngineSharp.Framework.Color.Clone
+  fullName: BonEngineSharp.Framework.Color.Clone()
+  nameWithType: Color.Clone()
+- uid: BonEngineSharp.Framework.Color.Clone*
+  name: Clone
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Clone_
+  commentId: Overload:BonEngineSharp.Framework.Color.Clone
+  fullName: BonEngineSharp.Framework.Color.Clone
+  nameWithType: Color.Clone
 - uid: BonEngineSharp.Framework.Color.Cornflower
   name: Cornflower
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Cornflower
@@ -3364,6 +3679,24 @@ references:
   commentId: Overload:BonEngineSharp.Framework.Color.Decrease
   fullName: BonEngineSharp.Framework.Color.Decrease
   nameWithType: Color.Decrease
+- uid: BonEngineSharp.Framework.Color.Equals(BonEngineSharp.Framework.Color)
+  name: Equals(Color)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Equals_BonEngineSharp_Framework_Color_
+  commentId: M:BonEngineSharp.Framework.Color.Equals(BonEngineSharp.Framework.Color)
+  fullName: BonEngineSharp.Framework.Color.Equals(BonEngineSharp.Framework.Color)
+  nameWithType: Color.Equals(Color)
+- uid: BonEngineSharp.Framework.Color.Equals(System.Object)
+  name: Equals(Object)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Equals_System_Object_
+  commentId: M:BonEngineSharp.Framework.Color.Equals(System.Object)
+  fullName: BonEngineSharp.Framework.Color.Equals(System.Object)
+  nameWithType: Color.Equals(Object)
+- uid: BonEngineSharp.Framework.Color.Equals*
+  name: Equals
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Equals_
+  commentId: Overload:BonEngineSharp.Framework.Color.Equals
+  fullName: BonEngineSharp.Framework.Color.Equals
+  nameWithType: Color.Equals
 - uid: BonEngineSharp.Framework.Color.FromBytes(System.Byte,System.Byte,System.Byte,System.Byte)
   name: FromBytes(Byte, Byte, Byte, Byte)
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_FromBytes_System_Byte_System_Byte_System_Byte_System_Byte_
@@ -3418,6 +3751,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.Color.GByte
   fullName: BonEngineSharp.Framework.Color.GByte
   nameWithType: Color.GByte
+- uid: BonEngineSharp.Framework.Color.GetHashCode
+  name: GetHashCode()
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_GetHashCode
+  commentId: M:BonEngineSharp.Framework.Color.GetHashCode
+  fullName: BonEngineSharp.Framework.Color.GetHashCode()
+  nameWithType: Color.GetHashCode()
+- uid: BonEngineSharp.Framework.Color.GetHashCode*
+  name: GetHashCode
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_GetHashCode_
+  commentId: Overload:BonEngineSharp.Framework.Color.GetHashCode
+  fullName: BonEngineSharp.Framework.Color.GetHashCode
+  nameWithType: Color.GetHashCode
 - uid: BonEngineSharp.Framework.Color.Gray
   name: Gray
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Gray
@@ -3448,6 +3793,42 @@ references:
   commentId: Overload:BonEngineSharp.Framework.Color.Increase
   fullName: BonEngineSharp.Framework.Color.Increase
   nameWithType: Color.Increase
+- uid: BonEngineSharp.Framework.Color.Lerp(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color,System.Single)
+  name: Lerp(Color, Color, Single)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Lerp_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_System_Single_
+  commentId: M:BonEngineSharp.Framework.Color.Lerp(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color,System.Single)
+  fullName: BonEngineSharp.Framework.Color.Lerp(BonEngineSharp.Framework.Color, BonEngineSharp.Framework.Color, System.Single)
+  nameWithType: Color.Lerp(Color, Color, Single)
+- uid: BonEngineSharp.Framework.Color.Lerp*
+  name: Lerp
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Lerp_
+  commentId: Overload:BonEngineSharp.Framework.Color.Lerp
+  fullName: BonEngineSharp.Framework.Color.Lerp
+  nameWithType: Color.Lerp
+- uid: BonEngineSharp.Framework.Color.op_Equality(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color)
+  name: Equality(Color, Color)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_op_Equality_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_
+  commentId: M:BonEngineSharp.Framework.Color.op_Equality(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color)
+  fullName: BonEngineSharp.Framework.Color.Equality(BonEngineSharp.Framework.Color, BonEngineSharp.Framework.Color)
+  nameWithType: Color.Equality(Color, Color)
+- uid: BonEngineSharp.Framework.Color.op_Equality*
+  name: Equality
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_op_Equality_
+  commentId: Overload:BonEngineSharp.Framework.Color.op_Equality
+  fullName: BonEngineSharp.Framework.Color.Equality
+  nameWithType: Color.Equality
+- uid: BonEngineSharp.Framework.Color.op_Inequality(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color)
+  name: Inequality(Color, Color)
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_op_Inequality_BonEngineSharp_Framework_Color_BonEngineSharp_Framework_Color_
+  commentId: M:BonEngineSharp.Framework.Color.op_Inequality(BonEngineSharp.Framework.Color,BonEngineSharp.Framework.Color)
+  fullName: BonEngineSharp.Framework.Color.Inequality(BonEngineSharp.Framework.Color, BonEngineSharp.Framework.Color)
+  nameWithType: Color.Inequality(Color, Color)
+- uid: BonEngineSharp.Framework.Color.op_Inequality*
+  name: Inequality
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_op_Inequality_
+  commentId: Overload:BonEngineSharp.Framework.Color.op_Inequality
+  fullName: BonEngineSharp.Framework.Color.Inequality
+  nameWithType: Color.Inequality
 - uid: BonEngineSharp.Framework.Color.Purple
   name: Purple
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Purple
@@ -3682,6 +4063,12 @@ references:
   commentId: Overload:BonEngineSharp.Framework.PointF.DivideSelf
   fullName: BonEngineSharp.Framework.PointF.DivideSelf
   nameWithType: PointF.DivideSelf
+- uid: BonEngineSharp.Framework.PointF.Equals(BonEngineSharp.Framework.PointF)
+  name: Equals(PointF)
+  href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_Equals_BonEngineSharp_Framework_PointF_
+  commentId: M:BonEngineSharp.Framework.PointF.Equals(BonEngineSharp.Framework.PointF)
+  fullName: BonEngineSharp.Framework.PointF.Equals(BonEngineSharp.Framework.PointF)
+  nameWithType: PointF.Equals(PointF)
 - uid: BonEngineSharp.Framework.PointF.Equals(System.Object)
   name: Equals(Object)
   href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_Equals_System_Object_
@@ -3826,6 +4213,18 @@ references:
   commentId: F:BonEngineSharp.Framework.PointF.One
   fullName: BonEngineSharp.Framework.PointF.One
   nameWithType: PointF.One
+- uid: BonEngineSharp.Framework.PointF.op_Equality(BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointF)
+  name: Equality(PointF, PointF)
+  href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_op_Equality_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_PointF_
+  commentId: M:BonEngineSharp.Framework.PointF.op_Equality(BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointF)
+  fullName: BonEngineSharp.Framework.PointF.Equality(BonEngineSharp.Framework.PointF, BonEngineSharp.Framework.PointF)
+  nameWithType: PointF.Equality(PointF, PointF)
+- uid: BonEngineSharp.Framework.PointF.op_Equality*
+  name: Equality
+  href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_op_Equality_
+  commentId: Overload:BonEngineSharp.Framework.PointF.op_Equality
+  fullName: BonEngineSharp.Framework.PointF.Equality
+  nameWithType: PointF.Equality
 - uid: BonEngineSharp.Framework.PointF.op_Implicit(BonEngineSharp.Framework.PointF)~BonEngineSharp.Framework.PointI
   name: Implicit(PointF to PointI)
   href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_op_Implicit_BonEngineSharp_Framework_PointF__BonEngineSharp_Framework_PointI
@@ -3844,6 +4243,18 @@ references:
   fullName.vb: BonEngineSharp.Framework.PointF.Widening
   nameWithType: PointF.Implicit
   nameWithType.vb: PointF.Widening
+- uid: BonEngineSharp.Framework.PointF.op_Inequality(BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointF)
+  name: Inequality(PointF, PointF)
+  href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_op_Inequality_BonEngineSharp_Framework_PointF_BonEngineSharp_Framework_PointF_
+  commentId: M:BonEngineSharp.Framework.PointF.op_Inequality(BonEngineSharp.Framework.PointF,BonEngineSharp.Framework.PointF)
+  fullName: BonEngineSharp.Framework.PointF.Inequality(BonEngineSharp.Framework.PointF, BonEngineSharp.Framework.PointF)
+  nameWithType: PointF.Inequality(PointF, PointF)
+- uid: BonEngineSharp.Framework.PointF.op_Inequality*
+  name: Inequality
+  href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_op_Inequality_
+  commentId: Overload:BonEngineSharp.Framework.PointF.op_Inequality
+  fullName: BonEngineSharp.Framework.PointF.Inequality
+  nameWithType: PointF.Inequality
 - uid: BonEngineSharp.Framework.PointF.Rotate(System.Single)
   name: Rotate(Single)
   href: api/BonEngineSharp.Framework.PointF.html#BonEngineSharp_Framework_PointF_Rotate_System_Single_
@@ -4102,6 +4513,12 @@ references:
   commentId: Overload:BonEngineSharp.Framework.PointI.DivideSelf
   fullName: BonEngineSharp.Framework.PointI.DivideSelf
   nameWithType: PointI.DivideSelf
+- uid: BonEngineSharp.Framework.PointI.Equals(BonEngineSharp.Framework.PointI)
+  name: Equals(PointI)
+  href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_Equals_BonEngineSharp_Framework_PointI_
+  commentId: M:BonEngineSharp.Framework.PointI.Equals(BonEngineSharp.Framework.PointI)
+  fullName: BonEngineSharp.Framework.PointI.Equals(BonEngineSharp.Framework.PointI)
+  nameWithType: PointI.Equals(PointI)
 - uid: BonEngineSharp.Framework.PointI.Equals(System.Object)
   name: Equals(Object)
   href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_Equals_System_Object_
@@ -4252,6 +4669,18 @@ references:
   commentId: F:BonEngineSharp.Framework.PointI.One
   fullName: BonEngineSharp.Framework.PointI.One
   nameWithType: PointI.One
+- uid: BonEngineSharp.Framework.PointI.op_Equality(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI)
+  name: Equality(PointI, PointI)
+  href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_op_Equality_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_
+  commentId: M:BonEngineSharp.Framework.PointI.op_Equality(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI)
+  fullName: BonEngineSharp.Framework.PointI.Equality(BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.PointI)
+  nameWithType: PointI.Equality(PointI, PointI)
+- uid: BonEngineSharp.Framework.PointI.op_Equality*
+  name: Equality
+  href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_op_Equality_
+  commentId: Overload:BonEngineSharp.Framework.PointI.op_Equality
+  fullName: BonEngineSharp.Framework.PointI.Equality
+  nameWithType: PointI.Equality
 - uid: BonEngineSharp.Framework.PointI.op_Implicit(BonEngineSharp.Framework.PointI)~BonEngineSharp.Framework.PointF
   name: Implicit(PointI to PointF)
   href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_op_Implicit_BonEngineSharp_Framework_PointI__BonEngineSharp_Framework_PointF
@@ -4270,6 +4699,18 @@ references:
   fullName.vb: BonEngineSharp.Framework.PointI.Widening
   nameWithType: PointI.Implicit
   nameWithType.vb: PointI.Widening
+- uid: BonEngineSharp.Framework.PointI.op_Inequality(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI)
+  name: Inequality(PointI, PointI)
+  href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_op_Inequality_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_
+  commentId: M:BonEngineSharp.Framework.PointI.op_Inequality(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI)
+  fullName: BonEngineSharp.Framework.PointI.Inequality(BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.PointI)
+  nameWithType: PointI.Inequality(PointI, PointI)
+- uid: BonEngineSharp.Framework.PointI.op_Inequality*
+  name: Inequality
+  href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_op_Inequality_
+  commentId: Overload:BonEngineSharp.Framework.PointI.op_Inequality
+  fullName: BonEngineSharp.Framework.PointI.Inequality
+  nameWithType: PointI.Inequality
 - uid: BonEngineSharp.Framework.PointI.Rotate(System.Single)
   name: Rotate(Single)
   href: api/BonEngineSharp.Framework.PointI.html#BonEngineSharp_Framework_PointI_Rotate_System_Single_
@@ -4426,6 +4867,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.RectangleF.Center
   fullName: BonEngineSharp.Framework.RectangleF.Center
   nameWithType: RectangleF.Center
+- uid: BonEngineSharp.Framework.RectangleF.Clone
+  name: Clone()
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Clone
+  commentId: M:BonEngineSharp.Framework.RectangleF.Clone
+  fullName: BonEngineSharp.Framework.RectangleF.Clone()
+  nameWithType: RectangleF.Clone()
+- uid: BonEngineSharp.Framework.RectangleF.Clone*
+  name: Clone
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Clone_
+  commentId: Overload:BonEngineSharp.Framework.RectangleF.Clone
+  fullName: BonEngineSharp.Framework.RectangleF.Clone
+  nameWithType: RectangleF.Clone
 - uid: BonEngineSharp.Framework.RectangleF.Contains(BonEngineSharp.Framework.PointF)
   name: Contains(PointF)
   href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Contains_BonEngineSharp_Framework_PointF_
@@ -4450,6 +4903,24 @@ references:
   commentId: F:BonEngineSharp.Framework.RectangleF.Empty
   fullName: BonEngineSharp.Framework.RectangleF.Empty
   nameWithType: RectangleF.Empty
+- uid: BonEngineSharp.Framework.RectangleF.Equals(BonEngineSharp.Framework.RectangleF)
+  name: Equals(RectangleF)
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Equals_BonEngineSharp_Framework_RectangleF_
+  commentId: M:BonEngineSharp.Framework.RectangleF.Equals(BonEngineSharp.Framework.RectangleF)
+  fullName: BonEngineSharp.Framework.RectangleF.Equals(BonEngineSharp.Framework.RectangleF)
+  nameWithType: RectangleF.Equals(RectangleF)
+- uid: BonEngineSharp.Framework.RectangleF.Equals(System.Object)
+  name: Equals(Object)
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Equals_System_Object_
+  commentId: M:BonEngineSharp.Framework.RectangleF.Equals(System.Object)
+  fullName: BonEngineSharp.Framework.RectangleF.Equals(System.Object)
+  nameWithType: RectangleF.Equals(Object)
+- uid: BonEngineSharp.Framework.RectangleF.Equals*
+  name: Equals
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Equals_
+  commentId: Overload:BonEngineSharp.Framework.RectangleF.Equals
+  fullName: BonEngineSharp.Framework.RectangleF.Equals
+  nameWithType: RectangleF.Equals
 - uid: BonEngineSharp.Framework.RectangleF.FromString(System.String)
   name: FromString(String)
   href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_FromString_System_String_
@@ -4462,6 +4933,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.RectangleF.FromString
   fullName: BonEngineSharp.Framework.RectangleF.FromString
   nameWithType: RectangleF.FromString
+- uid: BonEngineSharp.Framework.RectangleF.GetHashCode
+  name: GetHashCode()
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_GetHashCode
+  commentId: M:BonEngineSharp.Framework.RectangleF.GetHashCode
+  fullName: BonEngineSharp.Framework.RectangleF.GetHashCode()
+  nameWithType: RectangleF.GetHashCode()
+- uid: BonEngineSharp.Framework.RectangleF.GetHashCode*
+  name: GetHashCode
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_GetHashCode_
+  commentId: Overload:BonEngineSharp.Framework.RectangleF.GetHashCode
+  fullName: BonEngineSharp.Framework.RectangleF.GetHashCode
+  nameWithType: RectangleF.GetHashCode
 - uid: BonEngineSharp.Framework.RectangleF.Height
   name: Height
   href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Height
@@ -4480,6 +4963,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.RectangleF.Left
   fullName: BonEngineSharp.Framework.RectangleF.Left
   nameWithType: RectangleF.Left
+- uid: BonEngineSharp.Framework.RectangleF.op_Equality(BonEngineSharp.Framework.RectangleF,BonEngineSharp.Framework.RectangleF)
+  name: Equality(RectangleF, RectangleF)
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_op_Equality_BonEngineSharp_Framework_RectangleF_BonEngineSharp_Framework_RectangleF_
+  commentId: M:BonEngineSharp.Framework.RectangleF.op_Equality(BonEngineSharp.Framework.RectangleF,BonEngineSharp.Framework.RectangleF)
+  fullName: BonEngineSharp.Framework.RectangleF.Equality(BonEngineSharp.Framework.RectangleF, BonEngineSharp.Framework.RectangleF)
+  nameWithType: RectangleF.Equality(RectangleF, RectangleF)
+- uid: BonEngineSharp.Framework.RectangleF.op_Equality*
+  name: Equality
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_op_Equality_
+  commentId: Overload:BonEngineSharp.Framework.RectangleF.op_Equality
+  fullName: BonEngineSharp.Framework.RectangleF.Equality
+  nameWithType: RectangleF.Equality
 - uid: BonEngineSharp.Framework.RectangleF.op_Implicit(BonEngineSharp.Framework.RectangleF)~BonEngineSharp.Framework.RectangleI
   name: Implicit(RectangleF to RectangleI)
   href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_op_Implicit_BonEngineSharp_Framework_RectangleF__BonEngineSharp_Framework_RectangleI
@@ -4498,6 +4993,18 @@ references:
   fullName.vb: BonEngineSharp.Framework.RectangleF.Widening
   nameWithType: RectangleF.Implicit
   nameWithType.vb: RectangleF.Widening
+- uid: BonEngineSharp.Framework.RectangleF.op_Inequality(BonEngineSharp.Framework.RectangleF,BonEngineSharp.Framework.RectangleF)
+  name: Inequality(RectangleF, RectangleF)
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_op_Inequality_BonEngineSharp_Framework_RectangleF_BonEngineSharp_Framework_RectangleF_
+  commentId: M:BonEngineSharp.Framework.RectangleF.op_Inequality(BonEngineSharp.Framework.RectangleF,BonEngineSharp.Framework.RectangleF)
+  fullName: BonEngineSharp.Framework.RectangleF.Inequality(BonEngineSharp.Framework.RectangleF, BonEngineSharp.Framework.RectangleF)
+  nameWithType: RectangleF.Inequality(RectangleF, RectangleF)
+- uid: BonEngineSharp.Framework.RectangleF.op_Inequality*
+  name: Inequality
+  href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_op_Inequality_
+  commentId: Overload:BonEngineSharp.Framework.RectangleF.op_Inequality
+  fullName: BonEngineSharp.Framework.RectangleF.Inequality
+  nameWithType: RectangleF.Inequality
 - uid: BonEngineSharp.Framework.RectangleF.Overlaps(BonEngineSharp.Framework.RectangleF)
   name: Overlaps(RectangleF)
   href: api/BonEngineSharp.Framework.RectangleF.html#BonEngineSharp_Framework_RectangleF_Overlaps_BonEngineSharp_Framework_RectangleF_
@@ -4618,6 +5125,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.RectangleI.Center
   fullName: BonEngineSharp.Framework.RectangleI.Center
   nameWithType: RectangleI.Center
+- uid: BonEngineSharp.Framework.RectangleI.Clone
+  name: Clone()
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Clone
+  commentId: M:BonEngineSharp.Framework.RectangleI.Clone
+  fullName: BonEngineSharp.Framework.RectangleI.Clone()
+  nameWithType: RectangleI.Clone()
+- uid: BonEngineSharp.Framework.RectangleI.Clone*
+  name: Clone
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Clone_
+  commentId: Overload:BonEngineSharp.Framework.RectangleI.Clone
+  fullName: BonEngineSharp.Framework.RectangleI.Clone
+  nameWithType: RectangleI.Clone
 - uid: BonEngineSharp.Framework.RectangleI.Contains(BonEngineSharp.Framework.PointI)
   name: Contains(PointI)
   href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Contains_BonEngineSharp_Framework_PointI_
@@ -4642,6 +5161,24 @@ references:
   commentId: F:BonEngineSharp.Framework.RectangleI.Empty
   fullName: BonEngineSharp.Framework.RectangleI.Empty
   nameWithType: RectangleI.Empty
+- uid: BonEngineSharp.Framework.RectangleI.Equals(BonEngineSharp.Framework.RectangleI)
+  name: Equals(RectangleI)
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Equals_BonEngineSharp_Framework_RectangleI_
+  commentId: M:BonEngineSharp.Framework.RectangleI.Equals(BonEngineSharp.Framework.RectangleI)
+  fullName: BonEngineSharp.Framework.RectangleI.Equals(BonEngineSharp.Framework.RectangleI)
+  nameWithType: RectangleI.Equals(RectangleI)
+- uid: BonEngineSharp.Framework.RectangleI.Equals(System.Object)
+  name: Equals(Object)
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Equals_System_Object_
+  commentId: M:BonEngineSharp.Framework.RectangleI.Equals(System.Object)
+  fullName: BonEngineSharp.Framework.RectangleI.Equals(System.Object)
+  nameWithType: RectangleI.Equals(Object)
+- uid: BonEngineSharp.Framework.RectangleI.Equals*
+  name: Equals
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Equals_
+  commentId: Overload:BonEngineSharp.Framework.RectangleI.Equals
+  fullName: BonEngineSharp.Framework.RectangleI.Equals
+  nameWithType: RectangleI.Equals
 - uid: BonEngineSharp.Framework.RectangleI.FromString(System.String)
   name: FromString(String)
   href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_FromString_System_String_
@@ -4654,6 +5191,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.RectangleI.FromString
   fullName: BonEngineSharp.Framework.RectangleI.FromString
   nameWithType: RectangleI.FromString
+- uid: BonEngineSharp.Framework.RectangleI.GetHashCode
+  name: GetHashCode()
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_GetHashCode
+  commentId: M:BonEngineSharp.Framework.RectangleI.GetHashCode
+  fullName: BonEngineSharp.Framework.RectangleI.GetHashCode()
+  nameWithType: RectangleI.GetHashCode()
+- uid: BonEngineSharp.Framework.RectangleI.GetHashCode*
+  name: GetHashCode
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_GetHashCode_
+  commentId: Overload:BonEngineSharp.Framework.RectangleI.GetHashCode
+  fullName: BonEngineSharp.Framework.RectangleI.GetHashCode
+  nameWithType: RectangleI.GetHashCode
 - uid: BonEngineSharp.Framework.RectangleI.Height
   name: Height
   href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Height
@@ -4672,6 +5221,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.RectangleI.Left
   fullName: BonEngineSharp.Framework.RectangleI.Left
   nameWithType: RectangleI.Left
+- uid: BonEngineSharp.Framework.RectangleI.op_Equality(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.RectangleI)
+  name: Equality(RectangleI, RectangleI)
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_op_Equality_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_RectangleI_
+  commentId: M:BonEngineSharp.Framework.RectangleI.op_Equality(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.RectangleI)
+  fullName: BonEngineSharp.Framework.RectangleI.Equality(BonEngineSharp.Framework.RectangleI, BonEngineSharp.Framework.RectangleI)
+  nameWithType: RectangleI.Equality(RectangleI, RectangleI)
+- uid: BonEngineSharp.Framework.RectangleI.op_Equality*
+  name: Equality
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_op_Equality_
+  commentId: Overload:BonEngineSharp.Framework.RectangleI.op_Equality
+  fullName: BonEngineSharp.Framework.RectangleI.Equality
+  nameWithType: RectangleI.Equality
 - uid: BonEngineSharp.Framework.RectangleI.op_Implicit(BonEngineSharp.Framework.RectangleI)~BonEngineSharp.Framework.RectangleF
   name: Implicit(RectangleI to RectangleF)
   href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_op_Implicit_BonEngineSharp_Framework_RectangleI__BonEngineSharp_Framework_RectangleF
@@ -4690,6 +5251,18 @@ references:
   fullName.vb: BonEngineSharp.Framework.RectangleI.Widening
   nameWithType: RectangleI.Implicit
   nameWithType.vb: RectangleI.Widening
+- uid: BonEngineSharp.Framework.RectangleI.op_Inequality(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.RectangleI)
+  name: Inequality(RectangleI, RectangleI)
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_op_Inequality_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_RectangleI_
+  commentId: M:BonEngineSharp.Framework.RectangleI.op_Inequality(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.RectangleI)
+  fullName: BonEngineSharp.Framework.RectangleI.Inequality(BonEngineSharp.Framework.RectangleI, BonEngineSharp.Framework.RectangleI)
+  nameWithType: RectangleI.Inequality(RectangleI, RectangleI)
+- uid: BonEngineSharp.Framework.RectangleI.op_Inequality*
+  name: Inequality
+  href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_op_Inequality_
+  commentId: Overload:BonEngineSharp.Framework.RectangleI.op_Inequality
+  fullName: BonEngineSharp.Framework.RectangleI.Inequality
+  nameWithType: RectangleI.Inequality
 - uid: BonEngineSharp.Framework.RectangleI.Overlaps(BonEngineSharp.Framework.RectangleI)
   name: Overlaps(RectangleI)
   href: api/BonEngineSharp.Framework.RectangleI.html#BonEngineSharp_Framework_RectangleI_Overlaps_BonEngineSharp_Framework_RectangleI_
@@ -4792,6 +5365,18 @@ references:
   commentId: F:BonEngineSharp.Framework.Sprite.Blend
   fullName: BonEngineSharp.Framework.Sprite.Blend
   nameWithType: Sprite.Blend
+- uid: BonEngineSharp.Framework.Sprite.Clone
+  name: Clone()
+  href: api/BonEngineSharp.Framework.Sprite.html#BonEngineSharp_Framework_Sprite_Clone
+  commentId: M:BonEngineSharp.Framework.Sprite.Clone
+  fullName: BonEngineSharp.Framework.Sprite.Clone()
+  nameWithType: Sprite.Clone()
+- uid: BonEngineSharp.Framework.Sprite.Clone*
+  name: Clone
+  href: api/BonEngineSharp.Framework.Sprite.html#BonEngineSharp_Framework_Sprite_Clone_
+  commentId: Overload:BonEngineSharp.Framework.Sprite.Clone
+  fullName: BonEngineSharp.Framework.Sprite.Clone
+  nameWithType: Sprite.Clone
 - uid: BonEngineSharp.Framework.Sprite.Color
   name: Color
   href: api/BonEngineSharp.Framework.Sprite.html#BonEngineSharp_Framework_Sprite_Color
@@ -4918,6 +5503,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.SpriteAnimation.Animate
   fullName: BonEngineSharp.Framework.SpriteAnimation.Animate
   nameWithType: SpriteAnimation.Animate
+- uid: BonEngineSharp.Framework.SpriteAnimation.Duration
+  name: Duration
+  href: api/BonEngineSharp.Framework.SpriteAnimation.html#BonEngineSharp_Framework_SpriteAnimation_Duration
+  commentId: P:BonEngineSharp.Framework.SpriteAnimation.Duration
+  fullName: BonEngineSharp.Framework.SpriteAnimation.Duration
+  nameWithType: SpriteAnimation.Duration
+- uid: BonEngineSharp.Framework.SpriteAnimation.Duration*
+  name: Duration
+  href: api/BonEngineSharp.Framework.SpriteAnimation.html#BonEngineSharp_Framework_SpriteAnimation_Duration_
+  commentId: Overload:BonEngineSharp.Framework.SpriteAnimation.Duration
+  fullName: BonEngineSharp.Framework.SpriteAnimation.Duration
+  nameWithType: SpriteAnimation.Duration
 - uid: BonEngineSharp.Framework.SpriteAnimation.Identifier
   name: Identifier
   href: api/BonEngineSharp.Framework.SpriteAnimation.html#BonEngineSharp_Framework_SpriteAnimation_Identifier
@@ -5224,6 +5821,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadConfig
   fullName: BonEngineSharp.Managers.AssetsManager.LoadConfig
   nameWithType: AssetsManager.LoadConfig
+- uid: BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean)
+  name: LoadEffect(String, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadEffect_System_String_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String, System.Boolean)
+  nameWithType: AssetsManager.LoadEffect(String, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.LoadEffect*
+  name: LoadEffect
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadEffect_
+  commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadEffect
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadEffect
+  nameWithType: AssetsManager.LoadEffect
 - uid: BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean)
   name: LoadFont(String, Int32, Boolean)
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadFont_System_String_System_Int32_System_Boolean_
@@ -5272,18 +5881,30 @@ references:
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadSound
   fullName: BonEngineSharp.Managers.AssetsManager.LoadSound
   nameWithType: AssetsManager.LoadSound
-- uid: BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset,System.String)
-  name: SaveConfig(ConfigAsset, String)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_SaveConfig_BonEngineSharp_Assets_ConfigAsset_System_String_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset,System.String)
-  fullName: BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset, System.String)
-  nameWithType: AssetsManager.SaveConfig(ConfigAsset, String)
+- uid: BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset,System.String,System.Boolean)
+  name: SaveConfig(ConfigAsset, String, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_SaveConfig_BonEngineSharp_Assets_ConfigAsset_System_String_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset,System.String,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.SaveConfig(BonEngineSharp.Assets.ConfigAsset, System.String, System.Boolean)
+  nameWithType: AssetsManager.SaveConfig(ConfigAsset, String, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.SaveConfig*
   name: SaveConfig
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_SaveConfig_
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.SaveConfig
   fullName: BonEngineSharp.Managers.AssetsManager.SaveConfig
   nameWithType: AssetsManager.SaveConfig
+- uid: BonEngineSharp.Managers.AssetsManager.SaveImage(BonEngineSharp.Assets.ImageAsset,System.String,System.Boolean)
+  name: SaveImage(ImageAsset, String, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_SaveImage_BonEngineSharp_Assets_ImageAsset_System_String_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.SaveImage(BonEngineSharp.Assets.ImageAsset,System.String,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.SaveImage(BonEngineSharp.Assets.ImageAsset, System.String, System.Boolean)
+  nameWithType: AssetsManager.SaveImage(ImageAsset, String, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.SaveImage*
+  name: SaveImage
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_SaveImage_
+  commentId: Overload:BonEngineSharp.Managers.AssetsManager.SaveImage
+  fullName: BonEngineSharp.Managers.AssetsManager.SaveImage
+  nameWithType: AssetsManager.SaveImage
 - uid: BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean)
   name: ToAssetsPath(String, Boolean)
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_ToAssetsPath_System_String_System_Boolean_
@@ -5758,6 +6379,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.GfxManager.DrawText
   fullName: BonEngineSharp.Managers.GfxManager.DrawText
   nameWithType: GfxManager.DrawText
+- uid: BonEngineSharp.Managers.GfxManager.GetTextBoundingBox(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,System.Int32,System.Int32,BonEngineSharp.Framework.PointF,System.Single)
+  name: GetTextBoundingBox(FontAsset, String, PointF, Int32, Int32, PointF, Single)
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_GetTextBoundingBox_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_System_Int32_System_Int32_BonEngineSharp_Framework_PointF_System_Single_
+  commentId: M:BonEngineSharp.Managers.GfxManager.GetTextBoundingBox(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,System.Int32,System.Int32,BonEngineSharp.Framework.PointF,System.Single)
+  fullName: BonEngineSharp.Managers.GfxManager.GetTextBoundingBox(BonEngineSharp.Assets.FontAsset, System.String, BonEngineSharp.Framework.PointF, System.Int32, System.Int32, BonEngineSharp.Framework.PointF, System.Single)
+  nameWithType: GfxManager.GetTextBoundingBox(FontAsset, String, PointF, Int32, Int32, PointF, Single)
+- uid: BonEngineSharp.Managers.GfxManager.GetTextBoundingBox*
+  name: GetTextBoundingBox
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_GetTextBoundingBox_
+  commentId: Overload:BonEngineSharp.Managers.GfxManager.GetTextBoundingBox
+  fullName: BonEngineSharp.Managers.GfxManager.GetTextBoundingBox
+  nameWithType: GfxManager.GetTextBoundingBox
 - uid: BonEngineSharp.Managers.GfxManager.Id
   name: Id
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_Id
@@ -5818,6 +6451,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.GfxManager.SetWindowProperties
   fullName: BonEngineSharp.Managers.GfxManager.SetWindowProperties
   nameWithType: GfxManager.SetWindowProperties
+- uid: BonEngineSharp.Managers.GfxManager.UseEffect(BonEngineSharp.Assets.EffectAsset)
+  name: UseEffect(EffectAsset)
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_UseEffect_BonEngineSharp_Assets_EffectAsset_
+  commentId: M:BonEngineSharp.Managers.GfxManager.UseEffect(BonEngineSharp.Assets.EffectAsset)
+  fullName: BonEngineSharp.Managers.GfxManager.UseEffect(BonEngineSharp.Assets.EffectAsset)
+  nameWithType: GfxManager.UseEffect(EffectAsset)
+- uid: BonEngineSharp.Managers.GfxManager.UseEffect*
+  name: UseEffect
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_UseEffect_
+  commentId: Overload:BonEngineSharp.Managers.GfxManager.UseEffect
+  fullName: BonEngineSharp.Managers.GfxManager.UseEffect
+  nameWithType: GfxManager.UseEffect
 - uid: BonEngineSharp.Managers.GfxManager.Viewport
   name: Viewport
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_Viewport
@@ -5980,6 +6625,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.InputManager.Id
   fullName: BonEngineSharp.Managers.InputManager.Id
   nameWithType: InputManager.Id
+- uid: BonEngineSharp.Managers.InputManager.LoadControlsFromConfig(BonEngineSharp.Assets.ConfigAsset,System.Boolean)
+  name: LoadControlsFromConfig(ConfigAsset, Boolean)
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_LoadControlsFromConfig_BonEngineSharp_Assets_ConfigAsset_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.InputManager.LoadControlsFromConfig(BonEngineSharp.Assets.ConfigAsset,System.Boolean)
+  fullName: BonEngineSharp.Managers.InputManager.LoadControlsFromConfig(BonEngineSharp.Assets.ConfigAsset, System.Boolean)
+  nameWithType: InputManager.LoadControlsFromConfig(ConfigAsset, Boolean)
+- uid: BonEngineSharp.Managers.InputManager.LoadControlsFromConfig*
+  name: LoadControlsFromConfig
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_LoadControlsFromConfig_
+  commentId: Overload:BonEngineSharp.Managers.InputManager.LoadControlsFromConfig
+  fullName: BonEngineSharp.Managers.InputManager.LoadControlsFromConfig
+  nameWithType: InputManager.LoadControlsFromConfig
 - uid: BonEngineSharp.Managers.InputManager.PressedNow(BonEngineSharp.Defs.KeyCodes)
   name: PressedNow(KeyCodes)
   href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_PressedNow_BonEngineSharp_Defs_KeyCodes_
