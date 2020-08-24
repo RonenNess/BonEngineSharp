@@ -5,6 +5,25 @@ using System;
 namespace BonEngineSharp.Defs
 {
 	/// <summary>
+	/// Determine which features to enable on initialization.
+	/// This allow you to enable / disable special runtime features and flags.
+	/// </summary>
+	public class BonFeatures
+	{
+		/// <summary>
+		/// If true, will enable Effects asset. 
+		/// With BonEngine default GFX implementation, this also forces us to use OpenGL.
+		/// </summary>
+		public bool EffectsEnabled = false;
+
+		/// <summary>
+		/// If true, will force the Gfx manager to use OpenGL implementation.
+		/// Note: if Effects are enabled it will force OpenGL regardless of this setting.
+		/// </summary>
+		public bool ForceOpenGL = false;
+	}
+
+	/// <summary>
 	/// Different states the engine can be in.
 	/// You can query engine states to better understand whats going on while debugging.
 	/// </summary>
@@ -97,6 +116,11 @@ namespace BonEngineSharp.Defs
 		/// Font asset, used to draw text.
 		/// </summary>
 		Font,
+
+		/// <summary>
+		/// Effect asset, used to draw sprites with special effects.
+		/// </summary>
+		Effect,
 
 		/// <summary>
 		/// How many asset types we got.

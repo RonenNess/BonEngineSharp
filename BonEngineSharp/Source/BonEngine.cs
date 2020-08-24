@@ -22,17 +22,36 @@ namespace BonEngineSharp
         // did we call 'Start' already?
         static bool _wasInit;
 
+        // init features
+        static Defs.BonFeatures _features;
+
+        /// <summary>
+        /// Get currently active features.
+        /// </summary>
+        /// <returns>Activated features, or null if Start() wasn't called yet.</returns>
+        public static Defs.BonFeatures GetActiveFeatures()
+        {
+            return _features;
+        }
+
         /// <summary>
         /// Start the engine.
         /// </summary>
         /// <param name="scene">Scene to set as first scene.</param>
-        public static void Start(Scene scene)
+        /// <param name="features">Object describing which features / flags to enable for BonEngine initialization.</param>
+        public static void Start(Scene scene, Defs.BonFeatures features = null)
         {
+            // sanity
             if (_wasInit) { throw new Exception("BonEngine.Start() was already called!"); }
             _wasInit = true;
+
+            // default features
+            _features = features = features ?? new Defs.BonFeatures();
+
+            // initialize
             scene.IsFirstScene = true;
             _BonEngineBind.Initialize();
-            _BonEngineBind.BON_Start(scene.GetOrCreateHandle());
+            _BonEngineBind.BON_StartEx(scene.GetOrCreateHandle(), features.ForceOpenGL, features.EffectsEnabled);
         }
 
         /// <summary>

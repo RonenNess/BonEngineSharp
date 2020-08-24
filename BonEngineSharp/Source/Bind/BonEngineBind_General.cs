@@ -28,6 +28,12 @@ namespace BonEngineSharp
         public static extern void BON_Start(IntPtr scene);
 
         /// <summary>
+        /// Start the engine with custom features flags.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_StartEx(IntPtr scene, bool forceOpenGL, bool enableEffects);
+
+        /// <summary>
         /// Stop the engine.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]

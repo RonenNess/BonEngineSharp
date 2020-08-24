@@ -245,6 +245,16 @@ namespace BonEngineSharp.Managers
         }
 
         /// <summary>
+        /// Set active effect to use for future rendering.
+        /// Note: active effect resets after every new frame.
+        /// </summary>
+        /// <param name="effect">New active effect to set, or null to disable special effects.</param>
+        public void UseEffect(EffectAsset effect)
+        {
+            _BonEngineBind.BON_Gfx_UseEffect(effect == null ? IntPtr.Zero : effect._handle);
+        }
+
+        /// <summary>
         /// Set window title.
         /// </summary>
         /// <param name="title">New title.</param>

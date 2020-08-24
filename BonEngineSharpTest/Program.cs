@@ -60,6 +60,7 @@ namespace BonEngineSharpTest
                 AddDemo("Custom Managers", new Demos.CustomManagerScene());
                 AddDemo("Drawing Shapes", new Demos.DrawingShapesScene());
                 AddDemo("UI System", new Demos.UIScene());
+                AddDemo("Effects", new Demos.EffectsScene());
             }
 
             /// <summary>
@@ -140,7 +141,13 @@ namespace BonEngineSharpTest
             Console.WriteLine("Begin BonEngine demo..");
 
             using (var scene = new WelcomeScene())
-                BonEngine.Start(scene);
+            {
+                BonEngine.Start(scene, new BonFeatures()
+                {
+                    EffectsEnabled = true,
+                    ForceOpenGL = false
+                });
+            }
 
             Console.WriteLine("Bye!");
         }

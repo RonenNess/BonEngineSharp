@@ -105,6 +105,7 @@ namespace BonEngineSharpTest.Demos
 
             // draw player
             Gfx.DrawSprite(_player);
+            Gfx.DrawSprite(_player);
         }
     }
 }

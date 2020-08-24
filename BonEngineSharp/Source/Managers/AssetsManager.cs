@@ -146,6 +146,19 @@ namespace BonEngineSharp.Managers
         }
 
         /// <summary>
+        /// Loads an effect asset.
+        /// </summary>
+        /// <param name="filename">Effect ini file path.</param>
+        /// <param name="useCache">Should we use cache for this asset to make future loadings faster?</param>
+        /// <returns>Loaded effect asset.</returns>
+        public EffectAsset LoadEffect(string filename, bool useCache = true)
+        {
+            if (!BonEngine.GetActiveFeatures().EffectsEnabled) { throw new Exception("Can't load effect because 'Effects' feature is not enabled. Please initialize BonEngine with 'EffectsEnabled' = true."); }
+            var ret = new EffectAsset(_BonEngineBind.BON_Assets_LoadEffect(ToAssetsPath(filename, true), useCache));
+            return ret;
+        }
+
+        /// <summary>
         /// Loads a font asset.
         /// </summary>
         /// <param name="filename">Font track path.</param>

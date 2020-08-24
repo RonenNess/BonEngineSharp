@@ -40,6 +40,13 @@ namespace BonEngineSharp
         public static extern IntPtr BON_Assets_LoadSound([MarshalAs(UnmanagedType.LPStr)] string filename, bool useCache);
 
         /// <summary>
+        /// Load an effect asset.
+        /// </summary>
+
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr BON_Assets_LoadEffect([MarshalAs(UnmanagedType.LPStr)] string filename, bool useCache);
+
+        /// <summary>
         /// Load a font asset.
         /// </summary>
 
@@ -276,6 +283,90 @@ namespace BonEngineSharp
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern int BON_Font_Size(IntPtr font);
+
+        /// <summary>
+        /// Get if effect is valid.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern bool BON_Effect_IsValid(IntPtr effect);
+
+        /// <summary>
+        /// Get if effect uses textures.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern bool BON_Effect_UseTextures(IntPtr effect);
+
+        /// <summary>
+        /// Get if effect uses vertex color.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern bool BON_Effect_UseVertexColor(IntPtr effect);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformFloat(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, float val);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformVector2(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, float x, float y);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformVector3(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, float x, float y, float z);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformVector4(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, float x, float y, float z, float w);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformInt(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, int val);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformVector2i(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, int x, int y);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformVector3i(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, int x, int y, int z);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformVector4i(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, int x, int y, int z, int w);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformMatrix2(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, int count, bool transpose, float[] values);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformMatrix3(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, int count, bool transpose, float[] values);
+
+        /// <summary>
+        /// Set uniform.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Effect_SetUniformMatrix4(IntPtr effect, [MarshalAs(UnmanagedType.LPStr)] string name, int count, bool transpose, float[] values);
 
     }
 }

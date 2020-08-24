@@ -119,5 +119,11 @@ namespace BonEngineSharp
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern void BON_Gfx_GetTextBoundingBox(IntPtr font, [MarshalAs(UnmanagedType.LPStr)] string text, float x, float y, int fontSize, int maxWidth, float originX, float originY, float rotation, ref int outX, ref int outY, ref int outWidth, ref int outHeight);
 
+        /// <summary>
+        /// Set effect to use.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Gfx_UseEffect(IntPtr effect);
+
     }
 }
