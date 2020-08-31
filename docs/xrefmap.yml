@@ -1147,6 +1147,18 @@ references:
   commentId: F:BonEngineSharp.Defs.BonFeatures.ForceOpenGL
   fullName: BonEngineSharp.Defs.BonFeatures.ForceOpenGL
   nameWithType: BonFeatures.ForceOpenGL
+- uid: BonEngineSharp.Defs.BonFeatures.Logging
+  name: Logging
+  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_Logging
+  commentId: F:BonEngineSharp.Defs.BonFeatures.Logging
+  fullName: BonEngineSharp.Defs.BonFeatures.Logging
+  nameWithType: BonFeatures.Logging
+- uid: BonEngineSharp.Defs.BonFeatures.RegisterSignalsHandler
+  name: RegisterSignalsHandler
+  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_RegisterSignalsHandler
+  commentId: F:BonEngineSharp.Defs.BonFeatures.RegisterSignalsHandler
+  fullName: BonEngineSharp.Defs.BonFeatures.RegisterSignalsHandler
+  nameWithType: BonFeatures.RegisterSignalsHandler
 - uid: BonEngineSharp.Defs.DiagnosticsCounters
   name: DiagnosticsCounters
   href: api/BonEngineSharp.Defs.DiagnosticsCounters.html
@@ -5515,6 +5527,18 @@ references:
   commentId: Overload:BonEngineSharp.Framework.SpriteAnimation.Duration
   fullName: BonEngineSharp.Framework.SpriteAnimation.Duration
   nameWithType: SpriteAnimation.Duration
+- uid: BonEngineSharp.Framework.SpriteAnimation.GetTag(System.Int32)
+  name: GetTag(Int32)
+  href: api/BonEngineSharp.Framework.SpriteAnimation.html#BonEngineSharp_Framework_SpriteAnimation_GetTag_System_Int32_
+  commentId: M:BonEngineSharp.Framework.SpriteAnimation.GetTag(System.Int32)
+  fullName: BonEngineSharp.Framework.SpriteAnimation.GetTag(System.Int32)
+  nameWithType: SpriteAnimation.GetTag(Int32)
+- uid: BonEngineSharp.Framework.SpriteAnimation.GetTag*
+  name: GetTag
+  href: api/BonEngineSharp.Framework.SpriteAnimation.html#BonEngineSharp_Framework_SpriteAnimation_GetTag_
+  commentId: Overload:BonEngineSharp.Framework.SpriteAnimation.GetTag
+  fullName: BonEngineSharp.Framework.SpriteAnimation.GetTag
+  nameWithType: SpriteAnimation.GetTag
 - uid: BonEngineSharp.Framework.SpriteAnimation.Identifier
   name: Identifier
   href: api/BonEngineSharp.Framework.SpriteAnimation.html#BonEngineSharp_Framework_SpriteAnimation_Identifier
@@ -5569,6 +5593,12 @@ references:
   commentId: F:BonEngineSharp.Framework.SpriteAnimationStep.Index
   fullName: BonEngineSharp.Framework.SpriteAnimationStep.Index
   nameWithType: SpriteAnimationStep.Index
+- uid: BonEngineSharp.Framework.SpriteAnimationStep.Tag
+  name: Tag
+  href: api/BonEngineSharp.Framework.SpriteAnimationStep.html#BonEngineSharp_Framework_SpriteAnimationStep_Tag
+  commentId: F:BonEngineSharp.Framework.SpriteAnimationStep.Tag
+  fullName: BonEngineSharp.Framework.SpriteAnimationStep.Tag
+  nameWithType: SpriteAnimationStep.Tag
 - uid: BonEngineSharp.Framework.SpriteSheet
   name: SpriteSheet
   href: api/BonEngineSharp.Framework.SpriteSheet.html
@@ -6760,6 +6790,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.LogManager.Error
   fullName: BonEngineSharp.Managers.LogManager.Error
   nameWithType: LogManager.Error
+- uid: BonEngineSharp.Managers.LogManager.Flush
+  name: Flush()
+  href: api/BonEngineSharp.Managers.LogManager.html#BonEngineSharp_Managers_LogManager_Flush
+  commentId: M:BonEngineSharp.Managers.LogManager.Flush
+  fullName: BonEngineSharp.Managers.LogManager.Flush()
+  nameWithType: LogManager.Flush()
+- uid: BonEngineSharp.Managers.LogManager.Flush*
+  name: Flush
+  href: api/BonEngineSharp.Managers.LogManager.html#BonEngineSharp_Managers_LogManager_Flush_
+  commentId: Overload:BonEngineSharp.Managers.LogManager.Flush
+  fullName: BonEngineSharp.Managers.LogManager.Flush
+  nameWithType: LogManager.Flush
 - uid: BonEngineSharp.Managers.LogManager.Id
   name: Id
   href: api/BonEngineSharp.Managers.LogManager.html#BonEngineSharp_Managers_LogManager_Id

@@ -158,8 +158,9 @@
 Under this section, we should have the following keys:
 - repeats = true / false - does this animation loops, or remain stuck on last step after done?
 - steps_count = how many steps we have in this animation.
-- setp_x_duration[x is step index] = duration, in seconds, of this animation step.
-- setp_x_source[x is step index] = index in spritesheet file, format is: &quot;x,y&quot;.
+- setp_x_duration [x is step index] = duration, in seconds, of this animation step.
+- setp_x_source [x is step index] = index in spritesheet file, format is: &quot;x,y&quot;.
+- step_x_tag [x is step index] = optional tag to attach to this step.
 For more info, check out demo_spritesheet.ini in test assets folder.</p>
 </div>
   <h3 id="properties">Properties
@@ -409,6 +410,51 @@ For more info, check out demo_spritesheet.ini in test assets folder.</p>
       <tr>
         <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
         <td><p>Index to set in spritesheet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Framework_SpriteAnimation_GetTag_" data-uid="BonEngineSharp.Framework.SpriteAnimation.GetTag*"></a>
+  <h4 id="BonEngineSharp_Framework_SpriteAnimation_GetTag_System_Int32_" data-uid="BonEngineSharp.Framework.SpriteAnimation.GetTag(System.Int32)">GetTag(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get step tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTag(int stepIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stepIndex</span></td>
+        <td><p>Step index to get tag from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Step tag or null if not set.</p>
 </td>
       </tr>
     </tbody>
