@@ -18,6 +18,11 @@ namespace BonEngineSharp.Framework
         /// The index of the sprite in the spritesheet during this animation step.
         /// </summary>
         public PointI Index;
+
+        /// <summary>
+        /// Animation step optional tag.
+        /// </summary>
+        public string Tag;
     };
 
     /// <summary>
@@ -77,8 +82,9 @@ namespace BonEngineSharp.Framework
         /// Under this section, we should have the following keys:
         ///     - repeats = true / false - does this animation loops, or remain stuck on last step after done?
         ///     - steps_count = how many steps we have in this animation.
-        ///     - setp_x_duration[x is step index] = duration, in seconds, of this animation step.
-        ///     - setp_x_source[x is step index] = index in spritesheet file, format is: "x,y".
+        ///     - setp_x_duration [x is step index] = duration, in seconds, of this animation step.
+        ///     - setp_x_source [x is step index] = index in spritesheet file, format is: "x,y".
+        ///     - step_x_tag [x is step index] = optional tag to attach to this step.
         /// For more info, check out demo_spritesheet.ini in test assets folder.</remarks>
         public SpriteAnimation(string identifier, ConfigAsset config)
         {
@@ -99,8 +105,19 @@ namespace BonEngineSharp.Framework
                 string prefix = "step_" + i.ToString();
                 float duration = config.GetFloat(section, prefix + "_duration");
                 PointI index = PointI.FromString(config.GetStr(section, prefix + "_source"));
-                AddStep(new SpriteAnimationStep() { Duration = duration, Index = index });
+                string tag = config.GetStr(section, prefix + "_tag", null);
+                AddStep(new SpriteAnimationStep() { Duration = duration, Index = index, Tag = tag });
             }
+        }
+
+        /// <summary>
+        /// Get step tag.
+        /// </summary>
+        /// <param name="stepIndex">Step index to get tag from.</param>
+        /// <returns>Step tag or null if not set.</returns>
+        public string GetTag(int stepIndex)
+        {
+            return _steps[stepIndex].Tag;
         }
 
         /// <summary>

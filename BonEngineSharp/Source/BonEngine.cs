@@ -17,7 +17,7 @@ namespace BonEngineSharp
         /// <summary>
         /// BonEngine version - must match the underlying CPP version.
         /// </summary>
-        public static float Version => 1.3f;
+        public static float Version => 1.31f;
 
         // did we call 'Start' already?
         static bool _wasInit;
@@ -51,7 +51,7 @@ namespace BonEngineSharp
             // initialize
             scene.IsFirstScene = true;
             _BonEngineBind.Initialize();
-            _BonEngineBind.BON_StartEx(scene.GetOrCreateHandle(), features.ForceOpenGL, features.EffectsEnabled);
+            _BonEngineBind.BON_StartEx(scene.GetOrCreateHandle(), features.ForceOpenGL, features.EffectsEnabled, features.Logging, features.RegisterSignalsHandler);
         }
 
         /// <summary>

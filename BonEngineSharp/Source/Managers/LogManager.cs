@@ -29,6 +29,14 @@ namespace BonEngineSharp.Managers
         }
 
         /// <summary>
+        /// Flush log files.
+        /// </summary>
+        public void Flush()
+        {
+            _BonEngineBind.BON_Log_Flush();
+        }
+
+        /// <summary>
         /// Write a log debug message.
         /// </summary>
         /// <param name="message">Message to write.</param>

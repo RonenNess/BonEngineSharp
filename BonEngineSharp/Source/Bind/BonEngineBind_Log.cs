@@ -34,5 +34,11 @@ namespace BonEngineSharp
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern void BON_Log_Write(int level, [MarshalAs(UnmanagedType.LPStr)] string msg);
+
+        /// <summary>
+        /// Flush log file.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Log_Flush();
     }
 }

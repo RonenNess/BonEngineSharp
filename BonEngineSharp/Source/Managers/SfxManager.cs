@@ -36,6 +36,7 @@ namespace BonEngineSharp.Managers
         /// <param name="loops">How many times to repeat music (-1 = endless, 0 = once, above 0 = number of times).</param>
         public void PlayMusic(MusicAsset music, int volume = 100, int loops = -1)
         {
+            if (music._handle == IntPtr.Zero) { throw new Exception("Can't play music asset with null handle!"); }
             _BonEngineBind.BON_Sfx_PlayMusic(music._handle, volume, loops);
         }
 
@@ -75,6 +76,7 @@ namespace BonEngineSharp.Managers
         /// <returns>Channel id, which you can use later to modify sound. Can be Invalid if there was no available channel.</returns>
         public SoundChannelId PlaySound(SoundAsset sound, int volume = 100, int loops = 0, float pitch = 1f)
         {
+            if (sound._handle == IntPtr.Zero) { throw new Exception("Can't play sound asset with null handle!"); }
             return _BonEngineBind.BON_Sfx_PlaySound(sound._handle, volume, loops, pitch);
         }
 
@@ -92,6 +94,7 @@ namespace BonEngineSharp.Managers
         /// <returns>Channel id, which you can use later to modify sound. Can be Invalid if there was no available channel.</returns>
         public SoundChannelId PlaySound(SoundAsset sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance)
         {
+            if (sound._handle == IntPtr.Zero) { throw new Exception("Can't play sound asset with null handle!"); }
             return _BonEngineBind.BON_Sfx_PlaySoundEx(sound._handle, volume, loops, pitch, panLeft, panRight, distance);
         }
 

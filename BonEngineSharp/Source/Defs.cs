@@ -21,6 +21,16 @@ namespace BonEngineSharp.Defs
 		/// Note: if Effects are enabled it will force OpenGL regardless of this setting.
 		/// </summary>
 		public bool ForceOpenGL = false;
+
+		/// <summary>
+		/// If true, will register signals handler to finish logs before exiting.
+		/// </summary>
+		public bool RegisterSignalsHandler = false;
+
+		/// <summary>
+		/// If true, will enable logging by default.
+		/// </summary>
+		public bool Logging = true;
 	}
 
 	/// <summary>
