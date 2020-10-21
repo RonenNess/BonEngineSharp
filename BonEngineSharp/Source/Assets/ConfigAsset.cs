@@ -2,6 +2,7 @@
 using BonEngineSharp.Defs;
 using BonEngineSharp.Framework;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace BonEngineSharp.Assets
 {
@@ -25,6 +26,11 @@ namespace BonEngineSharp.Assets
         public override AssetType AssetType => AssetType.Config;
 
         /// <summary>
+        /// Store all read keys in form of 'section.key'.
+        /// </summary>
+        HashSet<string> _readKeys = new HashSet<string>();
+
+        /// <summary>
         /// Get a string value from config.
         /// </summary>
         /// <param name="section">Section to get value from.</param>
@@ -33,6 +39,7 @@ namespace BonEngineSharp.Assets
         /// <returns>Value from config, or defaultVal if not found.</returns>
         public string GetStr(string section, string key, string defaultVal = null)
         {
+            _readKeys.Add($"{section ?? string.Empty}.{key}");
             return _BonEngineBind.BON_Config_GetStr_(_handle, section, key, defaultVal);
         }
 
@@ -45,6 +52,7 @@ namespace BonEngineSharp.Assets
         /// <returns>Value from config, or defaultVal if not found.</returns>
         public int GetInt(string section, string key, int defaultVal = 0)
         {
+            _readKeys.Add($"{section ?? string.Empty}.{key}");
             return _BonEngineBind.BON_Config_GetInt(_handle, section, key, defaultVal);
         }
 
@@ -57,6 +65,7 @@ namespace BonEngineSharp.Assets
         /// <returns>Value from config, or defaultVal if not found.</returns>
         public float GetFloat(string section, string key, float defaultVal = 0f)
         {
+            _readKeys.Add($"{section ?? string.Empty}.{key}");
             return _BonEngineBind.BON_Config_GetFloat(_handle, section, key, defaultVal);
         }
 
@@ -69,6 +78,7 @@ namespace BonEngineSharp.Assets
         /// <returns>Value from config, or defaultVal if not found.</returns>
         public bool GetBool(string section, string key, bool defaultVal = false)
         {
+            _readKeys.Add($"{section ?? string.Empty}.{key}");
             return _BonEngineBind.BON_Config_GetBool(_handle, section, key, defaultVal);
         }
 
@@ -172,6 +182,7 @@ namespace BonEngineSharp.Assets
         /// <param name="value">Value to set (will be stringified with ToString()).</param>
         public void SetValue(string section, string key, object value)
         {
+            _readKeys.Add($"{section ?? string.Empty}.{key}");
             _BonEngineBind.BON_Config_SetValue(_handle, section, key, value.ToString());
         }
 
@@ -256,6 +267,42 @@ namespace BonEngineSharp.Assets
                 sb.Append('\n');
             }
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// Return enumerable with all keys that were read.
+        /// Format is 'section.key'.
+        /// </summary>
+        /// <returns>Enumerable with all keys read.</returns>
+        public IEnumerable<string> GetAllReadKeys()
+        {
+            return _readKeys.AsEnumerable();
+        }
+
+        /// <summary>
+        /// Return enumerable with all keys that were not read from this config file.
+        /// This method is useful to detect useless keys in file.
+        /// Format is 'section.key'.
+        /// </summary>
+        /// <returns>Enumerable with all unread keys.</returns>
+        public IEnumerable<string> GetAllUnreadKeys()
+        {
+            List<string> ret = new List<string>();
+            var sections = Sections().ToList();
+            sections.Add(string.Empty);
+            foreach (var section in sections)
+            {
+                var keys = Keys(section);
+                foreach (var key in keys)
+                {
+                    var curr = $"{section ?? string.Empty}.{key}";
+                    if (!_readKeys.Contains(curr))
+                    {
+                        ret.Add(curr);
+                    }
+                }
+            }
+            return ret;
         }
 
         /// <summary>

@@ -144,15 +144,23 @@ namespace BonEngineSharp.Framework
             // get previous step
             int prevStep = (int)Math.Floor(progress);
 
-            // special case - if prev step is bigger than max, it means 3 things:
-            //	1. we're not in repeat mode (otherwise we would have reset back to 0 by now).
-            //	2. we already finished animation.
+            // did finish animation?
             if (prevStep >= (int)_steps.Count)
             {
-                prevStep = (int)_steps.Count - 1;
-                currStep = prevStep;
-                didFinish = true;
-                return _steps[prevStep].Index;
+                // if on repeat mode, reset progress
+                if (Repeats)
+                {
+                    prevStep = (int)_steps.Count - 1;
+                    progress = 0f;
+                }
+                // if not on repeat, means we finished animation and should stay stuck here
+                else
+                {
+                    prevStep = (int)_steps.Count - 1;
+                    currStep = prevStep;
+                    didFinish = true;
+                    return _steps[prevStep].Index;
+                }
             }
 
             // set as didn't finish
@@ -170,7 +178,6 @@ namespace BonEngineSharp.Framework
                 {
                     // set new step to either start of animation, or last step
                     newStep = Repeats ? 0 : (int)_steps.Count - 1;
-                    if (newStep == 0) { progress = 0.0; }
 
                     // set as finished
                     didFinish = true;

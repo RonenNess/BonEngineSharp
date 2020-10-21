@@ -23,6 +23,8 @@
       href: changelog_1_3.md
     - name: V1.31
       href: changelog_1_31.md
+    - name: V1.32
+      href: changelog_1_32.md
 - name: Examples
   href: examples.md
   items:
