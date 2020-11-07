@@ -73,6 +73,30 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ConfigAsset.Finalize
   fullName: BonEngineSharp.Assets.ConfigAsset.Finalize
   nameWithType: ConfigAsset.Finalize
+- uid: BonEngineSharp.Assets.ConfigAsset.GetAllReadKeys
+  name: GetAllReadKeys()
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetAllReadKeys
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetAllReadKeys
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetAllReadKeys()
+  nameWithType: ConfigAsset.GetAllReadKeys()
+- uid: BonEngineSharp.Assets.ConfigAsset.GetAllReadKeys*
+  name: GetAllReadKeys
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetAllReadKeys_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetAllReadKeys
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetAllReadKeys
+  nameWithType: ConfigAsset.GetAllReadKeys
+- uid: BonEngineSharp.Assets.ConfigAsset.GetAllUnreadKeys
+  name: GetAllUnreadKeys()
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetAllUnreadKeys
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.GetAllUnreadKeys
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetAllUnreadKeys()
+  nameWithType: ConfigAsset.GetAllUnreadKeys()
+- uid: BonEngineSharp.Assets.ConfigAsset.GetAllUnreadKeys*
+  name: GetAllUnreadKeys
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetAllUnreadKeys_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.GetAllUnreadKeys
+  fullName: BonEngineSharp.Assets.ConfigAsset.GetAllUnreadKeys
+  nameWithType: ConfigAsset.GetAllUnreadKeys
 - uid: BonEngineSharp.Assets.ConfigAsset.GetBool(System.String,System.String,System.Boolean)
   name: GetBool(String, String, Boolean)
   href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_GetBool_System_String_System_String_System_Boolean_
@@ -208,6 +232,21 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ConfigAsset.Keys
   fullName: BonEngineSharp.Assets.ConfigAsset.Keys
   nameWithType: ConfigAsset.Keys
+- uid: BonEngineSharp.Assets.ConfigAsset.ReadInto(System.String,System.Object,System.Action{System.Reflection.MemberInfo},System.Action{System.Reflection.MemberInfo})
+  name: ReadInto(String, Object, Action<MemberInfo>, Action<MemberInfo>)
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_ReadInto_System_String_System_Object_System_Action_System_Reflection_MemberInfo__System_Action_System_Reflection_MemberInfo__
+  commentId: M:BonEngineSharp.Assets.ConfigAsset.ReadInto(System.String,System.Object,System.Action{System.Reflection.MemberInfo},System.Action{System.Reflection.MemberInfo})
+  name.vb: ReadInto(String, Object, Action(Of MemberInfo), Action(Of MemberInfo))
+  fullName: BonEngineSharp.Assets.ConfigAsset.ReadInto(System.String, System.Object, System.Action<System.Reflection.MemberInfo>, System.Action<System.Reflection.MemberInfo>)
+  fullName.vb: BonEngineSharp.Assets.ConfigAsset.ReadInto(System.String, System.Object, System.Action(Of System.Reflection.MemberInfo), System.Action(Of System.Reflection.MemberInfo))
+  nameWithType: ConfigAsset.ReadInto(String, Object, Action<MemberInfo>, Action<MemberInfo>)
+  nameWithType.vb: ConfigAsset.ReadInto(String, Object, Action(Of MemberInfo), Action(Of MemberInfo))
+- uid: BonEngineSharp.Assets.ConfigAsset.ReadInto*
+  name: ReadInto
+  href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_ReadInto_
+  commentId: Overload:BonEngineSharp.Assets.ConfigAsset.ReadInto
+  fullName: BonEngineSharp.Assets.ConfigAsset.ReadInto
+  nameWithType: ConfigAsset.ReadInto
 - uid: BonEngineSharp.Assets.ConfigAsset.RemoveKey(System.String,System.String)
   name: RemoveKey(String, String)
   href: api/BonEngineSharp.Assets.ConfigAsset.html#BonEngineSharp_Assets_ConfigAsset_RemoveKey_System_String_System_String_

@@ -7,11 +7,11 @@
 	<owners>RonenNess</owners>
 	<title>BonEngine Sharp</title>
 	<summary>BonEngine is a code-based game engine designed to be simple and straightforward, with as little setup as possible. It covers 2d rendering, assets, sound effects, music, input, config files, and more.</summary>
-    <license type="expression">MIT</license>
+	<licenseUrl>https://en.wikipedia.org/wiki/MIT_License</licenseUrl>
 	<projectUrl>https://github.com/RonenNess/BonEngineSharp</projectUrl>
 	<iconUrl>https://raw.githubusercontent.com/RonenNess/BonEngineSharp/master/nuget_icon.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<releaseNotes>Bugfix and optimizations + small additions to APIs.</releaseNotes>
+	<releaseNotes>Fixed sprite animation bug and improved config asset.</releaseNotes>
 	<description>BonEngine is a code-based game engine designed to be fast, simple and straightforward.</description>
 	<tags>game engine,gamedev,graphics,gamedev</tags>
 	<dependencies>

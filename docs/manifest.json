@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Assets.ConfigAsset.html",
-          "hash": "ZD8yTsNOUVckwf/umZajcw=="
+          "hash": "k5ANmkRmPo9ozC8RgM3IPw=="
         }
       },
       "is_incremental": false,
@@ -965,6 +965,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/changelog_1_32.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog_1_32.html",
+          "hash": "ARczhWBG1QlZwFXEyGWxVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/examples.md",
       "output": {
         ".html": {
@@ -989,6 +1001,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/examples_lights.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/examples_lights.html",
+          "hash": "uOHvUa2HtUkAAriREG9ZUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
@@ -1005,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "JjRFVu0TdiovRxqiHmC1qg=="
+          "hash": "LQ5R2tQ9xeEeOuEaXBIbRw=="
         }
       },
       "is_incremental": false,
@@ -1017,6 +1041,17 @@
       "output": {
         "resource": {
           "relative_path": "images/example_breakout.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/example_lights.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/example_lights.jpg"
         }
       },
       "is_incremental": false,
@@ -1059,8 +1094,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 16,
-          "skipped_file_count": 16
+          "total_file_count": 18,
+          "skipped_file_count": 18
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,

@@ -30,3 +30,5 @@
   items:
     - name: Breakout
       href: examples_breakout.md
+    - name: Lights
+      href: examples_lights.md
