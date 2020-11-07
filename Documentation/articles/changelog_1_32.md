@@ -1,6 +1,6 @@
 # 1.3.2
 
-**[WIP]**
+**[07/11/2020]**
 
 Key changes:
 
@@ -9,3 +9,4 @@ Key changes:
 All Changes:
 
 - Added config files API to query read and unread keys.
+- Added `ReadInto` to config asset.

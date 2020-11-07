@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
 	<id>BonEngineSharp</id>
-	<version>1.3.1</version>
+	<version>1.3.2</version>
 	<authors>Ronen Ness</authors>
 	<owners>RonenNess</owners>
 	<title>BonEngine Sharp</title>
 	<summary>BonEngine is a code-based game engine designed to be simple and straightforward, with as little setup as possible. It covers 2d rendering, assets, sound effects, music, input, config files, and more.</summary>
-	<licenseUrl>https://en.wikipedia.org/wiki/MIT_License</licenseUrl>
+    <license type="expression">MIT</license>
 	<projectUrl>https://github.com/RonenNess/BonEngineSharp</projectUrl>
 	<iconUrl>https://raw.githubusercontent.com/RonenNess/BonEngineSharp/master/nuget_icon.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>

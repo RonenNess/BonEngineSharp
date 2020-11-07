@@ -3,6 +3,8 @@ using BonEngineSharp.Defs;
 using BonEngineSharp.Framework;
 using System.Linq;
 using System.Collections.Generic;
+using System.Reflection;
+using System.ComponentModel;
 
 namespace BonEngineSharp.Assets
 {
@@ -303,6 +305,95 @@ namespace BonEngineSharp.Assets
                 }
             }
             return ret;
+        }
+
+        /// <summary>
+        /// Read a section into an object, by using all public fields as keys.
+        /// </summary>
+        /// <param name="section">Section to read.</param>
+        /// <param name="obj">Object to read values into.</param>
+        /// <param name="onUnsupportedType">Optional callback to call for every field we don't know how to parse.</param>
+        /// <param name="onMissingFields">Optional callback to call for every public field we don't have a key for in the ini file.</param>
+        public void ReadInto(string section, object obj, Action<MemberInfo> onUnsupportedType = null, Action<MemberInfo> onMissingFields = null)
+        {
+            // iterate public fields and properties we can set
+            var bindingFlags = BindingFlags.Public | BindingFlags.Instance;
+            var propsAndFields = obj.GetType().GetFields(bindingFlags).Cast<MemberInfo>().Concat(obj.GetType().GetProperties(bindingFlags)).ToArray();
+            foreach (MemberInfo prop in propsAndFields)
+            {
+                // get key from property name
+                var key = prop.Name;
+                var fieldType = prop is PropertyInfo ? (prop as PropertyInfo).PropertyType : (prop as FieldInfo).FieldType;
+
+                // value doesn't exist?
+                if (!Exists(section, key))
+                {
+                    onMissingFields?.Invoke(prop);
+                    continue;
+                }
+
+                // value to set
+                object value = null;
+
+                // string value
+                if (fieldType == typeof(string))
+                {
+                    value = GetStr(section, key);
+                }
+                // enum value
+                else if (fieldType.IsEnum)
+                {
+                    var asStr = GetStr(section, key, null);
+                    if (asStr != null && !Enum.TryParse(fieldType, asStr, out value))
+                    {
+                        throw new FormatException($"Invalid value in ini file! Trying to read '[{section ?? string.Empty}].{key}' as enum of type '{fieldType.Name}', but value is '{asStr}'.");
+                    }
+                }
+                // boolean value
+                else if (fieldType == typeof(bool))
+                {
+                    value = GetBool(section, key);
+                }
+                // primitive types
+                else if (fieldType.IsPrimitive)
+                {
+                    var valueStr = GetStr(section, key);
+                    var converter = TypeDescriptor.GetConverter(fieldType);
+                    if (converter == null)
+                    {
+                        onUnsupportedType?.Invoke(prop);
+                        continue;
+                    }
+                    value = converter.ConvertFromString(valueStr);
+                }
+                // points
+                else if (fieldType == typeof(PointI))
+                {
+                    value = GetPointI(section, key, PointI.Zero);
+                }
+                else if (fieldType == typeof(PointF))
+                {
+                    value = GetPointI(section, key, PointF.Zero);
+                }
+                // rects
+                else if (fieldType == typeof(RectangleI))
+                {
+                    value = GetRectangleI(section, key, RectangleI.Empty);
+                }
+                else if (fieldType == typeof(RectangleF))
+                {
+                    value = GetRectangleF(section, key, RectangleF.Empty);
+                }
+                // color
+                else if (fieldType == typeof(Color))
+                {
+                    value = GetColor(section, key, Color.White);
+                }
+
+                // finally - set field value in instance
+                (prop as PropertyInfo)?.SetValue(obj, value);
+                (prop as FieldInfo)?.SetValue(obj, value);
+            }
         }
 
         /// <summary>
