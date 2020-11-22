@@ -125,5 +125,11 @@ namespace BonEngineSharp
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern void BON_Gfx_UseEffect(IntPtr effect);
 
+        /// <summary>
+        /// Creates an image from currently rendered screen.
+        /// </summary>
+
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern IntPtr BON_Gfx_CreateImageFromScreen();
     }
 }

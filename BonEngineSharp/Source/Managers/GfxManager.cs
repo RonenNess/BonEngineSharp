@@ -308,6 +308,17 @@ namespace BonEngineSharp.Managers
         ImageAsset _renderTarget;
 
         /// <summary>
+        /// Create image asset from currently rendered screen.
+        /// This method is useful to generate screenshots, or use currently rendered screen for post effects.
+        /// </summary>
+        /// <returns>New image asset from currently rendered screen.</returns>
+        public ImageAsset CreateImageFromScreen()
+        {
+            var handle = _BonEngineBind.BON_Gfx_CreateImageFromScreen();
+            return new ImageAsset(handle);
+        }
+
+        /// <summary>
         /// Draws a rectangle.
         /// </summary>
         /// <param name="rectangle">Rectangle to draw.</param>

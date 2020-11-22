@@ -201,6 +201,12 @@ namespace BonEngineSharpTest.Demos
                     }
                 }
             }
+
+            // save screenshot
+            if (Input.ReleasedNow(KeyCodes.KeyS))
+            {
+                Gfx.CreateImageFromScreen().SaveToFile("screenshot.png");
+            }
         }
 
         // adds an explosion effect
@@ -236,6 +242,7 @@ namespace BonEngineSharpTest.Demos
             Gfx.DrawText(_fontBig, "Drawing Shapes Example", new PointF(80, 320), Color.White, Color.Black, 1, 42);
             Gfx.DrawText(_font, "No images were loaded in this demo! :)\n" +
                 "- Use Arrows or WASD to move.\n" +
+                "- Press 'S' to save screenshot.\n" +
                 "- Press Escape to exit.", new PointF(80, 410), Color.White, Color.Black, 1, 22);
 
             // draw blocks
