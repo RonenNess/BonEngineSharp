@@ -244,7 +244,7 @@ namespace BonEngineSharp.Managers
 		}
 
 		/// <summary>
-		/// Create and return a UI LIST.
+		/// Create and return a UI List.
 		/// </summary>
 		/// <param name="stylesheet">Stylesheet path to load.</param>
 		/// <param name="parent">Optional parent to attach element to.</param>
@@ -254,6 +254,19 @@ namespace BonEngineSharp.Managers
 			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
 			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
 			return InitNewElement(new UIList(_BonEngineBind.BON_UI_CreateList(stylesheet, parentHandle)), parent);
+		}
+
+		/// <summary>
+		/// Create and return a UI DropDown element.
+		/// </summary>
+		/// <param name="stylesheet">Stylesheet path to load.</param>
+		/// <param name="parent">Optional parent to attach element to.</param>
+		/// <returns>New UI element.</returns>
+		public UIDropDown CreateDropDown(string stylesheet, UIElement parent)
+		{
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIDropDown(_BonEngineBind.BON_UI_CreateDropDown(stylesheet, parentHandle)), parent);
 		}
 
 		/// <summary>

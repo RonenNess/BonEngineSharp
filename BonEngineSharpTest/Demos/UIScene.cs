@@ -37,12 +37,13 @@ namespace BonEngineSharpTest.Demos
             _uiroot = UI.CreateRoot();
 
             // create button and list window
-            var buttonAndListWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Button & List");
+            var buttonAndListWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Button, DropDown & List");
             buttonAndListWindow.AutoArrangeChildren = true;
             buttonAndListWindow.Offset = new PointI(50, 40);
+            buttonAndListWindow.Size = new UISize(buttonAndListWindow.Size.Width, UISizeType.Pixels, buttonAndListWindow.Size.Height + 70, UISizeType.Pixels);
 
             // add into text and button
-            UI.CreateText("ui/small_text.ini", buttonAndListWindow, "This demo shows some built-in UI elements. \nFor example, here's a button:");
+            UI.CreateText("ui/small_text.ini", buttonAndListWindow, "This demo shows UI elements. \nFor example, here's a button:");
             var button = UI.CreateButton("ui/button.ini", buttonAndListWindow, "Click Me!");
             int clickCounts = 1;
             button.OnMouseReleased((UIElement elem) =>
@@ -50,8 +51,17 @@ namespace BonEngineSharpTest.Demos
                 button.Caption.Text = "Thanks! Clicks: " + clickCounts++;
             });
 
+            // add a dropdown
+            var dropdownTitle = UI.CreateText("ui/small_text.ini", buttonAndListWindow, "Here's a DropDown:");
+            var dropdown = UI.CreateDropDown("ui/dropdown.ini", buttonAndListWindow);
+            dropdown.PlaceholderText = "Click to show options.";
+            for (var i = 1; i <= 15; ++i)
+            {
+                dropdown.AddItem("Item #" + i);
+            }
+
             // add a list
-            var listTitle = UI.CreateText("ui/small_text.ini", buttonAndListWindow, "And here's a list:");
+            var listTitle = UI.CreateText("ui/small_text.ini", buttonAndListWindow, "And here's a List:");
             var list = UI.CreateList("ui/list.ini", buttonAndListWindow);
             for (var i = 1; i <= 15; ++i)
             {

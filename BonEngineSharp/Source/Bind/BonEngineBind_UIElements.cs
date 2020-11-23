@@ -568,15 +568,53 @@ namespace BonEngineSharp
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UIImage_GetSlicedImageSides(IntPtr element,ref int left,ref int top,ref int right,ref int bottom);
 
-        /// <summary>
-        /// Get list background
-        /// </summary>
+		/// <summary>
+		/// Set dropdown show / hide list.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIDropDown_ShowList(IntPtr element, bool show);
+
+		/// <summary>
+		/// Get placeholder text.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]  
+		public static extern IntPtr BON_UIDropDown_GetPlaceholderText(IntPtr element);
+
+		/// <summary>
+		/// Get placeholder text, converted to string.
+		/// </summary>
+		public static string BON_UIDropDown_GetPlaceholderText_Str(IntPtr asset)
+		{
+			return Marshal.PtrToStringAnsi(BON_UIDropDown_GetPlaceholderText(asset));
+		}
+
+		/// <summary>
+		/// Set placeholder text.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIDropDown_SetPlaceholderText(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string text);
+
+		/// <summary>
+		/// Get list background
+		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern IntPtr BON_UIList_Background(IntPtr element);
 
-        /// <summary>
-        /// Set list line height.
-        /// </summary>
+		/// <summary>
+		/// Set list locked
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIList_SetLocked(IntPtr element, bool locked);
+
+		/// <summary>
+		/// Get if list ist locked
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIList_GetLocked(IntPtr element);
+
+		/// <summary>
+		/// Set list line height.
+		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UIList_SetLineHeight(IntPtr element, int height);
 

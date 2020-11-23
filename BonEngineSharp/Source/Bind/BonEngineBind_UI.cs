@@ -110,6 +110,12 @@ namespace BonEngineSharp
 		public static extern IntPtr BON_UI_CreateList([MarshalAs(UnmanagedType.LPStr)] string stylesheet, IntPtr parent);
 
 		/// <summary>
+		/// Create and return a dropdown element.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+		public static extern IntPtr BON_UI_CreateDropDown([MarshalAs(UnmanagedType.LPStr)] string stylesheet, IntPtr parent);
+
+		/// <summary>
 		/// Create and return a slider element.
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]

@@ -1,6 +1,6 @@
 # 1.3.3
 
-**[22/11/2020]**
+**[24/11/2020]**
 
 Key changes:
 
@@ -11,4 +11,5 @@ All Changes:
 
 - Added validation that effect is active before setting uniforms.
 - Fixed effects state change bug.
-
+- Small refactor in UI system for more flexability.
+- Added 'Locked' property to list.

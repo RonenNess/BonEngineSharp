@@ -856,6 +856,11 @@ namespace BonEngineSharp.Defs
 		List,
 
 		/// <summary>
+		/// DropDown element.
+		/// </summary>
+		DropDown,
+
+		/// <summary>
 		/// Text / paragraph element.
 		/// </summary>
 		Text,
