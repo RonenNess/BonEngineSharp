@@ -3091,6 +3091,12 @@ references:
   commentId: F:BonEngineSharp.Defs.UIElementType.Checkbox
   fullName: BonEngineSharp.Defs.UIElementType.Checkbox
   nameWithType: UIElementType.Checkbox
+- uid: BonEngineSharp.Defs.UIElementType.DropDown
+  name: DropDown
+  href: api/BonEngineSharp.Defs.UIElementType.html#BonEngineSharp_Defs_UIElementType_DropDown
+  commentId: F:BonEngineSharp.Defs.UIElementType.DropDown
+  fullName: BonEngineSharp.Defs.UIElementType.DropDown
+  nameWithType: UIElementType.DropDown
 - uid: BonEngineSharp.Defs.UIElementType.Element
   name: Element
   href: api/BonEngineSharp.Defs.UIElementType.html#BonEngineSharp_Defs_UIElementType_Element
@@ -6310,6 +6316,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.GfxManager.ClearScreen
   fullName: BonEngineSharp.Managers.GfxManager.ClearScreen
   nameWithType: GfxManager.ClearScreen
+- uid: BonEngineSharp.Managers.GfxManager.CreateImageFromScreen
+  name: CreateImageFromScreen()
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_CreateImageFromScreen
+  commentId: M:BonEngineSharp.Managers.GfxManager.CreateImageFromScreen
+  fullName: BonEngineSharp.Managers.GfxManager.CreateImageFromScreen()
+  nameWithType: GfxManager.CreateImageFromScreen()
+- uid: BonEngineSharp.Managers.GfxManager.CreateImageFromScreen*
+  name: CreateImageFromScreen
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_CreateImageFromScreen_
+  commentId: Overload:BonEngineSharp.Managers.GfxManager.CreateImageFromScreen
+  fullName: BonEngineSharp.Managers.GfxManager.CreateImageFromScreen
+  nameWithType: GfxManager.CreateImageFromScreen
 - uid: BonEngineSharp.Managers.GfxManager.DrawCircle(BonEngineSharp.Framework.PointI,System.Int32,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes)
   name: DrawCircle(PointI, Int32, Color, Boolean, BlendModes)
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawCircle_BonEngineSharp_Framework_PointI_System_Int32_BonEngineSharp_Framework_Color_System_Boolean_BonEngineSharp_Defs_BlendModes_
@@ -7273,6 +7291,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.UIManager.CreateContainer
   fullName: BonEngineSharp.Managers.UIManager.CreateContainer
   nameWithType: UIManager.CreateContainer
+- uid: BonEngineSharp.Managers.UIManager.CreateDropDown(System.String,BonEngineSharp.UI.UIElement)
+  name: CreateDropDown(String, UIElement)
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateDropDown_System_String_BonEngineSharp_UI_UIElement_
+  commentId: M:BonEngineSharp.Managers.UIManager.CreateDropDown(System.String,BonEngineSharp.UI.UIElement)
+  fullName: BonEngineSharp.Managers.UIManager.CreateDropDown(System.String, BonEngineSharp.UI.UIElement)
+  nameWithType: UIManager.CreateDropDown(String, UIElement)
+- uid: BonEngineSharp.Managers.UIManager.CreateDropDown*
+  name: CreateDropDown
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateDropDown_
+  commentId: Overload:BonEngineSharp.Managers.UIManager.CreateDropDown
+  fullName: BonEngineSharp.Managers.UIManager.CreateDropDown
+  nameWithType: UIManager.CreateDropDown
 - uid: BonEngineSharp.Managers.UIManager.CreateImage(System.String,BonEngineSharp.UI.UIElement)
   name: CreateImage(String, UIElement)
   href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateImage_System_String_BonEngineSharp_UI_UIElement_
@@ -7738,6 +7768,60 @@ references:
   commentId: Overload:BonEngineSharp.UI.UICheckBox.Toggle
   fullName: BonEngineSharp.UI.UICheckBox.Toggle
   nameWithType: UICheckBox.Toggle
+- uid: BonEngineSharp.UI.UIDropDown
+  name: UIDropDown
+  href: api/BonEngineSharp.UI.UIDropDown.html
+  commentId: T:BonEngineSharp.UI.UIDropDown
+  fullName: BonEngineSharp.UI.UIDropDown
+  nameWithType: UIDropDown
+- uid: BonEngineSharp.UI.UIDropDown.#ctor(System.IntPtr)
+  name: UIDropDown(IntPtr)
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown__ctor_System_IntPtr_
+  commentId: M:BonEngineSharp.UI.UIDropDown.#ctor(System.IntPtr)
+  fullName: BonEngineSharp.UI.UIDropDown.UIDropDown(System.IntPtr)
+  nameWithType: UIDropDown.UIDropDown(IntPtr)
+- uid: BonEngineSharp.UI.UIDropDown.#ctor*
+  name: UIDropDown
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown__ctor_
+  commentId: Overload:BonEngineSharp.UI.UIDropDown.#ctor
+  fullName: BonEngineSharp.UI.UIDropDown.UIDropDown
+  nameWithType: UIDropDown.UIDropDown
+- uid: BonEngineSharp.UI.UIDropDown.ElementType
+  name: ElementType
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown_ElementType
+  commentId: P:BonEngineSharp.UI.UIDropDown.ElementType
+  fullName: BonEngineSharp.UI.UIDropDown.ElementType
+  nameWithType: UIDropDown.ElementType
+- uid: BonEngineSharp.UI.UIDropDown.ElementType*
+  name: ElementType
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown_ElementType_
+  commentId: Overload:BonEngineSharp.UI.UIDropDown.ElementType
+  fullName: BonEngineSharp.UI.UIDropDown.ElementType
+  nameWithType: UIDropDown.ElementType
+- uid: BonEngineSharp.UI.UIDropDown.PlaceholderText
+  name: PlaceholderText
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown_PlaceholderText
+  commentId: P:BonEngineSharp.UI.UIDropDown.PlaceholderText
+  fullName: BonEngineSharp.UI.UIDropDown.PlaceholderText
+  nameWithType: UIDropDown.PlaceholderText
+- uid: BonEngineSharp.UI.UIDropDown.PlaceholderText*
+  name: PlaceholderText
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown_PlaceholderText_
+  commentId: Overload:BonEngineSharp.UI.UIDropDown.PlaceholderText
+  fullName: BonEngineSharp.UI.UIDropDown.PlaceholderText
+  nameWithType: UIDropDown.PlaceholderText
+- uid: BonEngineSharp.UI.UIDropDown.ShowList(System.Boolean)
+  name: ShowList(Boolean)
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown_ShowList_System_Boolean_
+  commentId: M:BonEngineSharp.UI.UIDropDown.ShowList(System.Boolean)
+  fullName: BonEngineSharp.UI.UIDropDown.ShowList(System.Boolean)
+  nameWithType: UIDropDown.ShowList(Boolean)
+- uid: BonEngineSharp.UI.UIDropDown.ShowList*
+  name: ShowList
+  href: api/BonEngineSharp.UI.UIDropDown.html#BonEngineSharp_UI_UIDropDown_ShowList_
+  commentId: Overload:BonEngineSharp.UI.UIDropDown.ShowList
+  fullName: BonEngineSharp.UI.UIDropDown.ShowList
+  nameWithType: UIDropDown.ShowList
 - uid: BonEngineSharp.UI.UIElement
   name: UIElement
   href: api/BonEngineSharp.UI.UIElement.html
@@ -7990,6 +8074,18 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIElement.ForceActiveState
   fullName: BonEngineSharp.UI.UIElement.ForceActiveState
   nameWithType: UIElement.ForceActiveState
+- uid: BonEngineSharp.UI.UIElement.Grow(System.Int32,System.Int32)
+  name: Grow(Int32, Int32)
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Grow_System_Int32_System_Int32_
+  commentId: M:BonEngineSharp.UI.UIElement.Grow(System.Int32,System.Int32)
+  fullName: BonEngineSharp.UI.UIElement.Grow(System.Int32, System.Int32)
+  nameWithType: UIElement.Grow(Int32, Int32)
+- uid: BonEngineSharp.UI.UIElement.Grow*
+  name: Grow
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Grow_
+  commentId: Overload:BonEngineSharp.UI.UIElement.Grow
+  fullName: BonEngineSharp.UI.UIElement.Grow
+  nameWithType: UIElement.Grow
 - uid: BonEngineSharp.UI.UIElement.HaveHandle
   name: HaveHandle
   href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_HaveHandle
@@ -8623,6 +8719,18 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIList.LineHeight
   fullName: BonEngineSharp.UI.UIList.LineHeight
   nameWithType: UIList.LineHeight
+- uid: BonEngineSharp.UI.UIList.Locked
+  name: Locked
+  href: api/BonEngineSharp.UI.UIList.html#BonEngineSharp_UI_UIList_Locked
+  commentId: P:BonEngineSharp.UI.UIList.Locked
+  fullName: BonEngineSharp.UI.UIList.Locked
+  nameWithType: UIList.Locked
+- uid: BonEngineSharp.UI.UIList.Locked*
+  name: Locked
+  href: api/BonEngineSharp.UI.UIList.html#BonEngineSharp_UI_UIList_Locked_
+  commentId: Overload:BonEngineSharp.UI.UIList.Locked
+  fullName: BonEngineSharp.UI.UIList.Locked
+  nameWithType: UIList.Locked
 - uid: BonEngineSharp.UI.UIList.RemoveItem(System.Int32)
   name: RemoveItem(Int32)
   href: api/BonEngineSharp.UI.UIList.html#BonEngineSharp_UI_UIList_RemoveItem_System_Int32_

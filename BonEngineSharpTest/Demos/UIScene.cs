@@ -40,7 +40,7 @@ namespace BonEngineSharpTest.Demos
             var buttonAndListWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Button, DropDown & List");
             buttonAndListWindow.AutoArrangeChildren = true;
             buttonAndListWindow.Offset = new PointI(50, 40);
-            buttonAndListWindow.Size = new UISize(buttonAndListWindow.Size.Width, UISizeType.Pixels, buttonAndListWindow.Size.Height + 70, UISizeType.Pixels);
+            buttonAndListWindow.Grow(0, 50);
 
             // add into text and button
             UI.CreateText("ui/small_text.ini", buttonAndListWindow, "This demo shows UI elements. \nFor example, here's a button:");

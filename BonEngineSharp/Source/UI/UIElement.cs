@@ -609,6 +609,24 @@ namespace BonEngineSharp.UI
         }
 
 		/// <summary>
+		/// Grow / shrink element size.
+		/// Note: doesn't change unit type, only value, so this can either grow percents or pixels, depends on what was previously set.
+		/// </summary>
+		/// <param name="width">Width to grow.</param>
+		/// <param name="height">Height to grow.</param>
+		public void Grow(int width, int height)
+        {
+			if (width != 0)
+			{
+				Size = new UISize(Size.Width + width, Size.WidthType, Size.Height, Size.HeightType);
+			}
+			if (height != 0)
+			{
+				Size = new UISize(Size.Width, Size.WidthType, Size.Height + height, Size.HeightType);
+			}
+		}
+
+		/// <summary>
 		/// Add child element to this element.
 		/// </summary>
 		/// <param name="element">Element to add.</param>
