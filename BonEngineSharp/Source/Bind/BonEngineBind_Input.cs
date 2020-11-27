@@ -62,6 +62,12 @@ namespace BonEngineSharp
         public static extern void BON_Input_LoadControlsFromConfig(IntPtr config, bool replaceExisting);
 
         /// <summary>
+        /// Set cursor position.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Input_SetCursorPosition(int x, int y, bool global);
+
+        /// <summary>
         /// Struct to get text input data - must match the CPP side.
         /// </summary>
         [StructLayout(LayoutKind.Sequential)]
@@ -148,5 +154,11 @@ namespace BonEngineSharp
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern void BON_Input_SetKeyBind(int keyCode, [MarshalAs(UnmanagedType.LPStr)] string actionId);
+
+        /// <summary>
+        /// Set key state.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Input_SetKeyState(int keyCode, bool state);
     }
 }

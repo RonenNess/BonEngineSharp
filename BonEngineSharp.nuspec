@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
 	<id>BonEngineSharp</id>
-	<version>1.3.3</version>
+	<version>1.3.31</version>
 	<authors>Ronen Ness</authors>
 	<owners>RonenNess</owners>
 	<title>BonEngine Sharp</title>
@@ -11,7 +11,7 @@
 	<projectUrl>https://github.com/RonenNess/BonEngineSharp</projectUrl>
 	<iconUrl>https://raw.githubusercontent.com/RonenNess/BonEngineSharp/master/nuget_icon.png</iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<releaseNotes>Bugfix and added DropDown UI element.</releaseNotes>
+	<releaseNotes>Added methods to control mouse position and key states.</releaseNotes>
 	<description>BonEngine is a code-based game engine designed to be fast, simple and straightforward.</description>
 	<tags>game engine,gamedev,graphics,gamedev</tags>
 	<dependencies>

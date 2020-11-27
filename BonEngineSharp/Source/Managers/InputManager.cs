@@ -7,16 +7,16 @@ using System.Runtime.InteropServices;
 
 namespace BonEngineSharp.Managers
 {
-    /// <summary>
-    /// Input manager.
+	/// <summary>
+	/// Input manager.
 	/// Used to recieve user input, either by querying keyboard keys and mouse directly, or by binding keys to actions and querying action states.
-    /// </summary>
-    public class InputManager : IManager
-    {
-        /// <summary>
-        /// Get manager id.
-        /// </summary>
-        public override string Id => "input";
+	/// </summary>
+	public class InputManager : IManager
+	{
+		/// <summary>
+		/// Get manager id.
+		/// </summary>
+		public override string Id => "input";
 
 		/// <summary>
 		/// Get if an action id is currently pressed down.
@@ -24,9 +24,9 @@ namespace BonEngineSharp.Managers
 		/// <param name="action">Action to check.</param>
 		/// <returns>True if any of the keys bound to this action id are down.</returns>
 		public bool Down(string action)
-        {
+		{
 			return _BonEngineBind.BON_Input_Down(action);
-        }
+		}
 
 		/// <summary>
 		/// Get if an action id was released in this update or fixed update frame.
@@ -79,13 +79,25 @@ namespace BonEngineSharp.Managers
 		}
 
 		/// <summary>
+		/// Set a key state (if its pressed or released).
+		/// Note: this doesn't affect OS events, this will just change internal BonEngine states to emulate key state.
+		/// </summary>
+		/// <param name="key">Key to set.</param>
+		/// <param name="state">New key state.</param>
+		public void SetKeyState(KeyCodes key, bool state)
+        {
+			_BonEngineBind.BON_Input_SetKeyState((int)key, state);
+
+		}
+
+		/// <summary>
 		/// Get text input data.
 		/// This data struct contains input information relevant to text typing by user. 
 		/// It includes the new characters typed this frame + additional commands like backspace, delete, copy, paste, ect.
 		/// </summary>
 		/// <returns>Text input data struct.</returns>
 		public TextInputData TextInput()
-        {
+		{
 			var _data = _BonEngineBind.BON_Input_GetTextInput();
 			var ret = new TextInputData()
 			{
@@ -112,9 +124,9 @@ namespace BonEngineSharp.Managers
 		/// <param name="config">Config asset to load key binds from (must appear under 'controls' section).</param>
 		/// <param name="removeOldBinds">If true, will clear all previous key binds.</param>
 		public void LoadControlsFromConfig(ConfigAsset config, bool removeOldBinds)
-        {
+		{
 			_BonEngineBind.BON_Input_LoadControlsFromConfig(config._handle, removeOldBinds);
-        }
+		}
 
 		/// <summary>
 		/// Get mouse wheel / scroll delta of current frame.
@@ -122,9 +134,22 @@ namespace BonEngineSharp.Managers
 		public PointI ScrollDelta => new PointI(_BonEngineBind.BON_Input_ScrollDeltaX(), _BonEngineBind.BON_Input_ScrollDeltaY());
 
 		/// <summary>
-		/// Get cursor (mouse) position.
+		/// Get /set cursor position, relative to window position.
 		/// </summary>
-		public PointI CursorPosition => new PointI(_BonEngineBind.BON_Input_CursorPositionX(), _BonEngineBind.BON_Input_CursorPositionY());
+		public PointI CursorPosition
+		{
+			get => new PointI(_BonEngineBind.BON_Input_CursorPositionX(), _BonEngineBind.BON_Input_CursorPositionY());
+			set => _BonEngineBind.BON_Input_SetCursorPosition(value.X, value.Y, false);
+		}
+
+		/// <summary>
+		/// Set cursor global position, in screen space.
+		/// </summary>
+		/// <param name="position">Cursor position to set in screen space.</param>
+		public void SetCursorGlobalPosition(PointI position)
+        {
+			_BonEngineBind.BON_Input_SetCursorPosition(position.X, position.Y, true);
+		}
 
 		/// <summary>
 		/// Get cursor (mouse) position change since last frame.
