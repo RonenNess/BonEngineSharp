@@ -49,6 +49,12 @@ namespace BonEngineSharp.UI
 				size.WidthType = UISizeType.Pixels;
 				Size = size;
             }
+			get
+            {
+				var size = Size;
+				if (size.WidthType == UISizeType.Pixels) { return size.Width; }
+				return CalculatedDestRect.Width;
+            }
 		}
 
 		/// <summary>
@@ -62,6 +68,12 @@ namespace BonEngineSharp.UI
 				size.Height = value;
 				size.HeightType = UISizeType.Pixels;
 				Size = size;
+			}
+			get
+			{
+				var size = Size;
+				if (size.HeightType == UISizeType.Pixels) { return size.Height; }
+				return CalculatedDestRect.Height;
 			}
 		}
 
@@ -530,11 +542,20 @@ namespace BonEngineSharp.UI
 		}
 
 		/// <summary>
-		/// Set height value to max.
+		/// Set height value to max (100%).
 		/// </summary>
 		public void SetHeightToMax()
 		{
 			_BonEngineBind.BON_UIElement_SetHeightToMax(_handle);
+		}
+
+		/// <summary>
+		/// Set width and height values to max (100%).
+		/// </summary>
+		public void SetSizeToMax()
+		{
+			SetWidthToMax();
+			SetHeightToMax();
 		}
 
 		/// <summary>
@@ -558,6 +579,15 @@ namespace BonEngineSharp.UI
 				_BonEngineBind.BON_UIElement_SetSize(_handle, value.Width, (int)value.WidthType, value.Height, (int)value.HeightType);
 			}
 		}
+
+		/// <summary>
+		/// Set / get element size in pixels.
+		/// </summary>
+		public PointI SizePixels
+        {
+			get { return new PointI(WidthPixels, HeightPixels); }
+			set { Size = new UISize(value.X, UISizeType.Pixels, value.Y, UISizeType.Pixels); }
+        }
 
 		/// <summary>
 		/// Get / set padding. 
@@ -646,6 +676,24 @@ namespace BonEngineSharp.UI
 			_BonEngineBind.BON_UIElement_RemoveChild(_handle, element._handle);
 			_children.Remove(element);
 			element._parent = null;
+		}
+
+		/// <summary>
+		/// Create a column container inside this element.
+		/// Columns are sub elements that takes 100% of height, and arrange themselves automatically based on alignment and other columns.
+		/// For example if you create 3 columns in the sizes of 50, 100, and 150, and they all align left, the last column will have offset of 50 + 100.
+		/// Columns are useful when you want to arrange elements side by side.
+		/// </summary>
+		/// <remarks>To remove the column, use RemoveChild() just like you would do with a regular child element.</remarks>
+		/// <param name="stylesheet">Column stylesheet or null to create empty container.</param>
+		/// <param name="width">Column width.</param>
+		/// <param name="widthType">Column width unit (pixels / percents).</param>
+		/// <param name="alignment">Column alignment, ie which side of the parent element it will stick to.</param>
+		/// <returns>New column element.</returns>
+		public UIElement CreateColumn(string stylesheet, int width, UISizeType widthType = UISizeType.Pixels, UIAlignment alignment = UIAlignment.Left)
+        {
+			return new UIElement(_BonEngineBind.BON_UIElement_CreateColumn(_handle, stylesheet, width, (int)widthType, (int)alignment));
+
 		}
 
 		/// <summary>

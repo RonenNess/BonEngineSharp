@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace BonEngineSharp.UI
-   </title>
+    <title>1.3.5 </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace BonEngineSharp.UI
-   ">
+    <meta name="title" content="1.3.5 ">
     <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,55 +66,25 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BonEngineSharp.UI">
-  
-  <h1 id="BonEngineSharp_UI" data-uid="BonEngineSharp.UI" class="text-break">Namespace BonEngineSharp.UI
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIButton.html">UIButton</a></h4>
-      <section><p>UI Button element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UICheckBox.html">UICheckBox</a></h4>
-      <section><p>UI checkbox element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIDropDown.html">UIDropDown</a></h4>
-      <section><p>UI DropDown element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></h4>
-      <section><p>UI Element base class.
-This is the basic class all UI Elements inherit from and its main purpose is to manage the handle to the CPP-side elements.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIImage.html">UIImage</a></h4>
-      <section><p>UI Image element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIList.html">UIList</a></h4>
-      <section><p>UI List element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIRadioButton.html">UIRadioButton</a></h4>
-      <section><p>UI radio button element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIRectangle.html">UIRectangle</a></h4>
-      <section><p>UI Rectangle element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UISlider.html">UISlider</a></h4>
-      <section><p>UI slider element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIText.html">UIText</a></h4>
-      <section><p>UI Text element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UITextInput.html">UITextInput</a></h4>
-      <section><p>UI single-line text input element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIVerticalScrollbar.html">UIVerticalScrollbar</a></h4>
-      <section><p>UI Button element.</p>
-</section>
-      <h4><a class="xref" href="BonEngineSharp.UI.UIWindow.html">UIWindow</a></h4>
-      <section><p>UI window element.</p>
-</section>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="135">1.3.5</h1>
+
+<p><strong>[30/11/2020]</strong></p>
+<p>Key Changes:</p>
+<ul>
+<li>Added option to override cursor position in UI manager.</li>
+<li>Added Columns mechanism to UI elements (<code>CreateColumn()</code> method).</li>
+<li>Added UI Rectangle element.</li>
+</ul>
+<p>All Changes:</p>
+<ul>
+<li>Added way to query UI element size in pixels.</li>
+<li>Made UI elements calculate dest rect as soon as they are added to parent, so we can query them before an Update call.</li>
+<li>Fixed CAPI to set UI element margin.</li>
+<li>Fixed scrollbar when render target is smaller than screen size + made scrollbar smoother.</li>
+<li>Added built-in Orange color.</li>
+<li>Misc quality of life UIElement methods.</li>
+</ul>
 </article>
           </div>
           
@@ -124,6 +92,9 @@ This is the basic class all UI Elements inherit from and its main purpose is to 
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RonenNess/BonEngineSharp/blob/master/Documentation/articles/changelog_1_35.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

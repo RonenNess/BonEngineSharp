@@ -533,13 +533,13 @@ namespace BonEngineSharp
 		public static extern int BON_UIImage_GetBlendMode(IntPtr element);
 
         /// <summary>
-        /// Set ui image blend mode.
+        /// Set ui image type mode.
         /// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UIImage_SetImageTypes(IntPtr element, int type);
 
         /// <summary>
-        /// Get ui image blend mode.
+        /// Get ui image type mode.
         /// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern int BON_UIImage_GetImageTypes(IntPtr element);
@@ -567,6 +567,30 @@ namespace BonEngineSharp
         /// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]  
 		public static extern void BON_UIImage_GetSlicedImageSides(IntPtr element,ref int left,ref int top,ref int right,ref int bottom);
+
+		/// <summary>
+		/// Set ui rectangle blend mode.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIRectangle_SetBlendMode(IntPtr element, int blend);
+
+		/// <summary>
+		/// Get ui rectangle blend mode.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern int BON_UIRectangle_GetBlendMode(IntPtr element);
+
+		/// <summary>
+		/// Set rectagnle filled mode.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		public static extern void BON_UIRectangle_SetFilled(IntPtr element, bool val);
+
+		/// <summary>
+		/// Get rectagnle filled mode.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+		[return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_UIRectangle_GetFilled(IntPtr element);
 
 		/// <summary>
 		/// Set dropdown show / hide list.
@@ -1009,5 +1033,11 @@ namespace BonEngineSharp
 		{
 			return Marshal.PtrToStringAnsi(BON_UITextInput_GetPlaceholder(element));
 		}
+
+		/// <summary>
+		/// Create column element.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+		public static extern IntPtr BON_UIElement_CreateColumn(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string stylesheet, int width, int widthType, int alignment);
 	}
 }

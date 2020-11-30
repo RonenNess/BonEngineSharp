@@ -3037,6 +3037,36 @@ references:
   commentId: F:BonEngineSharp.Defs.TextInputData.Up
   fullName: BonEngineSharp.Defs.TextInputData.Up
   nameWithType: TextInputData.Up
+- uid: BonEngineSharp.Defs.UIAlignment
+  name: UIAlignment
+  href: api/BonEngineSharp.Defs.UIAlignment.html
+  commentId: T:BonEngineSharp.Defs.UIAlignment
+  fullName: BonEngineSharp.Defs.UIAlignment
+  nameWithType: UIAlignment
+- uid: BonEngineSharp.Defs.UIAlignment.Center
+  name: Center
+  href: api/BonEngineSharp.Defs.UIAlignment.html#BonEngineSharp_Defs_UIAlignment_Center
+  commentId: F:BonEngineSharp.Defs.UIAlignment.Center
+  fullName: BonEngineSharp.Defs.UIAlignment.Center
+  nameWithType: UIAlignment.Center
+- uid: BonEngineSharp.Defs.UIAlignment.Left
+  name: Left
+  href: api/BonEngineSharp.Defs.UIAlignment.html#BonEngineSharp_Defs_UIAlignment_Left
+  commentId: F:BonEngineSharp.Defs.UIAlignment.Left
+  fullName: BonEngineSharp.Defs.UIAlignment.Left
+  nameWithType: UIAlignment.Left
+- uid: BonEngineSharp.Defs.UIAlignment.Right
+  name: Right
+  href: api/BonEngineSharp.Defs.UIAlignment.html#BonEngineSharp_Defs_UIAlignment_Right
+  commentId: F:BonEngineSharp.Defs.UIAlignment.Right
+  fullName: BonEngineSharp.Defs.UIAlignment.Right
+  nameWithType: UIAlignment.Right
+- uid: BonEngineSharp.Defs.UIAlignment.value__
+  name: value__
+  href: api/BonEngineSharp.Defs.UIAlignment.html#BonEngineSharp_Defs_UIAlignment_value__
+  commentId: F:BonEngineSharp.Defs.UIAlignment.value__
+  fullName: BonEngineSharp.Defs.UIAlignment.value__
+  nameWithType: UIAlignment.value__
 - uid: BonEngineSharp.Defs.UIElementState
   name: UIElementState
   href: api/BonEngineSharp.Defs.UIElementState.html
@@ -3121,6 +3151,12 @@ references:
   commentId: F:BonEngineSharp.Defs.UIElementType.Radio
   fullName: BonEngineSharp.Defs.UIElementType.Radio
   nameWithType: UIElementType.Radio
+- uid: BonEngineSharp.Defs.UIElementType.Rectangle
+  name: Rectangle
+  href: api/BonEngineSharp.Defs.UIElementType.html#BonEngineSharp_Defs_UIElementType_Rectangle
+  commentId: F:BonEngineSharp.Defs.UIElementType.Rectangle
+  fullName: BonEngineSharp.Defs.UIElementType.Rectangle
+  nameWithType: UIElementType.Rectangle
 - uid: BonEngineSharp.Defs.UIElementType.Scrollbar
   name: Scrollbar
   href: api/BonEngineSharp.Defs.UIElementType.html#BonEngineSharp_Defs_UIElementType_Scrollbar
@@ -3886,6 +3922,12 @@ references:
   commentId: Overload:BonEngineSharp.Framework.Color.op_Inequality
   fullName: BonEngineSharp.Framework.Color.Inequality
   nameWithType: Color.Inequality
+- uid: BonEngineSharp.Framework.Color.Orange
+  name: Orange
+  href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Orange
+  commentId: F:BonEngineSharp.Framework.Color.Orange
+  fullName: BonEngineSharp.Framework.Color.Orange
+  nameWithType: Color.Orange
 - uid: BonEngineSharp.Framework.Color.Purple
   name: Purple
   href: api/BonEngineSharp.Framework.Color.html#BonEngineSharp_Framework_Color_Purple
@@ -6772,6 +6814,30 @@ references:
   commentId: Overload:BonEngineSharp.Managers.InputManager.ScrollDelta
   fullName: BonEngineSharp.Managers.InputManager.ScrollDelta
   nameWithType: InputManager.ScrollDelta
+- uid: BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition(BonEngineSharp.Framework.PointI)
+  name: SetCursorGlobalPosition(PointI)
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_SetCursorGlobalPosition_BonEngineSharp_Framework_PointI_
+  commentId: M:BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition(BonEngineSharp.Framework.PointI)
+  fullName: BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition(BonEngineSharp.Framework.PointI)
+  nameWithType: InputManager.SetCursorGlobalPosition(PointI)
+- uid: BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition*
+  name: SetCursorGlobalPosition
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_SetCursorGlobalPosition_
+  commentId: Overload:BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition
+  fullName: BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition
+  nameWithType: InputManager.SetCursorGlobalPosition
+- uid: BonEngineSharp.Managers.InputManager.SetKeyState(BonEngineSharp.Defs.KeyCodes,System.Boolean)
+  name: SetKeyState(KeyCodes, Boolean)
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_SetKeyState_BonEngineSharp_Defs_KeyCodes_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.InputManager.SetKeyState(BonEngineSharp.Defs.KeyCodes,System.Boolean)
+  fullName: BonEngineSharp.Managers.InputManager.SetKeyState(BonEngineSharp.Defs.KeyCodes, System.Boolean)
+  nameWithType: InputManager.SetKeyState(KeyCodes, Boolean)
+- uid: BonEngineSharp.Managers.InputManager.SetKeyState*
+  name: SetKeyState
+  href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_SetKeyState_
+  commentId: Overload:BonEngineSharp.Managers.InputManager.SetKeyState
+  fullName: BonEngineSharp.Managers.InputManager.SetKeyState
+  nameWithType: InputManager.SetKeyState
 - uid: BonEngineSharp.Managers.InputManager.TextInput
   name: TextInput()
   href: api/BonEngineSharp.Managers.InputManager.html#BonEngineSharp_Managers_InputManager_TextInput
@@ -7339,6 +7405,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.UIManager.CreateRadioButton
   fullName: BonEngineSharp.Managers.UIManager.CreateRadioButton
   nameWithType: UIManager.CreateRadioButton
+- uid: BonEngineSharp.Managers.UIManager.CreateRectangle(System.String,BonEngineSharp.UI.UIElement)
+  name: CreateRectangle(String, UIElement)
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateRectangle_System_String_BonEngineSharp_UI_UIElement_
+  commentId: M:BonEngineSharp.Managers.UIManager.CreateRectangle(System.String,BonEngineSharp.UI.UIElement)
+  fullName: BonEngineSharp.Managers.UIManager.CreateRectangle(System.String, BonEngineSharp.UI.UIElement)
+  nameWithType: UIManager.CreateRectangle(String, UIElement)
+- uid: BonEngineSharp.Managers.UIManager.CreateRectangle*
+  name: CreateRectangle
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateRectangle_
+  commentId: Overload:BonEngineSharp.Managers.UIManager.CreateRectangle
+  fullName: BonEngineSharp.Managers.UIManager.CreateRectangle
+  nameWithType: UIManager.CreateRectangle
 - uid: BonEngineSharp.Managers.UIManager.CreateRoot
   name: CreateRoot()
   href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_CreateRoot
@@ -7459,6 +7537,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.UIManager.Id
   fullName: BonEngineSharp.Managers.UIManager.Id
   nameWithType: UIManager.Id
+- uid: BonEngineSharp.Managers.UIManager.OverrideCursorPosition
+  name: OverrideCursorPosition
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_OverrideCursorPosition
+  commentId: P:BonEngineSharp.Managers.UIManager.OverrideCursorPosition
+  fullName: BonEngineSharp.Managers.UIManager.OverrideCursorPosition
+  nameWithType: UIManager.OverrideCursorPosition
+- uid: BonEngineSharp.Managers.UIManager.OverrideCursorPosition*
+  name: OverrideCursorPosition
+  href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_OverrideCursorPosition_
+  commentId: Overload:BonEngineSharp.Managers.UIManager.OverrideCursorPosition
+  fullName: BonEngineSharp.Managers.UIManager.OverrideCursorPosition
+  nameWithType: UIManager.OverrideCursorPosition
 - uid: BonEngineSharp.Managers.UIManager.SetCursor(BonEngineSharp.Assets.ImageAsset,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI)
   name: SetCursor(ImageAsset, PointI, PointI)
   href: api/BonEngineSharp.Managers.UIManager.html#BonEngineSharp_Managers_UIManager_SetCursor_BonEngineSharp_Assets_ImageAsset_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_
@@ -7978,6 +8068,18 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIElement.CopyParentState
   fullName: BonEngineSharp.UI.UIElement.CopyParentState
   nameWithType: UIElement.CopyParentState
+- uid: BonEngineSharp.UI.UIElement.CreateColumn(System.String,System.Int32,BonEngineSharp.Defs.UISizeType,BonEngineSharp.Defs.UIAlignment)
+  name: CreateColumn(String, Int32, UISizeType, UIAlignment)
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_CreateColumn_System_String_System_Int32_BonEngineSharp_Defs_UISizeType_BonEngineSharp_Defs_UIAlignment_
+  commentId: M:BonEngineSharp.UI.UIElement.CreateColumn(System.String,System.Int32,BonEngineSharp.Defs.UISizeType,BonEngineSharp.Defs.UIAlignment)
+  fullName: BonEngineSharp.UI.UIElement.CreateColumn(System.String, System.Int32, BonEngineSharp.Defs.UISizeType, BonEngineSharp.Defs.UIAlignment)
+  nameWithType: UIElement.CreateColumn(String, Int32, UISizeType, UIAlignment)
+- uid: BonEngineSharp.UI.UIElement.CreateColumn*
+  name: CreateColumn
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_CreateColumn_
+  commentId: Overload:BonEngineSharp.UI.UIElement.CreateColumn
+  fullName: BonEngineSharp.UI.UIElement.CreateColumn
+  nameWithType: UIElement.CreateColumn
 - uid: BonEngineSharp.UI.UIElement.DebugDraw(System.Boolean)
   name: DebugDraw(Boolean)
   href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_DebugDraw_System_Boolean_
@@ -8407,6 +8509,18 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIElement.SetHeightToMax
   fullName: BonEngineSharp.UI.UIElement.SetHeightToMax
   nameWithType: UIElement.SetHeightToMax
+- uid: BonEngineSharp.UI.UIElement.SetSizeToMax
+  name: SetSizeToMax()
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_SetSizeToMax
+  commentId: M:BonEngineSharp.UI.UIElement.SetSizeToMax
+  fullName: BonEngineSharp.UI.UIElement.SetSizeToMax()
+  nameWithType: UIElement.SetSizeToMax()
+- uid: BonEngineSharp.UI.UIElement.SetSizeToMax*
+  name: SetSizeToMax
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_SetSizeToMax_
+  commentId: Overload:BonEngineSharp.UI.UIElement.SetSizeToMax
+  fullName: BonEngineSharp.UI.UIElement.SetSizeToMax
+  nameWithType: UIElement.SetSizeToMax
 - uid: BonEngineSharp.UI.UIElement.SetWidthToMax
   name: SetWidthToMax()
   href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_SetWidthToMax
@@ -8431,6 +8545,18 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIElement.Size
   fullName: BonEngineSharp.UI.UIElement.Size
   nameWithType: UIElement.Size
+- uid: BonEngineSharp.UI.UIElement.SizePixels
+  name: SizePixels
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_SizePixels
+  commentId: P:BonEngineSharp.UI.UIElement.SizePixels
+  fullName: BonEngineSharp.UI.UIElement.SizePixels
+  nameWithType: UIElement.SizePixels
+- uid: BonEngineSharp.UI.UIElement.SizePixels*
+  name: SizePixels
+  href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_SizePixels_
+  commentId: Overload:BonEngineSharp.UI.UIElement.SizePixels
+  fullName: BonEngineSharp.UI.UIElement.SizePixels
+  nameWithType: UIElement.SizePixels
 - uid: BonEngineSharp.UI.UIElement.Update(System.Double)
   name: Update(Double)
   href: api/BonEngineSharp.UI.UIElement.html#BonEngineSharp_UI_UIElement_Update_System_Double_
@@ -8881,6 +9007,60 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIRadioButton.Toggle
   fullName: BonEngineSharp.UI.UIRadioButton.Toggle
   nameWithType: UIRadioButton.Toggle
+- uid: BonEngineSharp.UI.UIRectangle
+  name: UIRectangle
+  href: api/BonEngineSharp.UI.UIRectangle.html
+  commentId: T:BonEngineSharp.UI.UIRectangle
+  fullName: BonEngineSharp.UI.UIRectangle
+  nameWithType: UIRectangle
+- uid: BonEngineSharp.UI.UIRectangle.#ctor(System.IntPtr)
+  name: UIRectangle(IntPtr)
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle__ctor_System_IntPtr_
+  commentId: M:BonEngineSharp.UI.UIRectangle.#ctor(System.IntPtr)
+  fullName: BonEngineSharp.UI.UIRectangle.UIRectangle(System.IntPtr)
+  nameWithType: UIRectangle.UIRectangle(IntPtr)
+- uid: BonEngineSharp.UI.UIRectangle.#ctor*
+  name: UIRectangle
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle__ctor_
+  commentId: Overload:BonEngineSharp.UI.UIRectangle.#ctor
+  fullName: BonEngineSharp.UI.UIRectangle.UIRectangle
+  nameWithType: UIRectangle.UIRectangle
+- uid: BonEngineSharp.UI.UIRectangle.BlendMode
+  name: BlendMode
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle_BlendMode
+  commentId: P:BonEngineSharp.UI.UIRectangle.BlendMode
+  fullName: BonEngineSharp.UI.UIRectangle.BlendMode
+  nameWithType: UIRectangle.BlendMode
+- uid: BonEngineSharp.UI.UIRectangle.BlendMode*
+  name: BlendMode
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle_BlendMode_
+  commentId: Overload:BonEngineSharp.UI.UIRectangle.BlendMode
+  fullName: BonEngineSharp.UI.UIRectangle.BlendMode
+  nameWithType: UIRectangle.BlendMode
+- uid: BonEngineSharp.UI.UIRectangle.ElementType
+  name: ElementType
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle_ElementType
+  commentId: P:BonEngineSharp.UI.UIRectangle.ElementType
+  fullName: BonEngineSharp.UI.UIRectangle.ElementType
+  nameWithType: UIRectangle.ElementType
+- uid: BonEngineSharp.UI.UIRectangle.ElementType*
+  name: ElementType
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle_ElementType_
+  commentId: Overload:BonEngineSharp.UI.UIRectangle.ElementType
+  fullName: BonEngineSharp.UI.UIRectangle.ElementType
+  nameWithType: UIRectangle.ElementType
+- uid: BonEngineSharp.UI.UIRectangle.Filled
+  name: Filled
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle_Filled
+  commentId: P:BonEngineSharp.UI.UIRectangle.Filled
+  fullName: BonEngineSharp.UI.UIRectangle.Filled
+  nameWithType: UIRectangle.Filled
+- uid: BonEngineSharp.UI.UIRectangle.Filled*
+  name: Filled
+  href: api/BonEngineSharp.UI.UIRectangle.html#BonEngineSharp_UI_UIRectangle_Filled_
+  commentId: Overload:BonEngineSharp.UI.UIRectangle.Filled
+  fullName: BonEngineSharp.UI.UIRectangle.Filled
+  nameWithType: UIRectangle.Filled
 - uid: BonEngineSharp.UI.UISlider
   name: UISlider
   href: api/BonEngineSharp.UI.UISlider.html

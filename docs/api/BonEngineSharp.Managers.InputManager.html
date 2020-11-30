@@ -159,12 +159,12 @@ Used to recieve user input, either by querying keyboard keys and mouse directly,
   
   <a id="BonEngineSharp_Managers_InputManager_CursorPosition_" data-uid="BonEngineSharp.Managers.InputManager.CursorPosition*"></a>
   <h4 id="BonEngineSharp_Managers_InputManager_CursorPosition" data-uid="BonEngineSharp.Managers.InputManager.CursorPosition">CursorPosition</h4>
-  <div class="markdown level1 summary"><p>Get cursor (mouse) position.</p>
+  <div class="markdown level1 summary"><p>Get /set cursor position, relative to window position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PointI CursorPosition { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PointI CursorPosition { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -618,6 +618,71 @@ Used to recieve user input, either by querying keyboard keys and mouse directly,
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True if any of the keys bound to this action id were released during this frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_InputManager_SetCursorGlobalPosition_" data-uid="BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition*"></a>
+  <h4 id="BonEngineSharp_Managers_InputManager_SetCursorGlobalPosition_BonEngineSharp_Framework_PointI_" data-uid="BonEngineSharp.Managers.InputManager.SetCursorGlobalPosition(BonEngineSharp.Framework.PointI)">SetCursorGlobalPosition(PointI)</h4>
+  <div class="markdown level1 summary"><p>Set cursor global position, in screen space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCursorGlobalPosition(PointI position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Cursor position to set in screen space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_InputManager_SetKeyState_" data-uid="BonEngineSharp.Managers.InputManager.SetKeyState*"></a>
+  <h4 id="BonEngineSharp_Managers_InputManager_SetKeyState_BonEngineSharp_Defs_KeyCodes_System_Boolean_" data-uid="BonEngineSharp.Managers.InputManager.SetKeyState(BonEngineSharp.Defs.KeyCodes,System.Boolean)">SetKeyState(KeyCodes, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set a key state (if its pressed or released).
+Note: this doesn't affect OS events, this will just change internal BonEngine states to emulate key state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeyState(KeyCodes key, bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.KeyCodes.html">KeyCodes</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>New key state.</p>
 </td>
       </tr>
     </tbody>

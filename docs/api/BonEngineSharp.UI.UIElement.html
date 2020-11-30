@@ -83,6 +83,7 @@ This is the basic class all UI Elements inherit from and its main purpose is to 
     <div class="level1"><span class="xref">UIElement</span></div>
       <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIImage.html">UIImage</a></div>
       <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIList.html">UIList</a></div>
+      <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIRectangle.html">UIRectangle</a></div>
       <div class="level2"><a class="xref" href="BonEngineSharp.UI.UIText.html">UIText</a></div>
   </div>
   <div classs="implements">
@@ -562,7 +563,7 @@ This is useful for things like a label attached to a button, where you want to h
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int HeightPixels { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int HeightPixels { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -822,6 +823,32 @@ For width and height we also have unit types, that define the meaning of the val
   </table>
   
   
+  <a id="BonEngineSharp_UI_UIElement_SizePixels_" data-uid="BonEngineSharp.UI.UIElement.SizePixels*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_SizePixels" data-uid="BonEngineSharp.UI.UIElement.SizePixels">SizePixels</h4>
+  <div class="markdown level1 summary"><p>Set / get element size in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointI SizePixels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_UI_UIElement_Visible_" data-uid="BonEngineSharp.UI.UIElement.Visible*"></a>
   <h4 id="BonEngineSharp_UI_UIElement_Visible" data-uid="BonEngineSharp.UI.UIElement.Visible">Visible</h4>
   <div class="markdown level1 summary"><p>Get / set if this element is visible.
@@ -882,7 +909,7 @@ Note: if element is not visible, its children will be hidden too.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int WidthPixels { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int WidthPixels { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -942,6 +969,75 @@ This is called automatically by the UI manager, call this only if you create cus
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_CreateColumn_" data-uid="BonEngineSharp.UI.UIElement.CreateColumn*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_CreateColumn_System_String_System_Int32_BonEngineSharp_Defs_UISizeType_BonEngineSharp_Defs_UIAlignment_" data-uid="BonEngineSharp.UI.UIElement.CreateColumn(System.String,System.Int32,BonEngineSharp.Defs.UISizeType,BonEngineSharp.Defs.UIAlignment)">CreateColumn(String, Int32, UISizeType, UIAlignment)</h4>
+  <div class="markdown level1 summary"><p>Create a column container inside this element.
+Columns are sub elements that takes 100% of height, and arrange themselves automatically based on alignment and other columns.
+For example if you create 3 columns in the sizes of 50, 100, and 150, and they all align left, the last column will have offset of 50 + 100.
+Columns are useful when you want to arrange elements side by side.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement CreateColumn(string stylesheet, int width, UISizeType widthType, UIAlignment alignment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stylesheet</span></td>
+        <td><p>Column stylesheet or null to create empty container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Column width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UISizeType.html">UISizeType</a></td>
+        <td><span class="parametername">widthType</span></td>
+        <td><p>Column width unit (pixels / percents).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.UIAlignment.html">UIAlignment</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td><p>Column alignment, ie which side of the parent element it will stick to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></td>
+        <td><p>New column element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BonEngineSharp_UI_UIElement_CreateColumn_System_String_System_Int32_BonEngineSharp_Defs_UISizeType_BonEngineSharp_Defs_UIAlignment__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To remove the column, use RemoveChild() just like you would do with a regular child element.</p>
+</div>
   
   
   <a id="BonEngineSharp_UI_UIElement_DebugDraw_" data-uid="BonEngineSharp.UI.UIElement.DebugDraw*"></a>
@@ -1360,12 +1456,23 @@ Note: doesn't change unit type, only value, so this can either grow percents or 
   
   <a id="BonEngineSharp_UI_UIElement_SetHeightToMax_" data-uid="BonEngineSharp.UI.UIElement.SetHeightToMax*"></a>
   <h4 id="BonEngineSharp_UI_UIElement_SetHeightToMax" data-uid="BonEngineSharp.UI.UIElement.SetHeightToMax">SetHeightToMax()</h4>
-  <div class="markdown level1 summary"><p>Set height value to max.</p>
+  <div class="markdown level1 summary"><p>Set height value to max (100%).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetHeightToMax()</code></pre>
+  </div>
+  
+  
+  <a id="BonEngineSharp_UI_UIElement_SetSizeToMax_" data-uid="BonEngineSharp.UI.UIElement.SetSizeToMax*"></a>
+  <h4 id="BonEngineSharp_UI_UIElement_SetSizeToMax" data-uid="BonEngineSharp.UI.UIElement.SetSizeToMax">SetSizeToMax()</h4>
+  <div class="markdown level1 summary"><p>Set width and height values to max (100%).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSizeToMax()</code></pre>
   </div>
   
   

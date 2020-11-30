@@ -131,6 +131,32 @@ Responsible to create, render and interact with UI systems.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="BonEngineSharp.Managers.IManager.html#BonEngineSharp_Managers_IManager_Id">IManager.Id</a></div>
+  
+  
+  <a id="BonEngineSharp_Managers_UIManager_OverrideCursorPosition_" data-uid="BonEngineSharp.Managers.UIManager.OverrideCursorPosition*"></a>
+  <h4 id="BonEngineSharp_Managers_UIManager_OverrideCursorPosition" data-uid="BonEngineSharp.Managers.UIManager.OverrideCursorPosition">OverrideCursorPosition</h4>
+  <div class="markdown level1 summary"><p>Override cursor position for UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;PointI&gt; OverrideCursorPosition { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="BonEngineSharp.Framework.PointI.html">PointI</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -503,6 +529,57 @@ Responsible to create, render and interact with UI systems.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="BonEngineSharp.UI.UIRadioButton.html">UIRadioButton</a></td>
+        <td><p>New UI element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_UIManager_CreateRectangle_" data-uid="BonEngineSharp.Managers.UIManager.CreateRectangle*"></a>
+  <h4 id="BonEngineSharp_Managers_UIManager_CreateRectangle_System_String_BonEngineSharp_UI_UIElement_" data-uid="BonEngineSharp.Managers.UIManager.CreateRectangle(System.String,BonEngineSharp.UI.UIElement)">CreateRectangle(String, UIElement)</h4>
+  <div class="markdown level1 summary"><p>Create and return a UI Rectangle element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIRectangle CreateRectangle(string stylesheet, UIElement parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stylesheet</span></td>
+        <td><p>Stylesheet path to load.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIElement.html">UIElement</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Optional parent to attach element to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.UI.UIRectangle.html">UIRectangle</a></td>
         <td><p>New UI element.</p>
 </td>
       </tr>

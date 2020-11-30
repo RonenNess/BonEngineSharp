@@ -126,5 +126,18 @@ namespace BonEngineSharp
 		/// </summary>
 		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
 		public static extern IntPtr BON_UI_CreateVerticalScrollbar([MarshalAs(UnmanagedType.LPStr)] string stylesheet, IntPtr parent);
+
+		/// <summary>
+		/// Create and return a rectangle element.
+		/// </summary>
+		/// <returns></returns>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+		public static extern IntPtr BON_UI_CreateRectangle([MarshalAs(UnmanagedType.LPStr)] string stylesheet, IntPtr parent);
+
+		/// <summary>
+		/// Override cursor position just for the input manager.
+		/// </summary>
+		[DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET, CallingConvention = CallingConvention.Cdecl)]
+		public static extern void BON_UI_OverrideCursorPosition(int x, int y);
 	}
 }

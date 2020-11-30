@@ -18,6 +18,24 @@ namespace BonEngineSharp.Managers
         public override string Id => "ui";
 
 		/// <summary>
+		/// Override cursor position for UI.
+		/// </summary>
+		public PointI? OverrideCursorPosition
+		{
+			set
+			{
+				if (value.HasValue)
+				{
+					_BonEngineBind.BON_UI_OverrideCursorPosition(value.Value.X, value.Value.Y);
+				}
+				else
+				{
+					_BonEngineBind.BON_UI_OverrideCursorPosition(-1, -1);
+				}
+			}
+		}
+
+		/// <summary>
 		/// Set UI cursor from image, size and offset.
 		/// </summary>
 		/// <param name="image">Image asset to use as cursor.</param>
@@ -267,6 +285,19 @@ namespace BonEngineSharp.Managers
 			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
 			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
 			return InitNewElement(new UIDropDown(_BonEngineBind.BON_UI_CreateDropDown(stylesheet, parentHandle)), parent);
+		}
+
+		/// <summary>
+		/// Create and return a UI Rectangle element.
+		/// </summary>
+		/// <param name="stylesheet">Stylesheet path to load.</param>
+		/// <param name="parent">Optional parent to attach element to.</param>
+		/// <returns>New UI element.</returns>
+		public UIRectangle CreateRectangle(string stylesheet, UIElement parent)
+		{
+			if (!string.IsNullOrEmpty(stylesheet)) stylesheet = BonEngine._Engine.Assets.ToAssetsPath(stylesheet, true);
+			var parentHandle = parent != null ? parent._handle : IntPtr.Zero;
+			return InitNewElement(new UIRectangle(_BonEngineBind.BON_UI_CreateRectangle(stylesheet, parentHandle)), parent);
 		}
 
 		/// <summary>

@@ -39,7 +39,7 @@ namespace BonEngineSharpTest.Demos
             // create button and list window
             var buttonAndListWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Button, DropDown & List");
             buttonAndListWindow.AutoArrangeChildren = true;
-            buttonAndListWindow.Offset = new PointI(50, 40);
+            buttonAndListWindow.Offset = new PointI(40, 30);
             buttonAndListWindow.Grow(0, 50);
 
             // add into text and button
@@ -77,7 +77,7 @@ namespace BonEngineSharpTest.Demos
 
             // create another window for checkboxes and slider
             var checkboxSliderWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Checkbox, Radio & Slider");
-            checkboxSliderWindow.Offset = new PointI(200, 80);
+            checkboxSliderWindow.Offset = new PointI(140, 60);
             checkboxSliderWindow.AutoArrangeChildren = true;
 
             // some checkboxes
@@ -102,7 +102,7 @@ namespace BonEngineSharpTest.Demos
 
             // create another window for text inputs
             var textInputsWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Text Inputs");
-            textInputsWindow.Offset = new PointI(350, 120);
+            textInputsWindow.Offset = new PointI(240, 90);
             textInputsWindow.AutoArrangeChildren = true;
 
             // add text input
@@ -139,7 +139,53 @@ namespace BonEngineSharpTest.Demos
             upperAlphaInput.InputMode = UITextInputMode.Uppercase | UITextInputMode.AlphaOnly;
             upperAlphaInput.MaxLength = 16;
 
+            // create additional window for columns
+            UIWindow columnsWindow = UI.CreateWindow("ui/window.ini", _uiroot, "Columns");
+            columnsWindow.AutoArrangeChildren = true;
+            columnsWindow.SizePixels = new PointI(400, 450);
+            columnsWindow.Offset = new PointI(340, 120);
+
+            // create some test columns
+            {
+                UIElement column = columnsWindow.CreateColumn(null, 80);
+                UIRectangle rect = UI.CreateRectangle(null, column);
+                rect.SetSizeToMax();
+                rect.Color = Color.Red;
+                rect.Filled = false;
+            }
+            {
+                UIElement column = columnsWindow.CreateColumn(null, 70);
+                UIRectangle rect = UI.CreateRectangle(null, column);
+                rect.SetSizeToMax();
+                rect.Color = Color.Orange;
+                rect.Filled = false;
+            }
+            {
+                UIElement column = columnsWindow.CreateColumn(null, 80, alignment: UIAlignment.Right);
+                UIRectangle rect = UI.CreateRectangle(null, column);
+                rect.SetSizeToMax();
+                rect.Color = Color.Blue;
+                rect.Filled = false;
+            }
+            {
+                UIElement column = columnsWindow.CreateColumn(null, 70, alignment: UIAlignment.Right);
+                UIRectangle rect = UI.CreateRectangle(null, column);
+                rect.SetSizeToMax();
+                rect.Color = Color.Teal;
+                rect.Filled = false;
+            }
+            {
+                UIElement column = columnsWindow.CreateColumn(null, 50, alignment: UIAlignment.Center);
+                UIRectangle rect = UI.CreateRectangle(null, column);
+                rect.SetSizeToMax();
+                rect.Color = Color.Black;
+                rect.Filled = false;
+            }
+            UI.CreateText("ui/small_text.ini", columnsWindow,
+                "Columns allow you to divide containers into sections. Its useful when you need to place elements side by side.");
+
             // order windows
+            textInputsWindow.MoveToFront();
             checkboxSliderWindow.MoveToFront();
             buttonAndListWindow.MoveToFront();
         }

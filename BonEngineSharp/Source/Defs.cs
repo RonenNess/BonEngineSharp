@@ -660,6 +660,27 @@ namespace BonEngineSharp.Defs
 	}
 
 	/// <summary>
+	/// UI general alignment.
+	/// </summary>
+	public enum UIAlignment
+	{
+		/// <summary>
+		/// Align element left.
+		/// </summary>
+		Left = 0,
+
+		/// <summary>
+		/// Align element right.
+		/// </summary>
+		Right = 1,
+
+		/// <summary>
+		/// Align element to center.
+		/// </summary>
+		Center = 2
+	}
+
+	/// <summary>
 	/// UI Size unit types.
 	/// </summary>
 	public enum UISizeType
@@ -884,6 +905,11 @@ namespace BonEngineSharp.Defs
 		/// Container window element.
 		/// </summary>
 		Window,
+
+		/// <summary>
+		/// A rectangle element.
+		/// </summary>
+		Rectangle,
 	}
 
 	/// <summary>

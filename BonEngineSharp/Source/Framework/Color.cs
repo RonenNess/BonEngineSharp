@@ -248,6 +248,11 @@ namespace BonEngineSharp.Framework
         public static readonly Color Yellow = FromRGBA(1, 1, 0, 1);
 
         /// <summary>
+        /// Orange color const.
+        /// </summary>
+        public static readonly Color Orange = FromRGBA(1, 0.545f, 0, 1);
+
+        /// <summary>
         /// Purple color const.
         /// </summary>
         public static readonly Color Purple = FromRGBA(1, 0, 1, 1);
