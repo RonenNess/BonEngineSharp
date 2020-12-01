@@ -48,9 +48,14 @@ namespace BonEngineSharp.Assets
         public virtual bool IsValid => HaveHandle && _BonEngineBind.BON_Asset_IsValid(_handle);
 
         /// <summary>
-        /// Asset's file path, if have one.
+        /// Asset's full file path, if have one.
         /// </summary>
-        public virtual string Path => HaveHandle ? _BonEngineBind.BON_Asset_Path_Str(_handle) : null;
+        public virtual string FullPath => HaveHandle ? _BonEngineBind.BON_Asset_Path_Str(_handle) : null;
+
+        /// <summary>
+        /// Asset's file path, relative to Assets root (what we used when loading it).
+        /// </summary>
+        public string Path { get; internal set; }
 
         /// <summary>
         /// Get asset full identifier.

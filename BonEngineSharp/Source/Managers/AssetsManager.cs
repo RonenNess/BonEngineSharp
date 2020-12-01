@@ -24,22 +24,22 @@ namespace BonEngineSharp.Managers
         /// <summary>
         /// Add 'AssetsRoot' to an asset path.
         /// </summary>
-        public string ToAssetsPath(string filename, bool validate)
+        public string ToAssetsPath(string path, bool validate)
         {
             // set asset path
             if (!string.IsNullOrEmpty(AssetsRoot))
             {
-                filename = System.IO.Path.Combine(AssetsRoot, filename);
+                path = System.IO.Path.Combine(AssetsRoot, path);
             }
 
             // validate
-            if (validate && !System.IO.File.Exists(filename))
+            if (validate && !System.IO.File.Exists(path))
             {
-                throw new Exception($"Asset file not found: '{filename}'!");
+                throw new Exception($"Asset file not found: '{path}'!");
             }
 
             // return path
-            return filename;
+            return path;
         }
 
         /// <summary>
@@ -54,13 +54,14 @@ namespace BonEngineSharp.Managers
         /// <summary>
         /// Loads an image asset.
         /// </summary>
-        /// <param name="filename">Image path.</param>
+        /// <param name="path">Image path.</param>
         /// <param name="filter">Image filtering mode.</param>
         /// <param name="useCache">Should we use cache for this asset to make future loadings faster?</param>
         /// <returns>Loaded image asset.</returns>
-        public ImageAsset LoadImage(string filename, ImageFilterMode filter = ImageFilterMode.Nearest, bool useCache = true)
+        public ImageAsset LoadImage(string path, ImageFilterMode filter = ImageFilterMode.Nearest, bool useCache = true)
         {
-            var ret = new ImageAsset(_BonEngineBind.BON_Assets_LoadImage(ToAssetsPath(filename, true), (int)filter, useCache));
+            var ret = new ImageAsset(_BonEngineBind.BON_Assets_LoadImage(ToAssetsPath(path, true), (int)filter, useCache));
+            ret.Path = path;
             return ret;
         }
 
@@ -79,12 +80,13 @@ namespace BonEngineSharp.Managers
         /// <summary>
         /// Loads a config asset.
         /// </summary>
-        /// <param name="filename">Config path.</param>
+        /// <param name="path">Config path.</param>
         /// <param name="useCache">Should we use cache for this asset to make future loadings faster?</param>
         /// <returns>Loaded config asset.</returns>
-        public ConfigAsset LoadConfig(string filename, bool useCache = true)
+        public ConfigAsset LoadConfig(string path, bool useCache = true)
         {
-            var ret = new ConfigAsset(_BonEngineBind.BON_Assets_LoadConfig(ToAssetsPath(filename, true), useCache));
+            var ret = new ConfigAsset(_BonEngineBind.BON_Assets_LoadConfig(ToAssetsPath(path, true), useCache));
+            ret.Path = path;
             return ret;
         }
 
@@ -124,50 +126,54 @@ namespace BonEngineSharp.Managers
         /// <summary>
         /// Loads a music asset.
         /// </summary>
-        /// <param name="filename">Music file path.</param>
+        /// <param name="path">Music file path.</param>
         /// <param name="useCache">Should we use cache for this asset to make future loadings faster?</param>
         /// <returns>Loaded music asset.</returns>
-        public MusicAsset LoadMusic(string filename, bool useCache = true)
+        public MusicAsset LoadMusic(string path, bool useCache = true)
         {
-            var ret = new MusicAsset(_BonEngineBind.BON_Assets_LoadMusic(ToAssetsPath(filename, true), useCache));
+            var ret = new MusicAsset(_BonEngineBind.BON_Assets_LoadMusic(ToAssetsPath(path, true), useCache));
+            ret.Path = path;
             return ret;
         }
 
         /// <summary>
         /// Loads a sound track asset.
         /// </summary>
-        /// <param name="filename">Sound track path.</param>
+        /// <param name="path">Sound track path.</param>
         /// <param name="useCache">Should we use cache for this asset to make future loadings faster?</param>
         /// <returns>Loaded sound asset.</returns>
-        public SoundAsset LoadSound(string filename, bool useCache = true)
+        public SoundAsset LoadSound(string path, bool useCache = true)
         {
-            var ret = new SoundAsset(_BonEngineBind.BON_Assets_LoadSound(ToAssetsPath(filename, true), useCache));
+            var ret = new SoundAsset(_BonEngineBind.BON_Assets_LoadSound(ToAssetsPath(path, true), useCache));
+            ret.Path = path;
             return ret;
         }
 
         /// <summary>
         /// Loads an effect asset.
         /// </summary>
-        /// <param name="filename">Effect ini file path.</param>
+        /// <param name="path">Effect ini file path.</param>
         /// <param name="useCache">Should we use cache for this asset to make future loadings faster?</param>
         /// <returns>Loaded effect asset.</returns>
-        public EffectAsset LoadEffect(string filename, bool useCache = true)
+        public EffectAsset LoadEffect(string path, bool useCache = true)
         {
             if (!BonEngine.GetActiveFeatures().EffectsEnabled) { throw new Exception("Can't load effect because 'Effects' feature is not enabled. Please initialize BonEngine with 'EffectsEnabled' = true."); }
-            var ret = new EffectAsset(_BonEngineBind.BON_Assets_LoadEffect(ToAssetsPath(filename, true), useCache));
+            var ret = new EffectAsset(_BonEngineBind.BON_Assets_LoadEffect(ToAssetsPath(path, true), useCache));
+            ret.Path = path;
             return ret;
         }
 
         /// <summary>
         /// Loads a font asset.
         /// </summary>
-        /// <param name="filename">Font track path.</param>
+        /// <param name="path">Font track path.</param>
         /// <param name="fontSize">Font native size to load.</param>
         /// <param name="useCache">Should we use cache for this asset to make future loadings faster?</param>
         /// <returns>Loaded font asset.</returns>
-        public FontAsset LoadFont(string filename, int fontSize, bool useCache = true)
+        public FontAsset LoadFont(string path, int fontSize, bool useCache = true)
         {
-            var ret = new FontAsset(_BonEngineBind.BON_Assets_LoadFont(ToAssetsPath(filename, true), fontSize, useCache));
+            var ret = new FontAsset(_BonEngineBind.BON_Assets_LoadFont(ToAssetsPath(path, true), fontSize, useCache));
+            ret.Path = path;
             return ret;
         }
     }
