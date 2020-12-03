@@ -10,3 +10,4 @@ All Changes:
 
 - Made assets 'Path' be relative to assets root, and added 'FullPath' to represent the whole path.
 - Added format validations to Point and Rectangle parsing + better error handling in SpriteSheet load.
+- Fixed setting IsRecievingInput to false in TextInput UI elements.
