@@ -319,10 +319,17 @@ namespace BonEngineSharp.Framework
         /// <returns>Point instance.</returns>
         public static PointF FromString(string str)
         {
-            var parts = str.Split(',');
-            float x = float.Parse(parts[0].Trim());
-            float y = float.Parse(parts[1].Trim());
-            return new PointF(x, y);
+            try
+            {
+                var parts = str.Split(',');
+                float x = float.Parse(parts[0].Trim());
+                float y = float.Parse(parts[1].Trim());
+                return new PointF(x, y);
+            }
+            catch
+            {
+                throw new FormatException($"Invalid string to convert to PointF: '{str}'");
+            }
         }
 
         /// <summary>

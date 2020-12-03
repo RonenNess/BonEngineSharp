@@ -103,8 +103,22 @@ namespace BonEngineSharp.Framework
             for (int i = 0; i < steps; ++i)
             {
                 string prefix = "step_" + i.ToString();
-                float duration = config.GetFloat(section, prefix + "_duration");
-                PointI index = PointI.FromString(config.GetStr(section, prefix + "_source"));
+                
+                // read duration
+                float duration = config.GetFloat(section, prefix + "_duration", -100f);
+                if (duration == -100f)
+                {
+                    throw new FormatException($"Missing or invalid duration value for step {i} in animation '{identifier}'.");
+                }
+
+                // read source index
+                PointI index = config.GetPointI(section, prefix + "_source", new PointI(-100,-100));
+                if (index.X == -100f)
+                {
+                    throw new FormatException($"Missing or invalid source value for step {i} in animation '{identifier}'.");
+                }
+
+                // read optional tag and add step
                 string tag = config.GetStr(section, prefix + "_tag", null);
                 AddStep(new SpriteAnimationStep() { Duration = duration, Index = index, Tag = tag });
             }
@@ -253,13 +267,13 @@ namespace BonEngineSharp.Framework
         public void LoadFromConfig(ConfigAsset config)
         {
             // load general settings
-            SpritesCount = PointI.FromString(config.GetStr("general", "sprites_count", "0,0"));
+            SpritesCount = config.GetPointI("general", "sprites_count", PointI.Zero);
 
             // load bookmarks
             var bookmarks = config.Keys("bookmarks");
             foreach (var book in bookmarks)
             {
-                var value = PointI.FromString(config.GetStr("bookmarks", book, "0,0"));
+                var value = config.GetPointI("bookmarks", book, PointI.Zero);
                 _bookmarks.Add(book, value);
             }
 

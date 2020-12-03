@@ -153,13 +153,20 @@ namespace BonEngineSharp.Framework
         /// <returns>Rectangle instance.</returns>
         public static RectangleF FromString(string str)
         {
-            var parts = str.Split(',');
-            return new RectangleF(
-                    float.Parse(parts[0].Trim()),
-                    float.Parse(parts[1].Trim()),
-                    float.Parse(parts[2].Trim()),
-                    float.Parse(parts[3].Trim())
-                );
+            try
+            {
+                var parts = str.Split(',');
+                return new RectangleF(
+                        float.Parse(parts[0].Trim()),
+                        float.Parse(parts[1].Trim()),
+                        float.Parse(parts[2].Trim()),
+                        float.Parse(parts[3].Trim())
+                    );
+            }
+            catch
+            {
+                throw new FormatException($"Invalid string to convert to RectangleF: '{str}'");
+            }
         }
 
         /// <summary>

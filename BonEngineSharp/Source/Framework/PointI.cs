@@ -335,10 +335,17 @@ namespace BonEngineSharp.Framework
         /// <returns>Point instance.</returns>
         public static PointI FromString(string str)
         {
-            var parts = str.Split(',');
-            int x = int.Parse(parts[0].Trim());
-            int y = int.Parse(parts[1].Trim());
-            return new PointI(x, y);
+            try
+            {
+                var parts = str.Split(',');
+                int x = int.Parse(parts[0].Trim());
+                int y = int.Parse(parts[1].Trim());
+                return new PointI(x, y);
+            }
+            catch
+            {
+                throw new FormatException($"Invalid string to convert to PointI: '{str}'");
+            }
         }
 
         /// <summary>
