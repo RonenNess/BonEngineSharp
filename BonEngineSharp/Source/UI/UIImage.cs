@@ -26,7 +26,10 @@ namespace BonEngineSharp.UI
                 ret._releaseElementOnDispose = false;
                 return ret;
             }
-            set { _BonEngineBind.BON_UIImage_SetImage(_handle, value._handle); }
+            set 
+            { 
+                _BonEngineBind.BON_UIImage_SetImage(_handle, value != null ? value._handle : IntPtr.Zero); 
+            }
         }
 
         /// <summary>
