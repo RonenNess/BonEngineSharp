@@ -237,6 +237,32 @@ This is the basic class all Assets inherit from and its main purpose is to manag
   </table>
   
   
+  <a id="BonEngineSharp_Assets_IAsset_FullPath_" data-uid="BonEngineSharp.Assets.IAsset.FullPath*"></a>
+  <h4 id="BonEngineSharp_Assets_IAsset_FullPath" data-uid="BonEngineSharp.Assets.IAsset.FullPath">FullPath</h4>
+  <div class="markdown level1 summary"><p>Asset's full file path, if have one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FullPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Assets_IAsset_HaveHandle_" data-uid="BonEngineSharp.Assets.IAsset.HaveHandle*"></a>
   <h4 id="BonEngineSharp_Assets_IAsset_HaveHandle" data-uid="BonEngineSharp.Assets.IAsset.HaveHandle">HaveHandle</h4>
   <div class="markdown level1 summary"><p>Get if this asset got a handle.</p>
@@ -291,12 +317,12 @@ This is the basic class all Assets inherit from and its main purpose is to manag
   
   <a id="BonEngineSharp_Assets_IAsset_Path_" data-uid="BonEngineSharp.Assets.IAsset.Path*"></a>
   <h4 id="BonEngineSharp_Assets_IAsset_Path" data-uid="BonEngineSharp.Assets.IAsset.Path">Path</h4>
-  <div class="markdown level1 summary"><p>Asset's file path, if have one.</p>
+  <div class="markdown level1 summary"><p>Asset's file path, relative to Assets root (what we used when loading it).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual string Path { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Path { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -252,13 +252,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_LoadConfig_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadConfig*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadConfig_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String,System.Boolean)">LoadConfig(String, Boolean)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadConfig_System_String_System_Boolean_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String,System.Boolean,System.Boolean)">LoadConfig(String, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads a config asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConfigAsset LoadConfig(string filename, bool useCache = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConfigAsset LoadConfig(string path, bool useCache = true, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,7 +272,7 @@ Note: this will not release assets that you still hold a reference to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filename</span></td>
+        <td><span class="parametername">path</span></td>
         <td><p>Config path.</p>
 </td>
       </tr>
@@ -280,6 +280,12 @@ Note: this will not release assets that you still hold a reference to.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useCache</span></td>
         <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, path will be relative to 'AssetsRoot'. If false, will be relative to working directory.</p>
 </td>
       </tr>
     </tbody>
@@ -303,13 +309,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_LoadEffect_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadEffect*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadEffect_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean)">LoadEffect(String, Boolean)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadEffect_System_String_System_Boolean_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean,System.Boolean)">LoadEffect(String, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads an effect asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EffectAsset LoadEffect(string filename, bool useCache = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public EffectAsset LoadEffect(string path, bool useCache = true, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -323,7 +329,7 @@ Note: this will not release assets that you still hold a reference to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filename</span></td>
+        <td><span class="parametername">path</span></td>
         <td><p>Effect ini file path.</p>
 </td>
       </tr>
@@ -331,6 +337,12 @@ Note: this will not release assets that you still hold a reference to.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useCache</span></td>
         <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, path will be relative to 'AssetsRoot'. If false, will be relative to working directory.</p>
 </td>
       </tr>
     </tbody>
@@ -354,13 +366,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_LoadFont_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadFont*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadFont_System_String_System_Int32_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean)">LoadFont(String, Int32, Boolean)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadFont_System_String_System_Int32_System_Boolean_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean,System.Boolean)">LoadFont(String, Int32, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads a font asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FontAsset LoadFont(string filename, int fontSize, bool useCache = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public FontAsset LoadFont(string path, int fontSize, bool useCache = true, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -374,7 +386,7 @@ Note: this will not release assets that you still hold a reference to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filename</span></td>
+        <td><span class="parametername">path</span></td>
         <td><p>Font track path.</p>
 </td>
       </tr>
@@ -388,6 +400,12 @@ Note: this will not release assets that you still hold a reference to.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useCache</span></td>
         <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, path will be relative to 'AssetsRoot'. If false, will be relative to working directory.</p>
 </td>
       </tr>
     </tbody>
@@ -411,13 +429,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_LoadImage_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadImage*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadImage_System_String_BonEngineSharp_Defs_ImageFilterMode_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadImage(System.String,BonEngineSharp.Defs.ImageFilterMode,System.Boolean)">LoadImage(String, ImageFilterMode, Boolean)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadImage_System_String_BonEngineSharp_Defs_ImageFilterMode_System_Boolean_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadImage(System.String,BonEngineSharp.Defs.ImageFilterMode,System.Boolean,System.Boolean)">LoadImage(String, ImageFilterMode, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads an image asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ImageAsset LoadImage(string filename, ImageFilterMode filter, bool useCache = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public ImageAsset LoadImage(string path, ImageFilterMode filter, bool useCache = true, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -431,7 +449,7 @@ Note: this will not release assets that you still hold a reference to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filename</span></td>
+        <td><span class="parametername">path</span></td>
         <td><p>Image path.</p>
 </td>
       </tr>
@@ -445,6 +463,12 @@ Note: this will not release assets that you still hold a reference to.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useCache</span></td>
         <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, path will be relative to 'AssetsRoot'. If false, will be relative to working directory.</p>
 </td>
       </tr>
     </tbody>
@@ -468,13 +492,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_LoadMusic_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadMusic*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadMusic_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String,System.Boolean)">LoadMusic(String, Boolean)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadMusic_System_String_System_Boolean_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String,System.Boolean,System.Boolean)">LoadMusic(String, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads a music asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MusicAsset LoadMusic(string filename, bool useCache = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public MusicAsset LoadMusic(string path, bool useCache = true, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -488,7 +512,7 @@ Note: this will not release assets that you still hold a reference to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filename</span></td>
+        <td><span class="parametername">path</span></td>
         <td><p>Music file path.</p>
 </td>
       </tr>
@@ -496,6 +520,12 @@ Note: this will not release assets that you still hold a reference to.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useCache</span></td>
         <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, path will be relative to 'AssetsRoot'. If false, will be relative to working directory.</p>
 </td>
       </tr>
     </tbody>
@@ -519,13 +549,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_LoadSound_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadSound*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadSound_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadSound(System.String,System.Boolean)">LoadSound(String, Boolean)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_LoadSound_System_String_System_Boolean_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.LoadSound(System.String,System.Boolean,System.Boolean)">LoadSound(String, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads a sound track asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SoundAsset LoadSound(string filename, bool useCache = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public SoundAsset LoadSound(string path, bool useCache = true, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -539,7 +569,7 @@ Note: this will not release assets that you still hold a reference to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filename</span></td>
+        <td><span class="parametername">path</span></td>
         <td><p>Sound track path.</p>
 </td>
       </tr>
@@ -547,6 +577,12 @@ Note: this will not release assets that you still hold a reference to.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useCache</span></td>
         <td><p>Should we use cache for this asset to make future loadings faster?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
+        <td><p>If true, path will be relative to 'AssetsRoot'. If false, will be relative to working directory.</p>
 </td>
       </tr>
     </tbody>
@@ -668,13 +704,13 @@ Note: this will not release assets that you still hold a reference to.</p>
   
   
   <a id="BonEngineSharp_Managers_AssetsManager_ToAssetsPath_" data-uid="BonEngineSharp.Managers.AssetsManager.ToAssetsPath*"></a>
-  <h4 id="BonEngineSharp_Managers_AssetsManager_ToAssetsPath_System_String_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean)">ToAssetsPath(String, Boolean)</h4>
+  <h4 id="BonEngineSharp_Managers_AssetsManager_ToAssetsPath_System_String_System_Boolean_System_Boolean_" data-uid="BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean,System.Boolean)">ToAssetsPath(String, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Add 'AssetsRoot' to an asset path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToAssetsPath(string filename, bool validate)</code></pre>
+    <pre><code class="lang-csharp hljs">public string ToAssetsPath(string path, bool validate = true, bool useAssetsRoot = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -688,12 +724,17 @@ Note: this will not release assets that you still hold a reference to.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filename</span></td>
+        <td><span class="parametername">path</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAssetsRoot</span></td>
         <td></td>
       </tr>
     </tbody>

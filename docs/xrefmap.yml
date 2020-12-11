@@ -604,6 +604,18 @@ references:
   commentId: Overload:BonEngineSharp.Assets.IAsset.FullIdentifier
   fullName: BonEngineSharp.Assets.IAsset.FullIdentifier
   nameWithType: IAsset.FullIdentifier
+- uid: BonEngineSharp.Assets.IAsset.FullPath
+  name: FullPath
+  href: api/BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_FullPath
+  commentId: P:BonEngineSharp.Assets.IAsset.FullPath
+  fullName: BonEngineSharp.Assets.IAsset.FullPath
+  nameWithType: IAsset.FullPath
+- uid: BonEngineSharp.Assets.IAsset.FullPath*
+  name: FullPath
+  href: api/BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_FullPath_
+  commentId: Overload:BonEngineSharp.Assets.IAsset.FullPath
+  fullName: BonEngineSharp.Assets.IAsset.FullPath
+  nameWithType: IAsset.FullPath
 - uid: BonEngineSharp.Assets.IAsset.HaveHandle
   name: HaveHandle
   href: api/BonEngineSharp.Assets.IAsset.html#BonEngineSharp_Assets_IAsset_HaveHandle
@@ -5926,72 +5938,72 @@ references:
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.Id
   fullName: BonEngineSharp.Managers.AssetsManager.Id
   nameWithType: AssetsManager.Id
-- uid: BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String,System.Boolean)
-  name: LoadConfig(String, Boolean)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadConfig_System_String_System_Boolean_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String,System.Boolean)
-  fullName: BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String, System.Boolean)
-  nameWithType: AssetsManager.LoadConfig(String, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String,System.Boolean,System.Boolean)
+  name: LoadConfig(String, Boolean, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadConfig_System_String_System_Boolean_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String,System.Boolean,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadConfig(System.String, System.Boolean, System.Boolean)
+  nameWithType: AssetsManager.LoadConfig(String, Boolean, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.LoadConfig*
   name: LoadConfig
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadConfig_
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadConfig
   fullName: BonEngineSharp.Managers.AssetsManager.LoadConfig
   nameWithType: AssetsManager.LoadConfig
-- uid: BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean)
-  name: LoadEffect(String, Boolean)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadEffect_System_String_System_Boolean_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean)
-  fullName: BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String, System.Boolean)
-  nameWithType: AssetsManager.LoadEffect(String, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean,System.Boolean)
+  name: LoadEffect(String, Boolean, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadEffect_System_String_System_Boolean_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String,System.Boolean,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadEffect(System.String, System.Boolean, System.Boolean)
+  nameWithType: AssetsManager.LoadEffect(String, Boolean, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.LoadEffect*
   name: LoadEffect
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadEffect_
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadEffect
   fullName: BonEngineSharp.Managers.AssetsManager.LoadEffect
   nameWithType: AssetsManager.LoadEffect
-- uid: BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean)
-  name: LoadFont(String, Int32, Boolean)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadFont_System_String_System_Int32_System_Boolean_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean)
-  fullName: BonEngineSharp.Managers.AssetsManager.LoadFont(System.String, System.Int32, System.Boolean)
-  nameWithType: AssetsManager.LoadFont(String, Int32, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean,System.Boolean)
+  name: LoadFont(String, Int32, Boolean, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadFont_System_String_System_Int32_System_Boolean_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadFont(System.String,System.Int32,System.Boolean,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadFont(System.String, System.Int32, System.Boolean, System.Boolean)
+  nameWithType: AssetsManager.LoadFont(String, Int32, Boolean, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.LoadFont*
   name: LoadFont
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadFont_
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadFont
   fullName: BonEngineSharp.Managers.AssetsManager.LoadFont
   nameWithType: AssetsManager.LoadFont
-- uid: BonEngineSharp.Managers.AssetsManager.LoadImage(System.String,BonEngineSharp.Defs.ImageFilterMode,System.Boolean)
-  name: LoadImage(String, ImageFilterMode, Boolean)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadImage_System_String_BonEngineSharp_Defs_ImageFilterMode_System_Boolean_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadImage(System.String,BonEngineSharp.Defs.ImageFilterMode,System.Boolean)
-  fullName: BonEngineSharp.Managers.AssetsManager.LoadImage(System.String, BonEngineSharp.Defs.ImageFilterMode, System.Boolean)
-  nameWithType: AssetsManager.LoadImage(String, ImageFilterMode, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.LoadImage(System.String,BonEngineSharp.Defs.ImageFilterMode,System.Boolean,System.Boolean)
+  name: LoadImage(String, ImageFilterMode, Boolean, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadImage_System_String_BonEngineSharp_Defs_ImageFilterMode_System_Boolean_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadImage(System.String,BonEngineSharp.Defs.ImageFilterMode,System.Boolean,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadImage(System.String, BonEngineSharp.Defs.ImageFilterMode, System.Boolean, System.Boolean)
+  nameWithType: AssetsManager.LoadImage(String, ImageFilterMode, Boolean, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.LoadImage*
   name: LoadImage
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadImage_
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadImage
   fullName: BonEngineSharp.Managers.AssetsManager.LoadImage
   nameWithType: AssetsManager.LoadImage
-- uid: BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String,System.Boolean)
-  name: LoadMusic(String, Boolean)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadMusic_System_String_System_Boolean_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String,System.Boolean)
-  fullName: BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String, System.Boolean)
-  nameWithType: AssetsManager.LoadMusic(String, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String,System.Boolean,System.Boolean)
+  name: LoadMusic(String, Boolean, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadMusic_System_String_System_Boolean_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String,System.Boolean,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadMusic(System.String, System.Boolean, System.Boolean)
+  nameWithType: AssetsManager.LoadMusic(String, Boolean, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.LoadMusic*
   name: LoadMusic
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadMusic_
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.LoadMusic
   fullName: BonEngineSharp.Managers.AssetsManager.LoadMusic
   nameWithType: AssetsManager.LoadMusic
-- uid: BonEngineSharp.Managers.AssetsManager.LoadSound(System.String,System.Boolean)
-  name: LoadSound(String, Boolean)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadSound_System_String_System_Boolean_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadSound(System.String,System.Boolean)
-  fullName: BonEngineSharp.Managers.AssetsManager.LoadSound(System.String, System.Boolean)
-  nameWithType: AssetsManager.LoadSound(String, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.LoadSound(System.String,System.Boolean,System.Boolean)
+  name: LoadSound(String, Boolean, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadSound_System_String_System_Boolean_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.LoadSound(System.String,System.Boolean,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.LoadSound(System.String, System.Boolean, System.Boolean)
+  nameWithType: AssetsManager.LoadSound(String, Boolean, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.LoadSound*
   name: LoadSound
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_LoadSound_
@@ -6022,12 +6034,12 @@ references:
   commentId: Overload:BonEngineSharp.Managers.AssetsManager.SaveImage
   fullName: BonEngineSharp.Managers.AssetsManager.SaveImage
   nameWithType: AssetsManager.SaveImage
-- uid: BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean)
-  name: ToAssetsPath(String, Boolean)
-  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_ToAssetsPath_System_String_System_Boolean_
-  commentId: M:BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean)
-  fullName: BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String, System.Boolean)
-  nameWithType: AssetsManager.ToAssetsPath(String, Boolean)
+- uid: BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean,System.Boolean)
+  name: ToAssetsPath(String, Boolean, Boolean)
+  href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_ToAssetsPath_System_String_System_Boolean_System_Boolean_
+  commentId: M:BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String,System.Boolean,System.Boolean)
+  fullName: BonEngineSharp.Managers.AssetsManager.ToAssetsPath(System.String, System.Boolean, System.Boolean)
+  nameWithType: AssetsManager.ToAssetsPath(String, Boolean, Boolean)
 - uid: BonEngineSharp.Managers.AssetsManager.ToAssetsPath*
   name: ToAssetsPath
   href: api/BonEngineSharp.Managers.AssetsManager.html#BonEngineSharp_Managers_AssetsManager_ToAssetsPath_
