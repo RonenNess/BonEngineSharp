@@ -1,6 +1,6 @@
 # 1.4.1
 
-**[TBD]**
+**[11/12/2020]**
 
 Key Changes:
 
@@ -13,3 +13,4 @@ All Changes:
 - Fixed setting IsRecievingInput to false in TextInput UI elements.
 - Added 'UseAssetsRoot' flag to Assets Manager loading methods.
 - Fixed setting UIImage to null.
+- Increased max section name size, max key size, and max line size in asset config.
