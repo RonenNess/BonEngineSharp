@@ -1,6 +1,7 @@
 ﻿using BonEngineSharp.Defs;
 using BonEngineSharp.Assets;
 using BonEngineSharp.Framework;
+using BonEngineSharp.Utils;
 
 namespace BonEngineSharpTest.Demos
 {
@@ -15,7 +16,10 @@ namespace BonEngineSharpTest.Demos
 
         // music and sound
         private MusicAsset _music;
+        private MusicAsset _altMusic;
         private SoundAsset _sound;
+
+        private MusicFader _musicFader;
 
         // is the music paused?
         bool _paused;
@@ -29,10 +33,11 @@ namespace BonEngineSharpTest.Demos
 
             // load font and music
             _music = Assets.LoadMusic("sfx/old city theme.ogg");
+            _altMusic = Assets.LoadMusic("sfx/forest.ogg");
             _sound = Assets.LoadSound("sfx/phaserUp1.mp3");
 
-            // start playing music
-            Sfx.PlayMusic(_music);
+            // start playing music via the music fader
+            _musicFader = new MusicFader(null, 100, _music, 100);
         }
 
         // on updates do animations and controls
@@ -53,11 +58,27 @@ namespace BonEngineSharpTest.Demos
             if (Input.PressedNow(KeyCodes.Key6)) { Sfx.PlaySound(_sound, 100, 0, 1.5f); }
             if (Input.PressedNow(KeyCodes.Key7)) { Sfx.PlaySound(_sound, 100, 0, 1.75f); }
 
+            // do music switching
+            if (Input.PressedNow(KeyCodes.KeyZ))
+            {
+                _musicFader = new MusicFader(_musicFader.ToTrack, 100, _music, 100);
+            }
+            if (Input.PressedNow(KeyCodes.KeyX))
+            {
+                _musicFader = new MusicFader(_musicFader.ToTrack, 100, _altMusic, 100);
+            }
+
             // pause / resume music
             if (Input.PressedNow(KeyCodes.KeySpace))
             {
                 _paused = !_paused;
                 Sfx.PauseMusic(_paused);
+            }
+
+            // update music fader
+            if (_musicFader != null && !_paused)
+            {
+                _musicFader.Update(deltaTime);
             }
         }
 
@@ -72,6 +93,7 @@ namespace BonEngineSharpTest.Demos
             Gfx.DrawText(_font, "This scene demonstrates the Sfx manager.\n" +
                 "- Press 1-7 to play sound with different pitch.\n" +
                 "- Press Space to pause / resume music.\n" +
+                "- Press Z/X to change music with fade effect.\n" +
                 "- Press Escape to exit.", new PointF(80, 210), Color.White, Color.Black, 1, 22);
         }
     }
