@@ -344,6 +344,19 @@ namespace BonEngineSharp.Managers
         }
 
         /// <summary>
+        /// Draws a polygon.
+        /// </summary>
+        /// <param name="a">Polygon first point.</param>
+        /// <param name="b">Polygon second point.</param>
+        /// <param name="c">Polygon third point.</param>
+        /// <param name="color">Polygon fill color.</param>
+        /// <param name="blend">Blend mode.</param>
+        public void DrawPolygon(PointI a, PointI b, PointI c, Color color, BlendModes blend = BlendModes.AlphaBlend)
+        {
+            _BonEngineBind.BON_Gfx_DrawPolygon(a.X, a.Y, b.X, b.Y, c.X, c.Y, color.R, color.G, color.B, color.A, (int)blend);
+        }
+
+        /// <summary>
         /// Clear a region of screen.
         /// </summary>
         /// <param name="color">Color to clear to.</param>
