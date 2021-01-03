@@ -33,6 +33,8 @@
       href: changelog_1_4.md
     - name: V1.41
       href: changelog_1_41.md
+    - name: V1.42
+      href: changelog_1_42.md
 - name: Examples
   href: examples.md
   items:
@@ -40,3 +42,5 @@
       href: examples_breakout.md
     - name: Lights
       href: examples_lights.md
+    - name: Screenshots
+      href: examples_screenshots.md
