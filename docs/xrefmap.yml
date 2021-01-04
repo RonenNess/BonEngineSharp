@@ -6454,6 +6454,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.GfxManager.DrawPixel
   fullName: BonEngineSharp.Managers.GfxManager.DrawPixel
   nameWithType: GfxManager.DrawPixel
+- uid: BonEngineSharp.Managers.GfxManager.DrawPolygon(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.Color,BonEngineSharp.Defs.BlendModes)
+  name: DrawPolygon(PointI, PointI, PointI, Color, BlendModes)
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawPolygon_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_Color_BonEngineSharp_Defs_BlendModes_
+  commentId: M:BonEngineSharp.Managers.GfxManager.DrawPolygon(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.Color,BonEngineSharp.Defs.BlendModes)
+  fullName: BonEngineSharp.Managers.GfxManager.DrawPolygon(BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.Color, BonEngineSharp.Defs.BlendModes)
+  nameWithType: GfxManager.DrawPolygon(PointI, PointI, PointI, Color, BlendModes)
+- uid: BonEngineSharp.Managers.GfxManager.DrawPolygon*
+  name: DrawPolygon
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawPolygon_
+  commentId: Overload:BonEngineSharp.Managers.GfxManager.DrawPolygon
+  fullName: BonEngineSharp.Managers.GfxManager.DrawPolygon
+  nameWithType: GfxManager.DrawPolygon
 - uid: BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes)
   name: DrawRectangle(RectangleI, Color, Boolean, BlendModes)
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawRectangle_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_Color_System_Boolean_BonEngineSharp_Defs_BlendModes_
@@ -9535,3 +9547,147 @@ references:
   commentId: Overload:BonEngineSharp.UI.UIWindow.Title
   fullName: BonEngineSharp.UI.UIWindow.Title
   nameWithType: UIWindow.Title
+- uid: BonEngineSharp.Utils
+  name: BonEngineSharp.Utils
+  href: api/BonEngineSharp.Utils.html
+  commentId: N:BonEngineSharp.Utils
+  fullName: BonEngineSharp.Utils
+  nameWithType: BonEngineSharp.Utils
+- uid: BonEngineSharp.Utils.MusicFader
+  name: MusicFader
+  href: api/BonEngineSharp.Utils.MusicFader.html
+  commentId: T:BonEngineSharp.Utils.MusicFader
+  fullName: BonEngineSharp.Utils.MusicFader
+  nameWithType: MusicFader
+- uid: BonEngineSharp.Utils.MusicFader.#ctor(BonEngineSharp.Assets.MusicAsset,System.Int32,BonEngineSharp.Assets.MusicAsset,System.Int32,System.Single,System.Single)
+  name: MusicFader(MusicAsset, Int32, MusicAsset, Int32, Single, Single)
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader__ctor_BonEngineSharp_Assets_MusicAsset_System_Int32_BonEngineSharp_Assets_MusicAsset_System_Int32_System_Single_System_Single_
+  commentId: M:BonEngineSharp.Utils.MusicFader.#ctor(BonEngineSharp.Assets.MusicAsset,System.Int32,BonEngineSharp.Assets.MusicAsset,System.Int32,System.Single,System.Single)
+  fullName: BonEngineSharp.Utils.MusicFader.MusicFader(BonEngineSharp.Assets.MusicAsset, System.Int32, BonEngineSharp.Assets.MusicAsset, System.Int32, System.Single, System.Single)
+  nameWithType: MusicFader.MusicFader(MusicAsset, Int32, MusicAsset, Int32, Single, Single)
+- uid: BonEngineSharp.Utils.MusicFader.#ctor*
+  name: MusicFader
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader__ctor_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.#ctor
+  fullName: BonEngineSharp.Utils.MusicFader.MusicFader
+  nameWithType: MusicFader.MusicFader
+- uid: BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack
+  name: CurrentlyPlayedTrack
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_CurrentlyPlayedTrack
+  commentId: P:BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack
+  fullName: BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack
+  nameWithType: MusicFader.CurrentlyPlayedTrack
+- uid: BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack*
+  name: CurrentlyPlayedTrack
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_CurrentlyPlayedTrack_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack
+  fullName: BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack
+  nameWithType: MusicFader.CurrentlyPlayedTrack
+- uid: BonEngineSharp.Utils.MusicFader.CurrentVolume
+  name: CurrentVolume
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_CurrentVolume
+  commentId: P:BonEngineSharp.Utils.MusicFader.CurrentVolume
+  fullName: BonEngineSharp.Utils.MusicFader.CurrentVolume
+  nameWithType: MusicFader.CurrentVolume
+- uid: BonEngineSharp.Utils.MusicFader.CurrentVolume*
+  name: CurrentVolume
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_CurrentVolume_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.CurrentVolume
+  fullName: BonEngineSharp.Utils.MusicFader.CurrentVolume
+  nameWithType: MusicFader.CurrentVolume
+- uid: BonEngineSharp.Utils.MusicFader.FadeInSpeed
+  name: FadeInSpeed
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_FadeInSpeed
+  commentId: F:BonEngineSharp.Utils.MusicFader.FadeInSpeed
+  fullName: BonEngineSharp.Utils.MusicFader.FadeInSpeed
+  nameWithType: MusicFader.FadeInSpeed
+- uid: BonEngineSharp.Utils.MusicFader.FadeOutSpeed
+  name: FadeOutSpeed
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_FadeOutSpeed
+  commentId: F:BonEngineSharp.Utils.MusicFader.FadeOutSpeed
+  fullName: BonEngineSharp.Utils.MusicFader.FadeOutSpeed
+  nameWithType: MusicFader.FadeOutSpeed
+- uid: BonEngineSharp.Utils.MusicFader.FromTrack
+  name: FromTrack
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_FromTrack
+  commentId: P:BonEngineSharp.Utils.MusicFader.FromTrack
+  fullName: BonEngineSharp.Utils.MusicFader.FromTrack
+  nameWithType: MusicFader.FromTrack
+- uid: BonEngineSharp.Utils.MusicFader.FromTrack*
+  name: FromTrack
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_FromTrack_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.FromTrack
+  fullName: BonEngineSharp.Utils.MusicFader.FromTrack
+  nameWithType: MusicFader.FromTrack
+- uid: BonEngineSharp.Utils.MusicFader.FromVolume
+  name: FromVolume
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_FromVolume
+  commentId: P:BonEngineSharp.Utils.MusicFader.FromVolume
+  fullName: BonEngineSharp.Utils.MusicFader.FromVolume
+  nameWithType: MusicFader.FromVolume
+- uid: BonEngineSharp.Utils.MusicFader.FromVolume*
+  name: FromVolume
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_FromVolume_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.FromVolume
+  fullName: BonEngineSharp.Utils.MusicFader.FromVolume
+  nameWithType: MusicFader.FromVolume
+- uid: BonEngineSharp.Utils.MusicFader.IsDone
+  name: IsDone
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_IsDone
+  commentId: P:BonEngineSharp.Utils.MusicFader.IsDone
+  fullName: BonEngineSharp.Utils.MusicFader.IsDone
+  nameWithType: MusicFader.IsDone
+- uid: BonEngineSharp.Utils.MusicFader.IsDone*
+  name: IsDone
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_IsDone_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.IsDone
+  fullName: BonEngineSharp.Utils.MusicFader.IsDone
+  nameWithType: MusicFader.IsDone
+- uid: BonEngineSharp.Utils.MusicFader.OnFinishFadeIn
+  name: OnFinishFadeIn
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_OnFinishFadeIn
+  commentId: F:BonEngineSharp.Utils.MusicFader.OnFinishFadeIn
+  fullName: BonEngineSharp.Utils.MusicFader.OnFinishFadeIn
+  nameWithType: MusicFader.OnFinishFadeIn
+- uid: BonEngineSharp.Utils.MusicFader.OnFinishFadeOut
+  name: OnFinishFadeOut
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_OnFinishFadeOut
+  commentId: F:BonEngineSharp.Utils.MusicFader.OnFinishFadeOut
+  fullName: BonEngineSharp.Utils.MusicFader.OnFinishFadeOut
+  nameWithType: MusicFader.OnFinishFadeOut
+- uid: BonEngineSharp.Utils.MusicFader.ToTrack
+  name: ToTrack
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_ToTrack
+  commentId: P:BonEngineSharp.Utils.MusicFader.ToTrack
+  fullName: BonEngineSharp.Utils.MusicFader.ToTrack
+  nameWithType: MusicFader.ToTrack
+- uid: BonEngineSharp.Utils.MusicFader.ToTrack*
+  name: ToTrack
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_ToTrack_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.ToTrack
+  fullName: BonEngineSharp.Utils.MusicFader.ToTrack
+  nameWithType: MusicFader.ToTrack
+- uid: BonEngineSharp.Utils.MusicFader.ToVolume
+  name: ToVolume
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_ToVolume
+  commentId: P:BonEngineSharp.Utils.MusicFader.ToVolume
+  fullName: BonEngineSharp.Utils.MusicFader.ToVolume
+  nameWithType: MusicFader.ToVolume
+- uid: BonEngineSharp.Utils.MusicFader.ToVolume*
+  name: ToVolume
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_ToVolume_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.ToVolume
+  fullName: BonEngineSharp.Utils.MusicFader.ToVolume
+  nameWithType: MusicFader.ToVolume
+- uid: BonEngineSharp.Utils.MusicFader.Update(System.Double)
+  name: Update(Double)
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_Update_System_Double_
+  commentId: M:BonEngineSharp.Utils.MusicFader.Update(System.Double)
+  fullName: BonEngineSharp.Utils.MusicFader.Update(System.Double)
+  nameWithType: MusicFader.Update(Double)
+- uid: BonEngineSharp.Utils.MusicFader.Update*
+  name: Update
+  href: api/BonEngineSharp.Utils.MusicFader.html#BonEngineSharp_Utils_MusicFader_Update_
+  commentId: Overload:BonEngineSharp.Utils.MusicFader.Update
+  fullName: BonEngineSharp.Utils.MusicFader.Update
+  nameWithType: MusicFader.Update

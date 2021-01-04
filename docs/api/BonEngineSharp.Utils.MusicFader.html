@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MusicFader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MusicFader
+   ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BonEngineSharp.Utils.MusicFader">
+  
+  
+  <h1 id="BonEngineSharp_Utils_MusicFader" data-uid="BonEngineSharp.Utils.MusicFader" class="text-break">Class MusicFader
+  </h1>
+  <div class="markdown level0 summary"><p>Utility class to fade out one music track and fade in the next.
+This will decrease the volume of the faded out track until it reach 0, then start to fade in the next.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MusicFader</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BonEngineSharp.Utils.html">BonEngineSharp.Utils</a></h6>
+  <h6><strong>Assembly</strong>: BonEngineSharp.dll</h6>
+  <h5 id="BonEngineSharp_Utils_MusicFader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MusicFader : Object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader__ctor_" data-uid="BonEngineSharp.Utils.MusicFader.#ctor*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader__ctor_BonEngineSharp_Assets_MusicAsset_System_Int32_BonEngineSharp_Assets_MusicAsset_System_Int32_System_Single_System_Single_" data-uid="BonEngineSharp.Utils.MusicFader.#ctor(BonEngineSharp.Assets.MusicAsset,System.Int32,BonEngineSharp.Assets.MusicAsset,System.Int32,System.Single,System.Single)">MusicFader(MusicAsset, Int32, MusicAsset, Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Create the music fader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MusicFader(MusicAsset fromTrack, int fromTrackVolume, MusicAsset toTrack, int toTrackVolume, float fadeOutSpeed = 1F, float fadeInSpeed = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></td>
+        <td><span class="parametername">fromTrack</span></td>
+        <td><p>Track to transition from. Note: fromTrack is assumed to be already playing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fromTrackVolume</span></td>
+        <td><p>Start volume to fade out from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></td>
+        <td><span class="parametername">toTrack</span></td>
+        <td><p>Track to transition to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">toTrackVolume</span></td>
+        <td><p>Target volume to fade in to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fadeOutSpeed</span></td>
+        <td><p>Fade out speed. 1f = takes one second to complete, 0f = immediate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fadeInSpeed</span></td>
+        <td><p>Fade in speed. 1f = takes one second to complete, 0f = immediate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BonEngineSharp_Utils_MusicFader_FadeInSpeed" data-uid="BonEngineSharp.Utils.MusicFader.FadeInSpeed">FadeInSpeed</h4>
+  <div class="markdown level1 summary"><p>Fade in speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FadeInSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Utils_MusicFader_FadeOutSpeed" data-uid="BonEngineSharp.Utils.MusicFader.FadeOutSpeed">FadeOutSpeed</h4>
+  <div class="markdown level1 summary"><p>Fade out speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FadeOutSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Utils_MusicFader_OnFinishFadeIn" data-uid="BonEngineSharp.Utils.MusicFader.OnFinishFadeIn">OnFinishFadeIn</h4>
+  <div class="markdown level1 summary"><p>Callback to invoke when finishing fade in.
+Must be set before fade in is complete or it won't be called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnFinishFadeIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Utils_MusicFader_OnFinishFadeOut" data-uid="BonEngineSharp.Utils.MusicFader.OnFinishFadeOut">OnFinishFadeOut</h4>
+  <div class="markdown level1 summary"><p>Callback to invoke when finishing fade out.
+Must be set before fade out is complete or it won't be called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnFinishFadeOut</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_CurrentlyPlayedTrack_" data-uid="BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_CurrentlyPlayedTrack" data-uid="BonEngineSharp.Utils.MusicFader.CurrentlyPlayedTrack">CurrentlyPlayedTrack</h4>
+  <div class="markdown level1 summary"><p>Music track currently played.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MusicAsset CurrentlyPlayedTrack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_CurrentVolume_" data-uid="BonEngineSharp.Utils.MusicFader.CurrentVolume*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_CurrentVolume" data-uid="BonEngineSharp.Utils.MusicFader.CurrentVolume">CurrentVolume</h4>
+  <div class="markdown level1 summary"><p>Current music track volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentVolume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_FromTrack_" data-uid="BonEngineSharp.Utils.MusicFader.FromTrack*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_FromTrack" data-uid="BonEngineSharp.Utils.MusicFader.FromTrack">FromTrack</h4>
+  <div class="markdown level1 summary"><p>Music track we fade from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MusicAsset FromTrack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_FromVolume_" data-uid="BonEngineSharp.Utils.MusicFader.FromVolume*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_FromVolume" data-uid="BonEngineSharp.Utils.MusicFader.FromVolume">FromVolume</h4>
+  <div class="markdown level1 summary"><p>Volume to fade out from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FromVolume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_IsDone_" data-uid="BonEngineSharp.Utils.MusicFader.IsDone*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_IsDone" data-uid="BonEngineSharp.Utils.MusicFader.IsDone">IsDone</h4>
+  <div class="markdown level1 summary"><p>Did we finish the transition?
+When true it means we set the target volume track at its desired volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_ToTrack_" data-uid="BonEngineSharp.Utils.MusicFader.ToTrack*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_ToTrack" data-uid="BonEngineSharp.Utils.MusicFader.ToTrack">ToTrack</h4>
+  <div class="markdown level1 summary"><p>Music track we fade to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MusicAsset ToTrack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Assets.MusicAsset.html">MusicAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_ToVolume_" data-uid="BonEngineSharp.Utils.MusicFader.ToVolume*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_ToVolume" data-uid="BonEngineSharp.Utils.MusicFader.ToVolume">ToVolume</h4>
+  <div class="markdown level1 summary"><p>Volume to fade in to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ToVolume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BonEngineSharp_Utils_MusicFader_Update_" data-uid="BonEngineSharp.Utils.MusicFader.Update*"></a>
+  <h4 id="BonEngineSharp_Utils_MusicFader_Update_System_Double_" data-uid="BonEngineSharp.Utils.MusicFader.Update(System.Double)">Update(Double)</h4>
+  <div class="markdown level1 summary"><p>Update the music volume.
+Note: its your responsibility to check if done using 'IsDone', and after the transition is finished you may release this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(double deltaTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td><p>Current frame delta time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
