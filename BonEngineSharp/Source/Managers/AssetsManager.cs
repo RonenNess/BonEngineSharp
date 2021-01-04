@@ -162,7 +162,6 @@ namespace BonEngineSharp.Managers
         /// <returns>Loaded effect asset.</returns>
         public EffectAsset LoadEffect(string path, bool useCache = true, bool useAssetsRoot = true)
         {
-            if (!BonEngine.GetActiveFeatures().EffectsEnabled) { throw new Exception("Can't load effect because 'Effects' feature is not enabled. Please initialize BonEngine with 'EffectsEnabled' = true."); }
             var ret = new EffectAsset(_BonEngineBind.BON_Assets_LoadEffect(ToAssetsPath(path, true, useAssetsRoot), useCache));
             ret.Path = path;
             return ret;

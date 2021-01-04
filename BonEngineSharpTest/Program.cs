@@ -43,7 +43,7 @@ namespace BonEngineSharpTest
                 Game.LoadConfig("config.ini");
 
                 // load assets
-                _cursor = Assets.LoadImage("gfx/cursor.png", ImageFilterMode.Nearest);
+                _cursor = Assets.LoadImage("gfx/cursor.png", ImageFilterMode.Nearest, false);
                 _fontBig = Assets.LoadFont("gfx/OpenSans-Regular.ttf", 46, false);
                 _font = Assets.LoadFont("gfx/OpenSans-Regular.ttf", 28, false);
 
@@ -142,11 +142,7 @@ namespace BonEngineSharpTest
 
             using (var scene = new WelcomeScene())
             {
-                BonEngine.Start(scene, new BonFeatures()
-                {
-                    EffectsEnabled = true,
-                    ForceOpenGL = false
-                });
+                BonEngine.Start(scene);
             }
 
             Console.WriteLine("Bye!");

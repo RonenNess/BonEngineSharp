@@ -11,18 +11,6 @@ namespace BonEngineSharp.Defs
 	public class BonFeatures
 	{
 		/// <summary>
-		/// If true, will enable Effects asset. 
-		/// With BonEngine default GFX implementation, this also forces us to use OpenGL.
-		/// </summary>
-		public bool EffectsEnabled = true;
-
-		/// <summary>
-		/// If true, will force the Gfx manager to use OpenGL implementation.
-		/// Note: if Effects are enabled it will force OpenGL regardless of this setting.
-		/// </summary>
-		public bool ForceOpenGL = true;
-
-		/// <summary>
 		/// If true, will register signals handler to finish logs before exiting.
 		/// </summary>
 		public bool RegisterSignalsHandler = false;

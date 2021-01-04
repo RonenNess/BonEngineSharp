@@ -17,6 +17,9 @@ namespace BonEngineSharpTest.Demos
         // load the scene
         protected override void Load()
         {
+            // force cache clear
+            Assets.ClearCache();
+
             // set fullscreen
             // note: only works when there are no loaded assets.
             Gfx.SetWindowProperties("BonEngine Windowed Fullscreen", 0, 0, WindowModes.WindowedBorderless, false);

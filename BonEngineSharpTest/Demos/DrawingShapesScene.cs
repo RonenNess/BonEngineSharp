@@ -72,7 +72,7 @@ namespace BonEngineSharpTest.Demos
                     _blocks.Add(new Block()
                     {
                         Rectangle = new RectangleI(i * BlockSize.X, j * BlockSize.Y, BlockSize.X, BlockSize.Y),
-                        Color = new Color(1f - (j / 10f), 0f, (j / 10f) - 1f, 1f)
+                        Color = new Color(1f - (j / 10f), 0f, (j / 10f), 1f)
                     });
                 }
             }

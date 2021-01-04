@@ -61,11 +61,11 @@ namespace BonEngineSharpTest.Demos
             // do music switching
             if (Input.PressedNow(KeyCodes.KeyZ))
             {
-                _musicFader = new MusicFader(_musicFader.ToTrack, 100, _music, 100);
+                _musicFader = new MusicFader(_musicFader.ToTrack, _musicFader.CurrentVolume, _music, 100);
             }
             if (Input.PressedNow(KeyCodes.KeyX))
             {
-                _musicFader = new MusicFader(_musicFader.ToTrack, 100, _altMusic, 100);
+                _musicFader = new MusicFader(_musicFader.ToTrack, _musicFader.CurrentVolume, _altMusic, 30);
             }
 
             // pause / resume music

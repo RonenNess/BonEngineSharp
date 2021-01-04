@@ -51,7 +51,7 @@ namespace BonEngineSharp
             // initialize
             scene.IsFirstScene = true;
             _BonEngineBind.Initialize();
-            _BonEngineBind.BON_StartEx(scene.GetOrCreateHandle(), features.ForceOpenGL, features.EffectsEnabled, features.Logging, features.RegisterSignalsHandler);
+            _BonEngineBind.BON_StartEx(scene.GetOrCreateHandle(), features.Logging, features.RegisterSignalsHandler);
         }
 
         /// <summary>
