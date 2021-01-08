@@ -327,8 +327,23 @@ namespace BonEngineSharp.Managers
         /// <param name="blend">Blend mode.</param>
         public void DrawRectangle(RectangleI rectangle, Color color, bool filled, BlendModes blend = BlendModes.AlphaBlend)
         {
-            _BonEngineBind.BON_Gfx_DrawRectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height, color.R, color.G, color.B, color.A, filled, (int)blend);
+            _BonEngineBind.BON_Gfx_DrawRectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height, color.R, color.G, color.B, color.A, filled, (int)blend, 0, 0, 0);
         }
+
+        /// <summary>
+        /// Draws a rectangle.
+        /// </summary>
+        /// <param name="rectangle">Rectangle to draw.</param>
+        /// <param name="color">Drawing color.</param>
+        /// <param name="filled">Draw filled / hollow rectangle.</param>
+        /// <param name="blend">Blend mode.</param>
+        /// <param name="origin">Rectangle origin.</param>
+        /// <param name="rotation">Rectangle rotation.</param>
+        public void DrawRectangle(RectangleI rectangle, Color color, bool filled, BlendModes blend, PointF origin, float rotation)
+        {
+            _BonEngineBind.BON_Gfx_DrawRectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height, color.R, color.G, color.B, color.A, filled, (int)blend, origin.X, origin.Y, rotation);
+        }
+        
 
         /// <summary>
         /// Draws a circle.

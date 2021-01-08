@@ -25,7 +25,7 @@ namespace BonEngineSharpTest.Demos
         // load the scene
         protected override void Load()
         {
-            // init player sprite
+            // init sprites
             _background = Assets.LoadImage("gfx/forest_scene.png");
             _cursor = Assets.LoadImage("gfx/cursor.png");
 

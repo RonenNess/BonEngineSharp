@@ -99,7 +99,7 @@ namespace BonEngineSharp
         /// Draw a rectangle on screen.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
-        public static extern void BON_Gfx_DrawRectangle(int x, int y, int w, int h, float r, float g, float b, float a, bool filled, int blend);
+        public static extern void BON_Gfx_DrawRectangle(int x, int y, int w, int h, float r, float g, float b, float a, bool filled, int blend, float ox, float oy, float rotation);
 
         /// <summary>
         /// Draw a circle on screen.

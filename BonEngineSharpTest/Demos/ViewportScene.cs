@@ -86,7 +86,6 @@ namespace BonEngineSharpTest.Demos
             if (Input.ReleasedNow(KeyCodes.KeySpace))
             {
                 _gotViewport = !_gotViewport;
-                Gfx.Viewport = _gotViewport ? new RectangleI(150, 150, 350, 350) : RectangleI.Empty;
             }
         }
 
@@ -96,7 +95,14 @@ namespace BonEngineSharpTest.Demos
         protected override void Draw()
         {
             // clear screen
+            Gfx.Viewport = RectangleI.Empty;
             Gfx.ClearScreen(Color.Cornflower);
+
+            // set viewport
+            if (_gotViewport)
+            {
+                Gfx.Viewport = new RectangleI(150, 150, 350, 350);
+            }
 
             // draw sprites
             foreach (var sprite in _sprites)

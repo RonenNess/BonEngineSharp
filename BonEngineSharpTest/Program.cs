@@ -51,6 +51,7 @@ namespace BonEngineSharpTest
                 AddDemo("Input & Spritesheet", new Demos.InputAndSpritesheetScene());
                 AddDemo("Music & Sound Effects", new Demos.MusicAndSoundScene());
                 AddDemo("Drawing Texts", new Demos.TextScene());
+                AddDemo("Blend Modes", new Demos.BlendScene());
                 AddDemo("Fullscreen Mode", new Demos.FullscreenScene());
                 AddDemo("Windowed Fullscreen", new Demos.WindowedFullscreenScene());
                 AddDemo("Rendering Viewport", new Demos.ViewportScene());

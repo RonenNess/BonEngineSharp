@@ -212,33 +212,63 @@ namespace BonEngineSharp.Defs
 	{
 		/// <summary>
 		/// Render without any transparency or opacity.
-		/// </summary>
+		/// </summary>		
 		Opaque = 0,
 
 		/// <summary>
 		/// Render with alpha channels.
-		/// </summary>
+		/// </summary>		
 		AlphaBlend = 1,
 
 		/// <summary>
-		/// Render with additive (lighten) effect.
+		/// Additive with alpha channels.
 		/// </summary>
-		Additive = 2,
+		AdditiveAlpha = 2,
 
 		/// <summary>
-		/// Render with mod effect.
+		/// Render with Darken effect.
 		/// </summary>
-		Mod = 3,
+		Darken = 3,
 
 		/// <summary>
-		/// Render with multiply (darken) effect.
-		/// </summary>
+		/// Render with multiply effect.
+		/// </summary>		
 		Multiply = 4,
+
+		/// <summary>
+		/// Render with screen effect.
+		/// </summary>		
+		Screen = 5,
+
+		/// <summary>
+		/// Invert dest pixels.
+		/// </summary>
+		Invert = 6,
+
+		/// <summary>
+		/// Render with difference blending.
+		/// </summary>		
+		Difference = 7,
+
+		/// <summary>
+		/// Render with lighten effect.
+		/// </summary>
+		Lighten = 8,
+
+		/// <summary>
+		/// Render with additive effect, no alpha channels.
+		/// </summary>
+		Additive = 9,
+
+		/// <summary>
+		/// Substract rendering.
+		/// </summary>
+		Subtract = 10,
 
 		/// <summary>
 		/// Blend modes count.
 		/// </summary>
-		_Count = 5,
+		_Count = 11,
 	};
 
 #pragma warning disable CS1591
