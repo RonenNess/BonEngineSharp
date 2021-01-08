@@ -1138,18 +1138,42 @@ references:
   commentId: F:BonEngineSharp.Defs.BlendModes.Additive
   fullName: BonEngineSharp.Defs.BlendModes.Additive
   nameWithType: BlendModes.Additive
+- uid: BonEngineSharp.Defs.BlendModes.AdditiveAlpha
+  name: AdditiveAlpha
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_AdditiveAlpha
+  commentId: F:BonEngineSharp.Defs.BlendModes.AdditiveAlpha
+  fullName: BonEngineSharp.Defs.BlendModes.AdditiveAlpha
+  nameWithType: BlendModes.AdditiveAlpha
 - uid: BonEngineSharp.Defs.BlendModes.AlphaBlend
   name: AlphaBlend
   href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_AlphaBlend
   commentId: F:BonEngineSharp.Defs.BlendModes.AlphaBlend
   fullName: BonEngineSharp.Defs.BlendModes.AlphaBlend
   nameWithType: BlendModes.AlphaBlend
-- uid: BonEngineSharp.Defs.BlendModes.Mod
-  name: Mod
-  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Mod
-  commentId: F:BonEngineSharp.Defs.BlendModes.Mod
-  fullName: BonEngineSharp.Defs.BlendModes.Mod
-  nameWithType: BlendModes.Mod
+- uid: BonEngineSharp.Defs.BlendModes.Darken
+  name: Darken
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Darken
+  commentId: F:BonEngineSharp.Defs.BlendModes.Darken
+  fullName: BonEngineSharp.Defs.BlendModes.Darken
+  nameWithType: BlendModes.Darken
+- uid: BonEngineSharp.Defs.BlendModes.Difference
+  name: Difference
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Difference
+  commentId: F:BonEngineSharp.Defs.BlendModes.Difference
+  fullName: BonEngineSharp.Defs.BlendModes.Difference
+  nameWithType: BlendModes.Difference
+- uid: BonEngineSharp.Defs.BlendModes.Invert
+  name: Invert
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Invert
+  commentId: F:BonEngineSharp.Defs.BlendModes.Invert
+  fullName: BonEngineSharp.Defs.BlendModes.Invert
+  nameWithType: BlendModes.Invert
+- uid: BonEngineSharp.Defs.BlendModes.Lighten
+  name: Lighten
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Lighten
+  commentId: F:BonEngineSharp.Defs.BlendModes.Lighten
+  fullName: BonEngineSharp.Defs.BlendModes.Lighten
+  nameWithType: BlendModes.Lighten
 - uid: BonEngineSharp.Defs.BlendModes.Multiply
   name: Multiply
   href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Multiply
@@ -1162,6 +1186,18 @@ references:
   commentId: F:BonEngineSharp.Defs.BlendModes.Opaque
   fullName: BonEngineSharp.Defs.BlendModes.Opaque
   nameWithType: BlendModes.Opaque
+- uid: BonEngineSharp.Defs.BlendModes.Screen
+  name: Screen
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Screen
+  commentId: F:BonEngineSharp.Defs.BlendModes.Screen
+  fullName: BonEngineSharp.Defs.BlendModes.Screen
+  nameWithType: BlendModes.Screen
+- uid: BonEngineSharp.Defs.BlendModes.Subtract
+  name: Subtract
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Subtract
+  commentId: F:BonEngineSharp.Defs.BlendModes.Subtract
+  fullName: BonEngineSharp.Defs.BlendModes.Subtract
+  nameWithType: BlendModes.Subtract
 - uid: BonEngineSharp.Defs.BlendModes.value__
   name: value__
   href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_value__
@@ -1186,18 +1222,6 @@ references:
   commentId: Overload:BonEngineSharp.Defs.BonFeatures.#ctor
   fullName: BonEngineSharp.Defs.BonFeatures.BonFeatures
   nameWithType: BonFeatures.BonFeatures
-- uid: BonEngineSharp.Defs.BonFeatures.EffectsEnabled
-  name: EffectsEnabled
-  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_EffectsEnabled
-  commentId: F:BonEngineSharp.Defs.BonFeatures.EffectsEnabled
-  fullName: BonEngineSharp.Defs.BonFeatures.EffectsEnabled
-  nameWithType: BonFeatures.EffectsEnabled
-- uid: BonEngineSharp.Defs.BonFeatures.ForceOpenGL
-  name: ForceOpenGL
-  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_ForceOpenGL
-  commentId: F:BonEngineSharp.Defs.BonFeatures.ForceOpenGL
-  fullName: BonEngineSharp.Defs.BonFeatures.ForceOpenGL
-  nameWithType: BonFeatures.ForceOpenGL
 - uid: BonEngineSharp.Defs.BonFeatures.Logging
   name: Logging
   href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_Logging
@@ -6472,6 +6496,12 @@ references:
   commentId: M:BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes)
   fullName: BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI, BonEngineSharp.Framework.Color, System.Boolean, BonEngineSharp.Defs.BlendModes)
   nameWithType: GfxManager.DrawRectangle(RectangleI, Color, Boolean, BlendModes)
+- uid: BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes,BonEngineSharp.Framework.PointF,System.Single)
+  name: DrawRectangle(RectangleI, Color, Boolean, BlendModes, PointF, Single)
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawRectangle_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_Color_System_Boolean_BonEngineSharp_Defs_BlendModes_BonEngineSharp_Framework_PointF_System_Single_
+  commentId: M:BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes,BonEngineSharp.Framework.PointF,System.Single)
+  fullName: BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI, BonEngineSharp.Framework.Color, System.Boolean, BonEngineSharp.Defs.BlendModes, BonEngineSharp.Framework.PointF, System.Single)
+  nameWithType: GfxManager.DrawRectangle(RectangleI, Color, Boolean, BlendModes, PointF, Single)
 - uid: BonEngineSharp.Managers.GfxManager.DrawRectangle*
   name: DrawRectangle
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawRectangle_

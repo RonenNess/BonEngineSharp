@@ -117,12 +117,37 @@
   
   
   <h4 id="BonEngineSharp_Defs_BlendModes_Additive" data-uid="BonEngineSharp.Defs.BlendModes.Additive">Additive</h4>
-  <div class="markdown level1 summary"><p>Render with additive (lighten) effect.</p>
+  <div class="markdown level1 summary"><p>Render with additive effect, no alpha channels.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const BlendModes Additive</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Defs_BlendModes_AdditiveAlpha" data-uid="BonEngineSharp.Defs.BlendModes.AdditiveAlpha">AdditiveAlpha</h4>
+  <div class="markdown level1 summary"><p>Additive with alpha channels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const BlendModes AdditiveAlpha</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,13 +191,88 @@
   </table>
   
   
-  <h4 id="BonEngineSharp_Defs_BlendModes_Mod" data-uid="BonEngineSharp.Defs.BlendModes.Mod">Mod</h4>
-  <div class="markdown level1 summary"><p>Render with mod effect.</p>
+  <h4 id="BonEngineSharp_Defs_BlendModes_Darken" data-uid="BonEngineSharp.Defs.BlendModes.Darken">Darken</h4>
+  <div class="markdown level1 summary"><p>Render with Darken effect.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const BlendModes Mod</code></pre>
+    <pre><code class="lang-csharp hljs">public const BlendModes Darken</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Defs_BlendModes_Difference" data-uid="BonEngineSharp.Defs.BlendModes.Difference">Difference</h4>
+  <div class="markdown level1 summary"><p>Render with difference blending.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const BlendModes Difference</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Defs_BlendModes_Invert" data-uid="BonEngineSharp.Defs.BlendModes.Invert">Invert</h4>
+  <div class="markdown level1 summary"><p>Invert dest pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const BlendModes Invert</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Defs_BlendModes_Lighten" data-uid="BonEngineSharp.Defs.BlendModes.Lighten">Lighten</h4>
+  <div class="markdown level1 summary"><p>Render with lighten effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const BlendModes Lighten</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -192,7 +292,7 @@
   
   
   <h4 id="BonEngineSharp_Defs_BlendModes_Multiply" data-uid="BonEngineSharp.Defs.BlendModes.Multiply">Multiply</h4>
-  <div class="markdown level1 summary"><p>Render with multiply (darken) effect.</p>
+  <div class="markdown level1 summary"><p>Render with multiply effect.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -223,6 +323,56 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const BlendModes Opaque</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Defs_BlendModes_Screen" data-uid="BonEngineSharp.Defs.BlendModes.Screen">Screen</h4>
+  <div class="markdown level1 summary"><p>Render with screen effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const BlendModes Screen</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.BlendModes.html">BlendModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BonEngineSharp_Defs_BlendModes_Subtract" data-uid="BonEngineSharp.Defs.BlendModes.Subtract">Subtract</h4>
+  <div class="markdown level1 summary"><p>Substract rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const BlendModes Subtract</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">

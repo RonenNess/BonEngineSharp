@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.BlendModes.html",
-          "hash": "WhUarqUsaK6H5/Mb9nJYxg=="
+          "hash": "HaIaw5IP2vBE8UpeUg1HeA=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Defs.BonFeatures.html",
-          "hash": "OHlfKmyIeZ2BHq1Xp/7ErA=="
+          "hash": "iAyH1CBoCeRZEWNDva9N1A=="
         }
       },
       "is_incremental": false,
@@ -561,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.GfxManager.html",
-          "hash": "tbdbgHsISjBbVMaaIX9+wA=="
+          "hash": "fabPdLiVxMe6nxIO2ge+gQ=="
         }
       },
       "is_incremental": false,
@@ -1085,11 +1085,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/changelog_1_42.md",
+      "source_relative_path": "articles/changelog_1_51.md",
       "output": {
         ".html": {
-          "relative_path": "articles/changelog_1_42.html",
-          "hash": "KC7nycowmUQQaO3bG+kfqw=="
+          "relative_path": "articles/changelog_1_51.html",
+          "hash": "b/0XOE8hm/MOf8TaBIo8lw=="
         }
       },
       "is_incremental": false,
@@ -1161,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "+H/sO57Neig9OMN6QK6SPw=="
+          "hash": "j1p4ZkkVvUPnmnrjFw1SAg=="
         }
       },
       "is_incremental": false,
