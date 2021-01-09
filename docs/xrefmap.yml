@@ -7207,6 +7207,30 @@ references:
   commentId: Overload:BonEngineSharp.Managers.SfxManager.#ctor
   fullName: BonEngineSharp.Managers.SfxManager.SfxManager
   nameWithType: SfxManager.SfxManager
+- uid: BonEngineSharp.Managers.SfxManager.FadeOutChannel(BonEngineSharp.Defs.SoundChannelId,System.Single)
+  name: FadeOutChannel(SoundChannelId, Single)
+  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_FadeOutChannel_BonEngineSharp_Defs_SoundChannelId_System_Single_
+  commentId: M:BonEngineSharp.Managers.SfxManager.FadeOutChannel(BonEngineSharp.Defs.SoundChannelId,System.Single)
+  fullName: BonEngineSharp.Managers.SfxManager.FadeOutChannel(BonEngineSharp.Defs.SoundChannelId, System.Single)
+  nameWithType: SfxManager.FadeOutChannel(SoundChannelId, Single)
+- uid: BonEngineSharp.Managers.SfxManager.FadeOutChannel*
+  name: FadeOutChannel
+  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_FadeOutChannel_
+  commentId: Overload:BonEngineSharp.Managers.SfxManager.FadeOutChannel
+  fullName: BonEngineSharp.Managers.SfxManager.FadeOutChannel
+  nameWithType: SfxManager.FadeOutChannel
+- uid: BonEngineSharp.Managers.SfxManager.FadeOutMusic(System.Single)
+  name: FadeOutMusic(Single)
+  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_FadeOutMusic_System_Single_
+  commentId: M:BonEngineSharp.Managers.SfxManager.FadeOutMusic(System.Single)
+  fullName: BonEngineSharp.Managers.SfxManager.FadeOutMusic(System.Single)
+  nameWithType: SfxManager.FadeOutMusic(Single)
+- uid: BonEngineSharp.Managers.SfxManager.FadeOutMusic*
+  name: FadeOutMusic
+  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_FadeOutMusic_
+  commentId: Overload:BonEngineSharp.Managers.SfxManager.FadeOutMusic
+  fullName: BonEngineSharp.Managers.SfxManager.FadeOutMusic
+  nameWithType: SfxManager.FadeOutMusic
 - uid: BonEngineSharp.Managers.SfxManager.Id
   name: Id
   href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_Id
@@ -7231,30 +7255,30 @@ references:
   commentId: Overload:BonEngineSharp.Managers.SfxManager.PauseMusic
   fullName: BonEngineSharp.Managers.SfxManager.PauseMusic
   nameWithType: SfxManager.PauseMusic
-- uid: BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset,System.Int32,System.Int32)
-  name: PlayMusic(MusicAsset, Int32, Int32)
-  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlayMusic_BonEngineSharp_Assets_MusicAsset_System_Int32_System_Int32_
-  commentId: M:BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset,System.Int32,System.Int32)
-  fullName: BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset, System.Int32, System.Int32)
-  nameWithType: SfxManager.PlayMusic(MusicAsset, Int32, Int32)
+- uid: BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset,System.Int32,System.Int32,System.Single)
+  name: PlayMusic(MusicAsset, Int32, Int32, Single)
+  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlayMusic_BonEngineSharp_Assets_MusicAsset_System_Int32_System_Int32_System_Single_
+  commentId: M:BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset,System.Int32,System.Int32,System.Single)
+  fullName: BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset, System.Int32, System.Int32, System.Single)
+  nameWithType: SfxManager.PlayMusic(MusicAsset, Int32, Int32, Single)
 - uid: BonEngineSharp.Managers.SfxManager.PlayMusic*
   name: PlayMusic
   href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlayMusic_
   commentId: Overload:BonEngineSharp.Managers.SfxManager.PlayMusic
   fullName: BonEngineSharp.Managers.SfxManager.PlayMusic
   nameWithType: SfxManager.PlayMusic
-- uid: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single)
-  name: PlaySound(SoundAsset, Int32, Int32, Single)
-  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_
-  commentId: M:BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single)
-  fullName: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset, System.Int32, System.Int32, System.Single)
-  nameWithType: SfxManager.PlaySound(SoundAsset, Int32, Int32, Single)
-- uid: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)
-  name: PlaySound(SoundAsset, Int32, Int32, Single, Single, Single, Single)
-  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_
-  commentId: M:BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)
-  fullName: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset, System.Int32, System.Int32, System.Single, System.Single, System.Single, System.Single)
-  nameWithType: SfxManager.PlaySound(SoundAsset, Int32, Int32, Single, Single, Single, Single)
+- uid: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single)
+  name: PlaySound(SoundAsset, Int32, Int32, Single, Single)
+  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_System_Single_
+  commentId: M:BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single)
+  fullName: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset, System.Int32, System.Int32, System.Single, System.Single)
+  nameWithType: SfxManager.PlaySound(SoundAsset, Int32, Int32, Single, Single)
+- uid: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: PlaySound(SoundAsset, Int32, Int32, Single, Single, Single, Single, Single)
+  href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single)
+  fullName: BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset, System.Int32, System.Int32, System.Single, System.Single, System.Single, System.Single, System.Single)
+  nameWithType: SfxManager.PlaySound(SoundAsset, Int32, Int32, Single, Single, Single, Single, Single)
 - uid: BonEngineSharp.Managers.SfxManager.PlaySound*
   name: PlaySound
   href: api/BonEngineSharp.Managers.SfxManager.html#BonEngineSharp_Managers_SfxManager_PlaySound_

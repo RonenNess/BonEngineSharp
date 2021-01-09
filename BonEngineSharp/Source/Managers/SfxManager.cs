@@ -34,10 +34,11 @@ namespace BonEngineSharp.Managers
         /// <param name="music">Music asset to play.</param>
         /// <param name="volume">Music volume.</param>
         /// <param name="loops">How many times to repeat music (-1 = endless, 0 = once, above 0 = number of times).</param>
-        public void PlayMusic(MusicAsset music, int volume = 100, int loops = -1)
+        /// <param name="fadeInTime">Fade in time, in seconds (or 0 to play immediately).</param>
+        public void PlayMusic(MusicAsset music, int volume = 100, int loops = -1, float fadeInTime = 0f)
         {
             if (music._handle == IntPtr.Zero) { throw new Exception("Can't play music asset with null handle!"); }
-            _BonEngineBind.BON_Sfx_PlayMusic(music._handle, volume, loops);
+            _BonEngineBind.BON_Sfx_PlayMusic(music._handle, volume, loops, fadeInTime);
         }
 
         /// <summary>
@@ -73,13 +74,13 @@ namespace BonEngineSharp.Managers
         /// <param name="volume">Sound volume.</param>
         /// <param name="loops">How many times to repeat this sound (-1 = endless, 0 = once, above 0 = number of times).</param>
         /// <param name="pitch">Sound pitch effect.</param>
+        /// <param name="fadeInTime">Fade in time, in seconds (or 0 to play immediately).</param>
         /// <returns>Channel id, which you can use later to modify sound. Can be Invalid if there was no available channel.</returns>
-        public SoundChannelId PlaySound(SoundAsset sound, int volume = 100, int loops = 0, float pitch = 1f)
+        public SoundChannelId PlaySound(SoundAsset sound, int volume = 100, int loops = 0, float pitch = 1f, float fadeInTime = 0f)
         {
             if (sound._handle == IntPtr.Zero) { throw new Exception("Can't play sound asset with null handle!"); }
-            return _BonEngineBind.BON_Sfx_PlaySound(sound._handle, volume, loops, pitch);
+            return _BonEngineBind.BON_Sfx_PlaySound(sound._handle, volume, loops, pitch, fadeInTime);
         }
-
 
         /// <summary>
         /// Play a sound effect.
@@ -91,11 +92,34 @@ namespace BonEngineSharp.Managers
         /// <param name="panLeft">Pan sound left - value should be 0.0-1.0.</param>
         /// <param name="panRight">Pan sound right - value should be 0.0-1.0.</param>
         /// <param name="distance">Sound source distance (affect volume) - value should be 0.0-1.0.</param>
+        /// <param name="fadeInTime">Fade in time, in seconds (or 0 to play immediately).</param>
         /// <returns>Channel id, which you can use later to modify sound. Can be Invalid if there was no available channel.</returns>
-        public SoundChannelId PlaySound(SoundAsset sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance)
+        public SoundChannelId PlaySound(SoundAsset sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance, float fadeInTime = 0f)
         {
             if (sound._handle == IntPtr.Zero) { throw new Exception("Can't play sound asset with null handle!"); }
-            return _BonEngineBind.BON_Sfx_PlaySoundEx(sound._handle, volume, loops, pitch, panLeft, panRight, distance);
+            return _BonEngineBind.BON_Sfx_PlaySoundEx(sound._handle, volume, loops, pitch, panLeft, panRight, distance, fadeInTime);
+        }
+
+        /// <summary>
+        /// Fade out a channel.
+        /// </summary>
+        /// <param name="channel">Channel id to fade out.</param>
+        /// <param name="fadeOutTime">Fade out time, in seconds.</param>
+        public void FadeOutChannel(SoundChannelId channel, float fadeOutTime)
+        {
+            if (channel.IsValid)
+            {
+                _BonEngineBind.BON_Sfx_FadeOutChannel(channel, fadeOutTime);
+            }
+        }
+
+        /// <summary>
+        /// Fade out music.
+        /// </summary>
+        /// <param name="fadeOutTime">Fade out time, in seconds.</param>
+        public void FadeOutMusic(float fadeOutTime)
+        {
+            _BonEngineBind.BON_Sfx_FadeOutMusic(fadeOutTime);
         }
 
         /// <summary>
@@ -123,7 +147,6 @@ namespace BonEngineSharp.Managers
                 _BonEngineBind.BON_Sfx_SetChannelVolume(channel, volume);
             }
         }
-
 
         /// <summary>
         /// Set sound channel panning,

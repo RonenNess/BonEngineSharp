@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BonEngineSharp.Managers.SfxManager.html",
-          "hash": "5fovsxBYE9dYGzut7t37iw=="
+          "hash": "A92HDMKN2ynLOq+5tZZsow=="
         }
       },
       "is_incremental": false,
@@ -1097,6 +1097,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/changelog_1_52.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog_1_52.html",
+          "hash": "SP3XonDFk7xbv8npQ2fK/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/examples.md",
       "output": {
         ".html": {
@@ -1161,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "j1p4ZkkVvUPnmnrjFw1SAg=="
+          "hash": "iDEg6hxcoO3ojhqUI/jn7Q=="
         }
       },
       "is_incremental": false,
@@ -1226,8 +1238,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 24,
-          "skipped_file_count": 24
+          "total_file_count": 25,
+          "skipped_file_count": 25
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,

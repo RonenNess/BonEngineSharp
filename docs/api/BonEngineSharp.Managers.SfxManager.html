@@ -135,6 +135,70 @@ Used to play sound effects and music.</p>
   </h3>
   
   
+  <a id="BonEngineSharp_Managers_SfxManager_FadeOutChannel_" data-uid="BonEngineSharp.Managers.SfxManager.FadeOutChannel*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_FadeOutChannel_BonEngineSharp_Defs_SoundChannelId_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.FadeOutChannel(BonEngineSharp.Defs.SoundChannelId,System.Single)">FadeOutChannel(SoundChannelId, Single)</h4>
+  <div class="markdown level1 summary"><p>Fade out a channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FadeOutChannel(SoundChannelId channel, float fadeOutTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BonEngineSharp.Defs.SoundChannelId.html">SoundChannelId</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel id to fade out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fadeOutTime</span></td>
+        <td><p>Fade out time, in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BonEngineSharp_Managers_SfxManager_FadeOutMusic_" data-uid="BonEngineSharp.Managers.SfxManager.FadeOutMusic*"></a>
+  <h4 id="BonEngineSharp_Managers_SfxManager_FadeOutMusic_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.FadeOutMusic(System.Single)">FadeOutMusic(Single)</h4>
+  <div class="markdown level1 summary"><p>Fade out music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FadeOutMusic(float fadeOutTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fadeOutTime</span></td>
+        <td><p>Fade out time, in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BonEngineSharp_Managers_SfxManager_PauseMusic_" data-uid="BonEngineSharp.Managers.SfxManager.PauseMusic*"></a>
   <h4 id="BonEngineSharp_Managers_SfxManager_PauseMusic_System_Boolean_" data-uid="BonEngineSharp.Managers.SfxManager.PauseMusic(System.Boolean)">PauseMusic(Boolean)</h4>
   <div class="markdown level1 summary"><p>Pause / resume currently played music track.</p>
@@ -165,13 +229,13 @@ Used to play sound effects and music.</p>
   
   
   <a id="BonEngineSharp_Managers_SfxManager_PlayMusic_" data-uid="BonEngineSharp.Managers.SfxManager.PlayMusic*"></a>
-  <h4 id="BonEngineSharp_Managers_SfxManager_PlayMusic_BonEngineSharp_Assets_MusicAsset_System_Int32_System_Int32_" data-uid="BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset,System.Int32,System.Int32)">PlayMusic(MusicAsset, Int32, Int32)</h4>
+  <h4 id="BonEngineSharp_Managers_SfxManager_PlayMusic_BonEngineSharp_Assets_MusicAsset_System_Int32_System_Int32_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.PlayMusic(BonEngineSharp.Assets.MusicAsset,System.Int32,System.Int32,System.Single)">PlayMusic(MusicAsset, Int32, Int32, Single)</h4>
   <div class="markdown level1 summary"><p>Play a music track.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlayMusic(MusicAsset music, int volume = 100, int loops = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public void PlayMusic(MusicAsset music, int volume = 100, int loops = -1, float fadeInTime = 0F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,18 +265,24 @@ Used to play sound effects and music.</p>
         <td><p>How many times to repeat music (-1 = endless, 0 = once, above 0 = number of times).</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fadeInTime</span></td>
+        <td><p>Fade in time, in seconds (or 0 to play immediately).</p>
+</td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="BonEngineSharp_Managers_SfxManager_PlaySound_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound*"></a>
-  <h4 id="BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single)">PlaySound(SoundAsset, Int32, Int32, Single)</h4>
+  <h4 id="BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single)">PlaySound(SoundAsset, Int32, Int32, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Play a sound effect.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SoundChannelId PlaySound(SoundAsset sound, int volume = 100, int loops = 0, float pitch = 1F)</code></pre>
+    <pre><code class="lang-csharp hljs">public SoundChannelId PlaySound(SoundAsset sound, int volume = 100, int loops = 0, float pitch = 1F, float fadeInTime = 0F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -248,6 +318,12 @@ Used to play sound effects and music.</p>
         <td><p>Sound pitch effect.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fadeInTime</span></td>
+        <td><p>Fade in time, in seconds (or 0 to play immediately).</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -269,13 +345,13 @@ Used to play sound effects and music.</p>
   
   
   <a id="BonEngineSharp_Managers_SfxManager_PlaySound_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound*"></a>
-  <h4 id="BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single)">PlaySound(SoundAsset, Int32, Int32, Single, Single, Single, Single)</h4>
+  <h4 id="BonEngineSharp_Managers_SfxManager_PlaySound_BonEngineSharp_Assets_SoundAsset_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="BonEngineSharp.Managers.SfxManager.PlaySound(BonEngineSharp.Assets.SoundAsset,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single)">PlaySound(SoundAsset, Int32, Int32, Single, Single, Single, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Play a sound effect.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SoundChannelId PlaySound(SoundAsset sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance)</code></pre>
+    <pre><code class="lang-csharp hljs">public SoundChannelId PlaySound(SoundAsset sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance, float fadeInTime = 0F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,6 +403,12 @@ Used to play sound effects and music.</p>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">distance</span></td>
         <td><p>Sound source distance (affect volume) - value should be 0.0-1.0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fadeInTime</span></td>
+        <td><p>Fade in time, in seconds (or 0 to play immediately).</p>
 </td>
       </tr>
     </tbody>

@@ -21,7 +21,7 @@ namespace BonEngineSharp
         /// Play music track.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
-        public static extern void BON_Sfx_PlayMusic(IntPtr music, int volume, int loops);
+        public static extern void BON_Sfx_PlayMusic(IntPtr music, int volume, int loops, float fadeInTime);
 
         /// <summary>
         /// Pause music.
@@ -46,19 +46,31 @@ namespace BonEngineSharp
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern
-        int BON_Sfx_PlaySound(IntPtr sound, int volume, int loops, float pitch);
+        int BON_Sfx_PlaySound(IntPtr sound, int volume, int loops, float pitch, float fadeInTime);
 
         /// <summary>
         /// Play sound.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
-        public static extern int BON_Sfx_PlaySoundEx(IntPtr sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance);
+        public static extern int BON_Sfx_PlaySoundEx(IntPtr sound, int volume, int loops, float pitch, float panLeft, float panRight, float distance, float fadeInTime);
 
         /// <summary>
         /// Set channel distance.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
         public static extern void BON_Sfx_SetChannelDistance(int channel, float distance);
+
+        /// <summary>
+        /// Fade out channel.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Sfx_FadeOutChannel(int channel, float fadeOutTime);
+
+        /// <summary>
+        /// Fade out music.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Sfx_FadeOutMusic(float fadeOutTime);
 
         /// <summary>
         /// Set channel volume.
