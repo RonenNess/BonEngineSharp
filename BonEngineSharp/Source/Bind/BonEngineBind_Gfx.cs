@@ -114,6 +114,18 @@ namespace BonEngineSharp
         public static extern void BON_Gfx_DrawPolygon(int x1, int y1, int x2, int y2, int x3, int y3, float r, float g, float b, float a, int blend);
 
         /// <summary>
+        /// Draw a 2d quad on screen.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Gfx_DrawQuad(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4, float r, float g, float b, float a, int blend);
+
+        /// <summary>
+        /// Focus on window.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        public static extern void BON_Gfx_FocusWindow();
+
+        /// <summary>
         /// Clear screen.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]

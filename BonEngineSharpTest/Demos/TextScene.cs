@@ -59,8 +59,8 @@ namespace BonEngineSharpTest.Demos
             Gfx.DrawText(_font, "Anchored right", new PointF(400, 400), Color.Yellow, 0, 0, BlendModes.AlphaBlend, new PointF(1f, 0.5f), anchoredRotation);
 
             // additive
-            Gfx.DrawText(_fontBig, "Additive Blend", new PointF(550, 500), Color.Green, 0, 0, BlendModes.AdditiveAlpha, new PointF(1f, 0.5f), 0f);
-            Gfx.DrawText(_fontBig, "Additive Blend", new PointF(550 - 10, 500 - 10), Color.Red, 0, 0, BlendModes.AdditiveAlpha, new PointF(1f, 0.5f), 0f);
+            Gfx.DrawText(_fontBig, "Additive Blend", new PointF(550, 500), Color.Green, 0, 0, BlendModes.Additive, new PointF(1f, 0.5f), 0f);
+            Gfx.DrawText(_fontBig, "Additive Blend", new PointF(550 - 10, 500 - 10), Color.Red, 0, 0, BlendModes.Additive, new PointF(1f, 0.5f), 0f);
 
             // text max width
             Gfx.DrawText(_font, "This text have limited line width. It will wrap automatically.", new PointF(600, 400), Color.White, 0, 150);

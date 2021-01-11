@@ -208,6 +208,14 @@ namespace BonEngineSharp.Managers
         }
 
         /// <summary>
+        /// Set focus on the currently active window.
+        /// </summary>
+        public void FocusWindow()
+        {
+            _BonEngineBind.BON_Gfx_FocusWindow();
+        }
+
+        /// <summary>
         /// Draw a line.
         /// </summary>
         /// <param name="from">Source point.</param>
@@ -369,6 +377,20 @@ namespace BonEngineSharp.Managers
         public void DrawPolygon(PointI a, PointI b, PointI c, Color color, BlendModes blend = BlendModes.AlphaBlend)
         {
             _BonEngineBind.BON_Gfx_DrawPolygon(a.X, a.Y, b.X, b.Y, c.X, c.Y, color.R, color.G, color.B, color.A, (int)blend);
+        }
+
+        /// <summary>
+        /// Draws a 2d quad.
+        /// </summary>
+        /// <param name="a">Quad first point.</param>
+        /// <param name="b">Quad second point.</param>
+        /// <param name="c">Quad third point.</param>
+        /// <param name="d">Quad fourth point.</param>
+        /// <param name="color">Polygon fill color.</param>
+        /// <param name="blend">Blend mode.</param>
+        public void DrawQuad(PointI a, PointI b, PointI c, PointI d, Color color, BlendModes blend = BlendModes.AlphaBlend)
+        {
+            _BonEngineBind.BON_Gfx_DrawQuad(a.X, a.Y, b.X, b.Y, c.X, c.Y, d.X, d.Y, color.R, color.G, color.B, color.A, (int)blend);
         }
 
         /// <summary>

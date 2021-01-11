@@ -221,9 +221,9 @@ namespace BonEngineSharp.Defs
 		AlphaBlend = 1,
 
 		/// <summary>
-		/// Additive with alpha channels.
+		/// Mod blending.
 		/// </summary>
-		AdditiveAlpha = 2,
+		Mod = 2,
 
 		/// <summary>
 		/// Render with Darken effect.
