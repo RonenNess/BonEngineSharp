@@ -1138,12 +1138,6 @@ references:
   commentId: F:BonEngineSharp.Defs.BlendModes.Additive
   fullName: BonEngineSharp.Defs.BlendModes.Additive
   nameWithType: BlendModes.Additive
-- uid: BonEngineSharp.Defs.BlendModes.AdditiveAlpha
-  name: AdditiveAlpha
-  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_AdditiveAlpha
-  commentId: F:BonEngineSharp.Defs.BlendModes.AdditiveAlpha
-  fullName: BonEngineSharp.Defs.BlendModes.AdditiveAlpha
-  nameWithType: BlendModes.AdditiveAlpha
 - uid: BonEngineSharp.Defs.BlendModes.AlphaBlend
   name: AlphaBlend
   href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_AlphaBlend
@@ -1174,6 +1168,12 @@ references:
   commentId: F:BonEngineSharp.Defs.BlendModes.Lighten
   fullName: BonEngineSharp.Defs.BlendModes.Lighten
   nameWithType: BlendModes.Lighten
+- uid: BonEngineSharp.Defs.BlendModes.Mod
+  name: Mod
+  href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Mod
+  commentId: F:BonEngineSharp.Defs.BlendModes.Mod
+  fullName: BonEngineSharp.Defs.BlendModes.Mod
+  nameWithType: BlendModes.Mod
 - uid: BonEngineSharp.Defs.BlendModes.Multiply
   name: Multiply
   href: api/BonEngineSharp.Defs.BlendModes.html#BonEngineSharp_Defs_BlendModes_Multiply
@@ -6490,6 +6490,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.GfxManager.DrawPolygon
   fullName: BonEngineSharp.Managers.GfxManager.DrawPolygon
   nameWithType: GfxManager.DrawPolygon
+- uid: BonEngineSharp.Managers.GfxManager.DrawQuad(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.Color,BonEngineSharp.Defs.BlendModes)
+  name: DrawQuad(PointI, PointI, PointI, PointI, Color, BlendModes)
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawQuad_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_PointI_BonEngineSharp_Framework_Color_BonEngineSharp_Defs_BlendModes_
+  commentId: M:BonEngineSharp.Managers.GfxManager.DrawQuad(BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.PointI,BonEngineSharp.Framework.Color,BonEngineSharp.Defs.BlendModes)
+  fullName: BonEngineSharp.Managers.GfxManager.DrawQuad(BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.PointI, BonEngineSharp.Framework.Color, BonEngineSharp.Defs.BlendModes)
+  nameWithType: GfxManager.DrawQuad(PointI, PointI, PointI, PointI, Color, BlendModes)
+- uid: BonEngineSharp.Managers.GfxManager.DrawQuad*
+  name: DrawQuad
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawQuad_
+  commentId: Overload:BonEngineSharp.Managers.GfxManager.DrawQuad
+  fullName: BonEngineSharp.Managers.GfxManager.DrawQuad
+  nameWithType: GfxManager.DrawQuad
 - uid: BonEngineSharp.Managers.GfxManager.DrawRectangle(BonEngineSharp.Framework.RectangleI,BonEngineSharp.Framework.Color,System.Boolean,BonEngineSharp.Defs.BlendModes)
   name: DrawRectangle(RectangleI, Color, Boolean, BlendModes)
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_DrawRectangle_BonEngineSharp_Framework_RectangleI_BonEngineSharp_Framework_Color_System_Boolean_BonEngineSharp_Defs_BlendModes_
@@ -6562,6 +6574,18 @@ references:
   commentId: Overload:BonEngineSharp.Managers.GfxManager.DrawText
   fullName: BonEngineSharp.Managers.GfxManager.DrawText
   nameWithType: GfxManager.DrawText
+- uid: BonEngineSharp.Managers.GfxManager.FocusWindow
+  name: FocusWindow()
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_FocusWindow
+  commentId: M:BonEngineSharp.Managers.GfxManager.FocusWindow
+  fullName: BonEngineSharp.Managers.GfxManager.FocusWindow()
+  nameWithType: GfxManager.FocusWindow()
+- uid: BonEngineSharp.Managers.GfxManager.FocusWindow*
+  name: FocusWindow
+  href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_FocusWindow_
+  commentId: Overload:BonEngineSharp.Managers.GfxManager.FocusWindow
+  fullName: BonEngineSharp.Managers.GfxManager.FocusWindow
+  nameWithType: GfxManager.FocusWindow
 - uid: BonEngineSharp.Managers.GfxManager.GetTextBoundingBox(BonEngineSharp.Assets.FontAsset,System.String,BonEngineSharp.Framework.PointF,System.Int32,System.Int32,BonEngineSharp.Framework.PointF,System.Single)
   name: GetTextBoundingBox(FontAsset, String, PointF, Int32, Int32, PointF, Single)
   href: api/BonEngineSharp.Managers.GfxManager.html#BonEngineSharp_Managers_GfxManager_GetTextBoundingBox_BonEngineSharp_Assets_FontAsset_System_String_BonEngineSharp_Framework_PointF_System_Int32_System_Int32_BonEngineSharp_Framework_PointF_System_Single_
