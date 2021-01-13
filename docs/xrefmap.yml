@@ -676,6 +676,18 @@ references:
   commentId: Overload:BonEngineSharp.Assets.ImageAsset.#ctor
   fullName: BonEngineSharp.Assets.ImageAsset.ImageAsset
   nameWithType: ImageAsset.ImageAsset
+- uid: BonEngineSharp.Assets.ImageAsset.AlphaChannel
+  name: AlphaChannel
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_AlphaChannel
+  commentId: P:BonEngineSharp.Assets.ImageAsset.AlphaChannel
+  fullName: BonEngineSharp.Assets.ImageAsset.AlphaChannel
+  nameWithType: ImageAsset.AlphaChannel
+- uid: BonEngineSharp.Assets.ImageAsset.AlphaChannel*
+  name: AlphaChannel
+  href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_AlphaChannel_
+  commentId: Overload:BonEngineSharp.Assets.ImageAsset.AlphaChannel
+  fullName: BonEngineSharp.Assets.ImageAsset.AlphaChannel
+  nameWithType: ImageAsset.AlphaChannel
 - uid: BonEngineSharp.Assets.ImageAsset.AssetType
   name: AssetType
   href: api/BonEngineSharp.Assets.ImageAsset.html#BonEngineSharp_Assets_ImageAsset_AssetType
@@ -1234,6 +1246,12 @@ references:
   commentId: F:BonEngineSharp.Defs.BonFeatures.RegisterSignalsHandler
   fullName: BonEngineSharp.Defs.BonFeatures.RegisterSignalsHandler
   nameWithType: BonFeatures.RegisterSignalsHandler
+- uid: BonEngineSharp.Defs.BonFeatures.RoundPixels
+  name: RoundPixels
+  href: api/BonEngineSharp.Defs.BonFeatures.html#BonEngineSharp_Defs_BonFeatures_RoundPixels
+  commentId: F:BonEngineSharp.Defs.BonFeatures.RoundPixels
+  fullName: BonEngineSharp.Defs.BonFeatures.RoundPixels
+  nameWithType: BonFeatures.RoundPixels
 - uid: BonEngineSharp.Defs.DiagnosticsCounters
   name: DiagnosticsCounters
   href: api/BonEngineSharp.Defs.DiagnosticsCounters.html
