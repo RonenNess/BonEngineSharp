@@ -64,6 +64,22 @@ namespace BonEngineSharp.Assets
         int _height;
 
         /// <summary>
+        /// Return if this image have alpha channel.
+        /// </summary>
+        public bool AlphaChannel
+        {
+            get
+            {
+                if (_alphaChannel == null)
+                {
+                    _alphaChannel = _BonEngineBind.BON_Image_HaveAlphaChannel(_handle);
+                }
+                return _alphaChannel.Value;
+            }
+        }
+        bool? _alphaChannel;
+
+        /// <summary>
         /// Save image asset to file.
         /// </summary>
         /// <param name="path">Filename for the output image.</param>

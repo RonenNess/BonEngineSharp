@@ -19,6 +19,11 @@ namespace BonEngineSharp.Defs
 		/// If true, will enable logging by default.
 		/// </summary>
 		public bool Logging = true;
+
+		/// <summary>
+		/// If true, will floor drawing positions, and ceiling drawing size.
+		/// </summary>
+		public bool RoundPixels = true;
 	}
 
 	/// <summary>

@@ -128,6 +128,12 @@ namespace BonEngineSharp
         public static extern int BON_Image_Height(IntPtr asset);
 
         /// <summary>
+        /// Get if image have alpha channels.
+        /// </summary>
+        [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
+        [return: MarshalAs(UnmanagedType.I1)] public static extern bool BON_Image_HaveAlphaChannel(IntPtr asset);
+
+        /// <summary>
         /// Clears an image to transparent pixels.
         /// </summary>
         [DllImport(NATIVE_DLL_FILE_NAME, CharSet = CHARSET)]
