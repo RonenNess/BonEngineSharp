@@ -50,3 +50,5 @@
       href: examples_lights.md
     - name: Screenshots
       href: examples_screenshots.md
+    - name: Debug Console
+      href: examples_debug_console.md

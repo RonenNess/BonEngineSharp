@@ -702,8 +702,11 @@ namespace BonEngineSharp.UI
 		public void Remove()
         {
 			_BonEngineBind.BON_UIElement_RemoveSelf(_handle);
-			_parent._children.Remove(this);
-			_parent = null;
+			if (_parent != null)
+			{
+				_parent._children.Remove(this);
+				_parent = null;
+			}
 		}
 
 		/// <summary>

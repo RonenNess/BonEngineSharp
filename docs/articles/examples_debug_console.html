@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Debug Console </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Debug Console ">
+    <meta name="generator" content="docfx 2.54.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="debug-console">Debug Console</h1>
+
+<p><img src="../images/example_debug_console.jpg" alt="example_debug_console.jpg"></p>
+<p><strong>prerequisite</strong>: you must have NuGet package <code>Microsoft.CodeAnalysis.CSharp.Scripting</code> installed.</p>
+<p>The following code snippet creates an in-game debug console where you can execute commands at runtime:</p>
+<pre><code class="lang-cs">using System;
+using System.Collections.Generic;
+using BonEngineSharp;
+using BonEngineSharp.Defs;
+using BonEngineSharp.Framework;
+using BonEngineSharp.UI;
+using Microsoft.CodeAnalysis.CSharp.Scripting;
+
+/// &lt;summary&gt;
+/// Debug console to execute commands at runtime.
+/// &lt;/summary&gt;
+public class DebugConsole
+{
+    /// &lt;summary&gt;
+    /// Is debug console currently visible?
+    /// &lt;/summary&gt;
+    public bool Visible { get; private set; }
+
+    // globals object
+    object _globals;
+
+    // main console window
+    UIWindow _window;
+    UIElement _outputContainer;
+    UITextInput _input;
+
+    // ui root folder
+    string _UIroot;
+
+    // list of output lines
+    struct OutputLine
+    {
+        public string Line;
+        public bool IsError;
+    }
+    List&lt;OutputLine&gt; _outputData = new List&lt;OutputLine&gt;();
+    bool _outputDirty = true;
+
+    /// &lt;summary&gt;
+    /// Init the debug console.
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;globals&quot;&gt;Object to use as globals (every public member of this object will be accessible to script). Can be null.&lt;/param&gt;
+    /// &lt;param name=&quot;UIroot&quot;&gt;UI root folder to read ini files from.&lt;/param&gt;
+    /// &lt;param name=&quot;height&quot;&gt;Console height, in pixels.&lt;/param&gt;
+    public void Initialize(object globals, string UIroot = &quot;Game/UI/&quot;, int height = 400)
+    {
+        // store ui root
+        if (!UIroot.EndsWith('/')) { UIroot += '/'; }
+        _UIroot = UIroot;
+
+        // store globals
+        _globals = globals;
+
+        // create window
+        var ui = BonEngine._Engine.UI;
+        _window = ui.CreateWindow(UIroot + &quot;window.ini&quot;, null, &quot;&quot;);
+        _window.WidthPercents = 100;
+        _window.HeightPixels = height;
+        _window.AutoArrangeChildren = false;
+
+        // add command input
+        _input = ui.CreateTextInput(UIroot + &quot;textinput.ini&quot;, _window);
+        _input.Anchor = new PointF(0, 1);
+        _input.Origin = new PointF(0, 1);
+    }
+
+    /// &lt;summary&gt;
+    /// Execute a single command.
+    /// &lt;/summary&gt;
+    public void Execute(string command)
+    {
+        // skip empty
+        if (command.Length == 0) { return; }
+
+        // command for output
+        var commandForOutput = (command.Length &gt; 24 ? command.Substring(0, 24) : command) + &quot; &gt;&gt;&gt; &quot;;
+
+        // try to execute
+        try
+        {
+            if (!command.EndsWith(';')) { command += ';'; }
+            var result = CSharpScript.EvaluateAsync(command, null, _globals).Result;
+            if (result != null)
+            {
+                PrintCommandResult(commandForOutput + result.ToString());
+            }
+            else
+            {
+                PrintCommandResult(commandForOutput + &quot;[No return value]&quot;);
+            }
+        }
+        // handle errors
+        catch (Exception e)
+        {
+            PrintError(commandForOutput + e.Message);
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// Print last command's result.
+    /// &lt;/summary&gt;
+    private void PrintCommandResult(string result)
+    {
+        _outputData.Insert(0, new OutputLine() { Line = result, IsError = false });
+        _outputDirty = true;
+    }
+
+    /// &lt;summary&gt;
+    /// Print error message.
+    /// &lt;/summary&gt;
+    private void PrintError(string result)
+    {
+        _outputData.Insert(0, new OutputLine() { Line = result, IsError = true });
+        _outputDirty = true;
+    }
+
+    /// &lt;summary&gt;
+    /// Show the debug console.
+    /// &lt;/summary&gt;
+    public void Show()
+    {
+        Visible = true;
+    }
+
+    /// &lt;summary&gt;
+    /// Hide the debug console.
+    /// &lt;/summary&gt;
+    public void Hide()
+    {
+        Visible = false;
+    }
+
+    /// &lt;summary&gt;
+    /// Toggle console visibility.
+    /// &lt;/summary&gt;
+    public void Toggle()
+    {
+        Visible = !Visible;
+    }
+
+    /// &lt;summary&gt;
+    /// Update the debug console.
+    /// &lt;/summary&gt;
+    public void Update(double deltaTime)
+    {
+        // update UI
+        if (!Visible) { return; }
+        BonEngine._Engine.UI.UpdateUI(_window);
+
+        // make sure input line is focused
+        _input.IsReceivingInput = true;
+
+        // on enter, send command
+        var input = BonEngine._Engine.Input;
+        if (input.ReleasedNow(KeyCodes.KeyKpEnter) || input.ReleasedNow(KeyCodes.KeyReturn) || input.ReleasedNow(KeyCodes.KeyReturn2))
+        {
+            Execute(_input.Value);
+            _input.Value = &quot;&quot;;
+        }
+
+        // update output window
+        if (_outputDirty)
+        {
+            // remove previous output window
+            if (_outputContainer != null) 
+            {
+                _window.RemoveChild(_outputContainer);
+            }
+
+            // recreate output window
+            _outputContainer = BonEngine._Engine.UI.CreateContainer(null, _window);
+            _outputContainer.WidthPercents = 100;
+            _outputContainer.HeightPixels = _window.CalculatedDestRect.Height - (_input.CalculatedDestRect.Height + 6);
+            _outputContainer.AutoArrangeChildren = false;
+
+            // add output
+            int index = 0;
+            foreach (var output in _outputData)
+            {
+                var para = BonEngine._Engine.UI.CreateText(_UIroot + &quot;small_text.ini&quot;, _outputContainer, output.Line);
+                if (output.IsError) { para.Color = Color.Red; }
+                para.Origin = new PointF(0, 1);
+                para.Anchor = new PointF(0, 1);
+                para.Offset = new PointI(0, -(int)(index * para.CalculatedDestRect.Height * 0.75f) - _input.CalculatedDestRect.Height);
+                index++;
+                if (index * para.CalculatedDestRect.Height &gt; _outputContainer.HeightPixels - _window.Padding.Top) { break; }
+            }
+            if (index &lt; _outputData.Count)
+            {
+                _outputData.RemoveRange(index, _outputData.Count - index);
+            }
+
+            // no longer need update
+            _outputDirty = false;
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// Draw the debug console.
+    /// &lt;/summary&gt;
+    public void Draw()
+    {
+        if (!Visible) { return; }
+        BonEngineSharp.BonEngine._Engine.UI.Draw(_window, false);
+    }
+}
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>To use the snippet above, you need to make 3 calls:</p>
+<h3 id="initialize">Initialize</h3>
+<p>Call this to create the debug console (note: it won't be visible until you call 'Show' or 'Toggle'):</p>
+<pre><code class="lang-cs">_debugConsole = new DebugConsole();
+_debugConsole.Initialize(globalObject, uiRootFolder);
+</code></pre>
+<ul>
+<li><strong>globalObject</strong> is an object to set as the global scope, all its public members will be accessible when executing commands.</li>
+<li><strong>uiRootFolder</strong> is the path of the folder where you keep your UI ini files at. You must have at least the following stylesheets: window.ini, textinput.ini, and small_text.ini.</li>
+</ul>
+<p>Note: if you don't know how to create UI files, just copy the whole ui folder for the demo projects assets in the <a href="https://github.com/RonenNess/BonEngineSharp/tree/master/BonEngineSharpTest/TestAssets/ui">project repo</a>.</p>
+<h3 id="update">Update</h3>
+<p>Update the console + toggle it with F1 key:</p>
+<pre><code class="lang-cs">_debugConsole.Update(deltaTime);
+
+if (Input.ReleasedNow(KeyCodes.KeyF1))
+{
+    _debugConsole.Toggle();
+}
+</code></pre>
+<h3 id="draw">Draw</h3>
+<p>Render the console (will only show it if you called 'Toggle' or 'Show' before):</p>
+<pre><code class="lang-cs">_debugConsole.Draw();
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/RonenNess/BonEngineSharp/blob/master/Documentation/articles/examples_debug_console.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

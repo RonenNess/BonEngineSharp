@@ -1157,6 +1157,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/examples_debug_console.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/examples_debug_console.html",
+          "hash": "uEwCVGoOi8ODXrqGnLmuJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/examples_lights.md",
       "output": {
         ".html": {
@@ -1197,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "aii8fmGCE3mV5wTVQPArUg=="
+          "hash": "30f4+dc2pwMg2RdANe53vg=="
         }
       },
       "is_incremental": false,
@@ -1209,6 +1221,17 @@
       "output": {
         "resource": {
           "relative_path": "images/example_breakout.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/example_debug_console.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/example_debug_console.jpg"
         }
       },
       "is_incremental": false,
@@ -1262,8 +1285,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 27,
-          "skipped_file_count": 27
+          "total_file_count": 28,
+          "skipped_file_count": 28
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
