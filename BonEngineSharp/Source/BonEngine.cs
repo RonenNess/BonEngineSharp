@@ -17,7 +17,7 @@ namespace BonEngineSharp
         /// <summary>
         /// BonEngine version - must match the underlying CPP version.
         /// </summary>
-        public static float Version => 1.54f;
+        public static float Version => 1.55f;
 
         // did we call 'Start' already?
         static bool _wasInit;

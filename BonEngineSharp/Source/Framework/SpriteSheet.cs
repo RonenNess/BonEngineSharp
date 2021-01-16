@@ -65,6 +65,19 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Create a reversed copy of this animation.
+        /// </summary>
+        /// <param name="idSuffix">Suffix to attach to reversed animation id.</param>
+        public SpriteAnimation Reverse(string idSuffix = "_reversed")
+        {
+            SpriteAnimation ret = new SpriteAnimation(Identifier + idSuffix);
+            ret.Repeats = Repeats;
+            ret._steps = new List<SpriteAnimationStep>(_steps);
+            ret._steps.Reverse();
+            return ret;
+        }
+
+        /// <summary>
         /// Create empty sprite animation.
         /// </summary>
         /// <param name="identifier">Animation identifier.</param>
@@ -285,6 +298,20 @@ namespace BonEngineSharp.Framework
                 var spriteAnimation = new SpriteAnimation(animationName, config);
                 _animations.Add(animationName, spriteAnimation);
             }
+        }
+
+        /// <summary>
+        /// Create a reversed version of an animation with given id.
+        /// Reversed animation will have the same id, with suffix attached to it.
+        /// </summary>
+        /// <param name="id">Animation id to reverse.</param>
+        /// <param name="idSuffix">Suffix to attach to reversed animation id.</param>
+        public void CreateReversed(string id, string idSuffix = "_reversed")
+        {
+            var animation = _animations[id];
+            var reversed = animation.Reverse(idSuffix);
+            if (_animations.ContainsKey(reversed.Identifier)) { throw new Exception($"Trying to create reversed animation, but id '{reversed.Identifier}' is already in use!"); }
+            _animations[reversed.Identifier] = reversed;
         }
 
         /// <summary>
