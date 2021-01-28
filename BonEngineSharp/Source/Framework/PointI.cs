@@ -447,6 +447,14 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Convert point to string.
+        /// </summary>
+        public override string ToString()
+        {
+            return $"{X},{Y}";
+        }
+
+        /// <summary>
         /// Implicit conversion to pointF.
         /// </summary>
         public static implicit operator PointF(PointI p) => new PointF((float)p.X, (float)p.Y);

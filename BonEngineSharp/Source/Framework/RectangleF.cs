@@ -170,6 +170,14 @@ namespace BonEngineSharp.Framework
         }
 
         /// <summary>
+        /// Convert rectangle to string.
+        /// </summary>
+        public override string ToString()
+        {
+            return $"{X},{Y},{Width},{Height}";
+        }
+
+        /// <summary>
         /// Get absolute center point.
         /// Check if contains a point.
         /// </summary>
