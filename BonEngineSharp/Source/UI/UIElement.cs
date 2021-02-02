@@ -437,6 +437,19 @@ namespace BonEngineSharp.UI
 		}
 
 		/// <summary>
+		/// Set color for all states - regular, hover and pressed.
+		/// </summary>
+		public Color ColorAllStates
+        {
+			set
+            {
+				Color = value;
+				ColorHighlight = value;
+				ColorPressed = value;
+            }
+        }
+
+		/// <summary>
 		/// Get / set element color while idle.
 		/// </summary>
 		public Color Color
