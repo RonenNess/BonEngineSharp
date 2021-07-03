@@ -15,7 +15,7 @@ namespace BonEngineSharp
         static Dictionary<string, CustomManager> _customManager = new Dictionary<string, CustomManager>();
 
         /// <summary>
-        /// BonEngine version - must match the underlying CPP version.
+        /// BonEngine version.
         /// </summary>
         public static float Version => 1.55f;
 
