@@ -31,7 +31,7 @@ namespace BonEngineSharp.Assets
         }
 
         /// <summary>
-        /// Get music track length.
+        /// Get the font size
         /// </summary>
         public int Size
         {
