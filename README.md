@@ -6,6 +6,10 @@
 
 To view the full API you can check out [API docs](https://ronenness.github.io/BonEngineSharp/api/index.html) or the base [BonEngine repo](https://github.com/RonenNess/BonEngine).
 
+## Showcase
+
+A game I made with BonEngineSharp: https://ronenness.itch.io/edge-of-divinity
+
 ## Install
 
 To install use nuget:
